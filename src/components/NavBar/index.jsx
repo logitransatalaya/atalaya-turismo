@@ -1,11 +1,20 @@
+import './styles.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
 	return (
-		<nav>
-			<span>Logo</span>
-			<ul>
+		<nav className='navBar-container'>
+			<span>
+				<img src='' alt='' />
+			</span>
+			<a className='loginIcon' href='/'>
+				User icon
+			</a>
+			<a className='burgerIcon' href='/'>
+				menuburger icon
+			</a>
+			<ul className='navbarList'>
 				<li>
 					<Link to='/'>INICIO</Link>
 				</li>
