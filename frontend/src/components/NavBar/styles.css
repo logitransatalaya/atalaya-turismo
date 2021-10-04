@@ -1,0 +1,62 @@
+.navBar-container {
+	background-color: #10216f;
+	justify-content: space-between;
+	padding: 0.3rem 1rem;
+	display: flex;
+}
+
+.burgerIcon img {
+	width: 65%;
+}
+
+.loginIcon img {
+	width: 65%;
+}
+
+.loginIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 100%;
+}
+
+.burgerIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 100%;
+}
+
+.navbarList {
+	display: none;
+}
+
+.logoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+}
+
+.logoContainer img {
+	width: 100%;
+}
+
+.iconsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 20%;
+}
+
+@media (min-width: 850px) {
+	.navbarList {
+		display: flex;
+	}
+
+	.iconsContainer {
+		display: none;
+	}
+}
