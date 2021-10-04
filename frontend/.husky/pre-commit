@@ -1,5 +1,2 @@
-#!/bin/sh
-. "$(dirname "$0")/frontend/.husky/_/husky.sh"
-
 cd front
 npx lint-staged
