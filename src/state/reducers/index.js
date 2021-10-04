@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import { homeTravels } from './homeTravels'
+import { homeReducer } from './homeReducer'
 
 export default combineReducers({
-	homeTravels
+	homeReducer
 })

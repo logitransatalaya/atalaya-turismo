@@ -4,7 +4,7 @@ export const initial_state = {
 	login: false
 }
 
-export const homeTravels = (state = initial_state, action) => {
+export const homeReducer = (state = initial_state, action) => {
 	switch (action.type) {
 		case types.LOGIN_USER:
 			return {
