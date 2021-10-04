@@ -1,0 +1,29 @@
+.WhyAtalaya_row {
+	background-color: blue;
+	margin: 0 auto;
+	gap: 1.8rem;
+	display: grid;
+	min-height: calc(100vh - 110px);
+	grid-template-columns: repeat(3, 400px);
+	grid-template-rows: repeat(2, 270px);
+	justify-content: center;
+	padding-top: 5rem;
+}
+@media (max-width: 1270px) {
+	.WhyAtalaya_row {
+		grid-template-columns: repeat(2, 400px);
+		grid-template-rows: repeat(4, 300px);
+	}
+}
+
+@media (max-width: 857px) {
+	.WhyAtalaya_row {
+		grid-template-columns: 410px;
+	}
+}
+
+@media (max-width: 441px) {
+	.WhyAtalaya_row {
+		grid-template-columns: 310px;
+	}
+}
