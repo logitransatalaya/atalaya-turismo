@@ -1,9 +1,23 @@
 import './styles.css'
-import React from 'react'
 import { Link } from 'react-router-dom'
+import React, { useRef, useState } from 'react'
 import { Container } from 'components/Container'
 
 export const NavBar = () => {
+	const state = {
+		true: '/home/user-navbar.png',
+		false: '/home/burgerMenu-navbar.png'
+	}
+	const navbarRef = useRef(null)
+	const [urlImg, setUrlImg] = useState(state.false)
+
+	const openNavbar = () => {
+		navbarRef.current.classList.toggle('navbarVisible')
+
+		if (urlImg === state.true) setUrlImg(state.false)
+		else setUrlImg(state.true)
+	}
+
 	return (
 		<div className='navBar-background'>
 			<Container>
@@ -15,11 +29,11 @@ export const NavBar = () => {
 						<a className='loginIcon' href='/'>
 							<img src='/home/user-navbar.png' alt='' />
 						</a>
-						<a className='burgerIcon' href='/'>
-							<img src='/home/burgerMenu-navbar.png' alt='' />
-						</a>
+						<span className='burgerIcon' onClick={openNavbar}>
+							<img src={urlImg} alt='' />
+						</span>
 					</div>
-					<div className='navbarDesktop'>
+					<div ref={navbarRef} className='navbarDesktop'>
 						<div className='navbarButtonsContainer'>
 							<button>REGISTRATE</button>
 							<button>INICIA SESIÓN</button>
