@@ -9,6 +9,7 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 import { splideOptions, splideOptionsOffers } from 'lib/splide.js'
 
 import { OffersCard } from './OffersCard/index.jsx'
+import SliderComponent from './Slider/index.jsx'
 
 export const Home = () => {
 	return (
@@ -33,7 +34,7 @@ export const Home = () => {
 						</SplideSlide>
 					</Splide>
 				</div>
-				<div>Aqui va la imagen de destinos destacados </div>
+				<SliderComponent />
 				<div className='plansCard-container'>
 					<Splide options={splideOptionsOffers}>
 						<SplideSlide>
