@@ -30,25 +30,28 @@
 
 @media (max-width: 1010px) {
 	.WhyAtalaya_row {
+		grid-template-rows: repeat(6, 190px);
 		grid-template-columns: 600px;
-		gap: 0rem;
+		gap: 3rem;
 	}
 	.WhyAtalaya_bg_image {
 		width: 100%;
-		min-height: 10px;
-		background-image: url('../../images/imagen-habitacion-movil.png');
+		min-height: 0px;
+		background-image: url('../../images/imagen-habitacion-tablet.png');
 		background-size: cover;
 	}
 }
 
 @media (max-width: 690px) {
 	.WhyAtalaya_row {
+		grid-template-rows: repeat(6, 300px);
 		min-height: 2000px;
 		grid-template-columns: 330px;
 		gap: 0rem;
 	}
 	.WhyAtalaya_bg_image {
 		width: 100%;
+		min-height: 10px;
 		background-image: url('../../images/imagen-habitacion-movil.png');
 		background-size: cover;
 	}
