@@ -3,17 +3,19 @@ import styled from 'styled-components'
 export const PlansCardStyled = styled.a`
 	background-color: white;
 	border-radius: 5px;
-	box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.575);
+	box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.275);
 	display: flex;
 
 	flex-direction: column;
+	font-size: 1.2rem;
 	gap: 0.1rem;
 	justify-content: center;
-	margin-top: 1rem;
 
+	margin: 1.5rem 0;
 	padding: 0.8rem 0;
 	text-align: center;
 	text-decoration: none;
+
 	width: 50%;
 
 	.plansCard-title {
@@ -35,5 +37,12 @@ export const PlansCardStyled = styled.a`
 
 	.plansCard-yellow {
 		background-color: #f4a719;
+	}
+
+	@media (min-width: 550px) {
+		font-size: 1.4rem;
+		gap: 1rem;
+		padding: 1.3rem 0;
+		width: 30rem;
 	}
 `
