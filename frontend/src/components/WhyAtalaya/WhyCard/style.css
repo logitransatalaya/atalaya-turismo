@@ -21,7 +21,7 @@
 	fill: #0f216f;
 }
 .WhyCard_title {
-	color: orange;
+	color: #f3a719;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	margin-bottom: 10px;
 }
@@ -35,6 +35,7 @@
 
 @media (max-width: 857px) {
 	.WhyCard_card {
+		height: 200px;
 		font-size: 1.1rem;
 		color: white;
 		background-color: #0f216f;
