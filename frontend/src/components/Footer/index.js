@@ -172,9 +172,9 @@ export const Footer = () => {
 					ATALAYA VIAJES Y TURISMO Rechaza la explotación, la
 					pornografía, el turimo sexual y demás formas de abuso sexual
 					con menores, Ley 1336 de 2009 y ley 679 de 2001. ATALAYA
-					VIAJES Y TURISMO cumple la Ley 17 de 1981 tResolución de
-					1367 de 2000 contra la comercialización y tráfico de
-					especies de fauna y flora silvestre
+					VIAJES Y TURISMO cumple la Ley 17 de 1981 Resolución de 1367
+					de 2000 contra la comercialización y tráfico de especies de
+					fauna y flora silvestre
 				</p>
 			</FooterLey>
 		</>
