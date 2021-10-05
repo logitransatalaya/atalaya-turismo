@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container } from 'components/Container'
 
 export const HotelFeatures = () => {
 	return (
-		<div>
+		<Container>
 			<div>
 				<h1>Aqui van las caracteristicas de el hotel </h1>
 			</div>
@@ -22,6 +23,6 @@ export const HotelFeatures = () => {
 			<div>
 				<h1>SOBRE EL HOTEL TRYP MEDELLIN </h1>
 			</div>
-		</div>
+		</Container>
 	)
 }
