@@ -75,6 +75,7 @@ export const NavbarStyled = styled.div`
 		transition: ease-in-out 0.3s;
 		top: 0;
 		width: calc(70% - 2rem);
+		z-index: 100;
 	}
 
 	.navbarList {
