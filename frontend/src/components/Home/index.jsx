@@ -3,13 +3,12 @@ import { PlansCard } from './PlansCard'
 import image from '../../images/btn.png'
 import { HomeStyled } from './styles.js'
 import { Benefits } from '../BenefitsSection'
+import SliderComponent from './Slider/index.jsx'
+import { OffersCard } from './OffersCard/index.jsx'
 import { Container } from 'components/Container/index.jsx'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 import { splideOptions, splideOptionsOffers } from 'lib/splide.js'
-
-import { OffersCard } from './OffersCard/index.jsx'
-import SliderComponent from './Slider/index.jsx'
 
 export const Home = () => {
 	return (
