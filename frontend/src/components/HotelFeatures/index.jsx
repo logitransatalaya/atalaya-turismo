@@ -3,8 +3,15 @@ import React from 'react'
 export const HotelFeatures = () => {
 	return (
 		<div>
-			<div>
-				<h1>Aqui van las caracteristicas de el hotel </h1>
+			<div className=''>
+				<div>
+					<h1>TRYP NEDELLIN ESTADIO</h1>
+					<p>Medellin</p>
+					<div>Aqui van las estrellas</div>
+				</div>
+				<div>
+					<button>Reserva</button>
+				</div>
 			</div>
 			<hr />
 			<div>
