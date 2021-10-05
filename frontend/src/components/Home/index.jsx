@@ -1,11 +1,11 @@
-import { HomeStyled } from './styles.js'
 import React from 'react'
-import '@splidejs/splide/dist/css/themes/splide-default.min.css'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { PlansCard } from './PlansCard'
-import { WhyAtalaya } from '../WhyAtalaya'
-import { Container } from 'components/Container/index.jsx'
+import { HomeStyled } from './styles.js'
+import { Benefits } from '../BenefitsSection'
 import { splideOptions } from 'lib/splide.js'
+import { Container } from 'components/Container/index.jsx'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 
 export const Home = () => {
 	return (
@@ -33,7 +33,7 @@ export const Home = () => {
 				<div>Aqui va la imagen de destinos destacados </div>
 				<div>Aqui van las pfertas flash </div>
 				<div>
-					<WhyAtalaya />
+					<Benefits />
 				</div>
 			</HomeStyled>
 		</Container>
