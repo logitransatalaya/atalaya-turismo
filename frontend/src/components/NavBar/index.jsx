@@ -1,4 +1,4 @@
-import './styles.css'
+import { NavbarStyled } from './styles.js'
 import { Link } from 'react-router-dom'
 import React, { useRef, useState } from 'react'
 import { Container } from 'components/Container'
@@ -19,7 +19,7 @@ export const NavBar = () => {
 	}
 
 	return (
-		<div className='navBar-background'>
+		<NavbarStyled>
 			<Container>
 				<nav className='navBar-container'>
 					<span className='logoContainer'>
@@ -64,6 +64,6 @@ export const NavBar = () => {
 					</div>
 				</nav>
 			</Container>
-		</div>
+		</NavbarStyled>
 	)
 }
