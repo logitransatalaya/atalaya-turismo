@@ -1,16 +1,19 @@
 .navBar-container {
-	background-color: #10216f;
 	justify-content: space-between;
 	padding: 0.3rem 1rem;
 	display: flex;
 }
 
+.navBar-background {
+	background-color: #10216f;
+}
+
 .burgerIcon img {
-	width: 65%;
+	width: 100%;
 }
 
 .loginIcon img {
-	width: 65%;
+	width: 100%;
 }
 
 .loginIcon {
@@ -29,7 +32,7 @@
 	width: 100%;
 }
 
-.navbarList {
+.navbarDesktop {
 	display: none;
 }
 
@@ -37,7 +40,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 30%;
+	width: 20%;
 }
 
 .logoContainer img {
@@ -46,17 +49,85 @@
 
 .iconsContainer {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
-	width: 20%;
+	gap: 1rem;
+	align-items: center;
+	width: 25%;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 550px) {
+	.logoContainer {
+		padding: 0.5rem;
+		width: 5rem;
+	}
+
+	.iconsContainer {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		align-items: center;
+		width: 7rem;
+	}
+}
+
+@media (min-width: 950px) {
+	.logoContainer {
+		padding: 0.5rem;
+		width: 8rem;
+	}
+
+	.navbarDesktop {
+		padding: 1rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 1rem;
+	}
+
 	.navbarList {
 		display: flex;
+		gap: 1rem;
+	}
+
+	.navbarList li {
+		list-style: none;
+	}
+
+	.navbarList a {
+		color: #f4a719;
+		text-decoration: none;
+	}
+
+	.navbarList a:hover {
+		opacity: 0.8;
 	}
 
 	.iconsContainer {
 		display: none;
+	}
+
+	.navbarButtonsContainer {
+		display: flex;
+		gap: 0.5rem;
+		color: white;
+	}
+
+	.navbarButtonsContainer button {
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 3px;
+	}
+
+	.navbarButtonsContainer button:hover {
+		opacity: 0.8;
+	}
+
+	.navbarButtonsContainer button:nth-of-type(1) {
+		background-color: #0a1744;
+	}
+
+	.navbarButtonsContainer button:nth-of-type(2) {
+		background-color: #f4a719;
 	}
 }
