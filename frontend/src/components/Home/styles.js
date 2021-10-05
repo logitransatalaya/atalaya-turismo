@@ -20,4 +20,10 @@ export const HomeStyled = styled.div`
 		gap: 6.3rem;
 		justify-content: center;
 	}
+
+	@media (min-width: 950px) {
+		.plansCard-container {
+			margin: 2rem 0;
+		}
+	}
 `

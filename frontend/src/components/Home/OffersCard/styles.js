@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardStyle = styled.div`
-	width: auto;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,8 +9,18 @@ export const CardStyle = styled.div`
 	margin-top: 20px;
 	border-radius: 20px;
 
+	.btn_offert {
+		background-color: orange;
+		padding: 15px;
+		border-radius: 15px;
+		border: none;
+		color: white;
+		font-size: large;
+		margin-bottom: 19px;
+	}
+
 	@media (max-width: 810px) {
-		width: 80%;
+		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
