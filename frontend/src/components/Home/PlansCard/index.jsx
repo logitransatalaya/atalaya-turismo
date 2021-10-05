@@ -1,5 +1,5 @@
-import { PlansCardStyled } from './styles'
 import React from 'react'
+import { PlansCardStyled } from './styles'
 
 export const PlansCard = ({ text, color }) => {
 	return (

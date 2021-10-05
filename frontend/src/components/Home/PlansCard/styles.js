@@ -18,6 +18,10 @@ export const PlansCardStyled = styled.a`
 
 	width: 50%;
 
+	&:hover {
+		opacity: 0.8;
+	}
+
 	.plansCard-title {
 		color: #0b1644;
 		margin: 0;
