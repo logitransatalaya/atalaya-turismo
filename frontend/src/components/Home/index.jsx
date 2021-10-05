@@ -1,11 +1,14 @@
 import React from 'react'
 import { PlansCard } from './PlansCard'
+import image from '../../images/btn.png'
 import { HomeStyled } from './styles.js'
 import { Benefits } from '../BenefitsSection'
-import { splideOptions } from 'lib/splide.js'
 import { Container } from 'components/Container/index.jsx'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
+import { splideOptions, splideOptionsOffers } from 'lib/splide.js'
+
+import { OffersCard } from './OffersCard/index.jsx'
 
 export const Home = () => {
 	return (
@@ -31,7 +34,22 @@ export const Home = () => {
 					</Splide>
 				</div>
 				<div>Aqui va la imagen de destinos destacados </div>
-				<div>Aqui van las pfertas flash </div>
+				<div className='plansCard-container'>
+					<Splide options={splideOptionsOffers}>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+					</Splide>
+				</div>
 				<div>
 					<Benefits />
 				</div>
