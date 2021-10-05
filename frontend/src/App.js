@@ -1,3 +1,4 @@
+import { HotelFeatures } from 'components/HotelFeatures'
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Footer } from './components/Footer'
@@ -37,8 +38,11 @@ export default function App() {
 					<Route exact path='/medios-de-pago'>
 						<PaymentMethods />
 					</Route>
+					<Route exact path='/caracteristicas-de-hotel'>
+						<HotelFeatures />
+					</Route>
 				</Switch>
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 		</Router>
 	)
