@@ -16,7 +16,6 @@ export const splideOptions = {
 	},
 	breakpoints: {
 		950: {
-			type: 'loop',
 			perPage: 1,
 			height: '10rem',
 			pagination: true,

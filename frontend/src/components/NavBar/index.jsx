@@ -1,5 +1,5 @@
-import { NavbarStyled } from './styles.js'
 import { Link } from 'react-router-dom'
+import { NavbarStyled } from './styles.js'
 import React, { useRef, useState } from 'react'
 import { Container } from 'components/Container'
 
