@@ -7,7 +7,7 @@ export const PlansCardStyled = styled.a`
 	display: flex;
 
 	flex-direction: column;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	gap: 0.1rem;
 	justify-content: center;
 
