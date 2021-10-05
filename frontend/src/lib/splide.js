@@ -36,16 +36,20 @@ export const splideOptionsOffers = {
 
 	breakpoints: {
 		1340: {
-			perPage: 2
+			perPage: 3
 		},
-		810: {
+		1010: {
+			perPage: 2,
+			gap: '6rem'
+		},
+		750: {
 			perPage: 1,
-			type: 'slide',
-			gap: '2.5rem',
+			type: 'loop',
+			gap: '8rem',
 			height: '45rem',
 			padding: {
-				left: '3rem',
-				right: '3rem'
+				left: '1rem',
+				right: '1rem'
 			}
 		}
 	}

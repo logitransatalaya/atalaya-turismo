@@ -37,16 +37,16 @@ export const Home = () => {
 				<div className='plansCard-container'>
 					<Splide options={splideOptionsOffers}>
 						<SplideSlide>
-							<OffersCard image={image} />
+							<OffersCard image={image} title={'CANCUN'} />
 						</SplideSlide>
 						<SplideSlide>
-							<OffersCard image={image} />
+							<OffersCard image={image} title={'MEXICO'} />
 						</SplideSlide>
 						<SplideSlide>
-							<OffersCard image={image} />
+							<OffersCard image={image} title={'COLOMBIA'} />
 						</SplideSlide>
 						<SplideSlide>
-							<OffersCard image={image} />
+							<OffersCard image={image} title={'CHILE'} />
 						</SplideSlide>
 					</Splide>
 				</div>
