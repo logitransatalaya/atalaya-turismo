@@ -24,3 +24,30 @@ export const splideOptions = {
 		}
 	}
 }
+
+export const splideOptionsOffers = {
+	type: 'slide',
+	perPage: 3,
+	gap: '2.5rem',
+	height: '45rem',
+	padding: {
+		left: '3rem',
+		right: '3rem'
+	},
+
+	breakpoints: {
+		1340: {
+			perPage: 2
+		},
+		810: {
+			perPage: 1,
+			type: 'slide',
+			gap: '2.5rem',
+			height: '45rem',
+			padding: {
+				left: '3rem',
+				right: '3rem'
+			}
+		}
+	}
+}
