@@ -174,7 +174,7 @@ export const Footer = () => {
 					con menores, Ley 1336 de 2009 y ley 679 de 2001. ATALAYA
 					VIAJES Y TURISMO cumple la Ley 17 de 1981 Resolución de 1367
 					de 2000 contra la comercialización y tráfico de especies de
-					fauna y flora silvestre
+					fauna y flora silvestre.
 				</p>
 			</FooterLey>
 		</>
