@@ -1,0 +1,40 @@
+.WhyAtalaya_row {
+	width: 100%;
+	margin: 0 auto;
+	gap: 3rem;
+	display: grid;
+	min-height: calc(100vh - 110px);
+	grid-template-columns: repeat(3, 500px);
+	grid-template-rows: repeat(2, 270px);
+	justify-content: center;
+	padding-top: 5rem;
+}
+.WhyAtalaya_title {
+	text-align: center;
+	color: #0f216f;
+}
+.WhyAtalaya_bg_image {
+	min-height: 1200px;
+	width: 100%;
+	background-size: cover;
+	background-image: url('../../images/imagen habitacion.png');
+}
+@media (max-width: 1270px) {
+	.WhyAtalaya_row {
+		grid-template-columns: repeat(2, 400px);
+		grid-template-rows: repeat(4, 300px);
+	}
+}
+
+@media (max-width: 857px) {
+	.WhyAtalaya_row {
+		grid-template-columns: 410px;
+	}
+}
+
+@media (max-width: 441px) {
+	.WhyAtalaya_row {
+		grid-template-columns: 330px;
+		gap: 0rem;
+	}
+}
