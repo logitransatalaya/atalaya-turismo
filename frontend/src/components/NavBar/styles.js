@@ -10,32 +10,6 @@ export const NavbarStyled = styled.div`
 		position: relative;
 	}
 
-	.loginIcon {
-		align-items: center;
-		display: flex;
-		justify-content: center;
-		height: 50%;
-
-		width: 100%;
-
-		img {
-			width: 100%;
-		}
-	}
-
-	.burgerIcon {
-		align-items: center;
-		display: flex;
-		height: 50%;
-		justify-content: center;
-
-		width: 100%;
-
-		img {
-			width: 100%;
-		}
-	}
-
 	.logoContainer {
 		align-items: center;
 		display: flex;
@@ -54,6 +28,32 @@ export const NavbarStyled = styled.div`
 		gap: 1rem;
 
 		width: 25%;
+
+		.loginIcon {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			height: 50%;
+
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.burgerIcon {
+			align-items: center;
+			display: flex;
+			height: 50%;
+			justify-content: center;
+
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 	.navbarDesktop {
@@ -110,19 +110,18 @@ export const NavbarStyled = styled.div`
 			border-radius: 3px;
 			color: white;
 			padding: 0.5rem 1rem;
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			&:nth-of-type(1) {
+				background-color: #0a1744;
+			}
+			&:nth-of-type(2) {
+				background-color: #f4a719;
+			}
 		}
-	}
-
-	.navbarButtonsContainer button:hover {
-		opacity: 0.8;
-	}
-
-	.navbarButtonsContainer button:nth-of-type(1) {
-		background-color: #0a1744;
-	}
-
-	.navbarButtonsContainer button:nth-of-type(2) {
-		background-color: #f4a719;
 	}
 
 	@media (min-width: 550px) {
@@ -165,6 +164,12 @@ export const NavbarStyled = styled.div`
 			position: initial;
 			transform: none;
 			width: auto;
+
+			.navbarButtonsContainer {
+				color: white;
+				flex-direction: row;
+				gap: 1rem;
+			}
 		}
 
 		.iconsContainer {
@@ -174,12 +179,6 @@ export const NavbarStyled = styled.div`
 		.navbarList {
 			margin: 0;
 			flex-direction: row;
-		}
-
-		.navbarButtonsContainer {
-			color: white;
-			flex-direction: row;
-			gap: 1rem;
 		}
 	}
 
