@@ -38,7 +38,7 @@ export default function App() {
 						<PaymentMethods />
 					</Route>
 				</Switch>
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 		</Router>
 	)
