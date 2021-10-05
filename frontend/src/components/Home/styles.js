@@ -14,4 +14,10 @@ export const HomeStyled = styled.div`
 	.dotPaginations_color .is-active {
 		background-color: #e8641a !important;
 	}
+
+	.viajes-slide {
+		display: flex;
+		gap: 6.3rem;
+		justify-content: center;
+	}
 `

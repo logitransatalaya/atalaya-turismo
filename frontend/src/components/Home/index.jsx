@@ -5,7 +5,10 @@ import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { PlansCard } from './PlansCard'
 import { WhyAtalaya } from '../WhyAtalaya'
 import { Container } from 'components/Container/index.jsx'
-import { splideOptions } from 'lib/splide.js'
+import { splideOptions, splideOptionsOffers } from 'lib/splide.js'
+import image from '../../images/btn.png'
+
+import { OffersCard } from './OffersCard/index.jsx'
 
 export const Home = () => {
 	return (
@@ -31,7 +34,22 @@ export const Home = () => {
 					</Splide>
 				</div>
 				<div>Aqui va la imagen de destinos destacados </div>
-				<div>Aqui van las pfertas flash </div>
+				<div className='plansCard-container'>
+					<Splide options={splideOptionsOffers}>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+						<SplideSlide>
+							<OffersCard image={image} />
+						</SplideSlide>
+					</Splide>
+				</div>
 				<div>
 					<WhyAtalaya />
 				</div>
