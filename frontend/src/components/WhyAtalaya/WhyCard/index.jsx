@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-export const WhyCard = ({ Icon, bg, fill }) => {
+export const WhyCard = ({ Icon, bg, fill, titleCard, textCard }) => {
 	console.log(bg)
 	return (
 		<div className={`WhyCard_card ${bg}`}>
@@ -11,7 +11,7 @@ export const WhyCard = ({ Icon, bg, fill }) => {
 				</div>
 			</div>
 			<div className='WhyCard_info'>
-				<h3 className='WhyCard_title'>Hoteles exclusivos</h3>
+				<h3 className='WhyCard_title'>{titleCard}</h3>
 				<div>
 					<p className='WhyCard_text'>
 						Nos encargamos que de una forma fácil y segura adquieras
