@@ -4,6 +4,7 @@ import Bedrooms from './Bedrooms'
 import { Title } from './styles'
 import HotelInfo from './HotelInfo'
 import { HeaderFeature } from './HeaderFeatur'
+import { MorePopularService } from 'components/MorePopularService'
 
 export const HotelFeatures = () => {
 	return (
@@ -24,6 +25,7 @@ export const HotelFeatures = () => {
 					<h2 className='title'>SERVICIOS MÁS POPULARES</h2>
 					<span className='line'></span>
 				</Title>
+				<MorePopularService />
 			</div>
 			<div>
 				<Title>
