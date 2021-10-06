@@ -1,4 +1,4 @@
-import { types } from '../actions/homeActions'
+import { types } from '../actions/hotelsActions'
 
 export const initial_state = {
 	login: false,

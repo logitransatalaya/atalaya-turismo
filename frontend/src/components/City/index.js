@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { CityContainer } from './styles'
 
-import { getServicesHotel } from '../../state/actions/homeActions'
+import { getServicesHotel } from '../../state/actions/hotelsActions'
 
 export const City = () => {
 	const { hotelsCity } = useSelector((state) => state.homeReducer)
