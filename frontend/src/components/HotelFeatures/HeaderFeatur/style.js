@@ -39,7 +39,6 @@ export const CardGrid = styled.div`
 	background-color: white;
 	width: 100%;
 	gap: 1em;
-	height: 400px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -68,5 +67,12 @@ export const CardGrid = styled.div`
 		background-color: green;
 		width: 100%;
 		height: 100%;
+	}
+	.box_card {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 1em;
 	}
 `
