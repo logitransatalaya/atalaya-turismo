@@ -35,7 +35,7 @@ export const BenefitsSectionStyled = styled.div`
 		}
 
 		.benefitsSection-imageBackground {
-			margin-top: -10rem;
+			margin-top: -15rem;
 		}
 
 		.line-separator {

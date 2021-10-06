@@ -44,9 +44,9 @@ export const PlansCardStyled = styled.a`
 	}
 
 	@media (min-width: 550px) {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		gap: 1rem;
-		padding: 1.3rem 0;
+		padding: 2rem 0;
 		width: 30rem;
 	}
 `
