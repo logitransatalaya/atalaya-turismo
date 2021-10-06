@@ -76,8 +76,32 @@ export const splideOptionsLoop = {
 
 export const splideOptionsBedrooms = {
 	type: 'slide',
-	gap: '2rem',
+	gap: '0.5rem',
+	perPage: 3,
 	perMove: 1,
-	fixedWidth: '21rem',
-	speed: 400
+	breakpoints: {
+		1000: {
+			perPage: 2
+		},
+		750: {
+			perPage: 1
+		}
+	}
+}
+
+export const splideOptionsMessages = {
+	type: 'slide',
+	perPage: 2,
+	perMove: 1,
+	gap: '2rem',
+	height: '700px',
+	direction: 'ttb',
+	arrows: false,
+	breakpoints: {
+		700: {
+			height: '450px',
+			perPage: 2,
+			arrows: true
+		}
+	}
 }

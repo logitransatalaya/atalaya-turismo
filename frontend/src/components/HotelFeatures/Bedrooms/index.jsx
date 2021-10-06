@@ -1,5 +1,5 @@
 import React from 'react'
-import { Slider } from 'components/Home/Slider/styles'
+import { SliderRooms } from './styles'
 import { Splide } from '@splidejs/react-splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
 import { Room } from './styles'
@@ -8,50 +8,52 @@ import { splideOptionsBedrooms } from 'lib/splide'
 
 const Bedrooms = () => {
 	return (
-		<Slider>
-			<Splide options={splideOptionsBedrooms}>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-				<SplideSlide>
-					<Room>
-						<img src={imgPrueba} alt='habitación' />
-					</Room>
-				</SplideSlide>
-			</Splide>
-		</Slider>
+		<SliderRooms>
+			<div className='containerRooms'>
+				<Splide options={splideOptionsBedrooms}>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+					<SplideSlide className='splideslide'>
+						<Room>
+							<img src={imgPrueba} alt='habitación' />
+						</Room>
+					</SplideSlide>
+				</Splide>
+			</div>
+		</SliderRooms>
 	)
 }
 

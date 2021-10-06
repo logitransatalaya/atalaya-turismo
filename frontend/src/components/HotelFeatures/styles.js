@@ -18,4 +18,11 @@ export const Title = styled.div`
 		width: ${(props) => (props.about ? `29%` : `32%`)};
 		background: #053b77;
 	}
+
+	@media (max-width: 700px) {
+		.title {
+			text-align: center;
+			font-size: 1.4rem;
+		}
+	}
 `
