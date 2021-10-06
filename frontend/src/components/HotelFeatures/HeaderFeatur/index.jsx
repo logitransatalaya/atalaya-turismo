@@ -1,4 +1,6 @@
 import React from 'react'
+import image from '../../../images/btn.png'
+import { Qualification } from '../Qualification'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ReactComponent as IconPalmera } from '../../../images/icono-palmera.svg'
 
@@ -14,14 +16,25 @@ export const HeaderFeature = () => {
 						</div>
 						<p>Medellin</p>
 					</div>
-					<div>Aqui van las estrellas</div>
+					<div>
+						<Qualification />
+					</div>
 				</div>
 				<div>
 					<button className='card_button'>Reservas</button>
 				</div>
 			</HeaderCardStyled>
 			<CardGrid>
-				<div className='card_1'></div>
+				<div className='card_1'>
+					<img
+						style={{
+							width: '100%',
+							height: '100%'
+						}}
+						src={image}
+						alt=''
+					/>
+				</div>
 				<div className='card_2'></div>
 				<div className='card_3'></div>
 				<div className='card_4'></div>
