@@ -1,3 +1,4 @@
+import { City } from 'components/City'
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Footer } from './components/Footer'
@@ -21,6 +22,9 @@ export default function App() {
 					</Route>
 					<Route exact path='/hoteles'>
 						<Hotels />
+					</Route>
+					<Route exact path='/hoteles/:locid'>
+						<City />
 					</Route>
 					<Route exact path='/transporte'>
 						<Transport />
