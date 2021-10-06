@@ -12,6 +12,7 @@ export const HeaderCardStyled = styled.div`
 		font-weight: 600;
 	}
 	.card_location {
+		height: 35px;
 		color: #0f216e;
 		display: flex;
 		margin-left: 10px;
