@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 
 export const ContainerStars = styled.div`
-	padding: 20px;
+	padding: 10px 0;
+
+	div {
+		display: flex;
+		gap: 0.3em;
+	}
 	& svg {
 		color: #c7c7c7;
 		/* cursor: pointer; */

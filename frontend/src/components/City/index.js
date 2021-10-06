@@ -1,5 +1,6 @@
 import { Button } from 'components/Button'
 import { Container } from 'components/Container'
+import { Qualification } from 'components/HotelFeatures/Qualification'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { CityContainer } from './styles'
@@ -35,7 +36,7 @@ export const City = () => {
 									<small>Dirección: {hotel.addres}</small>
 								</p>
 								<div className='cityInfoCalification'>
-									<b>Es un {hotel.calification} estrellas</b>
+									<Qualification stars={hotel.calification} />
 								</div>
 							</div>
 							<div className='cityPrice'>
