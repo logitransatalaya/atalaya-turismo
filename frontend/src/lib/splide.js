@@ -64,3 +64,12 @@ export const splideOptionsOffers = {
 		}
 	}
 }
+
+export const splideOptionsLoop = {
+	type: 'loop',
+	perPage: 1,
+	autoplay: true,
+	interval: 9000,
+	speed: 2000,
+	arrows: false
+}
