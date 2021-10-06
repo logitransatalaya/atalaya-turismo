@@ -9,8 +9,6 @@ export const FooterStyle = styled.footer`
 	background-color: #10216f;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-
-	z-index: 100;
 `
 
 export const FooterWave = styled.div`
@@ -18,7 +16,6 @@ export const FooterWave = styled.div`
 	bottom: -5px;
 	left: 0;
 	width: 100%;
-
 	img {
 		width: 100%;
 	}
@@ -27,11 +24,19 @@ export const FooterWave = styled.div`
 export const FooterRedes = styled.div`
 	grid-column: 2/4;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	gap: 1em;
 	color: #fff;
 	padding: 1em 1em 6em 1em;
+	z-index: 100;
+	width: 80%;
+
+	@media (max-width: 600px) {
+		width: 105%;
+		grid-column: 1/3;
+		justify-content: left;
+	}
 `
 
 export const FooterContentIcons = styled.div`
@@ -41,7 +46,7 @@ export const FooterContentIcons = styled.div`
 export const FooterBoxIcons = styled.div`
 	width: 50px;
 	height: 50px;
-	z-index: 100;
+
 	img {
 		transition: transform 0.5s;
 		&:hover {
@@ -68,15 +73,29 @@ export const FooterTitle = styled.h5`
 export const FooterContact = styled.ul`
 	list-style: none;
 	color: #fff;
+	z-index: 100;
+	justify-self: center;
+
 	li {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
 		margin-bottom: 1em;
+
+		img {
+			width: 1rem;
+		}
 	}
 	@media (max-width: 600px) {
 		grid-column: 1/-1;
+		justify-self: left;
 	}
 `
 export const FooterWe = styled.ul`
+	justify-self: center;
 	color: #fff;
+	z-index: 100;
+
 	li {
 		color: orange;
 		margin-bottom: 0.5em;
@@ -92,10 +111,15 @@ export const FooterWe = styled.ul`
 	}
 	@media (max-width: 600px) {
 		grid-column: 1/-1;
+		justify-self: left;
 	}
 `
 export const FooterOtherServices = styled.ul`
 	color: #fff;
+	z-index: 100;
+	width: max-content;
+	justify-self: center;
+
 	li {
 		color: orange;
 		margin-bottom: 0.5em;
@@ -111,5 +135,6 @@ export const FooterOtherServices = styled.ul`
 	}
 	@media (max-width: 600px) {
 		grid-column: 1/-1;
+		justify-self: left;
 	}
 `

@@ -7,16 +7,16 @@ export const PlansCardStyled = styled.a`
 	display: flex;
 
 	flex-direction: column;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	gap: 0.1rem;
 	justify-content: center;
 
 	margin: 1.5rem 0;
-	padding: 0.8rem 0;
+	padding: 1.2rem 0;
 	text-align: center;
 	text-decoration: none;
 
-	width: 50%;
+	width: 30rem;
 
 	&:hover {
 		opacity: 0.8;
@@ -44,9 +44,9 @@ export const PlansCardStyled = styled.a`
 	}
 
 	@media (min-width: 550px) {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		gap: 1rem;
-		padding: 1.3rem 0;
-		width: 30rem;
+		padding: 2rem 0;
+		margin: 1.5rem 0;
 	}
 `
