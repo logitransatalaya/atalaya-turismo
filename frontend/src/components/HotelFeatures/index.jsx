@@ -1,6 +1,7 @@
 import React from 'react'
-import { Container } from 'components/Container'
 import { HeaderFeature } from './HeaderFeatur'
+import { Container } from 'components/Container'
+import { MorePopularService } from 'components/MorePopularService'
 
 export const HotelFeatures = () => {
 	return (
@@ -10,11 +11,7 @@ export const HotelFeatures = () => {
 			</div>
 			<hr />
 			<div>
-				<h1>SERVICIOS MAS POPULARES </h1>
-			</div>
-			<hr />
-			<div>
-				<h1>SERVICIOS MAS POPULARES </h1>
+				<MorePopularService />
 			</div>
 			<hr />
 			<div>
