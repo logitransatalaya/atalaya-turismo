@@ -68,3 +68,11 @@ export const splideOptionsLoop = {
 	speed: 2000,
 	arrows: false
 }
+
+export const splideOptionsBedrooms = {
+	type: 'slide',
+	gap: '2rem',
+	perMove: 1,
+	fixedWidth: '21rem',
+	speed: 400
+}

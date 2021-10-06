@@ -1,5 +1,8 @@
 import React from 'react'
 import { Container } from 'components/Container'
+import Bedrooms from './Bedrooms'
+import { Title } from './styles'
+import HotelInfo from './HotelInfo'
 
 export const HotelFeatures = () => {
 	return (
@@ -9,19 +12,37 @@ export const HotelFeatures = () => {
 			</div>
 			<hr />
 			<div>
-				<h1>SERVICIOS MAS POPULARES </h1>
+				<Title>
+					<span className='line'></span>
+					<h2 className='title'>SERVICIOS MÁS POPULARES</h2>
+					<span className='line'></span>
+				</Title>
 			</div>
 			<hr />
 			<div>
-				<h1>SERVICIOS MAS POPULARES </h1>
+				<Title>
+					<span className='line'></span>
+					<h2 className='title'>SERVICIOS MÁS POPULARES</h2>
+					<span className='line'></span>
+				</Title>
 			</div>
 			<hr />
 			<div>
-				<h1>HABITACIONES DEL HOTEL </h1>
+				<Title>
+					<span className='line'></span>
+					<h2 className='title'>HABITACIONES DEL HOTEL</h2>
+					<span className='line'></span>
+				</Title>
+				<Bedrooms />
 			</div>
 			<hr />
 			<div>
-				<h1>SOBRE EL HOTEL TRYP MEDELLIN </h1>
+				<Title about>
+					<span className='line'></span>
+					<h2 className='title'>SOBRE EL HOTEL TRYP MEDELLíN</h2>
+					<span className='line'></span>
+				</Title>
+				<HotelInfo />
 			</div>
 		</Container>
 	)

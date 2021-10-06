@@ -35,7 +35,7 @@ export const Home = () => {
 				</div>
 				<SliderComponent />
 				<div className='plansCard-container'>
-					<Splide options={splideOptionsOffers}>
+					<Splide options={splideOptions}>
 						<SplideSlide>
 							<OffersCard image={image} title={'CANCUN'} />
 						</SplideSlide>
