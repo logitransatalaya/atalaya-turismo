@@ -25,11 +25,42 @@ export const CityContainer = styled.div`
 
 		.cityInfo {
 			flex: 3;
+
+			.cityInfo_title {
+				font-size: 2rem;
+				margin: 0.3rem;
+			}
 		}
 
 		.cityPrice {
 			flex: 1;
 			text-align: end;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			div {
+				p {
+					margin: 0.2em;
+
+					small {
+						display: inline-block;
+						margin: 0.3em;
+					}
+				}
+			}
+
+			.cityPrice_title {
+				font-size: 1.5rem;
+			}
+
+			.cityPrice_subTitle {
+				font-size: 1.3rem;
+			}
+
+			.cityPrice_card {
+				font-weight: 300;
+			}
 		}
 	}
 `

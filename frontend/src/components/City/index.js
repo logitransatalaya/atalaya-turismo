@@ -1,3 +1,4 @@
+import { Button } from 'components/Button'
 import { Container } from 'components/Container'
 import React from 'react'
 import { useSelector } from 'react-redux'
@@ -29,25 +30,35 @@ export const City = () => {
 								<img src={hotel.urlImg} alt={hotel.name} />
 							</div>
 							<div className='cityInfo'>
-								<h4>{hotel.name}</h4>
+								<p className='cityInfo_title'>{hotel.name}</p>
 								<p>
-									<small>{hotel.addres}</small>
+									<small>Dirección: {hotel.addres}</small>
 								</p>
 								<div className='cityInfoCalification'>
 									<b>Es un {hotel.calification} estrellas</b>
 								</div>
 							</div>
 							<div className='cityPrice'>
-								<p>
-									COP: <b>{hotel.price}</b>
-								</p>
-								<p>DESDE Cop {hotel.price}</p>
-								<p>
-									<small>
-										tarjeta sujeta a disponibilidad
-									</small>
-								</p>
-								<button>ver más</button>
+								<div>
+									<p className='cityPrice_title'>
+										Cop: <b>{hotel.price}</b>
+									</p>
+								</div>
+								<div>
+									<p className='cityPrice_subTitle'>
+										DESDE Cop {hotel.price}
+									</p>
+									<p className='cityPrice_card'>
+										<small>
+											tarjeta sujeta a disponibilidad
+										</small>
+									</p>
+									<Button
+										text={'Ver más'}
+										bgColor={'#10216f'}
+										color={'#fff'}
+									/>
+								</div>
 							</div>
 						</div>
 					))}
