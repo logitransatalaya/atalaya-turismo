@@ -31,27 +31,32 @@ export const splideOptions = {
 
 export const splideOptionsOffers = {
 	type: 'slide',
-	perPage: 3,
+	perPage: 4,
+	speed: 600,
+	interval: 200,
 	gap: '2.5rem',
-	height: '45rem',
 	padding: {
-		left: '3rem',
-		right: '3rem'
+		left: '0.5rem',
+		right: '0.5rem'
 	},
-
+	classes: {
+		pagination: 'splide__pagination dotPaginations_color'
+	},
 	breakpoints: {
-		1340: {
-			perPage: 3
+		1150: {
+			perPage: 3,
+			gap: '2rem'
 		},
-		1010: {
-			perPage: 2,
-			gap: '6rem'
-		},
-		750: {
-			perPage: 1,
+		700: {
 			type: 'loop',
-			gap: '8rem',
-			height: '45rem',
+			arrows: false,
+			perPage: 2,
+			gap: '2rem'
+		},
+		500: {
+			type: 'loop',
+			perPage: 1,
+			arrows: false,
 			padding: {
 				left: '1rem',
 				right: '1rem'
