@@ -12,7 +12,7 @@ export const HotelFeatures = () => {
 			<div>
 				<HeaderFeature />
 			</div>
-			<hr />
+
 			<div>
 				<Title>
 					<span className='line'></span>
@@ -21,15 +21,6 @@ export const HotelFeatures = () => {
 				</Title>
 				<MorePopularService />
 			</div>
-			<hr />
-			<div>
-				<Title>
-					<span className='line'></span>
-					<h2 className='title'>SERVICIOS MÁS POPULARES</h2>
-					<span className='line'></span>
-				</Title>
-			</div>
-			<hr />
 			<div>
 				<Title>
 					<span className='line'></span>
@@ -38,7 +29,6 @@ export const HotelFeatures = () => {
 				</Title>
 				<Bedrooms />
 			</div>
-			<hr />
 			<div>
 				<Title about>
 					<span className='line'></span>

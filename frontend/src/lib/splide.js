@@ -79,5 +79,6 @@ export const splideOptionsBedrooms = {
 	gap: '2rem',
 	perMove: 1,
 	fixedWidth: '21rem',
-	speed: 400
+	speed: 400,
+	height: '19rem'
 }
