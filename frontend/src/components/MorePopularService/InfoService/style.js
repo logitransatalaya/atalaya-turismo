@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Info = styled.div`
 	display: flex;
 	padding: 5px;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 
 	.icon {
@@ -23,6 +23,7 @@ export const Info = styled.div`
 			color: #1a2a75;
 			font-size: 1.5rem;
 			font-weight: 300;
+			margin: 0.2em;
 		}
 	}
 `

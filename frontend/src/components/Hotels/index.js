@@ -17,12 +17,13 @@ export const Hotels = () => {
 		<Container>
 			<HotelsContainer>
 				{locations &&
-					locations.map((loc) => (
+					locations.map((loc, i) => (
 						<Link
+							key={i}
 							to={`hoteles/${loc.title}`}
 							onClick={() => handleHotels(loc.id)}
 						>
-							<div className='hotelCard' key={loc.id}>
+							<div className='hotelCard'>
 								<div className='hotelCardBoxImg'>
 									<img src={loc.urlImg} alt={loc.title} />
 									<div className='hotelCardTitle'>
@@ -33,8 +34,8 @@ export const Hotels = () => {
 						</Link>
 					))}
 				{locations &&
-					locations.map((loc) => (
-						<div className='hotelCard' key={loc.id}>
+					locations.map((loc, i) => (
+						<div key={i} className='hotelCard'>
 							<div className='hotelCardBoxImg'>
 								<img src={loc.urlImg} alt={loc.title} />
 								<div className='hotelCardTitle'>
@@ -44,8 +45,8 @@ export const Hotels = () => {
 						</div>
 					))}
 				{locations &&
-					locations.map((loc) => (
-						<div className='hotelCard' key={loc.id}>
+					locations.map((loc, i) => (
+						<div key={i} className='hotelCard'>
 							<div className='hotelCardBoxImg'>
 								<img src={loc.urlImg} alt={loc.title} />
 								<div className='hotelCardTitle'>

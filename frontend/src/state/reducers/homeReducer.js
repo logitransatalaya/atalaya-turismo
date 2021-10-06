@@ -16,64 +16,68 @@ export const initial_state = {
 					addres: 'calle 1 carrera 45',
 					calification: 4,
 					price: '120.000',
-					more: [
-						{
-							services: [
-								{
-									id: 1,
-									iconName: 'IconTasa',
-									text: 'Desayuno incluido'
-								},
-								{
-									id: 2,
-									iconName: 'IconGota',
-									text: 'Limpieza de habitación'
-								},
-								{ id: 3, iconName: 'IconCopa', text: 'Bar' },
-								{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
-								{
-									id: 5,
-									iconName: 'IconRecepcion',
-									text: 'Recepción 24 horas'
-								},
-								{
-									id: 6,
-									iconName: 'IconHabitacion',
-									text: 'Servicios de habitación'
-								},
-								{
-									id: 7,
-									iconName: 'IconAire',
-									text: 'Aire acondicionado'
-								},
-								{
-									id: 8,
-									iconName: 'IconPiscina',
-									text: 'Piscina'
-								},
-								{
-									id: 9,
-									iconName: 'IconParqueadero',
-									text: 'Parqueadero gratis'
-								},
-								{
-									id: 10,
-									iconName: 'IconMascota',
-									text: 'Nose admiten mascotas'
-								},
-								{
-									id: 11,
-									iconName: 'IconTurista',
-									text: 'información turística'
-								},
-								{
-									id: 12,
-									iconName: 'IconTv',
-									text: 'TV satelital'
-								}
-							]
-						}
-					]
+					more: {
+						services: [
+							{
+								id: 1,
+								iconName: 'IconTasa',
+								text: 'Desayuno incluido'
+							},
+							{
+								id: 2,
+								iconName: 'IconGota',
+								text: 'Limpieza de habitación'
+							},
+							{ id: 3, iconName: 'IconCopa', text: 'Bar' },
+							{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
+							{
+								id: 5,
+								iconName: 'IconRecepcion',
+								text: 'Recepción 24 horas'
+							},
+							{
+								id: 6,
+								iconName: 'IconHabitacion',
+								text: 'Servicios de habitación'
+							},
+							{
+								id: 7,
+								iconName: 'IconAire',
+								text: 'Aire acondicionado'
+							},
+							{
+								id: 8,
+								iconName: 'IconPiscina',
+								text: 'Piscina'
+							},
+							{
+								id: 9,
+								iconName: 'IconParqueadero',
+								text: 'Parqueadero gratis'
+							},
+							{
+								id: 10,
+								iconName: 'IconMascota',
+								text: 'Nose admiten mascotas'
+							},
+							{
+								id: 11,
+								iconName: 'IconTurista',
+								text: 'información turística'
+							},
+							{
+								id: 12,
+								iconName: 'IconTv',
+								text: 'TV satelital'
+							}
+						],
+						photos: {
+							photos1: ['', '', ''],
+							photos2: ['', '', '']
+						},
+						description: '',
+						comentens: ['', '', '']
+					}
 				},
 				{
 					id: 2,
@@ -83,24 +87,22 @@ export const initial_state = {
 					addres: 'avenida 12 circular 2',
 					calification: 3,
 					price: '140.000',
-					more: [
-						{
-							services: [
-								{
-									id: 1,
-									iconName: 'IconTasa',
-									text: 'Desayuno incluido'
-								},
-								{
-									id: 2,
-									iconName: 'IconGota',
-									text: 'Limpieza de habitación'
-								},
-								{ id: 3, iconName: 'IconCopa', text: 'Bar' },
-								{ id: 4, iconName: 'IconWifi', text: 'Wifi' }
-							]
-						}
-					]
+					more: {
+						services: [
+							{
+								id: 1,
+								iconName: 'IconTasa',
+								text: 'Desayuno incluido'
+							},
+							{
+								id: 2,
+								iconName: 'IconGota',
+								text: 'Limpieza de habitación'
+							},
+							{ id: 3, iconName: 'IconCopa', text: 'Bar' },
+							{ id: 4, iconName: 'IconWifi', text: 'Wifi' }
+						]
+					}
 				}
 			]
 		},
@@ -117,37 +119,35 @@ export const initial_state = {
 					addres: 'calle 1 carrera 45',
 					calification: 4,
 					price: '220.000',
-					more: [
-						{
-							services: [
-								{
-									id: 8,
-									iconName: 'IconPiscina',
-									text: 'Piscina'
-								},
-								{
-									id: 9,
-									iconName: 'IconParqueadero',
-									text: 'Parqueadero gratis'
-								},
-								{
-									id: 10,
-									iconName: 'IconMascota',
-									text: 'Nose admiten mascotas'
-								},
-								{
-									id: 11,
-									iconName: 'IconTurista',
-									text: 'información turística'
-								},
-								{
-									id: 12,
-									iconName: 'IconTv',
-									text: 'TV satelital'
-								}
-							]
-						}
-					]
+					more: {
+						services: [
+							{
+								id: 8,
+								iconName: 'IconPiscina',
+								text: 'Piscina'
+							},
+							{
+								id: 9,
+								iconName: 'IconParqueadero',
+								text: 'Parqueadero gratis'
+							},
+							{
+								id: 10,
+								iconName: 'IconMascota',
+								text: 'Nose admiten mascotas'
+							},
+							{
+								id: 11,
+								iconName: 'IconTurista',
+								text: 'información turística'
+							},
+							{
+								id: 12,
+								iconName: 'IconTv',
+								text: 'TV satelital'
+							}
+						]
+					}
 				},
 				{
 					id: 1,
@@ -157,44 +157,42 @@ export const initial_state = {
 					addres: 'avenida 12 circular 2',
 					calification: 3,
 					price: '240.000',
-					more: [
-						{
-							services: [
-								{
-									id: 1,
-									iconName: 'IconTasa',
-									text: 'Desayuno incluido'
-								},
-								{
-									id: 2,
-									iconName: 'IconGota',
-									text: 'Limpieza de habitación'
-								},
-								{ id: 3, iconName: 'IconCopa', text: 'Bar' },
-								{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
-								{
-									id: 9,
-									iconName: 'IconParqueadero',
-									text: 'Parqueadero gratis'
-								},
-								{
-									id: 10,
-									iconName: 'IconMascota',
-									text: 'Nose admiten mascotas'
-								},
-								{
-									id: 11,
-									iconName: 'IconTurista',
-									text: 'información turística'
-								},
-								{
-									id: 12,
-									iconName: 'IconTv',
-									text: 'TV satelital'
-								}
-							]
-						}
-					]
+					more: {
+						services: [
+							{
+								id: 1,
+								iconName: 'IconTasa',
+								text: 'Desayuno incluido'
+							},
+							{
+								id: 2,
+								iconName: 'IconGota',
+								text: 'Limpieza de habitación'
+							},
+							{ id: 3, iconName: 'IconCopa', text: 'Bar' },
+							{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
+							{
+								id: 9,
+								iconName: 'IconParqueadero',
+								text: 'Parqueadero gratis'
+							},
+							{
+								id: 10,
+								iconName: 'IconMascota',
+								text: 'Nose admiten mascotas'
+							},
+							{
+								id: 11,
+								iconName: 'IconTurista',
+								text: 'información turística'
+							},
+							{
+								id: 12,
+								iconName: 'IconTv',
+								text: 'TV satelital'
+							}
+						]
+					}
 				}
 			]
 		},
@@ -211,39 +209,37 @@ export const initial_state = {
 					addres: 'calle 1 carrera 45',
 					calification: 4,
 					price: '220.000',
-					more: [
-						{
-							services: [
-								{ id: 3, iconName: 'IconCopa', text: 'Bar' },
-								{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
-								{
-									id: 5,
-									iconName: 'IconRecepcion',
-									text: 'Recepción 24 horas'
-								},
-								{
-									id: 6,
-									iconName: 'IconHabitacion',
-									text: 'Servicios de habitación'
-								},
-								{
-									id: 7,
-									iconName: 'IconAire',
-									text: 'Aire acondicionado'
-								},
-								{
-									id: 8,
-									iconName: 'IconPiscina',
-									text: 'Piscina'
-								},
-								{
-									id: 9,
-									iconName: 'IconParqueadero',
-									text: 'Parqueadero gratis'
-								}
-							]
-						}
-					]
+					more: {
+						services: [
+							{ id: 3, iconName: 'IconCopa', text: 'Bar' },
+							{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
+							{
+								id: 5,
+								iconName: 'IconRecepcion',
+								text: 'Recepción 24 horas'
+							},
+							{
+								id: 6,
+								iconName: 'IconHabitacion',
+								text: 'Servicios de habitación'
+							},
+							{
+								id: 7,
+								iconName: 'IconAire',
+								text: 'Aire acondicionado'
+							},
+							{
+								id: 8,
+								iconName: 'IconPiscina',
+								text: 'Piscina'
+							},
+							{
+								id: 9,
+								iconName: 'IconParqueadero',
+								text: 'Parqueadero gratis'
+							}
+						]
+					}
 				},
 				{
 					id: 2,
@@ -253,49 +249,47 @@ export const initial_state = {
 					addres: 'avenida 12 circular 2',
 					calification: 3,
 					price: '240.000',
-					more: [
-						{
-							services: [
-								{
-									id: 1,
-									iconName: 'IconTasa',
-									text: 'Desayuno incluido'
-								},
-								{
-									id: 2,
-									iconName: 'IconGota',
-									text: 'Limpieza de habitación'
-								},
-								{ id: 3, iconName: 'IconCopa', text: 'Bar' },
-								{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
-								{
-									id: 5,
-									iconName: 'IconRecepcion',
-									text: 'Recepción 24 horas'
-								},
-								{
-									id: 9,
-									iconName: 'IconParqueadero',
-									text: 'Parqueadero gratis'
-								},
-								{
-									id: 10,
-									iconName: 'IconMascota',
-									text: 'Nose admiten mascotas'
-								},
-								{
-									id: 11,
-									iconName: 'IconTurista',
-									text: 'información turística'
-								},
-								{
-									id: 12,
-									iconName: 'IconTv',
-									text: 'TV satelital'
-								}
-							]
-						}
-					]
+					more: {
+						services: [
+							{
+								id: 1,
+								iconName: 'IconTasa',
+								text: 'Desayuno incluido'
+							},
+							{
+								id: 2,
+								iconName: 'IconGota',
+								text: 'Limpieza de habitación'
+							},
+							{ id: 3, iconName: 'IconCopa', text: 'Bar' },
+							{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
+							{
+								id: 5,
+								iconName: 'IconRecepcion',
+								text: 'Recepción 24 horas'
+							},
+							{
+								id: 9,
+								iconName: 'IconParqueadero',
+								text: 'Parqueadero gratis'
+							},
+							{
+								id: 10,
+								iconName: 'IconMascota',
+								text: 'Nose admiten mascotas'
+							},
+							{
+								id: 11,
+								iconName: 'IconTurista',
+								text: 'información turística'
+							},
+							{
+								id: 12,
+								iconName: 'IconTv',
+								text: 'TV satelital'
+							}
+						]
+					}
 				}
 			]
 		},
@@ -312,48 +306,46 @@ export const initial_state = {
 					addres: 'calle 1 carrera 45',
 					calification: 4,
 					price: '220.000',
-					more: [
-						{
-							services: [
-								{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
-								{
-									id: 5,
-									iconName: 'IconRecepcion',
-									text: 'Recepción 24 horas'
-								},
-								{
-									id: 6,
-									iconName: 'IconHabitacion',
-									text: 'Servicios de habitación'
-								},
-								{
-									id: 7,
-									iconName: 'IconAire',
-									text: 'Aire acondicionado'
-								},
-								{
-									id: 9,
-									iconName: 'IconParqueadero',
-									text: 'Parqueadero gratis'
-								},
-								{
-									id: 10,
-									iconName: 'IconMascota',
-									text: 'Nose admiten mascotas'
-								},
-								{
-									id: 11,
-									iconName: 'IconTurista',
-									text: 'información turística'
-								},
-								{
-									id: 12,
-									iconName: 'IconTv',
-									text: 'TV satelital'
-								}
-							]
-						}
-					]
+					more: {
+						services: [
+							{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
+							{
+								id: 5,
+								iconName: 'IconRecepcion',
+								text: 'Recepción 24 horas'
+							},
+							{
+								id: 6,
+								iconName: 'IconHabitacion',
+								text: 'Servicios de habitación'
+							},
+							{
+								id: 7,
+								iconName: 'IconAire',
+								text: 'Aire acondicionado'
+							},
+							{
+								id: 9,
+								iconName: 'IconParqueadero',
+								text: 'Parqueadero gratis'
+							},
+							{
+								id: 10,
+								iconName: 'IconMascota',
+								text: 'Nose admiten mascotas'
+							},
+							{
+								id: 11,
+								iconName: 'IconTurista',
+								text: 'información turística'
+							},
+							{
+								id: 12,
+								iconName: 'IconTv',
+								text: 'TV satelital'
+							}
+						]
+					}
 				},
 				{
 					id: 2,
@@ -363,59 +355,58 @@ export const initial_state = {
 					addres: 'avenida 12 circular 2',
 					calification: 3,
 					price: '240.000',
-					more: [
-						{
-							services: [
-								{
-									id: 2,
-									iconName: 'IconGota',
-									text: 'Limpieza de habitación'
-								},
-								{ id: 3, iconName: 'IconCopa', text: 'Bar' },
-								{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
-								{
-									id: 5,
-									iconName: 'IconRecepcion',
-									text: 'Recepción 24 horas'
-								},
-								{
-									id: 6,
-									iconName: 'IconHabitacion',
-									text: 'Servicios de habitación'
-								},
-								{
-									id: 7,
-									iconName: 'IconAire',
-									text: 'Aire acondicionado'
-								},
-								{
-									id: 9,
-									iconName: 'IconParqueadero',
-									text: 'Parqueadero gratis'
-								},
-								{
-									id: 10,
-									iconName: 'IconMascota',
-									text: 'Nose admiten mascotas'
-								},
-								{
-									id: 11,
-									iconName: 'IconTurista',
-									text: 'información turística'
-								},
-								{
-									id: 12,
-									iconName: 'IconTv',
-									text: 'TV satelital'
-								}
-							]
-						}
-					]
+					more: {
+						services: [
+							{
+								id: 2,
+								iconName: 'IconGota',
+								text: 'Limpieza de habitación'
+							},
+							{ id: 3, iconName: 'IconCopa', text: 'Bar' },
+							{ id: 4, iconName: 'IconWifi', text: 'Wifi' },
+							{
+								id: 5,
+								iconName: 'IconRecepcion',
+								text: 'Recepción 24 horas'
+							},
+							{
+								id: 6,
+								iconName: 'IconHabitacion',
+								text: 'Servicios de habitación'
+							},
+							{
+								id: 7,
+								iconName: 'IconAire',
+								text: 'Aire acondicionado'
+							},
+							{
+								id: 9,
+								iconName: 'IconParqueadero',
+								text: 'Parqueadero gratis'
+							},
+							{
+								id: 10,
+								iconName: 'IconMascota',
+								text: 'Nose admiten mascotas'
+							},
+							{
+								id: 11,
+								iconName: 'IconTurista',
+								text: 'información turística'
+							},
+							{
+								id: 12,
+								iconName: 'IconTv',
+								text: 'TV satelital'
+							}
+						]
+					}
 				}
 			]
 		}
 	],
-	hotelsCity: []
+	hotelsCity: [],
+	servicesHotel: []
 }
 
 export const homeReducer = (state = initial_state, action) => {
@@ -427,6 +418,13 @@ export const homeReducer = (state = initial_state, action) => {
 					(loc) => loc.id === action.payload
 				)
 			}
+
+		case types.GET_SERVICES_HOTEL:
+			return {
+				...state,
+				servicesHotel: action.payload
+			}
+
 		default:
 			return state
 	}
