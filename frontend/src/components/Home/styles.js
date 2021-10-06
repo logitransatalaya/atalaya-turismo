@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export const HomeStyled = styled.div`
+	.recomendedCard-container {
+		margin-top: 2rem;
+	}
+
 	.plansCard-slide {
 		display: flex;
 		gap: 1rem;

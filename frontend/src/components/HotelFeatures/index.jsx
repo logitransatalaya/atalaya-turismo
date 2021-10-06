@@ -3,12 +3,13 @@ import { Container } from 'components/Container'
 import Bedrooms from './Bedrooms'
 import { Title } from './styles'
 import HotelInfo from './HotelInfo'
+import { HeaderFeature } from './HeaderFeatur'
 
 export const HotelFeatures = () => {
 	return (
 		<Container>
 			<div>
-				<h1>Aqui van las caracteristicas de el hotel </h1>
+				<HeaderFeature />
 			</div>
 			<hr />
 			<div>
