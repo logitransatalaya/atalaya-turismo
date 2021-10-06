@@ -69,7 +69,7 @@ export const splideOptionsLoop = {
 	type: 'loop',
 	perPage: 1,
 	autoplay: true,
-	interval: 9000,
+	interval: 7000,
 	speed: 2000,
 	arrows: false
 }
