@@ -17,4 +17,8 @@ export const ButtonStyled = styled.button`
 	&:active {
 		transform: scale(0.9);
 	}
+
+	@media (max-width: 600px) {
+		width: ${({ w }) => w || 'auto'};
+	}
 `
