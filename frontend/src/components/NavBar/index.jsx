@@ -5,7 +5,7 @@ import { Container } from 'components/Container'
 
 export const NavBar = () => {
 	const state = {
-		true: '/home/user-navbar.png',
+		true: '/home/boton-x.png',
 		false: '/home/burgerMenu-navbar.png'
 	}
 	const navbarRef = useRef(null)
