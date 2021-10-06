@@ -1,11 +1,12 @@
 import React from 'react'
 import { Container } from 'components/Container'
+import { HeaderFeature } from './HeaderFeatur'
 
 export const HotelFeatures = () => {
 	return (
 		<Container>
 			<div>
-				<h1>Aqui van las caracteristicas de el hotel </h1>
+				<HeaderFeature />
 			</div>
 			<hr />
 			<div>
