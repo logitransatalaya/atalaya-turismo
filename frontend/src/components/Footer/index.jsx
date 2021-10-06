@@ -29,13 +29,24 @@ export const Footer = () => {
 						</FooterWave>
 						<FooterContact>
 							<FooterTitle>CONTÁCTENOS</FooterTitle>
-							<li>ATALAYA VIAJES Y TURISMO</li>
 							<li>
+								<img src='/footer/casa.svg' alt='' />
+								ATALAYA VIAJES Y TURISMO
+							</li>
+							<li>
+								<img src='/footer/chulito.svg' alt='' />
 								Registro Nacional de Turismo: <b>RNT 00000</b>
 							</li>
-							<li>atalayaviajesturismo@gmail.com</li>
-							<li>+57 314 555 4981 - +57 314 555 4761</li>
 							<li>
+								<img src='/footer/correo.svg' alt='' />
+								atalayaviajesturismo@gmail.com
+							</li>
+							<li>
+								<img src='/footer/telefono.svg' alt='' />
+								+57 314 555 4981 - +57 314 555 4761
+							</li>
+							<li>
+								<img src='/footer/ubicacion.svg' alt='' />
 								Cra. 49 #45a-35, Oficina 203 Bello, Antioquia
 							</li>
 						</FooterContact>

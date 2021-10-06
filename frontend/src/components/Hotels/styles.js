@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const HotelsContainer = styled.div`
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1em;
-	padding: 2em 0;
+	padding: 2em 1em;
 
 	.hotelCard {
 		height: 300px;
@@ -35,10 +35,21 @@ export const HotelsContainer = styled.div`
 				bottom: 0;
 				left: 0;
 				width: 100%;
-				background-color: #10216f;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				background: linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 0) 5%,
+					rgba(1, 38, 209, 1) 90%
+				);
 
 				h3 {
 					color: #fff;
+					text-transform: uppercase;
+					font-size: 1.5rem;
 				}
 			}
 		}

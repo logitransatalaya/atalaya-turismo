@@ -24,12 +24,19 @@ export const FooterWave = styled.div`
 export const FooterRedes = styled.div`
 	grid-column: 2/4;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	gap: 1em;
 	color: #fff;
 	padding: 1em 1em 6em 1em;
 	z-index: 100;
+	width: 80%;
+
+	@media (max-width: 600px) {
+		width: 105%;
+		grid-column: 1/3;
+		justify-content: left;
+	}
 `
 
 export const FooterContentIcons = styled.div`
@@ -67,15 +74,25 @@ export const FooterContact = styled.ul`
 	list-style: none;
 	color: #fff;
 	z-index: 100;
+	justify-self: center;
 
 	li {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
 		margin-bottom: 1em;
+
+		img {
+			width: 1rem;
+		}
 	}
 	@media (max-width: 600px) {
 		grid-column: 1/-1;
+		justify-self: left;
 	}
 `
 export const FooterWe = styled.ul`
+	justify-self: center;
 	color: #fff;
 	z-index: 100;
 
@@ -94,11 +111,14 @@ export const FooterWe = styled.ul`
 	}
 	@media (max-width: 600px) {
 		grid-column: 1/-1;
+		justify-self: left;
 	}
 `
 export const FooterOtherServices = styled.ul`
 	color: #fff;
 	z-index: 100;
+	width: max-content;
+	justify-self: center;
 
 	li {
 		color: orange;
@@ -115,5 +135,6 @@ export const FooterOtherServices = styled.ul`
 	}
 	@media (max-width: 600px) {
 		grid-column: 1/-1;
+		justify-self: left;
 	}
 `

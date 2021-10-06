@@ -1,5 +1,6 @@
 import { Button } from 'components/Button'
 import { Container } from 'components/Container'
+import { Qualification } from 'components/HotelFeatures/Qualification'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { CityContainer } from './styles'
@@ -19,9 +20,16 @@ export const City = () => {
 		)
 	}
 	const { hotels } = hotelsCity[0]
+	const { title } = hotelsCity[0]
 
 	return (
 		<Container>
+			<h2>
+				Hoteles de{' '}
+				<span style={{ color: '#10216f', textTransform: 'uppercase' }}>
+					{title}
+				</span>
+			</h2>
 			<CityContainer>
 				{hotels &&
 					hotels.map((hotel) => (
@@ -35,7 +43,7 @@ export const City = () => {
 									<small>Dirección: {hotel.addres}</small>
 								</p>
 								<div className='cityInfoCalification'>
-									<b>Es un {hotel.calification} estrellas</b>
+									<Qualification stars={hotel.calification} />
 								</div>
 							</div>
 							<div className='cityPrice'>
@@ -57,6 +65,7 @@ export const City = () => {
 										text={'Ver más'}
 										bgColor={'#10216f'}
 										color={'#fff'}
+										w={'100%'}
 									/>
 								</div>
 							</div>

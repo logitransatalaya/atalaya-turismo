@@ -69,7 +69,15 @@ export const splideOptionsLoop = {
 	type: 'loop',
 	perPage: 1,
 	autoplay: true,
-	interval: 9000,
+	interval: 7000,
 	speed: 2000,
 	arrows: false
+}
+
+export const splideOptionsBedrooms = {
+	type: 'slide',
+	gap: '2rem',
+	perMove: 1,
+	fixedWidth: '21rem',
+	speed: 400
 }

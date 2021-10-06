@@ -19,7 +19,7 @@ export const BenefitsCardStyled = styled.div`
 
 	.benefitsCard-icon svg {
 		margin-top: 0px;
-		fill: #0f216f;
+		fill: ${(p) => (p.bg ? 'white' : '#0f216f')};
 	}
 
 	.benefitsCard-textContent {
@@ -32,7 +32,8 @@ export const BenefitsCardStyled = styled.div`
 
 	.benefitsCard-title {
 		margin: 0;
-		color: #f3a719;
+		color: ${(p) => (p.bg ? '#f3a719' : '#e8641a')};
+		font-size: 1.5rem;
 		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	}
 
@@ -54,6 +55,11 @@ export const BenefitsCardStyled = styled.div`
 
 		.benefitsCard-description {
 			font-size: 1.3rem;
+		}
+
+		.benefitsCard-icon svg {
+			margin-top: 0px;
+			fill: #0f216f;
 		}
 	}
 `
