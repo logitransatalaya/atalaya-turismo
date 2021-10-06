@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CityContainer = styled.div`
-	padding: 2em 0;
+	padding: 2em 1em;
 	display: flex;
 	gap: 1em;
 	flex-direction: column;
@@ -13,22 +13,46 @@ export const CityContainer = styled.div`
 		border-radius: 1em;
 		gap: 1em;
 
+		@media (max-width: 600px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
 		.cityBoxImg {
 			width: 300px;
+			min-width: 300px;
+			height: 200px;
 			border-radius: 1em;
 			overflow: hidden;
 
+			@media (max-width: 600px) {
+				width: 90%;
+				height: 300px;
+			}
 			img {
 				width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
 		}
 
 		.cityInfo {
 			flex: 3;
 
+			@media (max-width: 600px) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				p {
+					margin: 0;
+				}
+			}
+
 			.cityInfo_title {
 				font-size: 2rem;
-				margin: 0.3rem;
+				margin: 0.3rem 0;
 			}
 		}
 
@@ -38,6 +62,12 @@ export const CityContainer = styled.div`
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+
+			@media (max-width: 600px) {
+				text-align: start;
+				justify-content: center;
+				align-items: flex-start;
+			}
 
 			div {
 				p {

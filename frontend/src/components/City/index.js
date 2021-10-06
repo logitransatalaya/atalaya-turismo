@@ -20,9 +20,16 @@ export const City = () => {
 		)
 	}
 	const { hotels } = hotelsCity[0]
+	const { title } = hotelsCity[0]
 
 	return (
 		<Container>
+			<h2>
+				Hoteles de{' '}
+				<span style={{ color: '#10216f', textTransform: 'uppercase' }}>
+					{title}
+				</span>
+			</h2>
 			<CityContainer>
 				{hotels &&
 					hotels.map((hotel) => (
@@ -58,6 +65,7 @@ export const City = () => {
 										text={'Ver más'}
 										bgColor={'#10216f'}
 										color={'#fff'}
+										w={'100%'}
 									/>
 								</div>
 							</div>
