@@ -1,13 +1,39 @@
-import React from 'react'
+import { useParams } from 'react-router'
+import { useSelector } from 'react-redux'
 import { ToursDetailsStyled } from './styles'
+import { tours } from 'json/tours.json'
 import { Container } from 'components/Container'
+import React, { useEffect, useState } from 'react'
+import { Skeleton } from 'components/Skeletons'
 
 export const ToursDetails = () => {
-	return (
+	const { urlCode } = useParams()
+	const [tour, setTour] = useState(null)
+	const { currentTour } = useSelector((state) => state.tourReducer)
+
+	useEffect(() => {
+		if (currentTour) {
+			setTour(currentTour)
+		} else {
+			setTimeout(() => {
+				const [res] = tours.filter((el) => el.urlCode === urlCode)
+				setTour(res)
+			}, 2000)
+			// ;(async () => {
+			// 	//consumir api para buscar un viaje con el urlCode al que ingreso
+			// 	// const res = await fetch(`hhtps://nuestroServer.com?urlCode=${tour}`)
+			// 	console.log('entra')
+			// })()
+		}
+	}, [currentTour])
+
+	return !tour ? (
+		<Skeleton type='toursDescription' />
+	) : (
 		<Container>
 			<ToursDetailsStyled className='ToursDetails'>
 				<header>
-					<h3>PEÑOL Y GUATAPÉ</h3>
+					<h3>{tour.title}</h3>
 					<a href='/'>
 						<img src='/tours/whatsapp.png' alt='' />
 					</a>
@@ -15,76 +41,33 @@ export const ToursDetails = () => {
 				<div className='separator'></div>
 				<div className='description'>
 					<div className='descriptionImg-container'>
-						<img
-							src='/home/benefitsSection-background.png'
-							alt=''
-						/>
+						<img src={tour.descriptionImg} alt={tour.title} />
 					</div>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Vero exercitationem ad nulla numquam nostrum rem
-						illo laudantium aut natus labore aliquam, esse,
-						repellendus fugiat ab, modi consequuntur reiciendis
-						ipsum. Temporibus, earum! Libero provident aliquam
-						numquam animi ad laborum blanditiis mollitia.
-					</p>
+					<p>{tour.description}</p>
 				</div>
 				<div className='characteristics-container'>
 					<h5>INCLUYE:</h5>
 					<div className='characteristics-content'>
 						<div>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Transporte en van o bus de turismo de acuerdo al
-								número de pasajeros
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Tarjeta de asistencia médica
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Desayuno
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								almuerzo según menú
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Paseo en barco por el embalse
-							</p>
+							{tour.characteristics.column1.map((text, i) => (
+								<p key={i}>
+									<img src='/footer/casa.svg' alt='' />
+									{text}
+								</p>
+							))}
 						</div>
 						<div>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Transporte en van o bus de turismo de acuerdo al
-								número de pasajeros
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Tarjeta de asistencia médica
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Desayuno
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								almuerzo según menú
-							</p>
-							<p>
-								<img src='/footer/casa.svg' alt='' />
-								Paseo en barco por el embalse
-							</p>
+							{tour.characteristics.column2.map((text, i) => (
+								<p key={i}>
+									<img src='/footer/casa.svg' alt='' />
+									{text}
+								</p>
+							))}
 						</div>
 					</div>
 					<p className='characteristics-specialItem'>
 						<img src='/footer/casa.svg' alt='' />
-						Acompañamiento de un guía profesional de turismo (solo
-						español). En caso de necesitar guía bilingüe puede
-						solicitarse este servicio con solicitud previa y con
-						suplemento tarifario.
+						{tour.characteristics.unique}
 					</p>
 				</div>
 			</ToursDetailsStyled>

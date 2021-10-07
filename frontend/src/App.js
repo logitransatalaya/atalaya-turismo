@@ -40,7 +40,7 @@ export default function App() {
 					<Route exact path='/tours'>
 						<Tours />
 					</Route>
-					<Route exact path='/tours/:toursid'>
+					<Route exact path='/tours/:urlCode'>
 						<ToursDetails />
 					</Route>
 					<Route exact path='/ofertas'>
