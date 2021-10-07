@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container } from 'components/Container'
-import Bedrooms from './Bedrooms'
 import { Title } from './styles'
+import Bedrooms from './Bedrooms'
 import HotelInfo from './HotelInfo'
 import { HeaderFeature } from './HeaderFeatur'
+import { Container } from 'components/Container'
 import { MorePopularService } from 'components/MorePopularService'
 
 export const HotelFeatures = () => {
@@ -12,7 +12,6 @@ export const HotelFeatures = () => {
 			<div>
 				<HeaderFeature />
 			</div>
-
 			<div>
 				<Title>
 					<span className='line'></span>

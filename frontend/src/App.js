@@ -28,6 +28,9 @@ export default function App() {
 					<Route exact path='/hoteles/:locid'>
 						<City />
 					</Route>
+					<Route exact path='/hoteles/:locid/:hotelId'>
+						<HotelFeatures />
+					</Route>
 					<Route exact path='/transporte'>
 						<Transport />
 					</Route>
@@ -45,9 +48,6 @@ export default function App() {
 					</Route>
 					<Route exact path='/medios-de-pago'>
 						<PaymentMethods />
-					</Route>
-					<Route exact path='/caracteristicas-de-hotel'>
-						<HotelFeatures />
 					</Route>
 				</Switch>
 				<Footer />

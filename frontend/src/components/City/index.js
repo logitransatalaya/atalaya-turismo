@@ -1,12 +1,16 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { CityContainer } from './styles'
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Button } from 'components/Button'
 import { Container } from 'components/Container'
+import { getServicesHotel } from '../../state/actions/hotelsActions'
 import { Qualification } from 'components/HotelFeatures/Qualification'
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { CityContainer } from './styles'
 
 export const City = () => {
 	const { hotelsCity } = useSelector((state) => state.homeReducer)
+	const dispatch = useDispatch()
 
 	if (!hotelsCity[0]) {
 		return (
@@ -19,8 +23,17 @@ export const City = () => {
 			</Container>
 		)
 	}
+
 	const { hotels } = hotelsCity[0]
 	const { title } = hotelsCity[0]
+
+	const handleButton = (data) => {
+		const obj = {
+			more: data.more,
+			calification: data.calification
+		}
+		dispatch(getServicesHotel(obj))
+	}
 
 	return (
 		<Container>
@@ -32,8 +45,8 @@ export const City = () => {
 			</h2>
 			<CityContainer>
 				{hotels &&
-					hotels.map((hotel) => (
-						<div className='cityCard' key={hotel.id}>
+					hotels.map((hotel, i) => (
+						<div className='cityCard' key={i}>
 							<div className='cityBoxImg'>
 								<img src={hotel.urlImg} alt={hotel.name} />
 							</div>
@@ -61,12 +74,17 @@ export const City = () => {
 											tarjeta sujeta a disponibilidad
 										</small>
 									</p>
-									<Button
-										text={'Ver más'}
-										bgColor={'#10216f'}
-										color={'#fff'}
-										w={'100%'}
-									/>
+									<Link
+										to={`${title}/${hotel.id}`}
+										onClick={() => handleButton(hotel)}
+									>
+										<Button
+											text={'Ver más'}
+											bgColor={'#10216f'}
+											color={'#fff'}
+											w={'100%'}
+										/>
+									</Link>
 								</div>
 							</div>
 						</div>

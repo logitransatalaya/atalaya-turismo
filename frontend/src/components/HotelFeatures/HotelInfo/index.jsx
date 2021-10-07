@@ -1,7 +1,8 @@
-import { SplideSlide, Splide } from '@splidejs/react-splide'
 import React from 'react'
-import { ContainerHotelInfo, SplideInfo } from './styles'
-import { splideOptionsVertical } from 'lib/splide'
+import { splideOptionsMessages } from 'lib/splide'
+import { ContainerHotelInfo, Message } from './styles'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import { ReactComponent as CajaTexto } from 'images/cajadetextoconusuario.svg'
 
 const HotelInfo = () => {
 	return (
@@ -32,7 +33,73 @@ const HotelInfo = () => {
 			</div>
 			<div className='item2'>
 				{/* slider */}
-				<div className='sliderContain'></div>
+				<div className='sliderContain'>
+					<Splide options={splideOptionsMessages} className='splideC'>
+						<SplideSlide className='center'>
+							<Message>
+								<CajaTexto className='cajatexto' />
+								<p className='text'>
+									Excelente personal!!! y el hotel está muy
+									bonito y centrico
+								</p>
+								<span className='name'>Laura</span>
+							</Message>
+						</SplideSlide>
+						<SplideSlide className='center'>
+							<Message>
+								<CajaTexto className='cajatexto' />
+								<p className='text'>
+									"muy buena ubicación el personal muy amable
+									lo recomendare a mis amistades"
+								</p>
+								<span className='name'>Carlos</span>
+							</Message>
+						</SplideSlide>
+						<SplideSlide className='center'>
+							<Message>
+								<CajaTexto className='cajatexto' />
+								<p className='text'>la buena pai</p>
+								<span className='name'>brayan</span>
+							</Message>
+						</SplideSlide>
+						<SplideSlide className='center'>
+							<Message>
+								<CajaTexto className='cajatexto' />
+								<p className='text'>
+									services hotel esta manejando services
+								</p>
+								<span className='name'>Brayan</span>
+							</Message>
+						</SplideSlide>
+						<SplideSlide className='center'>
+							<Message>
+								<CajaTexto className='cajatexto' />
+								<p className='text'>
+									ya la rompieron por que la estructura no es
+									la misma
+								</p>
+								<span className='name'>Camilo</span>
+							</Message>
+						</SplideSlide>
+						<SplideSlide className='center'>
+							<Message>
+								<CajaTexto className='cajatexto' />
+								<p className='text'>un objeto mor</p>
+								<span className='name'>Fabian</span>
+							</Message>
+						</SplideSlide>
+						<SplideSlide className='center'>
+							<Message>
+								<CajaTexto className='cajatexto' />
+								<p className='text'>
+									hagamos un framework y le ponemos
+									ja-bra-ca-lixto.js
+								</p>
+								<span className='name'>Kalixto</span>
+							</Message>
+						</SplideSlide>
+					</Splide>
+				</div>
 			</div>
 		</ContainerHotelInfo>
 	)

@@ -15,6 +15,7 @@ export const Qualification = ({ stars = 3 }) => {
 	}
 	useEffect(() => {
 		handleStarClick(stars - 1)
+		// eslint-disable-next-line
 	}, [])
 
 	return (
