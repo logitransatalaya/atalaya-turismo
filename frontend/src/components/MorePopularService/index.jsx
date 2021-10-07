@@ -1,12 +1,22 @@
 import React from 'react'
 import { InfoService } from './InfoService'
-import { ContainerCards, ContainerCardsInfo } from './style'
+import { ContainerCards } from './style'
 
 import { useSelector } from 'react-redux'
 
 export const MorePopularService = () => {
 	const { servicesHotel } = useSelector((state) => state.homeReducer)
-	const services = servicesHotel
+
+	if (!servicesHotel[0]) {
+		return (
+			<div>
+				<h1 style={{ backgroundColor: 'blue' }}>Dale atras, please</h1>
+				<p>Estyo pasa por que los datos no son persistentes</p>
+			</div>
+		)
+	}
+
+	const { services } = servicesHotel.more
 
 	return (
 		<ContainerCards>

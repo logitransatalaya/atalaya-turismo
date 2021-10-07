@@ -43,28 +43,24 @@ export const CardGrid = styled.div`
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	.card_1 {
-		background-color: red;
 		grid-column: 1/3;
 		grid-row: 1/-1;
 		width: 100%;
 		height: 100%;
 	}
 	.card_2 {
-		background-color: blue;
 		width: 100%;
 		height: 100%;
 	}
 	.card_3 {
 		grid-column: 4/5;
 		grid-row: 1/-1;
-		background-color: yellow;
 		width: 100%;
 		height: 100%;
 	}
 	.card_4 {
 		grid-column: 3/4;
 		grid-row: 2/3;
-		background-color: green;
 		width: 100%;
 		height: 100%;
 	}
@@ -74,5 +70,6 @@ export const CardGrid = styled.div`
 		object-fit: cover;
 		object-position: center;
 		border-radius: 1em;
+		overflow: hidden;
 	}
 `

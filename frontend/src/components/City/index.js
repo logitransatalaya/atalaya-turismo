@@ -29,7 +29,11 @@ export const City = () => {
 	const { title } = hotelsCity[0]
 
 	const handleButton = (data) => {
-		dispatch(getServicesHotel(data.services))
+		const obj = {
+			more: data.more,
+			calification: data.calification
+		}
+		dispatch(getServicesHotel(obj))
 	}
 
 	return (
@@ -73,7 +77,7 @@ export const City = () => {
 									</p>
 									<Link
 										to={`${title}/${hotel.id}`}
-										onClick={() => handleButton(hotel.more)}
+										onClick={() => handleButton(hotel)}
 									>
 										<Button
 											text={'Ver más'}
