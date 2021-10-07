@@ -528,7 +528,7 @@ export const initial_state = {
 	servicesHotel: []
 }
 
-export const homeReducer = (state = initial_state, action) => {
+export const hotelsReducer = (state = initial_state, action) => {
 	switch (action.type) {
 		case types.GET_HOTELS:
 			return {
