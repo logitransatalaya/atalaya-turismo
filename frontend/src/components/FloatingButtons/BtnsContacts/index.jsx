@@ -33,7 +33,7 @@ const BtnContact = ({ Icon, IconResponsive, title }) => {
 	return (
 		<Button>
 			{title === 'Whatsapp' ? (
-				<a href='#' className='acontainer'>
+				<a href='https://www.google.com/?hl=es' className='acontainer'>
 					<Icon />
 					{showToolTip && (
 						<span className='tiptextW' showToolTip>
@@ -42,7 +42,7 @@ const BtnContact = ({ Icon, IconResponsive, title }) => {
 					)}
 				</a>
 			) : (
-				<a href='#'>
+				<a href='https://www.google.com/?hl=es'>
 					<Icon />
 					{showToolTip && (
 						<span className='tiptextW' showToolTip>
