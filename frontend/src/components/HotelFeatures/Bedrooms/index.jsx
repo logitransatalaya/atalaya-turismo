@@ -1,7 +1,6 @@
 import React from 'react'
 import { Room } from './styles'
 import { SliderRooms } from './styles'
-import imgPrueba from '../../../images/btn.png'
 import { Splide } from '@splidejs/react-splide'
 import { splideOptionsBedrooms } from 'lib/splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
