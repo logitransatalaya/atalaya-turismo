@@ -1,5 +1,4 @@
 import React from 'react'
-import image from '../../../images/btn.png'
 import { Qualification } from '../Qualification'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ReactComponent as IconPalmera } from '../../../images/icono-palmera.svg'
@@ -31,7 +30,7 @@ export const HeaderFeature = () => {
 					<img
 						className='box_card'
 						src='https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg'
-						alt=''
+						alt='img1'
 					/>
 				</div>
 				<div className='card_2'>
@@ -40,7 +39,7 @@ export const HeaderFeature = () => {
 						src={
 							'https://img.blogs.es/anexom/wp-content/uploads/2016/08/hoteles-w-920x515.jpg'
 						}
-						alt=''
+						alt='img2'
 					/>
 				</div>
 				<div className='card_3'>
@@ -49,7 +48,7 @@ export const HeaderFeature = () => {
 						src={
 							'https://cdn.forbes.co/2020/02/sofitel-legend-santa-clara-outdoor-pool.jpg'
 						}
-						alt=''
+						alt='img3'
 					/>
 				</div>
 				<div className='card_4'>
@@ -58,7 +57,7 @@ export const HeaderFeature = () => {
 						src={
 							'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/17/26/1726359_v5.jpeg'
 						}
-						alt=''
+						alt='img4'
 					/>
 				</div>
 			</CardGrid>
