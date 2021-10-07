@@ -2,8 +2,13 @@ import React from 'react'
 import { Qualification } from '../Qualification'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ReactComponent as IconPalmera } from '../../../images/icono-palmera.svg'
+import { useSelector } from 'react-redux'
 
 export const HeaderFeature = () => {
+	const { calification } = useSelector(
+		(state) => state.homeReducer.servicesHotel
+	)
+
 	return (
 		<div>
 			<HeaderCardStyled>
@@ -16,7 +21,7 @@ export const HeaderFeature = () => {
 						<p>Medellin</p>
 					</div>
 					<div>
-						<Qualification />
+						<Qualification stars={calification} />
 					</div>
 				</div>
 			</HeaderCardStyled>
