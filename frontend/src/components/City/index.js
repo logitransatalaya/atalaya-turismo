@@ -24,13 +24,13 @@ export const City = () => {
 		)
 	}
 
-	const { hotels } = hotelsCity[0]
-	const { title } = hotelsCity[0]
+	const { hotels, title } = hotelsCity[0]
 
 	const handleButton = (data) => {
 		const obj = {
 			more: data.more,
-			calification: data.calification
+			calification: data.calification,
+			city: title
 		}
 		dispatch(getServicesHotel(obj))
 	}
@@ -38,7 +38,6 @@ export const City = () => {
 	return (
 		<Container>
 			<h2>
-				Hoteles de{' '}
 				<span style={{ color: '#10216f', textTransform: 'uppercase' }}>
 					{title}
 				</span>

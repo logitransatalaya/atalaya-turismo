@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Qualification } from '../Qualification'
-import { HeaderCardStyled, CardGrid } from './style'
-import { ReactComponent as IconPalmera } from '../../../images/icono-palmera.svg'
-import { useSelector } from 'react-redux'
 import Bedrooms from '../Bedrooms'
+import { useSelector } from 'react-redux'
+import { Qualification } from '../Qualification'
+import React, { useEffect, useState } from 'react'
+import { HeaderCardStyled, CardGrid } from './style'
+import { ReactComponent as IconLocation } from '../../../images/ubicacion.svg'
 
-export const HeaderFeature = ({ photos }) => {
+export const HeaderFeature = ({ city, photos }) => {
 	const { photos1 } = photos
 	const [screen, setScreen] = useState(window.innerWidth)
 	const { calification } = useSelector(
@@ -17,16 +17,17 @@ export const HeaderFeature = ({ photos }) => {
 			setScreen(window.innerWidth)
 		}
 	}, [screen])
+
 	return (
-		<div>
+		<>
 			<HeaderCardStyled>
 				<div>
 					<div className='card_title'>TRYP MEDELLIN ESTADIO</div>
 					<div className='card_location'>
 						<div className='card_icon'>
-							<IconPalmera />
+							<IconLocation />
 						</div>
-						<p>Medellin</p>
+						<p>{city}</p>
 					</div>
 					<div>
 						<Qualification stars={calification} />
@@ -48,6 +49,6 @@ export const HeaderFeature = ({ photos }) => {
 			) : (
 				<Bedrooms img={photos1} />
 			)}
-		</div>
+		</>
 	)
 }

@@ -1,18 +1,19 @@
 import styled from 'styled-components'
 
 export const HeaderCardStyled = styled.div`
-	margin-top: 10px;
+	margin-top: 2.8rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	align-items: center;
 	.card_title {
 		color: #0f216e;
-		font-size: xx-large;
+		font-size: 2rem;
 		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 		font-weight: 600;
+		margin-left: 15px;
 	}
 	.card_location {
-		height: 35px;
+		height: 55px;
 		color: #0f216e;
 		display: flex;
 		margin-left: 10px;
@@ -20,9 +21,10 @@ export const HeaderCardStyled = styled.div`
 		font-size: x-large;
 	}
 	.card_icon {
-		margin-right: 10px;
+		padding: 5px;
+		margin-right: 1rem;
+		margin-top: 10px;
 		width: 20px;
-		height: 10px;
 	}
 	.card_button {
 		display: flex;
