@@ -1,8 +1,8 @@
-import { Container } from 'components/Container'
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { HotelsContainer } from './styles'
+import { Container } from 'components/Container'
+import { useSelector, useDispatch } from 'react-redux'
 import { getHotels } from '../../state/actions/hotelsActions'
 
 export const Hotels = () => {

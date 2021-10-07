@@ -1,8 +1,8 @@
 import React from 'react'
 import { Slider } from './styles'
-import slideDefault from '../../../images/bannerdestinosdestacados.png'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { splideOptionsLoop } from 'lib/splide'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import slideDefault from '../../../images/bannerdestinosdestacados.png'
 
 const SliderComponent = () => {
 	return (

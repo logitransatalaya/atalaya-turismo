@@ -1,5 +1,4 @@
 import React from 'react'
-import image from '../../../images/btn.png'
 import { Qualification } from '../Qualification'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ReactComponent as IconPalmera } from '../../../images/icono-palmera.svg'

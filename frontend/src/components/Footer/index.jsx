@@ -1,4 +1,3 @@
-import React from 'react'
 import {
 	FooterContainer,
 	FooterStyle,
@@ -12,11 +11,11 @@ import {
 	FooterBoxIcons,
 	FooterContentIcons
 } from './styles'
-
+import React from 'react'
+import { Container } from 'components/Container'
 import waveOrange from '../../images/orangeWave.png'
 import iconFacebook from '../../images/iconFacebook.svg'
 import iconInstagram from '../../images/iconInstagram.svg'
-import { Container } from 'components/Container'
 
 export const Footer = () => {
 	return (
