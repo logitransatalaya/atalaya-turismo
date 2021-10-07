@@ -9,6 +9,7 @@ export const ContainerHotelInfo = styled.div`
 	.item1 {
 		display: flex;
 		justify-content: flex-start;
+		color: #1a2a75;
 
 		.info {
 			width: 90%;
