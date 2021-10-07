@@ -4,7 +4,10 @@ export const OffersCard = ({ image, title }) => {
 	return (
 		<CardStyle>
 			<div className='offersCard-imgContainer'>
-				<img src={image} alt='' />
+				<img
+					src='https://img.blogs.es/anexom/wp-content/uploads/2016/08/hoteles-w-920x515.jpg'
+					alt=''
+				/>
 			</div>
 			<h1>{title}</h1>
 			<div className='offersCard-textContent'>
