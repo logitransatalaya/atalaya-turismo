@@ -5,6 +5,7 @@ import { HomeStyled } from './styles.js'
 import { Benefits } from '../BenefitsSection'
 import SliderComponent from './Slider/index.jsx'
 import { OffersCard } from './OffersCard/index.jsx'
+import { Title } from 'components/HotelFeatures/styles'
 import { Container } from 'components/Container/index.jsx'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
@@ -33,7 +34,13 @@ export const Home = () => {
 						</SplideSlide>
 					</Splide>
 				</div>
+
 				<SliderComponent />
+				<Title>
+					<span className='line'></span>
+					<h2 className='title'>OFERTAS FLASH</h2>
+					<span className='line'></span>
+				</Title>
 				<div className='recomendedCard-container'>
 					<Splide options={splideOptionsOffers}>
 						<SplideSlide>
