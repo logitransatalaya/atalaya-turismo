@@ -7,18 +7,11 @@ import { Container } from 'components/Container'
 import { MorePopularService } from 'components/MorePopularService'
 import { useSelector } from 'react-redux'
 
-const img =
-	'https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg'
-const images = {
-	img1: [img, img, img, img],
-	img2: [img, img, img, img, img, img]
-}
-
 export const HotelFeatures = () => {
 	const { servicesHotel } = useSelector((state) => state.homeReducer)
 
 	const { photos } = servicesHotel.more
-	const { photos1, photos2 } = photos
+	const { photos2 } = photos
 
 	return (
 		<Container>
