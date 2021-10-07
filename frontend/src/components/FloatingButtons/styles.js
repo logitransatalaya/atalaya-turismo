@@ -80,7 +80,7 @@ export const Button = styled.div`
 
 	.animation {
 		transition: all 0.5s ease;
-		animation: ${disappear} 0.5s ease forwards;
+		animation: ${disappear} 0.5s linear forwards;
 	}
 
 	.icons {
