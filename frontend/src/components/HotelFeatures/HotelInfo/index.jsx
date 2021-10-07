@@ -1,7 +1,7 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide'
 import React from 'react'
-import { ContainerHotelInfo, Message } from './styles'
 import { splideOptionsMessages } from 'lib/splide'
+import { ContainerHotelInfo, Message } from './styles'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { ReactComponent as CajaTexto } from 'images/cajadetextoconusuario.svg'
 
 const HotelInfo = () => {

@@ -1,13 +1,12 @@
-import { Button } from 'components/Button'
-import { Container } from 'components/Container'
-import { Qualification } from 'components/HotelFeatures/Qualification'
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { CityContainer } from './styles'
-
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { Button } from 'components/Button'
+import { Container } from 'components/Container'
 import { getServicesHotel } from '../../state/actions/hotelsActions'
+import { Qualification } from 'components/HotelFeatures/Qualification'
 
 export const City = () => {
 	const { hotelsCity } = useSelector((state) => state.homeReducer)
@@ -29,7 +28,11 @@ export const City = () => {
 	const { title } = hotelsCity[0]
 
 	const handleButton = (data) => {
-		dispatch(getServicesHotel(data.services))
+		const obj = {
+			more: data.more,
+			calification: data.calification
+		}
+		dispatch(getServicesHotel(obj))
 	}
 
 	return (
@@ -73,7 +76,7 @@ export const City = () => {
 									</p>
 									<Link
 										to={`${title}/${hotel.id}`}
-										onClick={() => handleButton(hotel.more)}
+										onClick={() => handleButton(hotel)}
 									>
 										<Button
 											text={'Ver más'}
