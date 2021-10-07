@@ -7,14 +7,14 @@ import { useSelector } from 'react-redux'
 export const MorePopularService = () => {
 	const { servicesHotel } = useSelector((state) => state.homeReducer)
 
-	// if (!servicesHotel[0]) {
-	// 	return (
-	// 		<div>
-	// 			<h1 style={{ backgroundColor: 'blue' }}>Dale atras, please</h1>
-	// 			<p>Estyo pasa por que los datos no son persistentes</p>
-	// 		</div>
-	// 	)
-	// }
+	if (servicesHotel.length === 0) {
+		return (
+			<div>
+				<h1 style={{ backgroundColor: 'blue' }}>Dale atras, please</h1>
+				<p>Estyo pasa por que los datos no son persistentes</p>
+			</div>
+		)
+	}
 
 	const { services } = servicesHotel.more
 
