@@ -72,8 +72,17 @@ export const initial_state = {
 							}
 						],
 						photos: {
-							photos1: ['', '', ''],
-							photos2: ['', '', '']
+							photos1: [
+								'https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg',
+								'https://www.eluniversal.com.co/binrepository/1049x700/0c0/0d0/none/13704/PJFX/conrad-cartagena_3478046_20200811132538.jpg',
+								'https://cnnespanol.cnn.com/wp-content/uploads/2021/06/2F210610151521-splurge-hotel-soneva-jani-super-tease.jpg?quality=100&strip=info',
+								'http://static1.eskypartners.com/travelguide/vancouver-hotels.jpg'
+							],
+							photos2: [
+								'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/17/26/1726359_v5.jpeg',
+								'https://dondealojarseen.com/wp-content/uploads/2019/10/The-Charlee-Hotel.jpg',
+								'https://exp.cdn-hotels.com/hotels/1000000/10000/9300/9257/52ecc395_y.jpg?impolicy=fcrop&w=500&h=333&q=high'
+							]
 						},
 						description: '',
 						comentens: ['', '', '']
@@ -101,7 +110,22 @@ export const initial_state = {
 							},
 							{ id: 3, iconName: 'IconCopa', text: 'Bar' },
 							{ id: 4, iconName: 'IconWifi', text: 'Wifi' }
-						]
+						],
+						photos: {
+							photos1: [
+								'https://cdn-3.expansion.mx/dims4/default/7dd1e2c/2147483647/strip/true/crop/1280x853+0+0/resize/1800x1200!/format/webp/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F68%2F8b%2F5faa52024be598130185eb70005d%2Fthe-royal-playa-del-carmen-quiet-pool-hr.jpeg',
+								'https://cdn.forbes.com.mx/2020/07/hoteles-Grand-Velas-Resorts-e1596047698604-640x360.jpg',
+								'https://exp.cdn-hotels.com/hotels/20000000/19300000/19295500/19295426/7ccfa5d3_z.jpg?impolicy=fcrop&w=500&h=333&q=medium',
+								'http://static1.eskypartners.com/travelguide/vancouver-hotels.jpg'
+							],
+							photos2: [
+								'https://www.aviatur.com/source/redes/hoteles-de-lujo-en-colombia-las-islas-cartagena-aviatur.jpg',
+								'https://aws.admagazine.com/prod/designs/v1/assets/767x384/61423.jpg',
+								'https://www.hola.com/imagenes/viajes/20190208137104/mejores-hoteles-tripadvisor-2019/0-645-792/mejores-hoteles-del-mundo-tripadvisor-m.jpg'
+							]
+						},
+						description: '',
+						comentens: ['', '', '']
 					}
 				}
 			]
@@ -146,7 +170,22 @@ export const initial_state = {
 								iconName: 'IconTv',
 								text: 'TV satelital'
 							}
-						]
+						],
+						photos: {
+							photos1: [
+								'https://content.r9cdn.net/kimg/bc/8d/61fbd6eee1b62569.png',
+								'https://media-cdn.tripadvisor.com/media/photo-s/10/46/5a/d0/hotel-lucerna-tijuana.jpg',
+								'https://s4p5s7j9.stackpathcdn.com/wp-content/uploads/2019/11/hotel-tijuana.jpeg',
+								'http://www.balneariosmexico.com/IMG/arton1802.jpg'
+							],
+							photos2: [
+								'https://media-cdn.tripadvisor.com/media/photo-s/02/fe/50/cb/hotel-lucerna.jpg',
+								'https://dondealojarseen.com/wp-content/uploads/2019/10/The-Charlee-Hotel.jpg',
+								'https://www.portafolio.co/files/article_multimedia/uploads/2021/06/07/60bedba57a5ae.jpeg'
+							]
+						},
+						description: '',
+						comentens: ['', '', '']
 					}
 				},
 				{
@@ -191,11 +230,27 @@ export const initial_state = {
 								iconName: 'IconTv',
 								text: 'TV satelital'
 							}
-						]
+						],
+						photos: {
+							photos1: [
+								'https://tecnohotelnews.com/wp-content/uploads/2020/04/hotel-atlantis-sanya.jpg',
+								'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b3/42/8b/underwater-suite-bedroom.jpg?w=900&h=-1&s=1',
+								'https://cnnespanol.cnn.com/wp-content/uploads/2021/06/2F210610151521-splurge-hotel-soneva-jani-super-tease.jpg?quality=100&strip=info',
+								'https://cdn.cnn.com/cnnnext/dam/assets/180329162346-the-palm-resort---underwater-suite-the-palm-large-169.jpg'
+							],
+							photos2: [
+								'https://img.nh-hotels.net/nh_royal_urban_26-016-rooms.jpg?output-quality=70&resize=550:*&composite-to=center,center|550:278&background-color=white',
+								'https://solucionesymediaciones.es/wp-content/uploads/2021/03/8904_TheWestinLima-ExecutiveSuiteRoom.CrditoTheWestinLimaHotel_amp_ConventionCenter.jpg',
+								'https://exp.cdn-hotels.com/hotels/1000000/10000/9300/9257/52ecc395_y.jpg?impolicy=fcrop&w=500&h=333&q=high'
+							]
+						},
+						description: '',
+						comentens: ['', '', '']
 					}
 				}
 			]
 		},
+
 		{
 			id: 3,
 			title: 'cali',
