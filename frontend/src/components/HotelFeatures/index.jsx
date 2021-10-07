@@ -9,14 +9,14 @@ import { useSelector } from 'react-redux'
 
 export const HotelFeatures = () => {
 	const { servicesHotel } = useSelector((state) => state.homeReducer)
-
+	const { city } = servicesHotel
 	const { photos } = servicesHotel.more
 	const { photos2 } = photos
 
 	return (
 		<Container>
 			<div>
-				<HeaderFeature photos={photos} />
+				<HeaderFeature city={city} photos={photos} />
 			</div>
 			<div>
 				<Title>

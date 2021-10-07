@@ -20,14 +20,16 @@ export const MorePopularService = () => {
 
 	return (
 		<ContainerCards>
-			{services &&
-				services.map((service, i) => (
-					<InfoService
-						key={i}
-						iconName={service.iconName}
-						text={service.text}
-					/>
-				))}
+			<div>
+				{services &&
+					services.map((service, i) => (
+						<InfoService
+							key={i}
+							iconName={service.iconName}
+							text={service.text}
+						/>
+					))}
+			</div>
 		</ContainerCards>
 	)
 }
