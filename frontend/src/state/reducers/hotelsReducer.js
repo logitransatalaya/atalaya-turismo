@@ -238,7 +238,23 @@ export const initial_state = {
 								iconName: 'IconParqueadero',
 								text: 'Parqueadero gratis'
 							}
-						]
+						],
+						photos: {
+							photos1: [
+								'https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
+								'https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
+								'https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
+								'https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80'
+							],
+							photos2: [
+								'https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg',
+								'https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg',
+								'https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg',
+								'https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg'
+							]
+						},
+						description: '',
+						comentens: ['', '', '']
 					}
 				},
 				{
@@ -288,7 +304,23 @@ export const initial_state = {
 								iconName: 'IconTv',
 								text: 'TV satelital'
 							}
-						]
+						],
+						photos: {
+							photos1: [
+								'https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg'
+							],
+							photos2: [
+								'https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg'
+							]
+						},
+						description: '',
+						comentens: ['', '', '']
 					}
 				}
 			]
@@ -344,7 +376,23 @@ export const initial_state = {
 								iconName: 'IconTv',
 								text: 'TV satelital'
 							}
-						]
+						],
+						photos: {
+							photos1: [
+								'https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80',
+								'https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80',
+								'https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80',
+								'https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80'
+							],
+							photos2: [
+								'https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg',
+								'https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg'
+							]
+						},
+						description: '',
+						comentens: ['', '', '']
 					}
 				},
 				{
@@ -399,7 +447,23 @@ export const initial_state = {
 								iconName: 'IconTv',
 								text: 'TV satelital'
 							}
-						]
+						],
+						photos: {
+							photos1: [
+								'https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg',
+								'https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg',
+								'https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg',
+								'https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg'
+							],
+							photos2: [
+								'https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg',
+								'https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg',
+								'https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg',
+								'https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg'
+							]
+						},
+						description: '',
+						comentens: ['', '', '']
 					}
 				}
 			]
