@@ -2,16 +2,17 @@ import { City } from 'components/City'
 import FloatingButtons from 'components/FloatingButtons'
 import { HotelFeatures } from 'components/HotelFeatures'
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Footer } from './components/Footer'
 import { Home } from './components/Home'
+import { Tours } from './components/Tours'
+import { Plans } from './components/Plans'
+import { Footer } from './components/Footer'
 import { Hotels } from './components/Hotels'
 import { NavBar } from './components/NavBar'
 import { Offers } from './components/Offers'
-import { PaymentMethods } from './components/PaymentMethods'
-import { Plans } from './components/Plans'
-import { Tours } from './components/Tours'
 import { Transport } from './components/Transport'
+import { PaymentMethods } from './components/PaymentMethods'
+import { ToursDetails } from 'components/Tours/ToursDetails'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 export default function App() {
 	return (
@@ -40,6 +41,9 @@ export default function App() {
 					</Route>
 					<Route exact path='/tours'>
 						<Tours />
+					</Route>
+					<Route exact path='/tours/:urlCode'>
+						<ToursDetails />
 					</Route>
 					<Route exact path='/ofertas'>
 						<Offers />
