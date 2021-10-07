@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import { tourReducer } from './toursReducer'
 import { homeReducer } from './hotelsReducer'
+import { tourReducer } from './toursReducer'
 
 export default combineReducers({
 	homeReducer,

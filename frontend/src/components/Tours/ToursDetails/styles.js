@@ -3,11 +3,14 @@ import styled from 'styled-components'
 export const ToursDetailsStyled = styled.div`
 	color: #10216f;
 	margin-top: 3rem;
+	margin: 0 auto;
+	margin-top: 3rem;
+	width: 95%;
 
 	.separator {
 		background-color: #f3a719;
-		height: 0.15rem;
-		margin: 1rem 0;
+		height: 0.2rem;
+		margin: 1rem 0 2rem 0;
 	}
 
 	header {
@@ -61,7 +64,7 @@ export const ToursDetailsStyled = styled.div`
 
 		@media (min-width: 950px) {
 			height: 15rem;
-			padding: 0 1rem;
+			padding: 0;
 			justify-content: space-between;
 
 			.descriptionImg-container {
@@ -83,7 +86,7 @@ export const ToursDetailsStyled = styled.div`
 		h5 {
 			font-size: 2rem;
 			font-weight: 500;
-			margin: 4rem 0 2rem 0;
+			margin: 4rem 0 1rem 0;
 		}
 
 		.characteristics-content {
@@ -124,12 +127,12 @@ export const ToursDetailsStyled = styled.div`
 
 		@media (min-width: 950px) {
 			h5 {
-				margin-left: 0;
+				width: auto;
+				padding-left: 1rem;
 			}
 
 			.characteristics-content {
 				justify-content: space-between;
-
 				div {
 					width: 45%;
 				}
@@ -150,11 +153,18 @@ export const ToursDetailsStyled = styled.div`
 			}
 
 			.characteristics-content {
+				font-size: 1.4rem;
 				justify-content: space-between;
+				padding: 0 2rem;
 
 				div {
-					width: 38rem;
+					width: 30rem;
 				}
+			}
+
+			.characteristics-specialItem {
+				width: calc(100% - 4rem);
+				font-size: 1.4rem;
 			}
 		}
 	}
