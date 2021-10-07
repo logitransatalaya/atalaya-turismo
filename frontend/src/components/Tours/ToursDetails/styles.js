@@ -113,6 +113,7 @@ export const ToursDetailsStyled = styled.div`
 			justify-content: center;
 			width: 90%;
 			margin: 0 auto;
+			margin-top: 1rem;
 
 			img {
 				display: inline-block;
@@ -128,7 +129,6 @@ export const ToursDetailsStyled = styled.div`
 
 			.characteristics-content {
 				justify-content: space-between;
-				gap: 1rem;
 
 				div {
 					width: 45%;
@@ -141,6 +141,8 @@ export const ToursDetailsStyled = styled.div`
 		}
 
 		@media (min-width: 1310px) {
+			padding: 0;
+
 			h5 {
 				font-size: 2rem;
 				font-weight: 500;
