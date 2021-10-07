@@ -5,12 +5,18 @@ import HotelInfo from './HotelInfo'
 import { HeaderFeature } from './HeaderFeatur'
 import { Container } from 'components/Container'
 import { MorePopularService } from 'components/MorePopularService'
+import { useSelector } from 'react-redux'
 
 export const HotelFeatures = () => {
+	const { servicesHotel } = useSelector((state) => state.homeReducer)
+
+	const { photos } = servicesHotel.more
+	const { photos2 } = photos
+
 	return (
 		<Container>
 			<div>
-				<HeaderFeature />
+				<HeaderFeature photos={photos} />
 			</div>
 			<div>
 				<Title>
@@ -26,10 +32,10 @@ export const HotelFeatures = () => {
 					<h2 className='title'>HABITACIONES DEL HOTEL</h2>
 					<span className='line'></span>
 				</Title>
-				<Bedrooms />
+				<Bedrooms img={photos2} />
 			</div>
 			<div>
-				<Title about>
+				<Title about='about'>
 					<span className='line'></span>
 					<h2 className='title'>SOBRE EL HOTEL TRYP MEDELLíN</h2>
 					<span className='line'></span>

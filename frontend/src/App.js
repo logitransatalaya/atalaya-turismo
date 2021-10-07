@@ -1,5 +1,7 @@
-import React from 'react'
 import { City } from 'components/City'
+import FloatingButtons from 'components/FloatingButtons'
+import { HotelFeatures } from 'components/HotelFeatures'
+import React from 'react'
 import { Home } from './components/Home'
 import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
@@ -8,7 +10,6 @@ import { Hotels } from './components/Hotels'
 import { NavBar } from './components/NavBar'
 import { Offers } from './components/Offers'
 import { Transport } from './components/Transport'
-import { HotelFeatures } from 'components/HotelFeatures'
 import { PaymentMethods } from './components/PaymentMethods'
 import { ToursDetails } from 'components/Tours/ToursDetails'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -17,6 +18,7 @@ export default function App() {
 	return (
 		<Router>
 			<div>
+				<FloatingButtons />
 				<NavBar />
 				<Switch>
 					<Route exact path='/'>
