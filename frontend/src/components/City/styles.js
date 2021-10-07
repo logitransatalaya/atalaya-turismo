@@ -39,7 +39,7 @@ export const CityContainer = styled.div`
 
 		.cityInfo {
 			flex: 3;
-
+			padding: 10px 0 0 30px;
 			@media (max-width: 600px) {
 				display: flex;
 				flex-direction: column;
@@ -62,6 +62,7 @@ export const CityContainer = styled.div`
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			padding: 10px 35px 20px 0;
 
 			@media (max-width: 600px) {
 				text-align: start;

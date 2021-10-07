@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerStars = styled.div`
-	padding: 10px 0;
+	padding: 25px 10px;
 
 	div {
 		display: flex;

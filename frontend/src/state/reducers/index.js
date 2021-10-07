@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
-import { hotelsReducer } from './hotelsReducer'
+import { homeReducer } from './hotelsReducer'
+import { tourReducer } from './toursReducer'
 
 export default combineReducers({
-	hotelsReducer
+	homeReducer,
+	tourReducer
 })

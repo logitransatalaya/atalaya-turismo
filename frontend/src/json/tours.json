@@ -1,0 +1,148 @@
+{
+	"tours": [
+		{
+			"urlCode": "peñol-guatape",
+			"title": "PEÑOL Y GUATAPÉ",
+			"cardImg": "https://cdn2.civitatis.com/colombia/guatape/galeria/header/islas-embalse-guatape-desde-aire.jpg",
+			"descriptionImg": "https://cdn2.civitatis.com/colombia/guatape/galeria/header/islas-embalse-guatape-desde-aire.jpg",
+			"description": "Visita en este tour el municipio de el peñol con su templo roca única en Antioquia, la réplica del antiguo Peñol, la imponente piedra del Peñol y uno de los pueblos más coloridos de Suramérica: Guatapé.Visita en este tour el municipio de el peñol con su templo roca única en Antioquia, la réplica del antiguo Peñol, la imponente.",
+			"characteristics": {
+				"column1": [
+					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
+					"Tarjeta de asistencia médica.",
+					"Desayuno.",
+					"almuerzo según menú.",
+					"Paseo en barco por el embalse."
+				],
+				"column2": [
+					"Visita al Municipio de Guatapé y el Peñol.",
+					"Visita el nuevo Peñol.",
+					"Visita a la réplica del antiguo Peñol.",
+					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
+					"Fechas de viaje: Todos los días."
+				],
+				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
+			}
+		},
+		{
+			"urlCode": "graffiti-tour",
+			"title": "GRAFFITI TOUR",
+			"cardImg": "https://cuponassets.cuponatic-latam.com/backendCo/uploads/imagenes_descuentos/172441/7e0a6468c4bafc9376f656b01c0795b8ae4a1822.XL2.jpg",
+			"descriptionImg": "https://cuponassets.cuponatic-latam.com/backendCo/uploads/imagenes_descuentos/172441/7e0a6468c4bafc9376f656b01c0795b8ae4a1822.XL2.jpg",
+			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem ad nulla numquam nostrum rem illo laudantium aut natus labore aliquam, esse, repellendus fugiat ab, modi consequuntur reiciendis ipsum. Temporibus, earum! Libero provident aliquam numquam animi ad laborum blanditiis mollitia.",
+			"characteristics": {
+				"column1": [
+					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
+					"Tarjeta de asistencia médica.",
+					"Desayuno.",
+					"almuerzo según menú.",
+					"Paseo en barco por el embalse."
+				],
+				"column2": [
+					"Visita al Municipio de Guatapé y el Peñol.",
+					"Visita el nuevo Peñol.",
+					"Visita a la réplica del antiguo Peñol.",
+					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
+					"Fechas de viaje: Todos los días."
+				],
+				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
+			}
+		},
+		{
+			"urlCode": "santafe-antioquia",
+			"title": "SANTA FE DE ANTIOQUIA",
+			"cardImg": "https://www.las2orillas.co/wp-content/uploads/2018/07/portada-santafe-de-antioquia.jpg",
+			"descriptionImg": "https://www.las2orillas.co/wp-content/uploads/2018/07/portada-santafe-de-antioquia.jpg",
+			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem ad nulla numquam nostrum rem illo laudantium aut natus labore aliquam, esse, repellendus fugiat ab, modi consequuntur reiciendis ipsum. Temporibus, earum! Libero provident aliquam numquam animi ad laborum blanditiis mollitia.",
+			"characteristics": {
+				"column1": [
+					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
+					"Tarjeta de asistencia médica.",
+					"Desayuno.",
+					"almuerzo según menú.",
+					"Paseo en barco por el embalse."
+				],
+				"column2": [
+					"Visita al Municipio de Guatapé y el Peñol.",
+					"Visita el nuevo Peñol.",
+					"Visita a la réplica del antiguo Peñol.",
+					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
+					"Fechas de viaje: Todos los días."
+				],
+				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
+			}
+		},
+		{
+			"urlCode": "jardin",
+			"title": "JARDIN",
+			"cardImg": "https://www.sitiosturisticoscolombia.com/wp-content/uploads/iglesia-jardin-antioquia.jpg",
+			"descriptionImg": "https://www.sitiosturisticoscolombia.com/wp-content/uploads/iglesia-jardin-antioquia.jpg",
+			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem ad nulla numquam nostrum rem illo laudantium aut natus labore aliquam, esse, repellendus fugiat ab, modi consequuntur reiciendis ipsum. Temporibus, earum! Libero provident aliquam numquam animi ad laborum blanditiis mollitia.",
+			"characteristics": {
+				"column1": [
+					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
+					"Tarjeta de asistencia médica.",
+					"Desayuno.",
+					"almuerzo según menú.",
+					"Paseo en barco por el embalse."
+				],
+				"column2": [
+					"Visita al Municipio de Guatapé y el Peñol.",
+					"Visita el nuevo Peñol.",
+					"Visita a la réplica del antiguo Peñol.",
+					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
+					"Fechas de viaje: Todos los días."
+				],
+				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
+			}
+		},
+		{
+			"urlCode": "hacienda-napoles",
+			"title": "HACIENDA NÁPOLES",
+			"cardImg": "https://upload.wikimedia.org/wikipedia/commons/4/4a/P%C3%B3rtico_Hacienda_N%C3%A1poles.JPG",
+			"descriptionImg": "https://upload.wikimedia.org/wikipedia/commons/4/4a/P%C3%B3rtico_Hacienda_N%C3%A1poles.JPG",
+			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem ad nulla numquam nostrum rem illo laudantium aut natus labore aliquam, esse, repellendus fugiat ab, modi consequuntur reiciendis ipsum. Temporibus, earum! Libero provident aliquam numquam animi ad laborum blanditiis mollitia.",
+			"characteristics": {
+				"column1": [
+					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
+					"Tarjeta de asistencia médica.",
+					"Desayuno.",
+					"almuerzo según menú.",
+					"Paseo en barco por el embalse."
+				],
+				"column2": [
+					"Visita al Municipio de Guatapé y el Peñol.",
+					"Visita el nuevo Peñol.",
+					"Visita a la réplica del antiguo Peñol.",
+					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
+					"Fechas de viaje: Todos los días."
+				],
+				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
+			}
+		},
+		{
+			"urlCode": "city-tour",
+			"title": "CITY TOUR",
+			"cardImg": "https://files.rcnradio.com/public/styles/m_img_680x464/public/2020-07/12001200p6905ednmainestacion-parque-berrio-530x300_0.jpg?itok=SYK-2407",
+			"descriptionImg": "https://files.rcnradio.com/public/styles/m_img_680x464/public/2020-07/12001200p6905ednmainestacion-parque-berrio-530x300_0.jpg?itok=SYK-2407",
+			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem ad nulla numquam nostrum rem illo laudantium aut natus labore aliquam, esse, repellendus fugiat ab, modi consequuntur reiciendis ipsum. Temporibus, earum! Libero provident aliquam numquam animi ad laborum blanditiis mollitia.",
+			"characteristics": {
+				"column1": [
+					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
+					"Tarjeta de asistencia médica.",
+					"Desayuno.",
+					"almuerzo según menú.",
+					"Paseo en barco por el embalse."
+				],
+				"column2": [
+					"Visita al Municipio de Guatapé y el Peñol.",
+					"Visita el nuevo Peñol.",
+					"Visita a la réplica del antiguo Peñol.",
+					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
+					"Fechas de viaje: Todos los días."
+				],
+				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
+			}
+		}
+	]
+}
