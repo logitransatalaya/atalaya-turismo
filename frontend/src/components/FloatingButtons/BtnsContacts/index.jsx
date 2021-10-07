@@ -32,10 +32,7 @@ const BtnContact = ({ icon, title }) => {
 				>
 					<img src={icon} alt={title} className='icons' />
 
-					<span
-						className={handleDisappear().animationwsp}
-						showToolTip
-					>
+					<span className={handleDisappear().animationwsp}>
 						Contactanos por Whatsapp
 					</span>
 				</a>
