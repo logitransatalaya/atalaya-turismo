@@ -34,7 +34,7 @@ export const HotelFeatures = () => {
 				<Bedrooms img={images.img2} />
 			</div>
 			<div>
-				<Title about>
+				<Title about='about'>
 					<span className='line'></span>
 					<h2 className='title'>SOBRE EL HOTEL TRYP MEDELLíN</h2>
 					<span className='line'></span>
