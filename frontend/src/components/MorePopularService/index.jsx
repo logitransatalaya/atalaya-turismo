@@ -30,7 +30,7 @@ export const MorePopularService = () => {
 		setCountServices(!countServices)
 	}
 
-	const auxServices = countServices ? services.slice(0, 4) : services
+	const auxServices = countServices ? services : services.slice(0, 4)
 	const auxIcon = countServices
 		? 'cardButton cardButtonRotate'
 		: ' cardButton'
