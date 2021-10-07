@@ -25,7 +25,7 @@ export const ToursDetails = () => {
 			// 	console.log('entra')
 			// })()
 		}
-	}, [currentTour])
+	}, [currentTour, urlCode])
 
 	return !tour ? (
 		<Skeleton type='toursDescription' />
