@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware'
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 
 # CORS_ORIGIN_ALLOW_ALL = (
 #     'localhost:3000'
@@ -87,20 +87,15 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'turismo',
+        'USER': 'atalaya',
+        'PASSWORD': 'atalaya1234',
+        'HOST': '127.0.0.1',
+        'PORT': '5432'
     }
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'test',
-        'CLIENT': {
-           'host': 'mongodb+srv://developer-atalaya:atalaya1234@cluster0.bwxgo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-        }
-    }
-}
 
 
 # Password validation
