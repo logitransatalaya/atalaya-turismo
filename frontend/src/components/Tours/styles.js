@@ -8,7 +8,6 @@ export const ToursStyled = styled.div`
 		gap: 1em;
 		padding: 2em 1em;
 	}
-
 	.hotelCard {
 		height: 300px;
 		background-color: #fff;
@@ -32,7 +31,6 @@ export const ToursStyled = styled.div`
 					transform: scale(1.1);
 				}
 			}
-
 			.hotelCardTitle {
 				position: absolute;
 				bottom: 0;
@@ -42,13 +40,11 @@ export const ToursStyled = styled.div`
 				display: flex;
 				align-items: center;
 				justify-content: center;
-
 				background: linear-gradient(
 					180deg,
 					rgba(255, 255, 255, 0) 5%,
 					rgba(1, 38, 209, 1) 90%
 				);
-
 				h3 {
 					color: #fff;
 					text-transform: uppercase;

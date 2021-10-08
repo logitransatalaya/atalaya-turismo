@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
 import { Title } from './styles'
 import Bedrooms from './Bedrooms'
 import HotelInfo from './HotelInfo'
-import { HeaderFeature } from './HeaderFeatur'
-import { Container } from 'components/Container'
-import { MorePopularService } from 'components/MorePopularService'
-import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
+import { HeaderFeature } from './HeaderFeatur'
 import { hotels } from '../../json/hotels.json'
+import { Container } from 'components/Container'
+import React, { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { MorePopularService } from 'components/MorePopularService'
 import { getServicesHotel } from '../../state/actions/hotelsActions'
 
 export const HotelFeatures = () => {
