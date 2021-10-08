@@ -23,11 +23,7 @@ export const DetailsPlan = () => {
 			)
 			dispatch(getCurrentPlan(currentPlanJson))
 		}
-
-		console.log(currentPlan)
 	}, [currentPlan, dispatch, urlCode])
-
-	console.log(currentPlan)
 
 	return (
 		<Rojo>
