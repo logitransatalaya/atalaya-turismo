@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { ContainerBtns } from './styles'
 import BtnContact from './BtnsContacts'
 import wspweb from 'images/svg/wspweb.svg'
@@ -11,14 +11,11 @@ const FloatingButtons = () => {
 	const history = useHistory()
 	const dispatch = useDispatch()
 	const { currentRoute } = useSelector((state) => state.toolTipReducer)
-	const [route, setRoute] = useState(history.location.pathname)
 	const { pathname } = history.location
 
 	useEffect(() => {
 		dispatch(updateRoute(pathname))
-		setRoute(pathname)
-		console.log(pathname, currentRoute)
-	}, [])
+	}, [currentRoute, dispatch, pathname])
 
 	return (
 		<ContainerBtns>
