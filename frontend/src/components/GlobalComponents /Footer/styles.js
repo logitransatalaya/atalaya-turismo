@@ -134,7 +134,20 @@ export const FooterOtherServices = styled.ul`
 `
 
 export const FooterTours = styled.div`
-	background-color: red;
-	height: 10rem;
+	margin-top: 10rem;
+	height: 25rem;
 	position: relative;
+
+	picture {
+		box-shadow: 0 0 3rem black inset;
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
 `

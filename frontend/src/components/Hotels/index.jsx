@@ -11,9 +11,7 @@ export const Hotels = () => {
 	const { cityList } = useSelector((state) => state.hotelsReducer)
 
 	useEffect(() => {
-		if (!cityList) {
-			dispatch(updatecityList(cities))
-		}
+		if (!cityList) dispatch(updatecityList(cities))
 	}, [cityList, dispatch])
 
 	return (

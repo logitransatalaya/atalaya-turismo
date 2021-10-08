@@ -105,3 +105,10 @@ export const splideOptionsMessages = {
 		}
 	}
 }
+
+export const splideOptionsOfferts = {
+	type: 'slide',
+	perPage: 1,
+	perMove: 1,
+	gap: '2rem'
+}
