@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import React, { useEffect } from 'react'
 import { CityContainer } from './styles'
 import { hotels } from 'json/hotels.json'
-import { Button } from 'components/Button'
 import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateHotelsList } from 'state/actions/hotelsActions'
 import { Qualification } from 'components/HotelFeatures/Qualification'
+import { Button } from 'components/GlobalComponents /Button'
 
 export const City = () => {
 	const { locid } = useParams()
