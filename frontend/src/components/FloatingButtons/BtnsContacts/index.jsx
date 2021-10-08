@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Button } from '../styles'
 
-const BtnContact = ({ icon, title }) => {
+const BtnContact = ({ icon, title, currentRoute }) => {
 	const [showToolTip, setShowToolTip] = useState(true)
 
+	console.log(currentRoute)
 	useEffect(() => {
 		const handleToolTip = () => {
 			setTimeout(() => {
