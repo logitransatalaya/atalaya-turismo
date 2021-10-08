@@ -1,31 +1,41 @@
-import { Title } from './styles'
+import { StyleTitle } from './styles'
 import Bedrooms from './Bedrooms'
 import HotelInfo from './HotelInfo'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { HeaderFeature } from './HeaderFeatur'
 import { hotels } from '../../json/hotels.json'
 import { Container } from 'components/Container'
-import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { MorePopularService } from 'components/MorePopularService'
 import { updateCurrentHotel } from '../../state/actions/hotelsActions'
-import { HeaderFeature } from './HeaderFeatur'
 
 export const HotelFeatures = () => {
-	const { hotelId, locid } = useParams()
-	const { currentHotel } = useSelector((state) => state.hotelsReducer)
 	const dispatch = useDispatch()
+	const { hotelId, locid } = useParams()
+	const { currentHotel, hotelsList } = useSelector(
+		(state) => state.hotelsReducer
+	)
 
 	useEffect(() => {
 		if (!currentHotel) {
-			console.log('entra')
 			const cityId = parseInt(locid)
 			const [hotel] = hotels
 				.filter((hotel) => hotel.idcity === cityId)
 				.filter((hotel) => hotel.urlCode === hotelId)
 			// const res = fetch(`api.com?cityId=${cityId}`)
 			dispatch(updateCurrentHotel(hotel))
+		} else {
+			const currentHotelCityId = currentHotel.urlCode
+
+			if (hotelId !== currentHotelCityId) {
+				const [hotel] = hotelsList.filter(
+					(hotel) => hotel.urlCode === hotelId
+				)
+				dispatch(updateCurrentHotel(hotel))
+			}
 		}
-	}, [])
+	}, [hotelsList, currentHotel, dispatch, hotelId, locid])
 
 	return (
 		<>
@@ -38,29 +48,29 @@ export const HotelFeatures = () => {
 						/>
 					</div>
 					<div>
-						<Title>
+						<StyleTitle>
 							<span className='line'></span>
 							<h2 className='title'>SERVICIOS MÁS POPULARES</h2>
 							<span className='line'></span>
-						</Title>
+						</StyleTitle>
 						<MorePopularService currentHotel={currentHotel} />
 					</div>
 					<div>
-						<Title>
+						<StyleTitle>
 							<span className='line'></span>
 							<h2 className='title'>HABITACIONES DEL HOTEL</h2>
 							<span className='line'></span>
-						</Title>
+						</StyleTitle>
 						<Bedrooms img={currentHotel.more.photos.photos2} />
 					</div>
 					<div>
-						<Title about='about'>
+						<StyleTitle about='about'>
 							<span className='line'></span>
 							<h2 className='title'>
 								SOBRE EL HOTEL TRYP MEDELLíN
 							</h2>
 							<span className='line'></span>
-						</Title>
+						</StyleTitle>
 						<HotelInfo />
 					</div>
 				</Container>

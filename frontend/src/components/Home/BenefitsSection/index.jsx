@@ -1,12 +1,12 @@
 import React from 'react'
 import { BenefitsCard } from './BenefitsCard'
 import { BenefitsSectionStyled } from './styles.js'
-import { ReactComponent as IconMapa } from '../../images/icono-mapa.svg'
-import { ReactComponent as IconBarco } from '../../images/icono-barco.svg'
-import { ReactComponent as IconAvion } from '../../images/icono-avion.svg'
-import { ReactComponent as IconMundo } from '../../images/icono-mundo.svg'
-import { ReactComponent as IconMaleta } from '../../images/icono-maleta.svg'
-import { ReactComponent as IconPalmera } from '../../images/icono-palmera.svg'
+import { ReactComponent as IconMapa } from 'images/icono-mapa.svg'
+import { ReactComponent as IconBarco } from 'images/icono-barco.svg'
+import { ReactComponent as IconAvion } from 'images/icono-avion.svg'
+import { ReactComponent as IconMundo } from 'images/icono-mundo.svg'
+import { ReactComponent as IconMaleta } from 'images/icono-maleta.svg'
+import { ReactComponent as IconPalmera } from 'images/icono-palmera.svg'
 
 export const Benefits = () => {
 	return (

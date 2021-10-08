@@ -5,7 +5,7 @@ import { tours } from 'json/tours.json'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
 import { Skeleton } from 'components/Skeletons'
-import { Footer } from 'components/Footer'
+import { Footer } from 'components/GlobalComponents /Footer'
 
 export const ToursDetails = () => {
 	const { urlCode } = useParams()
