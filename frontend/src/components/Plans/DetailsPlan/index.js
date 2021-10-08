@@ -8,7 +8,7 @@ import { plans } from '../../../json/plans.json'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
 import { Container } from 'components/Container'
 import { useState } from 'react'
-import Bedrooms from 'components/HotelFeatures/Bedrooms'
+import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
 
 export const DetailsPlan = () => {
 	const { urlCode } = useParams()
