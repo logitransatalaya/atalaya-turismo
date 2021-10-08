@@ -22,4 +22,11 @@ class National_city_list(generics.ListAPIView):
 class National_city_detail(generics.RetrieveAPIView):
     # API endpoint that return a single city by pk
     queryset = National_city.objects.all()
-    serializers_class = 
+
+class National_city_update(generics.RetrieveUpdateAPIView):
+    # API endpoint that allows a city record to be updated
+    queryset = National_city.objects.all()
+
+class National_city_delete(generics.RetrieveDestroyAPIView):
+    # API endpoint that allows a city record to be deleted
+    queryset = National_city.objects.all()
