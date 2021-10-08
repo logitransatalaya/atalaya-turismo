@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { CityContainer } from './styles'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Button } from 'components/Button'
 import { Container } from 'components/Container'
 import { Qualification } from 'components/HotelFeatures/Qualification'
-import { cities } from '../../json/cities.json'
 import { useParams } from 'react-router-dom'
+import { updateHotelsList } from 'state/actions/hotelsActions'
+import { hotels } from 'json/hotels.json'
 
 export const City = () => {
 	const { locid } = useParams()
-	const { hotelsCity } = useSelector((state) => state.homeReducer)
-	const [hotelsList, setHotelsList] = useState(null)
+	const dispatch = useDispatch()
+
+	const { hotelsList } = useSelector((state) => state.hotelsReducer)
 
 	useEffect(() => {
-		if (hotelsCity) {
-			setHotelsList(hotelsCity)
-		} else {
-			const [currentHotel] = cities.filter(
-				(city) => city.urlCode === locid
-			)
-			setHotelsList(currentHotel)
+		if (!hotelsList) {
+			const cityId = parseInt(locid)
+			const res = hotels.filter((hotel) => hotel.idcity === cityId)
+			// const res = fetch(`api.com?cityId=${cityId}`)
+			dispatch(updateHotelsList(res))
 		}
-	}, [hotelsCity, locid])
+	}, [])
 
 	return (
 		hotelsList && (
@@ -35,7 +35,7 @@ export const City = () => {
 					</span>
 				</h2>
 				<CityContainer>
-					{hotelsList.hotels?.map((hotel, i) => (
+					{hotelsList.map((hotel, i) => (
 						<div className='cityCard' key={i}>
 							<div className='cityBoxImg'>
 								<img src={hotel.urlImg} alt={hotel.name} />
@@ -64,9 +64,7 @@ export const City = () => {
 											tarjeta sujeta a disponibilidad
 										</small>
 									</p>
-									<Link
-										to={`${hotelsList.title}/${hotel.urlCode}`}
-									>
+									<Link to={`${locid}/${hotel.urlCode}`}>
 										<Button
 											text={'Ver más'}
 											bgColor={'#10216f'}

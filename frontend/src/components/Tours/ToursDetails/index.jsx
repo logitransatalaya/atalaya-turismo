@@ -35,7 +35,7 @@ export const ToursDetails = () => {
 				<header>
 					<h3>{tour.title}</h3>
 					<a href='/'>
-						<img src='/tours/whatsapp.png' alt='' />
+						<img src='/tours/whatsapp.png' alt='icono-watsap' />
 					</a>
 				</header>
 				<div className='separator'></div>

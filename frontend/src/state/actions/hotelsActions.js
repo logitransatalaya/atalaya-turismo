@@ -1,21 +1,21 @@
 // creamos la accion
 export const types = {
-	GET_HOTELS: 'GET_HOTELS',
-	GET_ALL_HOTELS: 'GET_ALL_HOTELS',
-	GET_SERVICES_HOTEL: 'GET_SERVICES_HOTEL'
+	UPDATE_HOTELS_LIST: 'UPDATE_HOTELS_LIST',
+	UPDATE_CITY_LIST: 'UPDATE_CITY_LIST',
+	UPDATE_CURRENT_HOTEL: 'UPDATE_CURRENT_HOTEL'
 }
 
-export const getHotels = (id) => ({
-	type: types.GET_HOTELS,
+export const updateHotelsList = (id) => ({
+	type: types.UPDATE_HOTELS_LIST,
 	payload: id
 })
 
-export const getAllHotels = (data) => ({
-	type: types.GET_ALL_HOTELS,
+export const updatecityList = (data) => ({
+	type: types.UPDATE_CITY_LIST,
 	payload: data
 })
 
-export const getServicesHotel = (data) => ({
-	type: types.GET_SERVICES_HOTEL,
+export const updateCurrentHotel = (data) => ({
+	type: types.UPDATE_CURRENT_HOTEL,
 	payload: data
 })

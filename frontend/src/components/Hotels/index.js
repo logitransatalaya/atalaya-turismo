@@ -3,44 +3,30 @@ import { Link } from 'react-router-dom'
 import { HotelsContainer } from './styles'
 import { Container } from 'components/Container'
 import { useSelector, useDispatch } from 'react-redux'
-import { getHotels, getAllHotels } from '../../state/actions/hotelsActions'
-
+import { updatecityList } from '../../state/actions/hotelsActions'
 import { cities } from '../../json/cities.json'
 
 export const Hotels = () => {
 	const dispatch = useDispatch()
-	const { locations } = useSelector((state) => state.homeReducer)
-
-	const [stateHotel, setStateHotel] = useState(null)
+	const { cityList } = useSelector((state) => state.hotelsReducer)
 
 	useEffect(() => {
-		if (locations) {
-			setStateHotel(locations)
-		} else {
-			setStateHotel(cities)
-			dispatch(getAllHotels(cities))
+		if (!cityList) {
+			dispatch(updatecityList(cities))
 		}
-	}, [stateHotel, locations, dispatch])
-
-	const handleHotels = (data) => {
-		dispatch(getHotels(data))
-	}
+	}, [cityList, dispatch])
 
 	return (
 		<Container>
 			<HotelsContainer>
-				{stateHotel &&
-					stateHotel.map((loc, i) => (
-						<Link
-							key={i}
-							to={`hoteles/${loc.title}`}
-							onClick={() => handleHotels(loc)}
-						>
+				{cityList &&
+					cityList.map((city, i) => (
+						<Link key={i} to={`hoteles/${city.id}`}>
 							<div className='hotelCard'>
 								<div className='hotelCardBoxImg'>
-									<img src={loc.urlImg} alt={loc.title} />
+									<img src={city.urlImg} alt={city.title} />
 									<div className='hotelCardTitle'>
-										<h3>{loc.title}</h3>
+										<h3>{city.title}</h3>
 									</div>
 								</div>
 							</div>
