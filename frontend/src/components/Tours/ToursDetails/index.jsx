@@ -5,6 +5,7 @@ import { tours } from 'json/tours.json'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
 import { Skeleton } from 'components/Skeletons'
+import { Footer } from 'components/Footer'
 
 export const ToursDetails = () => {
 	const { urlCode } = useParams()
@@ -30,54 +31,57 @@ export const ToursDetails = () => {
 	return !tour ? (
 		<Skeleton type='toursDescription' />
 	) : (
-		<Container>
-			<ToursDetailsStyled className='ToursDetails'>
-				<header>
-					<h3>{tour.title}</h3>
-					<a href='/'>
-						<img src='/tours/whatsapp.png' alt='' />
-					</a>
-				</header>
-				<div className='separator'></div>
-				<div className='description'>
-					<div className='descriptionImg-container'>
-						<img src={tour.descriptionImg} alt={tour.title} />
-					</div>
-					<p>{tour.description}</p>
-				</div>
-				<div className='characteristics-container'>
-					<h5>INCLUYE:</h5>
-					<div className='characteristics-content'>
-						<div>
-							{tour.characteristics.column1.map((text, i) => (
-								<p key={i}>
-									<img
-										src={`/tours/column1-${i + 1}.svg`}
-										alt=''
-									/>
-									{text}
-								</p>
-							))}
+		<>
+			<Container>
+				<ToursDetailsStyled className='ToursDetails'>
+					<header>
+						<h3>{tour.title}</h3>
+						<a href='/'>
+							<img src='/tours/whatsapp.png' alt='' />
+						</a>
+					</header>
+					<div className='separator'></div>
+					<div className='description'>
+						<div className='descriptionImg-container'>
+							<img src={tour.descriptionImg} alt={tour.title} />
 						</div>
-						<div>
-							{tour.characteristics.column2.map((text, i) => (
-								<p key={i}>
-									<img
-										src={`/tours/column2-${i + 1}.svg`}
-										alt=''
-									/>
+						<p>{tour.description}</p>
+					</div>
+					<div className='characteristics-container'>
+						<h5>INCLUYE:</h5>
+						<div className='characteristics-content'>
+							<div>
+								{tour.characteristics.column1.map((text, i) => (
+									<p key={i}>
+										<img
+											src={`/tours/column1-${i + 1}.svg`}
+											alt=''
+										/>
+										{text}
+									</p>
+								))}
+							</div>
+							<div>
+								{tour.characteristics.column2.map((text, i) => (
+									<p key={i}>
+										<img
+											src={`/tours/column2-${i + 1}.svg`}
+											alt=''
+										/>
 
-									{text}
-								</p>
-							))}
+										{text}
+									</p>
+								))}
+							</div>
 						</div>
+						<p className='characteristics-specialItem'>
+							<img src='/tours/icono-mapa.svg' alt='' />
+							{tour.characteristics.unique}
+						</p>
 					</div>
-					<p className='characteristics-specialItem'>
-						<img src='/tours/icono-mapa.svg' alt='' />
-						{tour.characteristics.unique}
-					</p>
-				</div>
-			</ToursDetailsStyled>
-		</Container>
+				</ToursDetailsStyled>
+			</Container>
+			<Footer type='tours' imageUrl={''} />
+		</>
 	)
 }

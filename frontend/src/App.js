@@ -51,7 +51,6 @@ export default function App() {
 					</Route>
 					<Route exact path='/tours/:urlCode'>
 						<ToursDetails />
-						<Footer />
 					</Route>
 					<Route exact path='/ofertas'>
 						<Offers />

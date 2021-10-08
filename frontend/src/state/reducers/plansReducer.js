@@ -1,4 +1,4 @@
-import { types } from 'state/actions/toolTipActions'
+import { types } from 'state/actions/plansAction'
 
 export const initial_state = {
 	plansReducer: null

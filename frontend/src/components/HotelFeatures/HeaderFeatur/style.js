@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const HeaderCardStyled = styled.div`
 	margin-top: 2.8rem;
 	display: flex;
-	justify-content: start;
+	justify-content: space-between;
 	align-items: center;
 	.card_title {
 		color: #0f216e;

@@ -2,41 +2,39 @@ import { Title } from './styles'
 import Bedrooms from './Bedrooms'
 import HotelInfo from './HotelInfo'
 import { useParams } from 'react-router-dom'
-import { HeaderFeature } from './HeaderFeatur'
 import { hotels } from '../../json/hotels.json'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { MorePopularService } from 'components/MorePopularService'
-import { getServicesHotel } from '../../state/actions/hotelsActions'
+import { updateCurrentHotel } from '../../state/actions/hotelsActions'
+import { HeaderFeature } from './HeaderFeatur'
 
 export const HotelFeatures = () => {
-	const { servicesHotel } = useSelector((state) => state.homeReducer)
-	const { hotelId } = useParams()
+	const { hotelId, locid } = useParams()
+	const { currentHotel } = useSelector((state) => state.hotelsReducer)
 	const dispatch = useDispatch()
 
-	const [stateCurrentHotel, setStateCurrentHotel] = useState(null)
-
 	useEffect(() => {
-		if (servicesHotel) {
-			setStateCurrentHotel(servicesHotel)
-		} else {
-			const [currentHotel] = hotels.filter(
-				(hotel) => hotel.urlCode === hotelId
-			)
-			dispatch(getServicesHotel(currentHotel))
-			setStateCurrentHotel(currentHotel)
+		if (!currentHotel) {
+			console.log('entra')
+			const cityId = parseInt(locid)
+			const [hotel] = hotels
+				.filter((hotel) => hotel.idcity === cityId)
+				.filter((hotel) => hotel.urlCode === hotelId)
+			// const res = fetch(`api.com?cityId=${cityId}`)
+			dispatch(updateCurrentHotel(hotel))
 		}
-	}, [dispatch, hotelId, servicesHotel])
+	}, [])
 
 	return (
 		<>
-			{stateCurrentHotel && (
+			{currentHotel && (
 				<Container>
 					<div>
 						<HeaderFeature
-							city={stateCurrentHotel.city}
-							photos={stateCurrentHotel.more.photos}
+							city={''}
+							photos={currentHotel.more.photos}
 						/>
 					</div>
 					<div>
@@ -45,7 +43,7 @@ export const HotelFeatures = () => {
 							<h2 className='title'>SERVICIOS MÁS POPULARES</h2>
 							<span className='line'></span>
 						</Title>
-						<MorePopularService />
+						<MorePopularService currentHotel={currentHotel} />
 					</div>
 					<div>
 						<Title>
@@ -53,7 +51,7 @@ export const HotelFeatures = () => {
 							<h2 className='title'>HABITACIONES DEL HOTEL</h2>
 							<span className='line'></span>
 						</Title>
-						<Bedrooms img={stateCurrentHotel.more.photos.photos2} />
+						<Bedrooms img={currentHotel.more.photos.photos2} />
 					</div>
 					<div>
 						<Title about='about'>

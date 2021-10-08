@@ -3,19 +3,8 @@ import { useSelector } from 'react-redux'
 import { InfoService } from './InfoService'
 import { ContainerCards } from './style'
 
-export const MorePopularService = () => {
-	const { servicesHotel } = useSelector((state) => state.homeReducer)
-
-	// if (servicesHotel.length === 0) {
-	// 	return (
-	// 		<div>
-	// 			<h1 style={{ backgroundColor: 'blue' }}>Dale atras, please</h1>
-	// 			<p>Estyo pasa por que los datos no son persistentes</p>
-	// 		</div>
-	// 	)
-	// }
-
-	const { services } = servicesHotel.more
+export const MorePopularService = ({ currentHotel }) => {
+	const { services } = currentHotel?.more
 
 	const [countServices, setCountServices] = useState(true)
 	const [handleWidth, setHandleWidth] = useState(window.innerWidth)

@@ -83,6 +83,7 @@
         },
         {
             "id": 2,
+            "idcity": 1,
             "idLocation": 1,
             "urlCode": "hotel-2",
             "name": "hotel 2",
@@ -124,6 +125,7 @@
         },
         {
             "id": 3,
+            "idcity": 2,
             "idLocation": 2,
             "urlCode": "hotel-3",
             "name": "hotel 3",
@@ -178,6 +180,7 @@
         },
         {
             "id": 4,
+            "idcity": 2,
             "idLocation": 2,
             "urlCode": "hotel-4",
             "name": "hotel 4",
@@ -239,6 +242,7 @@
         },
         {
             "id": 5,
+            "idcity": 3,
             "idLocation": 3,
             "urlCode": "hotel-5",
             "name": "hotel 5",
@@ -296,6 +300,7 @@
         },
         {
             "id": 6,
+            "idcity": 4,
             "idLocation": 3,
             "urlCode": "hotel-6",
             "name": "hotel 6",
@@ -363,6 +368,7 @@
         },
         {
             "id": 7,
+            "idcity": 4,
             "idLocation": 4,
             "urlCode": "hotel-7",
             "name": "hotel 7",
@@ -429,6 +435,7 @@
         },
         {
             "id": 8,
+            "idcity": 4,
             "idLocation": 4,
             "urlCode": "hotel-8",
             "name": "hotel 8",

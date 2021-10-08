@@ -8,9 +8,6 @@ import { ReactComponent as IconLocation } from '../../../images/ubicacion.svg'
 export const HeaderFeature = ({ city, photos }) => {
 	const { photos1 } = photos
 	const [screen, setScreen] = useState(window.innerWidth)
-	const { calification } = useSelector(
-		(state) => state.homeReducer.servicesHotel
-	)
 
 	useEffect(() => {
 		window.onresize = function () {
@@ -29,10 +26,11 @@ export const HeaderFeature = ({ city, photos }) => {
 						</div>
 						<p>{city}</p>
 					</div>
-					<div>
-						<Qualification stars={calification} />
-					</div>
+					<div>{/* <Qualification stars={calification} /> */}</div>
 				</div>
+				<a href='/' style={{ width: '20%', height: '100px' }}>
+					<img src='/hotels/reservas.svg' alt='icono-watsap' />
+				</a>
 			</HeaderCardStyled>
 			{screen > 850 ? (
 				<CardGrid>
