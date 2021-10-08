@@ -14,9 +14,9 @@ import {
 } from './styles'
 import React from 'react'
 import { Container } from 'components/Container'
-import waveOrange from '../../images/orangeWave.png'
-import iconFacebook from '../../images/iconFacebook.svg'
-import iconInstagram from '../../images/iconInstagram.svg'
+import waveOrange from 'images/orangeWave.png'
+import iconFacebook from 'images/iconFacebook.svg'
+import iconInstagram from 'images/iconInstagram.svg'
 
 export const Footer = ({ type = 'general' }) => {
 	return (
