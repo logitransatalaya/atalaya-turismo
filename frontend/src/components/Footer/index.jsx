@@ -9,7 +9,8 @@ import {
 	FooterOtherServices,
 	FooterWave,
 	FooterBoxIcons,
-	FooterContentIcons
+	FooterContentIcons,
+	FooterTours
 } from './styles'
 import React from 'react'
 import { Container } from 'components/Container'
@@ -17,166 +18,171 @@ import waveOrange from '../../images/orangeWave.png'
 import iconFacebook from '../../images/iconFacebook.svg'
 import iconInstagram from '../../images/iconInstagram.svg'
 
-export const Footer = () => {
+export const Footer = ({ type = 'general' }) => {
 	return (
 		<>
-			<FooterContainer>
-				<Container>
-					<FooterStyle>
-						<FooterWave>
-							<img src={waveOrange} alt='wave' />
-						</FooterWave>
-						<FooterContact>
-							<FooterTitle>CONTÁCTENOS</FooterTitle>
-							<li>
-								<img src='/footer/casa.svg' alt='' />
-								ATALAYA VIAJES Y TURISMO
-							</li>
-							<li>
-								<img src='/footer/chulito.svg' alt='' />
-								Registro Nacional de Turismo: <b>RNT 00000</b>
-							</li>
-							<li>
-								<img src='/footer/correo.svg' alt='' />
-								atalayaviajesturismo@gmail.com
-							</li>
-							<li>
-								<img src='/footer/telefono.svg' alt='' />
-								+57 314 555 4981 - +57 314 555 4761
-							</li>
-							<li>
-								<img src='/footer/ubicacion.svg' alt='' />
-								Cra. 49 #45a-35, Oficina 203 Bello, Antioquia
-							</li>
-						</FooterContact>
-						<FooterWe>
-							<FooterTitle>ACERCA DE NOSOTROS</FooterTitle>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Nuestra Historia
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Nuestros Valores
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Nuestras Sedes
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Políticas de privacidad
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Políticas de tratamiento de datos
-								</a>
-							</li>
-						</FooterWe>
-						<FooterOtherServices>
-							<FooterTitle>OTROS SERVICIOS</FooterTitle>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Logística Integral
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Transporte de Carga
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Transportes Especiales
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Desarrollo de Software
-								</a>
-							</li>
-							<li>
-								<a
-									href='https://www.google.com/?hl=es'
-									target='_blank'
-									rel='noreferrer'
-								>
-									Marketing y Publicidad
-								</a>
-							</li>
-						</FooterOtherServices>
-						<FooterRedes>
-							<b>Únase a nuestra comunidad</b>
-							<FooterContentIcons>
-								<FooterBoxIcons>
+			{type === 'general' && (
+				<FooterContainer>
+					<Container>
+						<FooterStyle>
+							<FooterWave>
+								<img src={waveOrange} alt='wave' />
+							</FooterWave>
+							<FooterContact>
+								<FooterTitle>CONTÁCTENOS</FooterTitle>
+								<li>
+									<img src='/footer/casa.svg' alt='' />
+									ATALAYA VIAJES Y TURISMO
+								</li>
+								<li>
+									<img src='/footer/chulito.svg' alt='' />
+									Registro Nacional de Turismo:{' '}
+									<b>RNT 00000</b>
+								</li>
+								<li>
+									<img src='/footer/correo.svg' alt='' />
+									atalayaviajesturismo@gmail.com
+								</li>
+								<li>
+									<img src='/footer/telefono.svg' alt='' />
+									+57 314 555 4981 - +57 314 555 4761
+								</li>
+								<li>
+									<img src='/footer/ubicacion.svg' alt='' />
+									Cra. 49 #45a-35, Oficina 203 Bello,
+									Antioquia
+								</li>
+							</FooterContact>
+							<FooterWe>
+								<FooterTitle>ACERCA DE NOSOTROS</FooterTitle>
+								<li>
 									<a
-										href='https://www.facebook.com/'
+										href='https://www.google.com/?hl=es'
 										target='_blank'
 										rel='noreferrer'
 									>
-										<img
-											src={iconInstagram}
-											alt='iconInstagram'
-										/>
+										Nuestra Historia
 									</a>
-								</FooterBoxIcons>
-								<FooterBoxIcons>
+								</li>
+								<li>
 									<a
-										href='https://www.instagram.com/?hl=es'
+										href='https://www.google.com/?hl=es'
 										target='_blank'
 										rel='noreferrer'
 									>
-										<img
-											src={iconFacebook}
-											alt='iconFacebook'
-										/>
+										Nuestros Valores
 									</a>
-								</FooterBoxIcons>
-							</FooterContentIcons>
-						</FooterRedes>
-					</FooterStyle>
-				</Container>
-			</FooterContainer>
+								</li>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Nuestras Sedes
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Políticas de privacidad
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Políticas de tratamiento de datos
+									</a>
+								</li>
+							</FooterWe>
+							<FooterOtherServices>
+								<FooterTitle>OTROS SERVICIOS</FooterTitle>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Logística Integral
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Transporte de Carga
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Transportes Especiales
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Desarrollo de Software
+									</a>
+								</li>
+								<li>
+									<a
+										href='https://www.google.com/?hl=es'
+										target='_blank'
+										rel='noreferrer'
+									>
+										Marketing y Publicidad
+									</a>
+								</li>
+							</FooterOtherServices>
+							<FooterRedes>
+								<b>Únase a nuestra comunidad</b>
+								<FooterContentIcons>
+									<FooterBoxIcons>
+										<a
+											href='https://www.facebook.com/'
+											target='_blank'
+											rel='noreferrer'
+										>
+											<img
+												src={iconInstagram}
+												alt='iconInstagram'
+											/>
+										</a>
+									</FooterBoxIcons>
+									<FooterBoxIcons>
+										<a
+											href='https://www.instagram.com/?hl=es'
+											target='_blank'
+											rel='noreferrer'
+										>
+											<img
+												src={iconFacebook}
+												alt='iconFacebook'
+											/>
+										</a>
+									</FooterBoxIcons>
+								</FooterContentIcons>
+							</FooterRedes>
+						</FooterStyle>
+					</Container>
+				</FooterContainer>
+			)}
+			{type === 'tours' && <ToursFooter />}
 			<FooterLey>
 				<p>
 					ATALAYA VIAJES Y TURISMO Rechaza la explotación, la
@@ -187,6 +193,19 @@ export const Footer = () => {
 					fauna y flora silvestre.
 				</p>
 			</FooterLey>
+		</>
+	)
+}
+
+const ToursFooter = ({ imageUrl }) => {
+	return (
+		<>
+			<FooterTours>
+				<img src={imageUrl} alt='' />
+				<FooterWave>
+					<img src={waveOrange} alt='wave' />
+				</FooterWave>
+			</FooterTours>
 		</>
 	)
 }

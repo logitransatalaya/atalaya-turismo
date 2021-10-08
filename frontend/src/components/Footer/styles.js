@@ -4,13 +4,11 @@ export const FooterContainer = styled.div`
 	background-color: #10216f;
 	position: relative;
 `
-
 export const FooterStyle = styled.footer`
 	background-color: #10216f;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 `
-
 export const FooterWave = styled.div`
 	position: absolute;
 	bottom: -5px;
@@ -20,7 +18,6 @@ export const FooterWave = styled.div`
 		width: 100%;
 	}
 `
-
 export const FooterRedes = styled.div`
 	grid-column: 2/4;
 	display: flex;
@@ -38,11 +35,9 @@ export const FooterRedes = styled.div`
 		justify-content: left;
 	}
 `
-
 export const FooterContentIcons = styled.div`
 	display: flex;
 `
-
 export const FooterBoxIcons = styled.div`
 	width: 50px;
 	height: 50px;
@@ -57,7 +52,6 @@ export const FooterBoxIcons = styled.div`
 		}
 	}
 `
-
 export const FooterLey = styled.div`
 	text-align: center;
 	color: #6a6a6a;
@@ -137,4 +131,10 @@ export const FooterOtherServices = styled.ul`
 		grid-column: 1/-1;
 		justify-self: left;
 	}
+`
+
+export const FooterTours = styled.div`
+	background-color: red;
+	height: 10rem;
+	position: relative;
 `

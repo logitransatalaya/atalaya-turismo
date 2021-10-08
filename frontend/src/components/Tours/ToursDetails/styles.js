@@ -79,7 +79,6 @@ export const ToursDetailsStyled = styled.div`
 
 	.characteristics-container {
 		font-size: 1.5rem;
-		text-align: justify;
 		padding: 0 2rem;
 		margin-bottom: 2rem;
 
@@ -126,6 +125,8 @@ export const ToursDetailsStyled = styled.div`
 		}
 
 		@media (min-width: 950px) {
+			text-align: justify;
+
 			h5 {
 				width: auto;
 				padding-left: 1rem;
