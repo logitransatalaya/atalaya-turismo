@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { Qualification } from '../Qualification'
 import React, { useEffect, useState } from 'react'
 import { HeaderCardStyled, CardGrid } from './style'
-import { ReactComponent as IconLocation } from '../../../images/ubicacion.svg'
+import { ReactComponent as IconLocation } from 'images/ubicacion.svg'
 
 export const HeaderFeature = ({ city, photos }) => {
 	const { photos1 } = photos

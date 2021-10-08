@@ -4,11 +4,11 @@ import HotelInfo from './HotelInfo'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { HeaderFeature } from './HeaderFeatur'
-import { hotels } from '../../json/hotels.json'
+import { hotels } from 'json/hotels.json'
 import { Container } from 'components/Container'
 import { useSelector, useDispatch } from 'react-redux'
-import { MorePopularService } from 'components/MorePopularService'
-import { updateCurrentHotel } from '../../state/actions/hotelsActions'
+import { MorePopularService } from 'components/Hotels/HotelFeatures/MorePopularService'
+import { updateCurrentHotel } from '../../../state/actions/hotelsActions'
 
 export const HotelFeatures = () => {
 	const dispatch = useDispatch()

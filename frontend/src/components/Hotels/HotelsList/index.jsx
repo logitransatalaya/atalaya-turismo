@@ -6,10 +6,10 @@ import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateHotelsList } from 'state/actions/hotelsActions'
-import { Qualification } from 'components/HotelFeatures/Qualification'
+import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
 import { Button } from 'components/GlobalComponents /Button'
 
-export const City = () => {
+export const HotelsList = () => {
 	const { locid } = useParams()
 	const dispatch = useDispatch()
 	const { hotelsList } = useSelector((state) => state.hotelsReducer)

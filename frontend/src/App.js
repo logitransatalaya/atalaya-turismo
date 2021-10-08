@@ -1,13 +1,13 @@
-import { City } from 'components/City'
-import FloatingButtons from 'components/FloatingButtons'
-import { HotelFeatures } from 'components/HotelFeatures'
+import { HotelsList } from 'components/Hotels/HotelsList'
+import FloatingButtons from 'components/GlobalComponents /FloatingButtons'
+import { HotelFeatures } from 'components/Hotels/HotelFeatures'
 import React from 'react'
 import { Home } from './components/Home'
 import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
 import { Footer } from './components/GlobalComponents /Footer'
 import { Hotels } from './components/Hotels'
-import { NavBar } from './components/NavBar'
+import { NavBar } from './components/GlobalComponents /NavBar'
 import { Offers } from './components/Offers'
 import { Transport } from './components/Transport'
 import { PaymentMethods } from './components/PaymentMethods'
@@ -31,7 +31,7 @@ export default function App() {
 						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid'>
-						<City />
+						<HotelsList />
 						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid/:hotelId'>
