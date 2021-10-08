@@ -23,36 +23,45 @@ export default function App() {
 				<Switch>
 					<Route exact path='/'>
 						<Home />
+						<Footer />
 					</Route>
 					<Route exact path='/hoteles'>
 						<Hotels />
+						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid'>
 						<City />
+						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid/:hotelId'>
 						<HotelFeatures />
+						<Footer />
 					</Route>
 					<Route exact path='/transporte'>
 						<Transport />
+						<Footer />
 					</Route>
 					<Route exact path='/planes'>
 						<Plans />
+						<Footer />
 					</Route>
 					<Route exact path='/tours'>
 						<Tours />
+						<Footer />
 					</Route>
 					<Route exact path='/tours/:urlCode'>
 						<ToursDetails />
+						<Footer />
 					</Route>
 					<Route exact path='/ofertas'>
 						<Offers />
+						<Footer />
 					</Route>
 					<Route exact path='/medios-de-pago'>
 						<PaymentMethods />
+						<Footer />
 					</Route>
 				</Switch>
-				<Footer />
 			</div>
 		</Router>
 	)

@@ -1,14 +1,20 @@
 import React from 'react'
+import { ToursSkeletonStyled } from './styles'
 import ContentLoader from 'react-content-loader'
 
 export const ToursSkeleton = () => {
 	return (
-		<div style={{ margin: '0 auto', width: '70%' }}>
-			<ToursTitle />
-			<ToursDescription />
-			<ToursLists />
-			<ToursUnique />
-		</div>
+		<ToursSkeletonStyled>
+			<div className='desktop'>
+				<ToursTitle />
+				<ToursDescription />
+				<ToursLists />
+				<ToursUnique />
+			</div>
+			<div className='responsive'>
+				<ToursResponsive />
+			</div>
+		</ToursSkeletonStyled>
 	)
 }
 
@@ -101,3 +107,36 @@ const ToursUnique = (props) => (
 		<rect x='30' y='45' rx='3' ry='3' width='50%' height='10' />
 	</ContentLoader>
 )
+
+const ToursResponsive = (props) => {
+	return (
+		<ContentLoader
+			viewBox='0 0 100 650'
+			height='100%'
+			width='80%'
+			{...props}
+		>
+			<rect x='0' y='1%' rx='16' ry='0' width='35' height='15' />
+			<rect x='85%' y='1%' rx='1' ry='1' width='15' height='10' />
+			<rect x='0' y='3%' rx='1' ry='1' width='100%' height='1' />
+			<rect x='0' y='4%' rx='1' ry='1' width='100%' height='60' />
+			{/* texto */}
+			<rect x='0' y='15%' rx='1' ry='1' width='100%' height='3' />
+			<rect x='0' y='16%' rx='1' ry='1' width='100%' height='3' />
+			<rect x='0' y='17%' rx='1' ry='1' width='100%' height='3' />
+			<rect x='0' y='18%' rx='1' ry='1' width='100%' height='3' />
+			<rect x='0' y='19%' rx='1' ry='1' width='100%' height='3' />
+			{/*  */}
+			<rect x='0' y='21%' rx='1' ry='1' width='30%' height='8' />
+			{/*  */}
+			<rect x='0' y='24%' rx='1' ry='1' width='8' height='8' />
+			<rect x='10%' y='24.35%' rx='1' ry='1' width='90%' height='3' />
+			<rect x='0' y='26%' rx='1' ry='1' width='8' height='8' />
+			<rect x='10%' y='26.35%' rx='1' ry='1' width='90%' height='3' />
+			<rect x='0' y='28%' rx='1' ry='1' width='8' height='8' />
+			<rect x='10%' y='28.35%' rx='1' ry='1' width='90%' height='3' />
+			<rect x='0' y='30%' rx='1' ry='1' width='8' height='8' />
+			<rect x='10%' y='30.35%' rx='1' ry='1' width='90%' height='3' />
+		</ContentLoader>
+	)
+}
