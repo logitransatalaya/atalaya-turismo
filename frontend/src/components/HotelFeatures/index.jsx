@@ -8,7 +8,7 @@ import { MorePopularService } from 'components/MorePopularService'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { hotels } from '../../json/hotels.json'
-import { getServicesHotelReducer } from '../../state/actions/hotelsActions'
+import { getServicesHotel } from '../../state/actions/hotelsActions'
 
 export const HotelFeatures = () => {
 	const { servicesHotel } = useSelector((state) => state.homeReducer)
@@ -24,7 +24,7 @@ export const HotelFeatures = () => {
 			const [currentHotel] = hotels.filter(
 				(hotel) => hotel.urlCode === hotelId
 			)
-			dispatch(getServicesHotelReducer(currentHotel))
+			dispatch(getServicesHotel(currentHotel))
 			setStateCurrentHotel(currentHotel)
 		}
 	}, [dispatch, hotelId, servicesHotel])
