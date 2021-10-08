@@ -4,38 +4,22 @@ import HotelInfo from './HotelInfo'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { HeaderFeature } from './HeaderFeatur'
-import { hotels } from 'json/hotels.json'
 import { Container } from 'components/Container'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { MorePopularService } from 'components/Hotels/HotelFeatures/MorePopularService'
-import { updateCurrentHotel } from '../../../state/actions/hotelsActions'
+import { useApi } from 'hooks/useApi'
 
 export const HotelFeatures = () => {
-	const dispatch = useDispatch()
+	const { getCurrentHotel } = useApi()
 	const { hotelId, locid } = useParams()
 	const { currentHotel, hotelsList } = useSelector(
 		(state) => state.hotelsReducer
 	)
 
-	useEffect(() => {
-		if (!currentHotel) {
-			const cityId = parseInt(locid)
-			const [hotel] = hotels
-				.filter((hotel) => hotel.idcity === cityId)
-				.filter((hotel) => hotel.urlCode === hotelId)
-			// const res = fetch(`api.com?cityId=${cityId}`)
-			dispatch(updateCurrentHotel(hotel))
-		} else {
-			const currentHotelCityId = currentHotel.urlCode
-
-			if (hotelId !== currentHotelCityId) {
-				const [hotel] = hotelsList.filter(
-					(hotel) => hotel.urlCode === hotelId
-				)
-				dispatch(updateCurrentHotel(hotel))
-			}
-		}
-	}, [hotelsList, currentHotel, dispatch, hotelId, locid])
+	useEffect(
+		() => getCurrentHotel(locid, hotelId, currentHotel, hotelsList),
+		[getCurrentHotel, hotelsList, currentHotel, hotelId, locid]
+	)
 
 	return (
 		<>
