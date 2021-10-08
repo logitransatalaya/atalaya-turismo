@@ -1,29 +1,29 @@
 import { types } from '../actions/hotelsActions'
 
 export const initial_state = {
-	locations: null,
-	hotelsCity: null,
-	servicesHotel: null
+	cityList: null,
+	hotelsList: null,
+	currentHotel: null
 }
 
-export const homeReducer = (state = initial_state, action) => {
+export const hotelsReducer = (state = initial_state, action) => {
 	switch (action.type) {
-		case types.GET_HOTELS:
+		case types.UPDATE_HOTELS_LIST:
 			return {
 				...state,
-				hotelsCity: action.payload
+				hotelsList: action.payload
 			}
 
-		case types.GET_ALL_HOTELS:
+		case types.UPDATE_CITY_LIST:
 			return {
 				...state,
-				locations: action.payload
+				cityList: action.payload
 			}
 
-		case types.GET_SERVICES_HOTEL:
+		case types.UPDATE_CURRENT_HOTEL:
 			return {
 				...state,
-				servicesHotel: action.payload
+				currentHotel: action.payload
 			}
 
 		default:
