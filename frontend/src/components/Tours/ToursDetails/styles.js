@@ -100,7 +100,7 @@ export const ToursDetailsStyled = styled.div`
 
 			p {
 				display: flex;
-				align-items: flex-start;
+				align-items: center;
 
 				img {
 					display: inline-block;
