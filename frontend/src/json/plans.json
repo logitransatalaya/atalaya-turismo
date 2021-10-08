@@ -2,43 +2,340 @@
 	"plans": [
 		{
 			"id": 1,
+			"urlCode": "san-andres",
 			"name": "San andres",
-			"url": "https://media.staticontent.com/media/pictures/ecc404e8-9a99-46b0-a56a-ead992b5166e"
+			"url": "https://media.staticontent.com/media/pictures/ecc404e8-9a99-46b0-a56a-ead992b5166e",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://mejoreszonas.com/wp-content/uploads/2019/05/Las-mejores-zonas-donde-alojarse-en-la-Isla-de-San-Andres-Colombia.jpg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://hotelesms.com/wp-content/uploads/2017/07/san-andres-2.jpg"
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://media-cdn.tripadvisor.com/media/photo-s/16/24/88/76/decameron-aquarium.jpg"
+				}
+			],
+			"desc": "San Andrés es una isla colombiana del mar Caribe, frente a la costa de Nicaragua. Es conocida por los arrecifes de coral y la música reggae. La encendida playa Spratt Bight tiene un paseo costero bordeado de palmeras. En el litoral está el Parque Johnny Cay, una pequeña isla con mangles de cocos y playas de arena blanca. ",
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		},
 		{
 			"id": 2,
+			"urlCode": "cartagena",
 			"name": "Cartagena",
-			"url": "https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/cartagena/ciudad-cartagena-800.jpg"
+			"url": "https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/cartagena/ciudad-cartagena-800.jpg",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://www.viajaporlibre.com/wp-content/uploads/2020/02/Cartagena-de-indias-770x514.jpg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://www.hola.com/imagenes/viajes/20190408140250/cartagena-indias-colombia-ciudad-colonial/0-666-838/cartagena-de-indias-casco-antiguo-t.jpg"
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://elviajerofeliz.com/wp-content/uploads/2016/04/portada-3.jpg"
+				}
+			],
+			"desc": "Cartagena es una ciudad portuaria en la costa caribeña de Colombia. Junto al mar, se encuentra la Ciudad Vieja amurallada, que se fundó en el siglo XVI, con plazas, calles de adoquines y edificios coloniales coloridos. Con un clima tropical, la ciudad también es un destino popular por sus playas.",
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		},
 		{
 			"id": 3,
+			"urlCode": "desierto-tatacoa",
 			"name": "Desierto de la tatacoa",
-			"url": "https://www.otbcali.com/wp-content/uploads/2019/10/huila3.png"
+			"url": "https://www.otbcali.com/wp-content/uploads/2019/10/huila3.png",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://encolombia.com/wp-content/uploads/2020/01/Desierto-de-la-Tatacoa.jpg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://www.eltiempo.com/files/image_640_428/uploads/2018/10/03/5bb522c3aa254.jpeg"
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://www.triviantes.com/wp-content/uploads/2021/05/Piscina-en-el-Desierto-de-la-Tatacoa.jpg"
+				}
+			],
+			"desc": "El Desierto de la Tatacoa es la segunda zona árida más extensa de Colombia después de la Península de La Guajira. Es uno de los escenarios naturales más atractivos de Colombia, de tierra de color ocre y gris con pincelazos del verde de los cactus.  ",
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		},
 		{
 			"id": 4,
+			"urlCode": "santa-marta",
 			"name": "Santa marta",
-			"url": "https://www.santamarta.gov.co/sites/default/files/santa_marta_1_0.jpg"
+			"url": "https://www.santamarta.gov.co/sites/default/files/santa_marta_1_0.jpg",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://codigoprensa.com/wp-content/uploads/2020/08/reapertura-hoteles-2.jpeg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://exp.cdn-hotels.com/hotels/37000000/36290000/36287900/36287893/cdfbdf4a_y.jpg?impolicy=fcrop&w=500&h=333&q=high"
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://content.r9cdn.net/himg/7e/bf/99/ice-142144622-61812339_3XL-138815.jpg"
+				}
+			],
+			"desc": "Santa Marta es una ciudad ubicada en el mar Caribe, en el departamento de Magdalena en el norte de Colombia. Es un puerto ajetreado que también fue el primer asentamiento español en Colombia. ",
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		},
 		{
 			"id": 5,
+			"urlCode": "amazonas",
 			"name": "Amazonas",
-			"url": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/2020/11/Amazonas.jpg"
+			"url": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/2020/11/Amazonas.jpg",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://www.elpais.com.co/files/article_main_small/uploads/2018/10/03/5bb4dbb399458.jpeg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://www.semana.com/resizer/PP-MUdEn47NsBnvYKyFlj3dsUmk=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/F3RMCVAP7BBAVFFDSNH4AN5FDE.jpg"
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://www.atrapalo.com.co/hoteles/picture/l/2487/9/4/399713641.jpg"
+				}
+			],
+			"desc": "Amazonas es uno de los treinta y dos departamentos que, junto con Bogotá, Distrito Capital, forman la República de Colombia. Su capital es Leticia. Está ubicado en el extremo sur del país, en gran parte al sur de la línea ecuatorial, en la región Amazonia. ",
+
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		},
 		{
 			"id": 6,
+			"urlCode": "eje-cafetero",
 			"name": "Eje cafetero",
-			"url": "https://expotur-eco.com/wp-content/uploads/2019/11/eje-cafetero-colombia.-foto-tomada-de-viajes-luxury.jpg"
+			"url": "https://expotur-eco.com/wp-content/uploads/2019/11/eje-cafetero-colombia.-foto-tomada-de-viajes-luxury.jpg",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://www.turismoquindio.com/wp-content/uploads/2017/07/hotel-las-camelias-quindio-113-e1595777723427.jpg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://www.turismoquindio.com/wp-content/uploads/2017/07/decameronpanaca01.jpg"
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://www.eltiempo.com/files/image_640_428/uploads/2019/12/27/5e0685b7c9965.jpeg"
+				}
+			],
+			"desc": "El eje cafetero es una región geográfica, cultural, económica y ecológica de Colombia, ubicada en los departamentos de Caldas, Risaralda y Quindío, además de las regiones del noroccidente de Tolima, el suroeste de Antioquia, el norte y oriente del Valle del Cauca  y las ciudades capitales de los cuatro primeros departamentos mencionados (Manizales, Pereira, Armenia e Ibagué, respectivamente). Fue una notable productora de caucho, a comienzos del siglo XX, pero luego se dedicó al café.",
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		},
 		{
 			"id": 7,
+			"urlCode": "la guajira",
 			"name": "La guajira",
-			"url": "https://miviaje.com/wp-content/uploads/2019/05/dunas-taroa-guajira.jpg"
+			"url": "https://miviaje.com/wp-content/uploads/2019/05/dunas-taroa-guajira.jpg",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://media-cdn.tripadvisor.com/media/photo-s/1c/f8/ea/81/hotel-on-vacation-wayira.jpg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://elturismoencolombia.com/wp-content/uploads/2018/10/hoteles_guajira_hotel_colombia_turismo.jpg"
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://hotelwayaguajira.com/wp-content/uploads/2020/10/Piscina-OCo-Hotel-Waya-GuajiraOCoDSC_1063-1.png"
+				}
+			],
+			"desc": "La Guajira es un departamento colombiano en el mar Caribe, que limita con Venezuela y abarca la mayor parte de la península de La Guajira. Se distingue por sus paisajes desérticos, las dunas de arena gigantes y las haciendas y las villas pesqueras remotas del pueblo indígena wayuu.",
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		},
 		{
 			"id": 8,
+			"urlCode": "coveñas",
 			"name": "Coveñas",
-			"url": "https://elgolfodemorrosquillo.com/wp-content/uploads/2020/02/como-llegar-a-covenas.jpg"
+			"url": "https://elgolfodemorrosquillo.com/wp-content/uploads/2020/02/como-llegar-a-covenas.jpg",
+			"photos": [
+				{
+					"name": "photo1",
+					"urlCode": "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/19/21/6a/hotel-green-luxury.jpg"
+				},
+				{
+					"name": "photo2",
+					"urlCode": "https://q-xx.bstatic.com/xdata/images/hotel/840x460/97273644.jpg?k=6b31da79ac5eac1e2ee1450dec0e66ed275589f62e9af783d8a15b2fc5d564bc&o="
+				},
+				{
+					"name": "photo3",
+					"urlCode": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/23/14/2314528_v1.jpeg"
+				}
+			],
+			"desc": "Coveñas es una ciudad turística del Golfo de Morrosquillo en el norte de Colombia. Es conocida por sus largas playas con aguas tranquilas y poco profundas. La playa Primera Ensenada es un centro de deportes acuáticos.  ",
+			"includes": [
+				{ "des": "Tiquetes aéreos" },
+				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
+				{ "des": "Tarjeta de asistencia médica" },
+				{ "des": "Alimentación en plan elegido" },
+				{ "des": "Snack de media tarde (plan full)" },
+				{
+					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
+				},
+				{ "des": "alojamiento 4 noches y 5 dias" },
+				{ "des": "Tarjeta de ingreso a la isla" },
+				{ "des": "TourJhony Cay" },
+				{ "des": "Tour vuelta a la isla" },
+				{ "des": "Paseo en yate por la bahía" },
+				{ "des": "visita al acuario" }
+			],
+			"noInclude": [
+				{ "des": "no incluye", "iconName": "" },
+				{ "des": "no incluye", "iconName": "" }
+			],
+			"notes": ["nota1", "nota2", "nota3", "nota4"]
 		}
 	]
 }

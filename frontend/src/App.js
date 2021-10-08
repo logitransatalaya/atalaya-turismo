@@ -13,6 +13,7 @@ import { Transport } from './components/Transport'
 import { PaymentMethods } from './components/PaymentMethods'
 import { ToursDetails } from 'components/Tours/ToursDetails'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { DetailsPlan } from 'components/Plans/DetailsPlan'
 
 export default function App() {
 	return (
@@ -43,6 +44,10 @@ export default function App() {
 					</Route>
 					<Route exact path='/planes'>
 						<Plans />
+						<Footer />
+					</Route>
+					<Route exact path='/planes/:urlCode'>
+						<DetailsPlan />
 						<Footer />
 					</Route>
 					<Route exact path='/tours'>
