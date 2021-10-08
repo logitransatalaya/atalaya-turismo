@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
 import { HotelsContainer } from './styles'
+import { cities } from '../../json/cities.json'
 import { Container } from 'components/Container'
 import { useSelector, useDispatch } from 'react-redux'
 import { updatecityList } from '../../state/actions/hotelsActions'
-import { cities } from '../../json/cities.json'
 
 export const Hotels = () => {
 	const dispatch = useDispatch()
 	const { cityList } = useSelector((state) => state.hotelsReducer)
 
 	useEffect(() => {
-		if (!cityList) {
-			dispatch(updatecityList(cities))
-		}
+		if (!cityList) dispatch(updatecityList(cities))
 	}, [cityList, dispatch])
 
 	return (

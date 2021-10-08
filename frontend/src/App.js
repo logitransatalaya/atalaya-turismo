@@ -1,18 +1,19 @@
-import { City } from 'components/City'
-import FloatingButtons from 'components/FloatingButtons'
-import { HotelFeatures } from 'components/HotelFeatures'
 import React from 'react'
 import { Home } from './components/Home'
 import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
-import { Footer } from './components/Footer'
 import { Hotels } from './components/Hotels'
-import { NavBar } from './components/NavBar'
 import { Offers } from './components/Offers'
 import { Transport } from './components/Transport'
+import { HotelsList } from 'components/Hotels/HotelsList'
+import { DetailsPlan } from 'components/Plans/DetailsPlan'
 import { PaymentMethods } from './components/PaymentMethods'
 import { ToursDetails } from 'components/Tours/ToursDetails'
+import { Footer } from './components/GlobalComponents /Footer'
+import { NavBar } from './components/GlobalComponents /NavBar'
+import { HotelFeatures } from 'components/Hotels/HotelFeatures'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import FloatingButtons from 'components/GlobalComponents /FloatingButtons'
 
 export default function App() {
 	return (
@@ -30,7 +31,7 @@ export default function App() {
 						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid'>
-						<City />
+						<HotelsList />
 						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid/:hotelId'>
@@ -43,6 +44,10 @@ export default function App() {
 					</Route>
 					<Route exact path='/planes'>
 						<Plans />
+						<Footer />
+					</Route>
+					<Route exact path='/planes/:urlCode'>
+						<DetailsPlan />
 						<Footer />
 					</Route>
 					<Route exact path='/tours'>

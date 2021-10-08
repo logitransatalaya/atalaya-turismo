@@ -14,11 +14,11 @@ import {
 } from './styles'
 import React from 'react'
 import { Container } from 'components/Container'
-import waveOrange from '../../images/orangeWave.png'
-import iconFacebook from '../../images/iconFacebook.svg'
-import iconInstagram from '../../images/iconInstagram.svg'
+import waveOrange from 'images/orangeWave.png'
+import iconFacebook from 'images/iconFacebook.svg'
+import iconInstagram from 'images/iconInstagram.svg'
 
-export const Footer = ({ type = 'general' }) => {
+export const Footer = ({ type = 'general', imageUrl }) => {
 	return (
 		<>
 			{type === 'general' && (
@@ -182,7 +182,7 @@ export const Footer = ({ type = 'general' }) => {
 					</Container>
 				</FooterContainer>
 			)}
-			{type === 'tours' && <ToursFooter />}
+			{type === 'tours' && <ToursFooter imageUrl={imageUrl} />}
 			<FooterLey>
 				<p>
 					ATALAYA VIAJES Y TURISMO Rechaza la explotación, la
@@ -201,7 +201,9 @@ const ToursFooter = ({ imageUrl }) => {
 	return (
 		<>
 			<FooterTours>
-				<img src={imageUrl} alt='' />
+				<picture>
+					<img src={imageUrl} alt='' />
+				</picture>
 				<FooterWave>
 					<img src={waveOrange} alt='wave' />
 				</FooterWave>
