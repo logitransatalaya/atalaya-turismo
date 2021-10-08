@@ -25,18 +25,25 @@ const BtnContact = ({ icon, title, currentRoute }) => {
 	return (
 		<Button>
 			{title === 'Whatsapp' ? (
-				<a href='#' className='acontainer'>
+				<a
+					href='https://www.google.com/?hl=es'
+					target='_blank'
+					rel='noreferrer'
+					className='acontainer'
+				>
 					<img src={icon} alt={title} className='icons' />
 
-					<span
-						className={handleDisappear().animationwsp}
-						showToolTip
-					>
+					<span className={handleDisappear().animationwsp}>
 						Contactanos por Whatsapp
 					</span>
 				</a>
 			) : (
-				<a href='#' className='acontainer'>
+				<a
+					href='https://www.google.com/?hl=es'
+					target='_blank'
+					rel='noreferrer'
+					className='acontainer'
+				>
 					<img src={icon} alt={title} className='icons' />
 
 					<span className={handleDisappear().animationMail}>
