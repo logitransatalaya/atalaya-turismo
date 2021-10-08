@@ -14,19 +14,13 @@ export const homeReducer = (state = initial_state, action) => {
 				hotelsCity: action.payload
 			}
 
-		case types.GET_SERVICES_HOTEL:
-			return {
-				...state,
-				servicesHotel: action.payload
-			}
-
 		case types.GET_ALL_HOTELS:
 			return {
 				...state,
 				locations: action.payload
 			}
 
-		case types.GET_SERVICES_HOTEL_HOTEL:
+		case types.GET_SERVICES_HOTEL:
 			return {
 				...state,
 				servicesHotel: action.payload

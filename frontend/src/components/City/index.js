@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CityContainer } from './styles'
-import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { Button } from 'components/Button'
 import { Container } from 'components/Container'
-import { getServicesHotel } from '../../state/actions/hotelsActions'
 import { Qualification } from 'components/HotelFeatures/Qualification'
 import { cities } from '../../json/cities.json'
 import { useParams } from 'react-router-dom'
 
 export const City = () => {
 	const { locid } = useParams()
-	const dispatch = useDispatch()
 	const { hotelsCity } = useSelector((state) => state.homeReducer)
 	const [hotelsList, setHotelsList] = useState(null)
 
@@ -26,15 +23,6 @@ export const City = () => {
 			setHotelsList(currentHotel)
 		}
 	}, [hotelsCity, locid])
-
-	const handleButton = (data) => {
-		const obj = {
-			more: data.more,
-			calification: data.calification,
-			city: hotelsList.title
-		}
-		dispatch(getServicesHotel(obj))
-	}
 
 	return (
 		hotelsList && (
@@ -78,7 +66,6 @@ export const City = () => {
 									</p>
 									<Link
 										to={`${hotelsList.title}/${hotel.urlCode}`}
-										onClick={() => handleButton(hotel)}
 									>
 										<Button
 											text={'Ver más'}
