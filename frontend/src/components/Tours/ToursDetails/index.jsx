@@ -51,7 +51,10 @@ export const ToursDetails = () => {
 						<div>
 							{tour.characteristics.column1.map((text, i) => (
 								<p key={i}>
-									<img src='/footer/casa.svg' alt='' />
+									<img
+										src={`/tours/column1-${i + 1}.svg`}
+										alt=''
+									/>
 									{text}
 								</p>
 							))}
@@ -59,14 +62,18 @@ export const ToursDetails = () => {
 						<div>
 							{tour.characteristics.column2.map((text, i) => (
 								<p key={i}>
-									<img src='/footer/casa.svg' alt='' />
+									<img
+										src={`/tours/column2-${i + 1}.svg`}
+										alt=''
+									/>
+
 									{text}
 								</p>
 							))}
 						</div>
 					</div>
 					<p className='characteristics-specialItem'>
-						<img src='/footer/casa.svg' alt='' />
+						<img src='/tours/icono-mapa.svg' alt='' />
 						{tour.characteristics.unique}
 					</p>
 				</div>
