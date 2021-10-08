@@ -21,6 +21,7 @@ export const BenefitsSectionStyled = styled.div`
 		width: 100%;
 
 		img {
+			height: 100%;
 			width: 100%;
 		}
 	}
