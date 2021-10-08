@@ -1,28 +1,35 @@
-import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
 import { CityContainer } from './styles'
-import { useDispatch, useSelector } from 'react-redux'
-import { Button } from 'components/GlobalComponents /Button'
-import { Container } from 'components/Container'
-import { Qualification } from 'components/HotelFeatures/Qualification'
-import { useParams } from 'react-router-dom'
-import { updateHotelsList } from 'state/actions/hotelsActions'
 import { hotels } from 'json/hotels.json'
+import { Button } from 'components/Button'
+import { useParams } from 'react-router-dom'
+import { Container } from 'components/Container'
+import { useDispatch, useSelector } from 'react-redux'
+import { updateHotelsList } from 'state/actions/hotelsActions'
+import { Qualification } from 'components/HotelFeatures/Qualification'
 
 export const City = () => {
 	const { locid } = useParams()
 	const dispatch = useDispatch()
-
 	const { hotelsList } = useSelector((state) => state.hotelsReducer)
 
 	useEffect(() => {
+		const cityId = parseInt(locid)
+
 		if (!hotelsList) {
-			const cityId = parseInt(locid)
 			const res = hotels.filter((hotel) => hotel.idcity === cityId)
-			// const res = fetch(`api.com?cityId=${cityId}`)
 			dispatch(updateHotelsList(res))
+			// const res = fetch(`api.com?cityId=${cityId}`)
+		} else {
+			const currentHotelsListCityId = hotelsList[0].idcity
+
+			if (cityId !== currentHotelsListCityId) {
+				const res = hotels.filter((hotel) => hotel.idcity === cityId)
+				dispatch(updateHotelsList(res))
+			}
 		}
-	}, [])
+	}, [dispatch, hotelsList, locid])
 
 	return (
 		hotelsList && (

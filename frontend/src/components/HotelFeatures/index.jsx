@@ -11,9 +11,11 @@ import { MorePopularService } from 'components/MorePopularService'
 import { updateCurrentHotel } from '../../state/actions/hotelsActions'
 
 export const HotelFeatures = () => {
-	const { hotelId, locid } = useParams()
-	const { currentHotel } = useSelector((state) => state.hotelsReducer)
 	const dispatch = useDispatch()
+	const { hotelId, locid } = useParams()
+	const { currentHotel, hotelsList } = useSelector(
+		(state) => state.hotelsReducer
+	)
 
 	useEffect(() => {
 		if (!currentHotel) {
@@ -23,8 +25,17 @@ export const HotelFeatures = () => {
 				.filter((hotel) => hotel.urlCode === hotelId)
 			// const res = fetch(`api.com?cityId=${cityId}`)
 			dispatch(updateCurrentHotel(hotel))
+		} else {
+			const currentHotelCityId = currentHotel.urlCode
+
+			if (hotelId !== currentHotelCityId) {
+				const [hotel] = hotelsList.filter(
+					(hotel) => hotel.urlCode === hotelId
+				)
+				dispatch(updateCurrentHotel(hotel))
+			}
 		}
-	}, [])
+	}, [hotelsList, currentHotel, dispatch, hotelId, locid])
 
 	return (
 		<>
