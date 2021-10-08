@@ -1,50 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CityContainer } from './styles'
-import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { Button } from 'components/Button'
 import { Container } from 'components/Container'
-import { getServicesHotel } from '../../state/actions/hotelsActions'
 import { Qualification } from 'components/HotelFeatures/Qualification'
+import { cities } from '../../json/cities.json'
+import { useParams } from 'react-router-dom'
 
 export const City = () => {
+	const { locid } = useParams()
 	const { hotelsCity } = useSelector((state) => state.homeReducer)
-	const dispatch = useDispatch()
+	const [hotelsList, setHotelsList] = useState(null)
 
-	if (!hotelsCity[0]) {
-		return (
-			<Container>
-				<h1 style={{ backgroundColor: 'red' }}>Recarga para atras</h1>
-				<p>
-					Esto pasa porque los datos no son persistentes, cuando se
-					conecte a la base de datos esto no va a pasar
-				</p>
-			</Container>
-		)
-	}
-
-	const { hotels, title } = hotelsCity[0]
-
-	const handleButton = (data) => {
-		const obj = {
-			more: data.more,
-			calification: data.calification,
-			city: title
+	useEffect(() => {
+		if (hotelsCity) {
+			setHotelsList(hotelsCity)
+		} else {
+			const [currentHotel] = cities.filter(
+				(city) => city.urlCode === locid
+			)
+			setHotelsList(currentHotel)
 		}
-		dispatch(getServicesHotel(obj))
-	}
+	}, [hotelsCity, locid])
 
 	return (
-		<Container>
-			<h2>
-				<span style={{ color: '#10216f', textTransform: 'uppercase' }}>
-					{title}
-				</span>
-			</h2>
-			<CityContainer>
-				{hotels &&
-					hotels.map((hotel, i) => (
+		hotelsList && (
+			<Container>
+				<h2>
+					<span
+						style={{ color: '#10216f', textTransform: 'uppercase' }}
+					>
+						{hotelsList.title}
+					</span>
+				</h2>
+				<CityContainer>
+					{hotelsList.hotels?.map((hotel, i) => (
 						<div className='cityCard' key={i}>
 							<div className='cityBoxImg'>
 								<img src={hotel.urlImg} alt={hotel.name} />
@@ -74,8 +65,7 @@ export const City = () => {
 										</small>
 									</p>
 									<Link
-										to={`${title}/${hotel.id}`}
-										onClick={() => handleButton(hotel)}
+										to={`${hotelsList.title}/${hotel.urlCode}`}
 									>
 										<Button
 											text={'Ver más'}
@@ -88,7 +78,8 @@ export const City = () => {
 							</div>
 						</div>
 					))}
-			</CityContainer>
-		</Container>
+				</CityContainer>
+			</Container>
+		)
 	)
 }

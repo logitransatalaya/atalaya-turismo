@@ -21,8 +21,6 @@ export const CardStyle = styled.div`
 	.offersCard-imgContainer {
 		height: 12rem;
 		width: 100%;
-		background-color: red;
-
 		img {
 			width: 100%;
 			height: 100%;
