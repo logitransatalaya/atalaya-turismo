@@ -6,7 +6,7 @@ import { Benefits } from './BenefitsSection'
 import SliderComponent from './Slider/index.jsx'
 import { HomeOffersFlash } from './HomeOffersFlash'
 import { Container } from 'components/Container/index.jsx'
-import { Title } from 'components/GlobalComponents /Title'
+import { Title } from 'components/GlobalComponents/Title'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 
 export const Home = () => {

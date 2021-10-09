@@ -5,7 +5,7 @@ import { CityContainer } from './styles'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
-import { Button } from 'components/GlobalComponents /Button'
+import { Button } from 'components/GlobalComponents/Button'
 import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
 
 export const HotelsList = () => {

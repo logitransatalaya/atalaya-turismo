@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import { ToursDetailsStyled } from './styles'
 import { Skeleton } from 'components/Skeletons'
 import { Container } from 'components/Container'
-import { Footer } from 'components/GlobalComponents /Footer'
+import { Footer } from 'components/GlobalComponents/Footer'
 
 export const ToursDetails = () => {
 	const { urlCode } = useParams()
