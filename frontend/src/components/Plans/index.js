@@ -22,8 +22,8 @@ export const Plans = () => {
 				<PlansContainer>
 					<h2 className='plansTitle'>PLANES NACIONALES</h2>
 					<div className='plansContent'>
-						{plansReducer.map((img) => (
-							<Link to={`/planes/${img.urlCode}`}>
+						{plansReducer.map((img, i) => (
+							<Link to={`/planes/${img.urlCode}`} key={i}>
 								<div className='plansCard' key={img.id}>
 									<div className='plansBoxImg'>
 										<img src={img.url} alt={img.name} />

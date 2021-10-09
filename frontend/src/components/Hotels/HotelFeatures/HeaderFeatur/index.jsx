@@ -36,7 +36,7 @@ export const HeaderFeature = ({ city, photos }) => {
 						<div className={`card_${i + 1}`} key={i}>
 							<img
 								className='box_card'
-								src={photo}
+								src={photo.urlCode}
 								alt={`img${i + 1}`}
 							/>
 						</div>
