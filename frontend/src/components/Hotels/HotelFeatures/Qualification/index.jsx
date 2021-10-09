@@ -2,7 +2,8 @@ import { FaStar } from 'react-icons/fa'
 import { ContainerStars } from './style'
 import React, { useEffect, useState } from 'react'
 
-export const Qualification = ({ stars = 3 }) => {
+export const Qualification = ({ stars }) => {
+	// console.log(stars)
 	const [clicked, setClicked] = useState([false, false, false, false, false])
 
 	const handleStarClick = (index) => {

@@ -6,7 +6,6 @@ import { splideOptionsBedrooms } from 'lib/splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
 
 const Bedrooms = ({ img }) => {
-	console.log(img)
 	return (
 		<SliderRooms>
 			<div className='containerRooms'>
