@@ -86,7 +86,7 @@ export const ToursStyled = styled.div`
 				bottom: 50%;
 				left: 5%;
 				position: absolute;
-				height: 0.17rem;
+				height: 0.2rem;
 				width: 25%;
 				background-color: #10216f;
 			}
@@ -98,7 +98,7 @@ export const ToursStyled = styled.div`
 				bottom: 50%;
 				right: 5%;
 				position: absolute;
-				height: 0.17rem;
+				height: 0.2rem;
 				width: 25%;
 				background-color: #10216f;
 			}
