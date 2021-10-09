@@ -1,4 +1,4 @@
-import { StyleTitle } from 'components/GlobalComponents /Title/styles'
+import { StyleTitle } from 'components/GlobalComponents/Title/styles'
 import React from 'react'
 
 export const Title = ({ text }) => {
