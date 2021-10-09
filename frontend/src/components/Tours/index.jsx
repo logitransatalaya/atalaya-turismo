@@ -14,7 +14,9 @@ export const Tours = () => {
 	return (
 		<Container>
 			<ToursStyled>
-				<h2>Estas en los tours</h2>
+				<div className='title'>
+					<h2>TOURES ANTIOQUIA</h2>
+				</div>
 				<div className='ToursCards-container'>
 					{tours.map((tour, i) => (
 						<Link to={`tours/${tour.urlCode}`} key={i}>
