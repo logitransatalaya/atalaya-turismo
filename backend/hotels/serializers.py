@@ -1,10 +1,21 @@
 from django.db.models import fields
 from rest_framework import serializers
-from .models import National_city
+from .models import Hotel, National_city, Review
 
-class National_city_serializer(serializers.ModelSerializer):
+class CitySerializer(serializers.Serializer):
     
     class Meta:
         model = National_city
-        fields = ['city']
+        fields = ('city')
 
+class HotelSerializer(serializers.Serializer):
+
+    class Meta:
+        model = Hotel
+        fields = '__all__'
+    
+
+class reviewSerializer(serializers.Serializer):
+    class Meta:
+        model = Review
+        fields = '__all__'
