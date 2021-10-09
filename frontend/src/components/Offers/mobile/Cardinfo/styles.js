@@ -12,6 +12,7 @@ export const ContainerCard = styled.div`
 	font-size: 1.2rem;
 	padding: 10px 0;
 	position: relative;
+	margin-bottom: 40px;
 
 	.plane {
 		background: #10216f;
@@ -59,5 +60,29 @@ export const ContainerCard = styled.div`
 		width: 62%;
 		font-weight: bold;
 		border-radius: 10px;
+	}
+
+	@media (min-width: 700px) {
+		flex-direction: row;
+		justify-content: space-around;
+		height: auto;
+		padding: 20px 0;
+
+		.plane {
+			position: static;
+		}
+
+		.text {
+			text-align: left;
+		}
+
+		.line {
+			display: none;
+		}
+
+		.reserve {
+			width: 20%;
+			margin-left: 100px;
+		}
 	}
 `

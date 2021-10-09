@@ -1,17 +1,22 @@
-import React, { useRef } from 'react'
-import Cardinfo from '../Cardinfo'
+import React, { useState } from 'react'
 import { InfoO } from './styles'
 
 const InfoOffer = () => {
-	const acordionRef = useRef()
+	const [accordion, setAccordion] = useState(false)
+
+	const handleAccordion = () => {
+		console.log('me hicieron click')
+		setAccordion(!accordion)
+	}
+	console.log(accordion)
 
 	return (
 		<InfoO>
-			<div className='accordion' ref={acordionRef}>
+			<div className='accordion' onClick={handleAccordion}>
 				<h2>San andrés</h2>
-				<span>V</span>
+				<span className={accordion ? `rotate` : ``}>V</span>
 			</div>
-			<div className='panel'>
+			<div className={`panel ${accordion ? `` : `disappear`}`}>
 				<ul className='services'>
 					<li className='service'>
 						<span>Tiquetes aereos</span>
@@ -55,7 +60,6 @@ const InfoOffer = () => {
 						<span>Vista al acuario.</span>
 					</li>
 				</ul>
-				<Cardinfo />
 			</div>
 		</InfoO>
 	)

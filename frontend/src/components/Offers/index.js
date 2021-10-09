@@ -1,7 +1,7 @@
 import { Container } from 'components/Container'
 import { TitleOffers } from './styles'
 import React from 'react'
-import CardOffer from './CardOffer'
+import CardOffer from './mobile/CardOffer'
 
 export const Offers = () => {
 	return (
