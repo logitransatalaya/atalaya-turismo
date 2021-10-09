@@ -202,6 +202,7 @@ const ToursFooter = ({ imageUrl }) => {
 		<>
 			<FooterTours>
 				<picture>
+					<div className='gradient'></div>
 					<img src={imageUrl} alt='' />
 				</picture>
 				<FooterWave>

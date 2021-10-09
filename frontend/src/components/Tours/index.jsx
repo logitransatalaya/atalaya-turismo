@@ -3,6 +3,7 @@ import { tours } from 'json/tours.json'
 import React, { useEffect } from 'react'
 import { Container } from 'components/Container'
 import { Link, useHistory } from 'react-router-dom'
+import { GoBack } from 'components/GlobalComponents/GoBack'
 
 export const Tours = () => {
 	const history = useHistory()
@@ -14,7 +15,10 @@ export const Tours = () => {
 	return (
 		<Container>
 			<ToursStyled>
-				<h2>Estas en los tours</h2>
+				<GoBack />
+				<div className='title'>
+					<h2>TOURES ANTIOQUIA</h2>
+				</div>
 				<div className='ToursCards-container'>
 					{tours.map((tour, i) => (
 						<Link to={`tours/${tour.urlCode}`} key={i}>

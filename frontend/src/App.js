@@ -4,16 +4,14 @@ import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
 import { Hotels } from './components/Hotels'
 import { Offers } from './components/Offers'
-import { Transport } from './components/Transport'
 import { HotelsList } from 'components/Hotels/HotelsList'
 import { DetailsPlan } from 'components/Plans/DetailsPlan'
-import { PaymentMethods } from './components/PaymentMethods'
 import { ToursDetails } from 'components/Tours/ToursDetails'
-import { Footer } from './components/GlobalComponents /Footer'
-import { NavBar } from './components/GlobalComponents /NavBar'
+import { Footer } from './components/GlobalComponents/Footer'
+import { NavBar } from './components/GlobalComponents/NavBar'
 import { HotelFeatures } from 'components/Hotels/HotelFeatures'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import FloatingButtons from 'components/GlobalComponents /FloatingButtons'
+import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
 
 export default function App() {
 	return (
@@ -38,10 +36,6 @@ export default function App() {
 						<HotelFeatures />
 						<Footer />
 					</Route>
-					<Route exact path='/transporte'>
-						<Transport />
-						<Footer />
-					</Route>
 					<Route exact path='/planes'>
 						<Plans />
 						<Footer />
@@ -59,10 +53,6 @@ export default function App() {
 					</Route>
 					<Route exact path='/ofertas'>
 						<Offers />
-						<Footer />
-					</Route>
-					<Route exact path='/medios-de-pago'>
-						<PaymentMethods />
 						<Footer />
 					</Route>
 				</Switch>
