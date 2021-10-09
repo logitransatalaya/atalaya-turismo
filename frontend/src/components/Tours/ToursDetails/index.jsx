@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import { ToursDetailsStyled } from './styles'
 import { Skeleton } from 'components/Skeletons'
 import { Container } from 'components/Container'
-import { Footer } from 'components/GlobalComponents /Footer'
+import { Footer } from 'components/GlobalComponents/Footer'
 
 export const ToursDetails = () => {
 	const { urlCode } = useParams()
@@ -81,10 +81,7 @@ export const ToursDetails = () => {
 					</div>
 				</ToursDetailsStyled>
 			</Container>
-			<Footer
-				type='tours'
-				imageUrl='https://farm9.staticflickr.com/8651/16157293967_d112d827d1_o.jpg'
-			/>
+			<Footer type='tours' imageUrl={currentTour.descriptionImg} />
 		</>
 	)
 }

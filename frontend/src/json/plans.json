@@ -3,7 +3,7 @@
 		{
 			"id": 1,
 			"urlCode": "san-andres",
-			"name": "San andres",
+			"name": "San andrés",
 			"url": "https://media.staticontent.com/media/pictures/ecc404e8-9a99-46b0-a56a-ead992b5166e",
 			"photos": [
 				{
@@ -20,15 +20,10 @@
 				}
 			],
 			"desc": "San Andrés es una isla colombiana del mar Caribe, frente a la costa de Nicaragua. Es conocida por los arrecifes de coral y la música reggae. La encendida playa Spratt Bight tiene un paseo costero bordeado de palmeras. En el litoral está el Parque Johnny Cay, una pequeña isla con mangles de cocos y playas de arena blanca. ",
-			"includes": [
+			"IncludesPlan": [
 				{ "des": "Tiquetes aéreos" },
 				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
 				{ "des": "Tarjeta de asistencia médica" },
-				{ "des": "Alimentación en plan elegido" },
-				{ "des": "Snack de media tarde (plan full)" },
-				{
-					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
-				},
 				{ "des": "alojamiento 4 noches y 5 dias" },
 				{ "des": "Tarjeta de ingreso a la isla" },
 				{ "des": "TourJhony Cay" },
@@ -62,7 +57,7 @@
 				}
 			],
 			"desc": "Cartagena es una ciudad portuaria en la costa caribeña de Colombia. Junto al mar, se encuentra la Ciudad Vieja amurallada, que se fundó en el siglo XVI, con plazas, calles de adoquines y edificios coloniales coloridos. Con un clima tropical, la ciudad también es un destino popular por sus playas.",
-			"includes": [
+			"IncludesPlan": [
 				{ "des": "Tiquetes aéreos" },
 				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
 				{ "des": "Tarjeta de asistencia médica" },
@@ -70,13 +65,7 @@
 				{ "des": "Snack de media tarde (plan full)" },
 				{
 					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
-				},
-				{ "des": "alojamiento 4 noches y 5 dias" },
-				{ "des": "Tarjeta de ingreso a la isla" },
-				{ "des": "TourJhony Cay" },
-				{ "des": "Tour vuelta a la isla" },
-				{ "des": "Paseo en yate por la bahía" },
-				{ "des": "visita al acuario" }
+				}
 			],
 			"noInclude": [
 				{ "des": "no incluye", "iconName": "" },
@@ -104,15 +93,7 @@
 				}
 			],
 			"desc": "El Desierto de la Tatacoa es la segunda zona árida más extensa de Colombia después de la Península de La Guajira. Es uno de los escenarios naturales más atractivos de Colombia, de tierra de color ocre y gris con pincelazos del verde de los cactus.  ",
-			"includes": [
-				{ "des": "Tiquetes aéreos" },
-				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
-				{ "des": "Tarjeta de asistencia médica" },
-				{ "des": "Alimentación en plan elegido" },
-				{ "des": "Snack de media tarde (plan full)" },
-				{
-					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
-				},
+			"IncludesPlan": [
 				{ "des": "alojamiento 4 noches y 5 dias" },
 				{ "des": "Tarjeta de ingreso a la isla" },
 				{ "des": "TourJhony Cay" },
@@ -146,15 +127,10 @@
 				}
 			],
 			"desc": "Santa Marta es una ciudad ubicada en el mar Caribe, en el departamento de Magdalena en el norte de Colombia. Es un puerto ajetreado que también fue el primer asentamiento español en Colombia. ",
-			"includes": [
+			"IncludesPlan": [
 				{ "des": "Tiquetes aéreos" },
 				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
 				{ "des": "Tarjeta de asistencia médica" },
-				{ "des": "Alimentación en plan elegido" },
-				{ "des": "Snack de media tarde (plan full)" },
-				{
-					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
-				},
 				{ "des": "alojamiento 4 noches y 5 dias" },
 				{ "des": "Tarjeta de ingreso a la isla" },
 				{ "des": "TourJhony Cay" },
@@ -189,18 +165,11 @@
 			],
 			"desc": "Amazonas es uno de los treinta y dos departamentos que, junto con Bogotá, Distrito Capital, forman la República de Colombia. Su capital es Leticia. Está ubicado en el extremo sur del país, en gran parte al sur de la línea ecuatorial, en la región Amazonia. ",
 
-			"includes": [
+			"IncludesPlan": [
 				{ "des": "Tiquetes aéreos" },
 				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
 				{ "des": "Tarjeta de asistencia médica" },
 				{ "des": "Alimentación en plan elegido" },
-				{ "des": "Snack de media tarde (plan full)" },
-				{
-					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
-				},
-				{ "des": "alojamiento 4 noches y 5 dias" },
-				{ "des": "Tarjeta de ingreso a la isla" },
-				{ "des": "TourJhony Cay" },
 				{ "des": "Tour vuelta a la isla" },
 				{ "des": "Paseo en yate por la bahía" },
 				{ "des": "visita al acuario" }
@@ -231,12 +200,7 @@
 				}
 			],
 			"desc": "El eje cafetero es una región geográfica, cultural, económica y ecológica de Colombia, ubicada en los departamentos de Caldas, Risaralda y Quindío, además de las regiones del noroccidente de Tolima, el suroeste de Antioquia, el norte y oriente del Valle del Cauca  y las ciudades capitales de los cuatro primeros departamentos mencionados (Manizales, Pereira, Armenia e Ibagué, respectivamente). Fue una notable productora de caucho, a comienzos del siglo XX, pero luego se dedicó al café.",
-			"includes": [
-				{ "des": "Tiquetes aéreos" },
-				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
-				{ "des": "Tarjeta de asistencia médica" },
-				{ "des": "Alimentación en plan elegido" },
-				{ "des": "Snack de media tarde (plan full)" },
+			"IncludesPlan": [
 				{
 					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
 				},
@@ -273,7 +237,7 @@
 				}
 			],
 			"desc": "La Guajira es un departamento colombiano en el mar Caribe, que limita con Venezuela y abarca la mayor parte de la península de La Guajira. Se distingue por sus paisajes desérticos, las dunas de arena gigantes y las haciendas y las villas pesqueras remotas del pueblo indígena wayuu.",
-			"includes": [
+			"IncludesPlan": [
 				{ "des": "Tiquetes aéreos" },
 				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
 				{ "des": "Tarjeta de asistencia médica" },
@@ -281,13 +245,7 @@
 				{ "des": "Snack de media tarde (plan full)" },
 				{
 					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
-				},
-				{ "des": "alojamiento 4 noches y 5 dias" },
-				{ "des": "Tarjeta de ingreso a la isla" },
-				{ "des": "TourJhony Cay" },
-				{ "des": "Tour vuelta a la isla" },
-				{ "des": "Paseo en yate por la bahía" },
-				{ "des": "visita al acuario" }
+				}
 			],
 			"noInclude": [
 				{ "des": "no incluye", "iconName": "" },
@@ -315,15 +273,11 @@
 				}
 			],
 			"desc": "Coveñas es una ciudad turística del Golfo de Morrosquillo en el norte de Colombia. Es conocida por sus largas playas con aguas tranquilas y poco profundas. La playa Primera Ensenada es un centro de deportes acuáticos.  ",
-			"includes": [
+			"IncludesPlan": [
 				{ "des": "Tiquetes aéreos" },
 				{ "des": "Traslado hotel aeropuerto aeropuerto hotel" },
 				{ "des": "Tarjeta de asistencia médica" },
 				{ "des": "Alimentación en plan elegido" },
-				{ "des": "Snack de media tarde (plan full)" },
-				{
-					"des": "Bar abierto establecidos por los horarios del hotel elegido (plan full)"
-				},
 				{ "des": "alojamiento 4 noches y 5 dias" },
 				{ "des": "Tarjeta de ingreso a la isla" },
 				{ "des": "TourJhony Cay" },

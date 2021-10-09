@@ -13,7 +13,7 @@ const Bedrooms = ({ img }) => {
 					{img.map((imges, i) => (
 						<SplideSlide key={i} className='splideslide'>
 							<Room>
-								<img src={imges} alt='habitación' />
+								<img src={imges.urlCode} alt={imges.name} />
 							</Room>
 						</SplideSlide>
 					))}

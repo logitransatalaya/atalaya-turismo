@@ -1,5 +1,5 @@
-import { StyleTitle } from 'components/Hotels/HotelFeatures/styles'
 import React from 'react'
+import { StyleTitle } from './styles'
 
 export const Title = ({ text }) => {
 	return (

@@ -11,7 +11,7 @@ class National_city(models.Model):
 
 class Hotel(models.Model):
     hotel_city = models.ForeignKey(National_city, on_delete=models.CASCADE, default=None)
-    name = models.CharField(max_length=100, blank=False)
+    name = models.CharField(max_length=100, blank=False, primary_key=True)
     stars = models.PositiveIntegerField()
     main_1 = models.URLField(max_length=250)
     main_2 = models.URLField(max_length=250)
@@ -23,7 +23,7 @@ class Hotel(models.Model):
     hab_3 = models.URLField(max_length=250)
     hab_4 = models.URLField(max_length=250)
     hab_5 = models.URLField(max_length=250)
-    description = models.URLField(max_length=250)
+    description = models.CharField(max_length=250)
 
 class Review(models.Model):
     review_hotel = models.ForeignKey(Hotel, on_delete=models.DO_NOTHING)

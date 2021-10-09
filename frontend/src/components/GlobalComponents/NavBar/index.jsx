@@ -46,9 +46,6 @@ export const NavBar = () => {
 								<Link to='/hoteles'>HOTELES</Link>{' '}
 							</li>
 							<li>
-								<Link to='/transporte'>TRANSPORTE</Link>
-							</li>
-							<li>
 								<Link to='/planes'>PLANES</Link>
 							</li>
 							<li>
@@ -56,9 +53,6 @@ export const NavBar = () => {
 							</li>
 							<li>
 								<Link to='/ofertas'>OFERTAS</Link>
-							</li>
-							<li>
-								<Link to='/medios-de-pago'>MEDIOS DE PAGO</Link>
 							</li>
 						</ul>
 					</div>
