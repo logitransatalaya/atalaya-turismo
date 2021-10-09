@@ -81,10 +81,7 @@ export const ToursDetails = () => {
 					</div>
 				</ToursDetailsStyled>
 			</Container>
-			<Footer
-				type='tours'
-				imageUrl='https://farm9.staticflickr.com/8651/16157293967_d112d827d1_o.jpg'
-			/>
+			<Footer type='tours' imageUrl={currentTour.descriptionImg} />
 		</>
 	)
 }
