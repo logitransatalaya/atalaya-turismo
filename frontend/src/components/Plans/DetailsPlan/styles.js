@@ -2,11 +2,30 @@ import styled from 'styled-components'
 
 export const CurrentPlanConatainer = styled.div`
 	.currentPlan_title {
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		padding-left: 2em;
-		font-size: 2rem;
-		color: #10216f;
+		h2 {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			padding-left: 2em;
+			font-size: 2rem;
+			color: #10216f;
+		}
+
+		@media (max-width: 600px) {
+			h2 {
+				font-size: 1.5rem;
+			}
+			.line {
+				margin: 0 auto;
+				width: 90%;
+				height: 5px;
+				background: rgb(244, 135, 0);
+				background: linear-gradient(
+					90deg,
+					rgba(244, 135, 0, 1) 0%,
+					rgba(255, 231, 0, 1) 85%
+				);
+			}
+		}
 	}
 
 	.containerImages {
@@ -25,9 +44,17 @@ export const CurrentPlanConatainer = styled.div`
 	}
 
 	.currentPlan_desc {
-		color: #10216f;
-		font-size: 1.5rem;
-		padding: 0 1em;
+		p {
+			color: #10216f;
+			font-size: 1.5rem;
+			padding: 0 1em;
+			text-align: justify;
+		}
+		@media (max-width: 600px) {
+			p {
+				font-size: 1.1rem;
+			}
+		}
 	}
 `
 export const CurrentPlanServices = styled.div`
@@ -46,6 +73,10 @@ export const CurrentPlanServices = styled.div`
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			padding: 0 4em;
+
+			@media (max-width: 600px) {
+				column-gap: 1em;
+			}
 
 			.box_services {
 				padding-bottom: 1.5em;
@@ -80,6 +111,64 @@ export const CurrentPlanServices = styled.div`
 					opacity: 0.9;
 				}
 			}
+		}
+	}
+
+	.contentMovile_s {
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.1em;
+		margin-bottom: 0.1em;
+
+		.boxInfo {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+
+			span {
+				color: orange;
+				font-size: 1.2em;
+				font-weight: bold;
+				transform: rotate(180deg);
+				transition: transform 0.5s;
+			}
+		}
+
+		.boxInfo_active {
+			span {
+				transform: rotate(0deg);
+			}
+		}
+
+		.includesMovile_s {
+			background-color: #10216f;
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			transition: background-color 0.5s;
+		}
+
+		.noIncludesMovile_s {
+			background-color: #10216f;
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			transition: background-color 0.5s;
+		}
+
+		.notesMovile_s {
+			background-color: #10216f;
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			position: relative;
+			transition: background-color 0.5s;
+		}
+
+		.bg_active {
+			background-color: #0a164b;
 		}
 	}
 `
