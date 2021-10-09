@@ -2,15 +2,14 @@ import Bedrooms from '../Bedrooms'
 import React, { useEffect, useState } from 'react'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ReactComponent as IconLocation } from 'images/ubicacion.svg'
+import { Qualification } from '../Qualification'
 
-export const HeaderFeature = ({ city, photos }) => {
+export const HeaderFeature = ({ city, photos, qualification }) => {
 	const { photos1 } = photos
 	const [screen, setScreen] = useState(window.innerWidth)
 
 	useEffect(() => {
-		window.onresize = function () {
-			setScreen(window.innerWidth)
-		}
+		window.onresize = () => setScreen(window.innerWidth)
 	}, [screen])
 
 	return (
@@ -24,11 +23,10 @@ export const HeaderFeature = ({ city, photos }) => {
 						</div>
 						<p>{city}</p>
 					</div>
-					<div>{/* <Qualification stars={calification} /> */}</div>
+					<div>
+						<Qualification stars={qualification} />
+					</div>
 				</div>
-				<a href='/' style={{ width: '20%', height: '100px' }}>
-					<img src='/hotels/reservas.svg' alt='icono-watsap' />
-				</a>
 			</HeaderCardStyled>
 			{screen > 850 ? (
 				<CardGrid>

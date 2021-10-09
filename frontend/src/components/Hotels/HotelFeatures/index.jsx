@@ -1,17 +1,17 @@
-import { StyleTitle } from './styles'
 import Bedrooms from './Bedrooms'
 import HotelInfo from './HotelInfo'
+import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { HeaderFeature } from './HeaderFeatur'
 import { Container } from 'components/Container'
-import { useSelector } from 'react-redux'
+import { Title } from 'components/GlobalComponents /Title/Title'
 import { MorePopularService } from 'components/Hotels/HotelFeatures/MorePopularService'
-import { useApi } from 'hooks/useApi'
 
 export const HotelFeatures = () => {
 	const { getCurrentHotel } = useApi()
-	const { hotelId, locid } = useParams()
+	const { hotelId, locid, city } = useParams()
 	const { currentHotel, hotelsList } = useSelector(
 		(state) => state.hotelsReducer
 	)
@@ -25,38 +25,17 @@ export const HotelFeatures = () => {
 		<>
 			{currentHotel && (
 				<Container>
-					<div>
-						<HeaderFeature
-							city={''}
-							photos={currentHotel.more.photos}
-						/>
-					</div>
-					<div>
-						<StyleTitle>
-							<span className='line'></span>
-							<h2 className='title'>SERVICIOS MÁS POPULARES</h2>
-							<span className='line'></span>
-						</StyleTitle>
-						<MorePopularService currentHotel={currentHotel} />
-					</div>
-					<div>
-						<StyleTitle>
-							<span className='line'></span>
-							<h2 className='title'>HABITACIONES DEL HOTEL</h2>
-							<span className='line'></span>
-						</StyleTitle>
-						<Bedrooms img={currentHotel.more.photos.photos2} />
-					</div>
-					<div>
-						<StyleTitle about='about'>
-							<span className='line'></span>
-							<h2 className='title'>
-								SOBRE EL HOTEL TRYP MEDELLíN
-							</h2>
-							<span className='line'></span>
-						</StyleTitle>
-						<HotelInfo />
-					</div>
+					<HeaderFeature
+						qualification={currentHotel.calification}
+						city={city}
+						photos={currentHotel.more.photos}
+					/>
+					<Title text={'SERVICIOS MÁS POPULARES'} />
+					<MorePopularService currentHotel={currentHotel} />
+					<Title text={'HABITACIONES DEL HOTEL'} />
+					<Bedrooms img={currentHotel.more.photos.photos2} />
+					<Title text={'SOBRE EL HOTEL TRYP MEDELLíN'} />
+					<HotelInfo />
 				</Container>
 			)}
 		</>
