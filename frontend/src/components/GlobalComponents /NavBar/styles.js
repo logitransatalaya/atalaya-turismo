@@ -92,6 +92,7 @@ export const NavbarStyled = styled.div`
 
 		a {
 			color: #f4a719;
+			font-weight: 500;
 			text-decoration: none;
 
 			&:hover {
