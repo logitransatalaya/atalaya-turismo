@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { HeaderFeature } from './HeaderFeatur'
 import { Container } from 'components/Container'
+import { Title } from 'components/GlobalComponents/Title'
 import { MorePopularService } from 'components/Hotels/HotelFeatures/MorePopularService'
 import { Title } from 'components/GlobalComponents/Title'
 

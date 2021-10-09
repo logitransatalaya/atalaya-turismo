@@ -1,3 +1,4 @@
+import { StyleTitle } from 'components/GlobalComponents/Title/styles'
 import React from 'react'
 import { StyleTitle } from './styles'
 

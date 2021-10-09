@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const ToursDetailsStyled = styled.div`
 	color: #10216f;
-	margin-top: 3rem;
 	margin: 0 auto;
 	margin-top: 3rem;
 	width: 95%;
