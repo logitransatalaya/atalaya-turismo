@@ -49,11 +49,8 @@ export const ToursStyled = styled.div`
 				height: 100%;
 				object-fit: cover;
 				transition: transform 0.5s;
-
-				&:hover {
-					transform: scale(1.1);
-				}
 			}
+
 			.hotelCardTitle {
 				position: absolute;
 				bottom: 0;
@@ -74,6 +71,10 @@ export const ToursStyled = styled.div`
 					font-size: 1.5rem;
 				}
 			}
+		}
+
+		&:hover .hotelCardBoxImg img {
+			transform: scale(1.1);
 		}
 	}
 

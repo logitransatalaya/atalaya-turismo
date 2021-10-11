@@ -8,11 +8,11 @@ export const HotelsContainer = styled.div`
 
 	.hotelCard {
 		height: 300px;
-		background-color: #fff;
 		text-align: center;
 		border-radius: 1em;
 		overflow: hidden;
 		cursor: pointer;
+		background-color: #fff;
 
 		.hotelCardBoxImg {
 			width: 100%;
@@ -24,10 +24,6 @@ export const HotelsContainer = styled.div`
 				height: 100%;
 				object-fit: cover;
 				transition: transform 0.5s;
-
-				&:hover {
-					transform: scale(1.1);
-				}
 			}
 
 			.hotelCardTitle {
@@ -52,6 +48,10 @@ export const HotelsContainer = styled.div`
 					font-size: 1.5rem;
 				}
 			}
+		}
+
+		&:hover .hotelCardBoxImg img {
+			transform: scale(1.1);
 		}
 	}
 `
