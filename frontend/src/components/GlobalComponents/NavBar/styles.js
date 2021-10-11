@@ -2,86 +2,73 @@ import styled from 'styled-components'
 
 export const NavbarStyled = styled.div`
 	background-color: #10216f;
-
 	.navBar-container {
 		display: flex;
 		justify-content: space-between;
 		padding: 0.3rem 1rem;
 		position: relative;
 	}
-
 	.logoContainer {
 		align-items: center;
 		display: flex;
 		justify-content: center;
 		width: 20%;
-
 		img {
 			width: 100%;
 		}
 	}
-
 	.iconsContainer {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
 		gap: 1rem;
-
 		width: 25%;
-
 		.loginIcon {
 			align-items: center;
 			display: flex;
 			justify-content: center;
 			height: 50%;
-
 			width: 100%;
-
 			img {
 				width: 100%;
 			}
 		}
-
 		.burgerIcon {
 			align-items: center;
 			display: flex;
 			height: 50%;
 			justify-content: center;
-
 			width: 100%;
-
 			img {
 				width: 100%;
 			}
 		}
 	}
-
 	.navbarDesktop {
 		align-items: flex-start;
 		display: flex;
 		background-color: #10216f;
 		flex-direction: column-reverse;
-
 		gap: 1rem;
-		min-height: 25rem;
+		min-height: 100vh;
 		justify-content: flex-end;
 		left: 0;
 
 		padding: 1rem 0;
-		padding-left: 2rem;
-		position: absolute;
+		padding-left: 2.5rem;
+		position: fixed;
 		transform: translateX(-105%);
 
 		transition: ease-in-out 0.3s;
 		top: 0;
 		width: calc(70% - 2rem);
-		z-index: 100;
+		z-index: 1000;
 	}
 
 	.navbarList {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 1.5rem;
 		margin: 2rem 0;
 
 		padding: 0;

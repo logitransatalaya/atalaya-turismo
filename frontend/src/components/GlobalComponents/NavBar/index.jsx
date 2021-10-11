@@ -40,19 +40,29 @@ export const NavBar = () => {
 						</div>
 						<ul className='navbarList'>
 							<li>
-								<Link to='/'>INICIO</Link>
+								<Link onClick={openNavbar} to='/'>
+									INICIO
+								</Link>
 							</li>
 							<li>
-								<Link to='/hoteles'>HOTELES</Link>{' '}
+								<Link onClick={openNavbar} to='/hoteles'>
+									HOTELES
+								</Link>{' '}
 							</li>
 							<li>
-								<Link to='/planes'>PLANES</Link>
+								<Link onClick={openNavbar} to='/planes'>
+									PLANES
+								</Link>
 							</li>
 							<li>
-								<Link to='/tours'>TOURS</Link>
+								<Link onClick={openNavbar} to='/tours'>
+									TOURS
+								</Link>
 							</li>
 							<li>
-								<Link to='/ofertas'>OFERTAS</Link>
+								<Link onClick={openNavbar} to='/ofertas'>
+									OFERTAS
+								</Link>
 							</li>
 						</ul>
 					</div>

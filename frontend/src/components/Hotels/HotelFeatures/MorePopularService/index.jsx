@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { InfoService } from './InfoService'
 import { ContainerCards } from './style'
+import { InfoService } from './InfoService'
+import React, { useEffect, useState } from 'react'
 
 export const MorePopularService = ({ currentHotel }) => {
 	const { services } = currentHotel?.more
-
-	const [countServices, setCountServices] = useState(true)
+	const [countServices, setCountServices] = useState(false)
 	const [handleWidth, setHandleWidth] = useState(window.innerWidth)
 
 	useEffect(() => {
