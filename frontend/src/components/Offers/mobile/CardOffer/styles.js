@@ -6,6 +6,7 @@ export const Card = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 1.9em 0em 0em 0em;
 
 	.containerSF {
 		width: 100%;
@@ -20,16 +21,6 @@ export const Card = styled.div`
 			width: 90%;
 			margin-bottom: 30px;
 			position: relative;
-
-			&::before {
-				content: '';
-				height: 2px;
-				background: orange;
-				width: 100%;
-				position: absolute;
-				top: -25px;
-				left: 0;
-			}
 		}
 	}
 `
