@@ -11,7 +11,7 @@ export const TitleOffers = styled.div`
 		font-weight: 500;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 800px) {
 		padding-left: 90px;
 
 		h2 {

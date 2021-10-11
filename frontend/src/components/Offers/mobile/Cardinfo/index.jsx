@@ -1,18 +1,23 @@
 import React from 'react'
 import { ContainerCard } from './styles'
+import plane from 'images/svg/iconoavionblanco.svg'
 
-const Cardinfo = () => {
+const Cardinfo = ({ data }) => {
+	const { fromDate, toDate, price, hotel } = data
+
 	return (
 		<ContainerCard>
-			<div className='plane'></div>
+			<div className='plane'>
+				<img src={plane} alt='plane' />
+			</div>
 			<div className='text'>
-				<p className='white bold'>Del 20 de Octubre</p>
-				<p className='white'>al 31 de Octubre</p>
+				<p className='white bold'>Del {fromDate}</p>
+				<p className='white'>al {toDate}</p>
 			</div>
 			<div className='line'></div>
 			<div className='text'>
-				<p className='blue bold'>Precio: $1'100.000</p>
-				<p className='blue bold'>Hotel Las Américas</p>
+				<p className='blue bold'>Precio: ${price}</p>
+				<p className='blue bold'>{hotel}</p>
 			</div>
 			<button className='reserve'>Reservar</button>
 		</ContainerCard>

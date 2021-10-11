@@ -8,7 +8,7 @@ export const ContainerSplider = styled.div`
 		border-radius: 30px;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 800px) {
 		width: 50%;
 	}
 `

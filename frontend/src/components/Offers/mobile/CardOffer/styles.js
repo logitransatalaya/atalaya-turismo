@@ -14,7 +14,7 @@ export const Card = styled.div`
 		align-items: center;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 800px) {
 		.containerSF {
 			flex-direction: row;
 			width: 90%;

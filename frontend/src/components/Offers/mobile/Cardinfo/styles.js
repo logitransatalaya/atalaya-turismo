@@ -22,6 +22,13 @@ export const ContainerCard = styled.div`
 		border-radius: 32px;
 		top: -30px;
 		right: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 65%;
+		}
 	}
 
 	.text {
@@ -60,9 +67,10 @@ export const ContainerCard = styled.div`
 		width: 62%;
 		font-weight: bold;
 		border-radius: 10px;
+		cursor: pointer;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 800px) {
 		flex-direction: row;
 		justify-content: space-around;
 		height: auto;
@@ -70,6 +78,12 @@ export const ContainerCard = styled.div`
 
 		.plane {
 			position: static;
+			background: none;
+			border-radius: 0;
+
+			img {
+				width: 90%;
+			}
 		}
 
 		.text {

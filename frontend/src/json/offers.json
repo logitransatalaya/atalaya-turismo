@@ -6,7 +6,8 @@
             "name": "San Andrés",
             "fromDate": "20 de Octubre",
             "toDate": "31 de Octubre",
-            "price": "1.100.000",
+            "price": "1'100.000",
+            "hotel": "Hotel Las Americas",
             "photos": [
                 {
                     "url": "https://cdn.pixabay.com/photo/2018/02/28/16/38/st-andrews-3188376_960_720.jpg" ,
@@ -43,8 +44,8 @@
             "name": "Las Bahamas",
             "fromDate": "06 de Noviembre",
             "toDate": "11 de Noviembre",
-            "price": "1.500.000",
-            "hotel": "Hotel las americas",
+            "price": "1'500.000",
+            "hotel": "Hotel las Bahamas",
             "photos": [
                 {
                     "url": "https://cdn.pixabay.com/photo/2015/03/26/10/58/atlantis-692201_960_720.jpg",
@@ -71,7 +72,7 @@
                 "Traslado hotel aeropuerto, aeropuerto hotel.",
                 "Tour por las bahamas.",
                 "Tour a la vuelta de la isla.",
-                "Paseo en yate por la bahía.",
+                "Paseo en yate por la bahía."
             ]
         },
         {
@@ -81,6 +82,7 @@
             "fromDate": "13 de Diciembre",
             "toDate": "17 de Diciembre",
             "price": "950.000",
+            "hotel": "Hotel la Tatacoa",
             "photos": [
                 {
                     "url": "https://rutasdelosandes.com/images/rutas/huila/desiertoTatacoa/slider3.JPG",
@@ -115,8 +117,8 @@
                 "Traslado hotel aeropuerto, aeropuerto hotel.",
                 "Tour Jhony Cay.",
                 "Tour a la vuelta de la isla.",
-                "Paseo en yate por la bahía.",
-                "Vista al acuario."
+                "Paseo en bicicleta por el desierto.",
+                "Museo la tatacoa."
             ]
         }
     ]

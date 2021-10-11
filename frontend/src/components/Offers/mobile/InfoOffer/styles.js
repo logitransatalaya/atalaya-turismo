@@ -63,7 +63,7 @@ export const InfoO = styled.div`
 		overflow: hidden;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 800px) {
 		width: 40%;
 
 		.accordion {
