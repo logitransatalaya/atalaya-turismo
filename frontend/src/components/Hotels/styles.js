@@ -1,18 +1,32 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const animationHotel = keyframes`
+	from{
+		opacity: 0;
+	}
+	30%{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+
+`
 
 export const HotelsContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1em;
 	padding: 2em 1em;
+	animation: ${animationHotel} 2s ease forwards;
 
 	.hotelCard {
 		height: 300px;
-		background-color: #fff;
 		text-align: center;
 		border-radius: 1em;
 		overflow: hidden;
 		cursor: pointer;
+		background-color: #fff;
 
 		.hotelCardBoxImg {
 			width: 100%;
@@ -24,10 +38,6 @@ export const HotelsContainer = styled.div`
 				height: 100%;
 				object-fit: cover;
 				transition: transform 0.5s;
-
-				&:hover {
-					transform: scale(1.1);
-				}
 			}
 
 			.hotelCardTitle {
@@ -52,6 +62,10 @@ export const HotelsContainer = styled.div`
 					font-size: 1.5rem;
 				}
 			}
+		}
+
+		&:hover .hotelCardBoxImg img {
+			transform: scale(1.1);
 		}
 	}
 `
