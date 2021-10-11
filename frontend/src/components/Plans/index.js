@@ -5,6 +5,7 @@ import { plans } from '../../json/plans'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllPlans } from '../../state/actions/plansAction'
 import { Link } from 'react-router-dom'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const Plans = () => {
 	const dispatch = useDispatch()
@@ -20,7 +21,7 @@ export const Plans = () => {
 		<Container>
 			{plansReducer && (
 				<PlansContainer>
-					<h2 className='plansTitle'>PLANES NACIONALES</h2>
+					<Title text={'PLANES NACIONALES'} color about={false} />
 					<div className='plansContent'>
 						{plansReducer.map((img, i) => (
 							<Link to={`/planes/${img.urlCode}`} key={i}>

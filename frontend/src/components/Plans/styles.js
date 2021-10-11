@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
 export const PlansContainer = styled.div`
-	.plansTitle {
-		padding: 0 0 0.5em 1em;
-		border-bottom: 3px solid orange;
-	}
 	.plansContent {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);

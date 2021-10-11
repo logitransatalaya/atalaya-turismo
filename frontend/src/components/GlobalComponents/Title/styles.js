@@ -15,8 +15,8 @@ export const StyleTitle = styled.div`
 
 	.line {
 		height: 3px;
-		width: ${(props) => (props.about ? `29%` : `30%`)};
-		background: #053b77;
+		width: ${(props) => (props.about ? `25%` : `35%`)};
+		background: ${(props) => (props.color ? `orange` : `#053b77`)};
 	}
 
 	@media (max-width: 700px) {
