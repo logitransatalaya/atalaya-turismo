@@ -4,7 +4,6 @@ import { Button } from '../styles'
 const BtnContact = ({ icon, title, pathname }) => {
 	const [showToolTip, setShowToolTip] = useState(true)
 
-	// console.log(pathname)
 	useEffect(() => {
 		const handleToolTip = () => {
 			setTimeout(() => {
