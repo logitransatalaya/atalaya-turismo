@@ -17,6 +17,15 @@ export const NavbarStyled = styled.div`
 			width: 100%;
 		}
 	}
+	.logoContainerMenu {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		img {
+			width: 150px;
+		}
+	}
 	.iconsContainer {
 		align-items: center;
 		display: flex;
@@ -118,7 +127,6 @@ export const NavbarStyled = styled.div`
 			padding: 0.5rem;
 			width: 5rem;
 		}
-
 		.iconsContainer {
 			align-items: center;
 			display: flex;
@@ -130,9 +138,9 @@ export const NavbarStyled = styled.div`
 
 		.navbarDesktop {
 			font-size: 1.3rem;
+			width: calc(70% - 15rem);
 		}
 	}
-
 	@media (min-width: 950px) {
 		.logoContainer {
 			padding: 0.5rem;

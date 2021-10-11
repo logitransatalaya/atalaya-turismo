@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { NavbarStyled } from './styles.js'
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Container } from 'components/Container'
 
 export const NavBar = () => {
@@ -10,13 +10,17 @@ export const NavBar = () => {
 	}
 	const navbarRef = useRef(null)
 	const [urlImg, setUrlImg] = useState(state.false)
+	const [scree, setScreen] = useState(window.innerWidth)
 
 	const openNavbar = () => {
 		navbarRef.current.classList.toggle('navbarVisible')
-
 		if (urlImg === state.true) setUrlImg(state.false)
 		else setUrlImg(state.true)
 	}
+
+	useEffect(() => {
+		window.onresize = () => setScreen(window.innerWidth)
+	}, [scree])
 
 	return (
 		<NavbarStyled>
@@ -38,7 +42,15 @@ export const NavBar = () => {
 							<button>REGISTRATE</button>
 							<button>INICIA SESIÓN</button>
 						</div>
+
 						<ul className='navbarList'>
+							{scree < 950 ? (
+								<span className='logoContainerMenu'>
+									<img src='/logo.png' alt='' />
+								</span>
+							) : (
+								''
+							)}
 							<li>
 								<Link onClick={openNavbar} to='/'>
 									INICIO

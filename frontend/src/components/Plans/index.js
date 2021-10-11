@@ -21,7 +21,7 @@ export const Plans = () => {
 		<Container>
 			{plansReducer && (
 				<PlansContainer>
-					<Title text={'PLANES NACIONALES'} color about={false} />
+					<Title text={'PLANES NACIONALES'} about={false} />
 					<div className='plansContent'>
 						{plansReducer.map((img, i) => (
 							<Link to={`/planes/${img.urlCode}`} key={i}>

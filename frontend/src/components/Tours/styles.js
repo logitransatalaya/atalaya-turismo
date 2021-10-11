@@ -1,34 +1,12 @@
 import styled from 'styled-components'
 
 export const ToursStyled = styled.div`
-	margin-top: 3rem;
-
-	.title {
-		font-family: 'Ubuntu';
-		color: #10216f;
-		text-align: center;
-		position: relative;
-		font-size: 1.3rem;
-
-		h2 {
-			font-weight: 500;
-		}
-
-		&::before {
-			display: none;
-		}
-
-		&::after {
-			display: none;
-		}
-	}
-
 	.ToursCards-container {
 		display: grid;
 		grid-template-columns: repeat(auto, minmax(300px, 1fr));
 		grid-template-rows: auto;
 		gap: 1em;
-		padding: 2em 1em;
+		padding: 1.9em 0em 2em 0em;
 	}
 
 	.hotelCard {
@@ -79,32 +57,6 @@ export const ToursStyled = styled.div`
 	}
 
 	@media (min-width: 735px) {
-		.title {
-			&::before {
-				display: initial;
-				content: '';
-				top: 50%;
-				bottom: 50%;
-				left: 5%;
-				position: absolute;
-				height: 0.2rem;
-				width: 25%;
-				background-color: #10216f;
-			}
-
-			&::after {
-				display: initial;
-				content: '';
-				top: 50%;
-				bottom: 50%;
-				right: 5%;
-				position: absolute;
-				height: 0.2rem;
-				width: 25%;
-				background-color: #10216f;
-			}
-		}
-
 		.ToursCards-container {
 			grid-template-columns: repeat(2, minmax(300px, 1fr));
 			grid-template-rows: auto;

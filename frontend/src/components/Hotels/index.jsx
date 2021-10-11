@@ -17,7 +17,7 @@ export const Hotels = () => {
 
 	return (
 		<Container>
-			<Title text={`HOTELES`} color about={false} />
+			<Title text={`HOTELES`} about={false} />
 			<HotelsContainer>
 				{cityList &&
 					cityList.map((city, i) => (

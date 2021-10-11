@@ -5,7 +5,7 @@ export const PlansContainer = styled.div`
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1em;
-		padding: 0 1em;
+		padding: 1.9em 0em 2em 2em;
 		padding-bottom: 1em;
 		@media (max-width: 800px) {
 			grid-template-columns: 1fr;
