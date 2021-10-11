@@ -93,16 +93,20 @@ export const FooterWe = styled.ul`
 	li {
 		color: orange;
 		margin-bottom: 0.5em;
+
 		a {
-			color: #fff;
+			display: block;
 			text-decoration: none;
-			transition: color 0.5s, margin-left 0.5s;
-			&:hover {
-				color: orange;
-				margin-left: 0.5em;
-			}
+			color: #fff;
+			transition: color 0.5s, transform 0.5s;
+		}
+
+		&:hover a {
+			color: orange;
+			transform: translateX(0.5em);
 		}
 	}
+
 	@media (max-width: 600px) {
 		grid-column: 1/-1;
 		justify-self: left;
@@ -117,14 +121,17 @@ export const FooterOtherServices = styled.ul`
 	li {
 		color: orange;
 		margin-bottom: 0.5em;
+
 		a {
-			color: #fff;
+			display: block;
 			text-decoration: none;
-			transition: color 0.5s, margin-left 0.5s;
-			&:hover {
-				color: orange;
-				margin-left: 0.5em;
-			}
+			color: #fff;
+			transition: color 0.5s, transform 0.5s;
+		}
+
+		&:hover a {
+			color: orange;
+			transform: translateX(0.5em);
 		}
 	}
 	@media (max-width: 600px) {
