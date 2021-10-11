@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
 import { Button } from 'components/GlobalComponents/Button'
 import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const HotelsList = () => {
 	const { locid, city } = useParams()
@@ -22,11 +23,7 @@ export const HotelsList = () => {
 		hotelsList && (
 			<Container>
 				<h2>
-					<span
-						style={{ color: '#10216f', textTransform: 'uppercase' }}
-					>
-						{city}
-					</span>
+					<Title text={`Ciudad ${city}`} about={false} />
 				</h2>
 				<CityContainer>
 					{hotelsList.map((hotel, i) => (
