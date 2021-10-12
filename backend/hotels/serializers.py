@@ -12,10 +12,21 @@ class HotelSerializer(serializers.Serializer):
 
     class Meta:
         model = Hotel
-        fields = '__all__'
-    
+        fields = ('__all__')
+
+class PhotosSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Hotel
+        fields = ('__all__')
 
 class reviewSerializer(serializers.Serializer):
     class Meta:
         model = Review
         fields = '__all__'
+
+class CityIdSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = National_city
+        fields = ('__all__')
