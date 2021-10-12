@@ -2,6 +2,11 @@ import styled from 'styled-components'
 
 export const NavbarStyled = styled.div`
 	background-color: #10216f;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 111;
 	.navBar-container {
 		display: flex;
 		justify-content: space-between;
