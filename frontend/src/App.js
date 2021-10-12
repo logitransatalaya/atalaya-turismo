@@ -12,6 +12,7 @@ import { NavBar } from './components/GlobalComponents/NavBar'
 import { HotelFeatures } from 'components/Hotels/HotelFeatures'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
+import { Health } from 'components/Health'
 
 export default function App() {
 	return (
@@ -53,6 +54,10 @@ export default function App() {
 					</Route>
 					<Route exact path='/ofertas'>
 						<Offers />
+						<Footer />
+					</Route>
+					<Route exact path='/salud'>
+						<Health />
 						<Footer />
 					</Route>
 				</Switch>
