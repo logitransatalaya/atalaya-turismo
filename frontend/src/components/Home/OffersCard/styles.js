@@ -1,3 +1,4 @@
+import { animationAppear } from 'components/GlobalComponents/animations'
 import styled from 'styled-components'
 
 export const CardStyle = styled.div`
@@ -10,6 +11,7 @@ export const CardStyle = styled.div`
 	padding: 0.8rem;
 	gap: 1rem;
 	margin: 2rem 0;
+	animation: ${animationAppear} 0.6s;
 
 	h1 {
 		margin: 0;

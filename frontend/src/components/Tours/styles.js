@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const ToursStyled = styled.div`
 	.ToursCards-container {
@@ -7,6 +8,7 @@ export const ToursStyled = styled.div`
 		grid-template-rows: auto;
 		gap: 1em;
 		padding: 1.9em 0em 2em 0em;
+		animation: ${animationAppear} 2s ease forwards;
 	}
 
 	.hotelCard {
