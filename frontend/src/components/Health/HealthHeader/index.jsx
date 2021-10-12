@@ -1,9 +1,10 @@
 import React from 'react'
+import { HealthHeaderContainer } from './styles'
 
 export const HealthHeader = () => {
 	return (
-		<div>
-			<h2>cabeza</h2>
-		</div>
+		<HealthHeaderContainer>
+			<div className='contentBanner'></div>
+		</HealthHeaderContainer>
 	)
 }
