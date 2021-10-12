@@ -12,8 +12,13 @@ class HotelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Hotel
-        fields = '__all__'
-    
+        fields = ('__all__')
+
+class PhotosSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Hotel
+        fields = ('__all__')
 
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:

@@ -4,7 +4,8 @@ from rest_framework import serializers
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import CityIdSerializer, CitySerializer, HotelSerializer
+
+from .serializers import CityIdSerializer, CitySerializer, HotelSerializer, PhotosSerializer
 
 from .models import Hotel, National_city
 
@@ -31,13 +32,19 @@ def cityList(request):
 
 @api_view(['GET'])
 def hotels(request):
+
     city = National_city.objects.filter(city__iexact=request.query_params['city'])
     cityIdSerializer = CityIdSerializer(city, many=True)
-    print(cityIdSerializer.data[0]['id'])
-    hotels = Hotel.objects.all()
-    # hotels = Hotel.objects.filter(hotel_city=city)
+    cityId = cityIdSerializer.data[0]['id']
+
+    hotels = Hotel.objects.filter(hotel_city=cityId)
+
     serializer = HotelSerializer(hotels, many=True)
+    serializerPhotos = PhotosSerializer(hotels, many=True)
+
+
     return Response({
-        'hotel' : cityIdSerializer.data[0]['id']
-    })
+            'hotels' : serializer.data
+        }
+    )
 
