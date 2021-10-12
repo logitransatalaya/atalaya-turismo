@@ -6,6 +6,7 @@ import { ToursDetailsStyled } from './styles'
 import { Skeleton } from 'components/Skeletons'
 import { Container } from 'components/Container'
 import { Footer } from 'components/GlobalComponents/Footer'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const ToursDetails = () => {
 	const { urlCode } = useParams()
@@ -23,13 +24,7 @@ export const ToursDetails = () => {
 		<>
 			<Container>
 				<ToursDetailsStyled className='ToursDetails'>
-					<header>
-						<h3>{currentTour.title}</h3>
-						<a href='/'>
-							<img src='/tours/whatsapp.png' alt='' />
-						</a>
-					</header>
-					<div className='separator'></div>
+					<Title text={currentTour.title} about={false} />
 					<div className='description'>
 						<div className='descriptionImg-container'>
 							<img

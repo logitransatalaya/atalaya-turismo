@@ -9,6 +9,7 @@ export const ButtonStyled = styled.button`
 	font-size: 1.1rem;
 	cursor: pointer;
 	transition: opacity 0.5s, transform 0.1s;
+	width: ${({ wDesc }) => wDesc || 'auto'};
 
 	&:hover {
 		opacity: 0.9;
@@ -19,6 +20,6 @@ export const ButtonStyled = styled.button`
 	}
 
 	@media (max-width: 600px) {
-		width: ${({ w }) => w || 'auto'};
+		width: ${({ wRes }) => wRes || 'auto'};
 	}
 `

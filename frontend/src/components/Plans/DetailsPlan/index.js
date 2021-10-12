@@ -8,6 +8,7 @@ import { plans } from '../../../json/plans.json'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
 import { Container } from 'components/Container'
 import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const DetailsPlan = () => {
 	const { urlCode } = useParams()
@@ -60,11 +61,10 @@ export const DetailsPlan = () => {
 						<CurrentPlanConatainer>
 							{
 								<>
-									<div className='currentPlan_title'>
-										<h2>plan {currentPlan.name}</h2>
-										<div className='line'></div>
-									</div>
-
+									<Title
+										text={currentPlan.name}
+										about={false}
+									/>
 									{handleScreen > 600 ? (
 										<div className='containerImages'>
 											{currentPlan.photos.map(
