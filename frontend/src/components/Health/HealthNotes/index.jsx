@@ -1,16 +1,34 @@
 import { Container } from 'components/Container'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { HealthNotesInfo } from './HealthNotesInfo'
 import { ReactComponent as IconEdificio } from 'images/svg/icono-edificio.svg'
 import { ReactComponent as IconAmbulancia } from 'images/svg/icnono-ambulancia.svg'
 import { ReactComponent as IconNotas } from 'images/svg/icono-notas.svg'
 import { ReactComponent as IconCruz } from 'images/svg/icono-cruz.svg'
-import { ReactComponent as IconParqueadero } from 'images/svg/iconParqueadero.svg'
 import { ReactComponent as IconEstetoscopio } from 'images/svg/icono-estetoscopio.svg'
+import { Button } from 'components/GlobalComponents/Button'
 
 export const HealthNotes = () => {
+	const [screen, setScreen] = useState(window.innerWidth)
+
+	useEffect(() => {
+		window.onresize = () => setScreen(window.innerWidth)
+	}, [screen])
+
 	return (
 		<Container>
+			{screen < 950 ? (
+				<div className='bg'>
+					<Button
+						text={'Reservar'}
+						bgColor={'#53a8c6'}
+						wDesc={'48%'}
+						fs={'1.9rem'}
+					/>
+				</div>
+			) : (
+				''
+			)}
 			<h2 className='healt_title'>Notas</h2>
 			<div className='Healt_content_grid'>
 				<div>
@@ -45,12 +63,21 @@ export const HealthNotes = () => {
 						Icon={IconEstetoscopio}
 					/>
 				</div>
-				<div className='Healt_content_button'>
-					<div></div>
-					<div className='bg'>
-						<button className='btn'>hola brayan</button>
+				{screen > 950 ? (
+					<div className='Healt_content_button'>
+						<div></div>
+						<div className='bg'>
+							<Button
+								text={'Reservar'}
+								bgColor={'#53a8c6'}
+								wDesc={'48%'}
+								fs={'1.9rem'}
+							/>
+						</div>
 					</div>
-				</div>
+				) : (
+					''
+				)}
 			</div>
 		</Container>
 	)

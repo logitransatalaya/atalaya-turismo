@@ -16,6 +16,9 @@ export const StyleCard = styled.div`
 		p {
 			text-align: start;
 			margin: 0.1em;
+			@media (min-width: 600px) {
+				font-size: 1.3rem;
+			}
 		}
 	}
 
@@ -24,6 +27,10 @@ export const StyleCard = styled.div`
 			display: grid;
 			grid-template-columns: 2fr 10fr;
 			margin: auto;
+			.icon {
+				height: 3rem;
+				padding: 1rem 0em 0em 0em;
+			}
 		}
 	}
 `
