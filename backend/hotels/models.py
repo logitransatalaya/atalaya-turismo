@@ -2,9 +2,11 @@ from os import name
 from typing import Tuple
 from django.db import models
 from django.db.models.fields.related import OneToOneField
+from rest_framework.fields import flatten_choices_dict
 
 class National_city(models.Model):
-    city = models.CharField(max_length=150)
+    city = models.CharField(max_length=150, blank=False, default='Medellin')
+    city_img = models.URLField(max_length=250, blank=False, default='')
     def __str__(self):
         return self.city
 

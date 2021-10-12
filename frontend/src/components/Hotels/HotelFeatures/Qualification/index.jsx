@@ -18,7 +18,7 @@ export const Qualification = ({ stars }) => {
 		handleStarClick(stars - 1)
 		// eslint-disable-next-line
 	}, [])
-
+	console.log(stars)
 	return (
 		<ContainerStars>
 			<div>

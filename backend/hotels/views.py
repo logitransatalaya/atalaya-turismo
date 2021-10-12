@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from rest_framework import serializers
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -24,7 +25,7 @@ def apiOverView(request):
 def cityList(request):
     cities = National_city.objects.all()
     serializer = CitySerializer(cities, many=True)
-    print(serializer.data)
+    print(cities)
     return Response({
         'cities': serializer.data
     })

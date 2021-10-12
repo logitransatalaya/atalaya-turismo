@@ -4,7 +4,7 @@ import { HeaderCardStyled, CardGrid } from './style'
 import { ReactComponent as IconLocation } from 'images/ubicacion.svg'
 import { Qualification } from '../Qualification'
 
-export const HeaderFeature = ({ city, photos, qualification }) => {
+export const HeaderFeature = ({ city, photos }) => {
 	const { photos1 } = photos
 	const [screen, setScreen] = useState(window.innerWidth)
 
@@ -24,7 +24,7 @@ export const HeaderFeature = ({ city, photos, qualification }) => {
 						<p>{city}</p>
 					</div>
 					<div>
-						<Qualification stars={qualification} />
+						<Qualification stars={3} />
 					</div>
 				</div>
 			</HeaderCardStyled>

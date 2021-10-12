@@ -26,7 +26,6 @@ export const HotelFeatures = () => {
 			{currentHotel && (
 				<Container>
 					<HeaderFeature
-						qualification={currentHotel.calification}
 						city={city}
 						photos={currentHotel.more.photos}
 					/>

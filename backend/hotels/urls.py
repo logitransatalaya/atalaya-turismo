@@ -7,6 +7,7 @@ from hotels import views
 
 urlpatterns = [
     path('test', views.apiOverView, name='api-overview'),
-    path('cities/', views.cityList, name='cities')
+    path('cities/', views.cityList, name='cities'),
+    path('hotels/', views.hotels, name='hotels')
 
 ]
