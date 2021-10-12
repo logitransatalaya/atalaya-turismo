@@ -13,10 +13,12 @@ import { HotelFeatures } from 'components/Hotels/HotelFeatures'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
 import { Health } from 'components/Health'
+import ScrollToTop from 'components/ScrollToTop'
 
 export default function App() {
 	return (
 		<Router>
+			<ScrollToTop />
 			<div>
 				<FloatingButtons />
 				<NavBar />

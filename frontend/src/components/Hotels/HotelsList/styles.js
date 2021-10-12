@@ -1,3 +1,4 @@
+import { animationAppear } from 'components/GlobalComponents/animations'
 import styled from 'styled-components'
 
 export const CityContainer = styled.div`
@@ -5,6 +6,7 @@ export const CityContainer = styled.div`
 	display: flex;
 	gap: 1em;
 	flex-direction: column;
+	animation: ${animationAppear} 2s ease forwards;
 
 	.cityCard {
 		display: flex;

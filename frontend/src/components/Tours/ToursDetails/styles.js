@@ -1,45 +1,20 @@
+import { animationAppear } from 'components/GlobalComponents/animations'
 import styled from 'styled-components'
 
 export const ToursDetailsStyled = styled.div`
 	color: #10216f;
 	margin: 0 auto;
-	margin-top: 3rem;
 	width: 95%;
-
-	.separator {
-		background-color: #f3a719;
-		height: 0.2rem;
-		margin: 1rem 0 2rem 0;
-	}
-
-	header {
-		padding: 0 1rem;
-		justify-content: space-between;
-		align-items: center;
-		display: flex;
-
-		h3 {
-			margin: 0;
-			font-weight: 500;
-			font-size: 2rem;
-		}
-
-		a {
-			width: 4rem;
-		}
-		img {
-			width: 100%;
-		}
-	}
 
 	.description {
 		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 2rem;
+		gap: 3rem;
 		height: auto;
-		padding: 0 1rem;
+		margin-top: 2.5rem;
+		animation: ${animationAppear} 2s ease forwards;
 
 		.descriptionImg-container {
 			height: 100%;
@@ -80,6 +55,7 @@ export const ToursDetailsStyled = styled.div`
 		font-size: 1.5rem;
 		padding: 0 2rem;
 		margin-bottom: 2rem;
+		animation: ${animationAppear} 2s ease forwards;
 
 		h5 {
 			font-size: 2rem;
