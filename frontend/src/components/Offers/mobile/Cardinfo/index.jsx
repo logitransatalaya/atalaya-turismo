@@ -6,6 +6,10 @@ import { Button } from 'components/GlobalComponents/Button'
 const Cardinfo = ({ data }) => {
 	const { fromDate, toDate, price, hotel } = data
 
+	const handleBooking = () => {
+		console.log('me hicieron click')
+	}
+
 	return (
 		<ContainerCard>
 			<div className='plane'>
@@ -21,7 +25,12 @@ const Cardinfo = ({ data }) => {
 				<p className='blue bold'>{hotel}</p>
 			</div>
 			{/* <button className='reserve'>Reservar</button> */}
-			<Button text='Reservar' bgColor='#10216f' wDesc={'62%'} />
+			<Button
+				onClick={handleBooking}
+				text='Reservar'
+				bgColor='#10216f'
+				wDesc={'20%'}
+			/>
 		</ContainerCard>
 	)
 }
