@@ -7,7 +7,7 @@ from rest_framework.response import Response
 
 from .serializers import CityIdSerializer, CitySerializer, HotelSerializer, PhotosSerializer
 
-from .models import Hotel, National_city
+from .models import Hotel, National_city, Service
 
 import json
 
@@ -23,9 +23,10 @@ def apiOverView(request):
 
 @api_view(['GET'])
 def cityList(request):
+
     cities = National_city.objects.all()
     serializer = CitySerializer(cities, many=True)
-    print(cities)
+
     return Response({
         'cities': serializer.data
     })
@@ -33,18 +34,35 @@ def cityList(request):
 @api_view(['GET'])
 def hotels(request):
 
-    city = National_city.objects.filter(city__iexact=request.query_params['city'])
-    cityIdSerializer = CityIdSerializer(city, many=True)
-    cityId = cityIdSerializer.data[0]['id']
 
-    hotels = Hotel.objects.filter(hotel_city=cityId)
+    city = National_city.objects.filter(city__iexact='medellin')
+    city_id_serializer = CityIdSerializer(city, many=True)
+    cityId = city_id_serializer.data[0]['id']
+
+    hotels = Hotel.objects.filter(id_city=cityId)
 
     serializer = HotelSerializer(hotels, many=True)
-    serializerPhotos = PhotosSerializer(hotels, many=True)
-
 
     return Response({
             'hotels' : serializer.data
         }
     )
+
+@api_view(['GET'])
+def hotel(request, pk):
+
+    hotel = Hotel.objects.filter(id=pk)
+    serializer_hotel = HotelSerializer(hotel, many=True)
+
+    hotel_id = serializer_hotel.data
+    print(hotel_id)
+    
+    service = Service.objects.all()
+    serializer = HotelSerializer(hotel, many=True)
+
+    return Response({
+        'Testing': serializer_hotel.data
+    })
+
+
 

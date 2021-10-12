@@ -61,7 +61,7 @@ export const HotelsList = () => {
 											text={'Ver más'}
 											bgColor={'#10216f'}
 											color={'#fff'}
-											w={'100%'}
+											wRes={'100%'}
 										/>
 									</Link>
 								</div>

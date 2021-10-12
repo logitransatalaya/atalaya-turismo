@@ -1,3 +1,4 @@
+import { animationAppear } from 'components/GlobalComponents/animations'
 import styled from 'styled-components'
 
 export const CurrentPlanConatainer = styled.div`
@@ -34,6 +35,7 @@ export const CurrentPlanConatainer = styled.div`
 		gap: 1em;
 		padding: 1em;
 		background-color: #fff;
+		animation: ${animationAppear} 2s ease forwards;
 		img {
 			width: 100%;
 			height: 300px;
@@ -49,6 +51,7 @@ export const CurrentPlanConatainer = styled.div`
 			font-size: 1.5rem;
 			padding: 0 1em;
 			text-align: justify;
+			animation: ${animationAppear} 2s ease forwards;
 		}
 		@media (max-width: 600px) {
 			p {
@@ -59,6 +62,7 @@ export const CurrentPlanConatainer = styled.div`
 `
 export const CurrentPlanServices = styled.div`
 	background-color: #f7f7f7;
+	animation: ${animationAppear} 2s ease forwards;
 
 	.contentMax_services {
 		max-width: 1350px;

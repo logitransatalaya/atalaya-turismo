@@ -49,7 +49,7 @@ const FloatingButtons = () => {
 				messageWsp: `Deseo%20reservar%20un%20cupo%20para%20${tour}`
 			})
 		}
-	}, [currentHotel, currentTour])
+	}, [currentHotel, currentTour, routes.route])
 
 	return (
 		<ContainerBtns>
