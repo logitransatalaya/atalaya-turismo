@@ -12,7 +12,9 @@ export const Health = () => {
 			<Container>
 				<HealthIncludes />
 			</Container>
-			<HealthNotes />
+			<div className='bg-image'>
+				<HealthNotes />
+			</div>
 		</StyleHealth>
 	)
 }
