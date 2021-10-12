@@ -7,6 +7,8 @@ import { ReactComponent as IconNotas } from 'images/svg/icono-notas.svg'
 import { ReactComponent as IconCruz } from 'images/svg/icono-cruz.svg'
 import { ReactComponent as IconEstetoscopio } from 'images/svg/icono-estetoscopio.svg'
 import { Button } from 'components/GlobalComponents/Button'
+import imagenSaludSmall from 'images/img-bg-screen-small.png'
+import { Boximgsmall } from './styles'
 
 export const HealthNotes = () => {
 	const [screen, setScreen] = useState(window.innerWidth)
@@ -79,6 +81,11 @@ export const HealthNotes = () => {
 					''
 				)}
 			</div>
+			<Boximgsmall>
+				<img src={imagenSaludSmall} alt='imagen' />
+
+				<div className='boxWhite'></div>
+			</Boximgsmall>
 		</Container>
 	)
 }

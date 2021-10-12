@@ -17,7 +17,11 @@ export const StyleHealth = styled.div`
 		background-size: cover;
 		min-height: 600px;
 		background-repeat: no-repeat;
+		@media (max-width: 600px) {
+			background-image: none;
+		}
 	}
+
 	.healt_title {
 		color: #53a8c6;
 		font-weight: 600;
