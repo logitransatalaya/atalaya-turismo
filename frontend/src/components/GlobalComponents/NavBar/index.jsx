@@ -76,6 +76,11 @@ export const NavBar = () => {
 									OFERTAS
 								</Link>
 							</li>
+							<li>
+								<Link onClick={openNavbar} to='/salud'>
+									SALUD
+								</Link>
+							</li>
 						</ul>
 					</div>
 				</nav>

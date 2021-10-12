@@ -1,3 +1,4 @@
+import { animationUpload } from 'components/GlobalComponents/animations'
 import styled from 'styled-components'
 
 export const PlansCardStyled = styled.a`
@@ -5,6 +6,8 @@ export const PlansCardStyled = styled.a`
 	border-radius: 5px;
 	box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.275);
 	display: flex;
+	position: relative;
+	animation: ${animationUpload} 0.5s;
 
 	flex-direction: column;
 	font-size: 1rem;

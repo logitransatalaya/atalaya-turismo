@@ -27,8 +27,8 @@ const FloatingButtons = () => {
 	}, [dispatch, location, currentRoute])
 
 	useEffect(() => {
-		if (currentHotel && routes.route !== currentRoute) {
-			console.log('entro')
+		if (currentHotel) {
+			// console.log('entro')
 			const { idcity, urlCode, name } = currentHotel
 			const hotel = name.replaceAll(' ', '%20')
 			setRoute({
@@ -38,8 +38,8 @@ const FloatingButtons = () => {
 				messageWsp: `Deseo%20reservar%20el%20hotel%20${hotel}`
 			})
 		}
-		if (currentTour && routes.route !== currentRoute) {
-			console.log('entro')
+		if (currentTour) {
+			// console.log('entro')
 			const { title, urlCode } = currentTour
 			const tour = title.replaceAll(' ', '%20')
 			setRoute({
@@ -48,13 +48,8 @@ const FloatingButtons = () => {
 				message: `Deseo reservar este tour`,
 				messageWsp: `Deseo%20reservar%20un%20cupo%20para%20${tour}`
 			})
-			return
 		}
 	}, [currentHotel, currentTour])
-
-	console.log(currentRoute)
-	console.log(routes.route)
-	console.log(routes)
 
 	return (
 		<ContainerBtns>

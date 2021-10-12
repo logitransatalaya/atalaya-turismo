@@ -3,7 +3,6 @@ import { ContainerStars } from './style'
 import React, { useEffect, useState } from 'react'
 
 export const Qualification = ({ stars }) => {
-	// console.log(stars)
 	const [clicked, setClicked] = useState([false, false, false, false, false])
 
 	const handleStarClick = (index) => {
@@ -18,7 +17,6 @@ export const Qualification = ({ stars }) => {
 		handleStarClick(stars - 1)
 		// eslint-disable-next-line
 	}, [])
-	console.log(stars)
 	return (
 		<ContainerStars>
 			<div>

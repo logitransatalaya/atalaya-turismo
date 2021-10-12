@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const Card = styled.div`
 	width: 100%;
@@ -7,6 +8,7 @@ export const Card = styled.div`
 	align-items: center;
 	justify-content: center;
 	padding: 1.9em 0em 0em 0em;
+	animation: ${animationAppear} 2s ease forwards;
 
 	.containerSF {
 		width: 100%;
