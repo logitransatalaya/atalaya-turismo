@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Button } from '../styles'
 
-const BtnContact = ({ icon, title, pathname }) => {
+const BtnContact = ({ icon, title, pathname, routes }) => {
 	const [showToolTip, setShowToolTip] = useState(true)
 
 	useEffect(() => {
@@ -33,7 +33,7 @@ const BtnContact = ({ icon, title, pathname }) => {
 					<img src={icon} alt={title} className='icons' />
 
 					<span className={handleDisappear().animationwsp}>
-						Contactanos por Whatsapp
+						{routes.message}
 					</span>
 				</a>
 			) : (
