@@ -8,7 +8,7 @@ export const StyleHealth = styled.div`
 		padding-bottom: 2rem;
 	}
 	.Healt_content_grid {
-		margin-top: 5rem;
+		margin-top: 2rem;
 	}
 	.bg-image {
 		padding-top: 4rem;
@@ -17,7 +17,11 @@ export const StyleHealth = styled.div`
 		background-size: cover;
 		min-height: 600px;
 		background-repeat: no-repeat;
+		@media (max-width: 600px) {
+			background-image: none;
+		}
 	}
+
 	.healt_title {
 		color: #53a8c6;
 		font-weight: 600;
@@ -40,4 +44,14 @@ export const StyleHealth = styled.div`
 			}
 		}
 	}
+	@media (min-width: 700px) {
+		.bg-image {
+			padding-top: 4rem;
+			margin-top: 2rem;
+			background-image: url(${image});
+			background-size: cover;
+			min-height: 600px;
+			background-repeat: no-repeat;
+		}
+	} ;
 `
