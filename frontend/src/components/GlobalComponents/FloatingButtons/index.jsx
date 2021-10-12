@@ -28,7 +28,6 @@ const FloatingButtons = () => {
 
 	useEffect(() => {
 		if (currentHotel && routes.route !== currentRoute) {
-			console.log('entro')
 			const { idcity, urlCode, name } = currentHotel
 			const hotel = name.replaceAll(' ', '%20')
 			setRoute({
@@ -39,7 +38,6 @@ const FloatingButtons = () => {
 			})
 		}
 		if (currentTour && routes.route !== currentRoute) {
-			console.log('entro')
 			const { title, urlCode } = currentTour
 			const tour = title.replaceAll(' ', '%20')
 			setRoute({
@@ -51,10 +49,6 @@ const FloatingButtons = () => {
 			return
 		}
 	}, [currentHotel, currentTour])
-
-	console.log(currentRoute)
-	console.log(routes.route)
-	console.log(routes)
 
 	return (
 		<ContainerBtns>
