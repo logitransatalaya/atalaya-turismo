@@ -38,12 +38,11 @@ export const HeaderCardStyled = styled.div`
 	}
 `
 export const CardGrid = styled.div`
-	background-color: white;
 	width: 100%;
 	gap: 1em;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 300px);
 	.card_1 {
 		grid-column: 1/3;
 		grid-row: 1/-1;
@@ -66,7 +65,7 @@ export const CardGrid = styled.div`
 		width: 100%;
 		height: 100%;
 	}
-	.box_card {
+	.box_img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;

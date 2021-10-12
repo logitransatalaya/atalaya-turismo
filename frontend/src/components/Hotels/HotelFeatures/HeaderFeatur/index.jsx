@@ -33,7 +33,7 @@ export const HeaderFeature = ({ city, photos }) => {
 					{photos1.map((photo, i) => (
 						<div className={`card_${i + 1}`} key={i}>
 							<img
-								className='box_card'
+								className='box_img'
 								src={photo.urlCode}
 								alt={`img${i + 1}`}
 							/>
