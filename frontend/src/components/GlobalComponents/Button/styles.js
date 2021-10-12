@@ -6,7 +6,7 @@ export const ButtonStyled = styled.button`
 	padding: 10px 20px;
 	border: none;
 	border-radius: 0.5em;
-	font-size: 1.1rem;
+	font-size: ${({ fs }) => fs || '1.1rem'};
 	cursor: pointer;
 	transition: opacity 0.5s, transform 0.1s;
 	width: ${({ wDesc }) => wDesc || 'auto'};
