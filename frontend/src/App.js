@@ -28,11 +28,11 @@ export default function App() {
 						<Hotels />
 						<Footer />
 					</Route>
-					<Route exact path='/hoteles/:city/:locid'>
+					<Route exact path='/hoteles/:locid'>
 						<HotelsList />
 						<Footer />
 					</Route>
-					<Route exact path='/hoteles/:city/:locid/:hotelId'>
+					<Route exact path='/hoteles/:locid/:hotelId'>
 						<HotelFeatures />
 						<Footer />
 					</Route>

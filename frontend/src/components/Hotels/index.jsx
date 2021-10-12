@@ -21,7 +21,7 @@ export const Hotels = () => {
 			<HotelsContainer>
 				{cityList &&
 					cityList.map((city, i) => (
-						<Link key={i} to={`hoteles/${city.title}/${city.id}`}>
+						<Link key={i} to={`hoteles/${city.id}`}>
 							<div className='hotelCard'>
 								<div className='hotelCardBoxImg'>
 									<img src={city.urlImg} alt={city.title} />
