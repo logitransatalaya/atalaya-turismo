@@ -2,16 +2,18 @@ from os import name
 from typing import Tuple
 from django.db import models
 from django.db.models.fields.related import OneToOneField
+from rest_framework.fields import flatten_choices_dict
 
 class National_city(models.Model):
-    city = models.CharField(max_length=150)
+    city = models.CharField(max_length=150, blank=False, default='Medellin')
+    city_img = models.URLField(max_length=250, blank=False, default='')
     def __str__(self):
         return self.city
 
 
 class Hotel(models.Model):
     hotel_city = models.ForeignKey(National_city, on_delete=models.CASCADE, default=None)
-    name = models.CharField(max_length=100, blank=False, primary_key=True)
+    name = models.CharField(max_length=100, blank=False)
     stars = models.PositiveIntegerField()
     main_1 = models.URLField(max_length=250)
     main_2 = models.URLField(max_length=250)
