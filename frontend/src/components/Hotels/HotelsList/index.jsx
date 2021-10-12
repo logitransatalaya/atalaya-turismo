@@ -11,6 +11,7 @@ import { Title } from 'components/GlobalComponents/Title'
 
 export const HotelsList = () => {
 	const { locid, city } = useParams()
+
 	const { getHotels } = useApi()
 	const { hotelsList } = useSelector((state) => state.hotelsReducer)
 
