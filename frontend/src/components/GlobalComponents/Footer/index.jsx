@@ -154,7 +154,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								<FooterContentIcons>
 									<FooterBoxIcons>
 										<a
-											href='https://www.facebook.com/'
+											href='https://www.instagram.com/?hl=es'
 											target='_blank'
 											rel='noreferrer'
 										>
@@ -166,7 +166,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 									</FooterBoxIcons>
 									<FooterBoxIcons>
 										<a
-											href='https://www.instagram.com/?hl=es'
+											href='https://www.facebook.com/'
 											target='_blank'
 											rel='noreferrer'
 										>

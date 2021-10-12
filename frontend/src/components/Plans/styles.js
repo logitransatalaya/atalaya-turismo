@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const PlansContainer = styled.div`
 	.plansContent {
@@ -7,6 +8,8 @@ export const PlansContainer = styled.div`
 		gap: 1em;
 		padding: 1.9em 0em 2em 2em;
 		padding-bottom: 1em;
+		animation: ${animationAppear} 2s ease forwards;
+
 		@media (max-width: 800px) {
 			grid-template-columns: 1fr;
 		}

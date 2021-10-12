@@ -1,24 +1,12 @@
-import styled, { keyframes } from 'styled-components'
-
-const animationHotel = keyframes`
-	from{
-		opacity: 0;
-	}
-	30%{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-
-`
+import styled from 'styled-components'
+import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const HotelsContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1em;
 	padding: 2em 1em;
-	animation: ${animationHotel} 2s ease forwards;
+	animation: ${animationAppear} 2s ease forwards;
 
 	.hotelCard {
 		height: 300px;

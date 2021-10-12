@@ -1,15 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-
-const animationTitle = keyframes`
-	0% {
-			opacity: 0;
-			bottom: -200px;
-		}
-	100% {
-		opacity: 1;
-		bottom: 0;
-	}
-`
+import styled from 'styled-components'
+import { animationUpload } from '../animations'
 
 export const StyleTitle = styled.div`
 	width: 100%;
@@ -17,7 +7,7 @@ export const StyleTitle = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	animation: ${animationTitle} 0.5s;
+	animation: ${animationUpload} 0.5s;
 
 	.title {
 		font-size: 1.85rem;
