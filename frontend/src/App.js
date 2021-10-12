@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
 import { Health } from 'components/Health'
 import ScrollToTop from 'components/ScrollToTop'
+import ScrollArrow from 'components/ScrollToTop/ScrollArrow'
 
 export default function App() {
 	return (
@@ -21,6 +22,7 @@ export default function App() {
 			<ScrollToTop />
 			<div>
 				<FloatingButtons />
+				<ScrollArrow />
 				<NavBar />
 				<Switch>
 					<Route exact path='/'>
