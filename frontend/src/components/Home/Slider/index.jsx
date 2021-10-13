@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
 import { Slider } from './styles'
 import { splideOptionsLoop } from 'lib/splide'
+import React, { useEffect, useState } from 'react'
+import slideMobile from 'images/imagenbannerhomemovil.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import slideDefault from '../../../images/bannerdestinosdestacados.png'
-import slideMobile from 'images/imagenbannerhomemovil.png'
 
 const SliderComponent = () => {
-	const [handleWidth, setHandleWidth] = useState(0)
+	const [handleWidth, setHandleWidth] = useState(window.innerWidth)
+
 	useEffect(() => {
-		setHandleWidth(window.innerWidth)
 		window.onresize = () => {
 			setHandleWidth(window.innerWidth)
 		}
