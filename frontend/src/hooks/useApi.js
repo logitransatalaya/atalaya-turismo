@@ -1,10 +1,10 @@
-import { useDispatch } from 'react-redux'
-import { hotels } from 'json/hotels.json'
-import { tours } from 'json/tours.json'
 import {
 	updateCurrentHotel,
 	updateHotelsList
 } from 'state/actions/hotelsActions'
+import { tours } from 'json/tours.json'
+import { useDispatch } from 'react-redux'
+import { hotels } from 'json/hotels.json'
 import { updateCurrentTour } from 'state/actions/toursActions'
 
 export const useApi = () => {

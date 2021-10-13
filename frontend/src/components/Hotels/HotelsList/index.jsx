@@ -5,13 +5,12 @@ import { CityContainer } from './styles'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
+import { Title } from 'components/GlobalComponents/Title'
 import { Button } from 'components/GlobalComponents/Button'
 import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
-import { Title } from 'components/GlobalComponents/Title'
 
 export const HotelsList = () => {
 	const { locid, city } = useParams()
-
 	const { getHotels } = useApi()
 	const { hotelsList } = useSelector((state) => state.hotelsReducer)
 

@@ -19,7 +19,7 @@ export const BenefitsSectionStyled = styled.div`
 
 	.benefitsSection-imageBackground {
 		width: 100%;
-
+		height: 420px;
 		img {
 			height: 100%;
 			width: 100%;
@@ -37,6 +37,7 @@ export const BenefitsSectionStyled = styled.div`
 
 		.benefitsSection-imageBackground {
 			margin-top: -15rem;
+			height: 630px;
 		}
 
 		.line-separator {
