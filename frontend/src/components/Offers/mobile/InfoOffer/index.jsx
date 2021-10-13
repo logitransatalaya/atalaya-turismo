@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import Cardinfo from '../Cardinfo'
 import { InfoO } from './styles'
+import Cardinfo from '../Cardinfo'
+import React, { useEffect, useState } from 'react'
 
 const InfoOffer = ({ data }) => {
 	const [accordion, setAccordion] = useState(false)

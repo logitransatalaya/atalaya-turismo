@@ -1,7 +1,7 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide'
-import { splideOptionsOfferts } from 'lib/splide'
 import React from 'react'
 import { ContainerSplider } from './styles'
+import { splideOptionsOfferts } from 'lib/splide'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
 
 const SliderOffer = ({ photos }) => {
 	return (

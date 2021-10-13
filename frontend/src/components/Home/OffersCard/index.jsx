@@ -1,5 +1,6 @@
 import React from 'react'
 import { CardStyle } from './styles'
+
 export const OffersCard = ({ title }) => {
 	return (
 		<CardStyle>

@@ -1,14 +1,12 @@
+import { useParams } from 'react-router'
+import { plans } from '../../../json/plans.json'
+import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { useParams } from 'react-router'
-
-import { getCurrentPlan } from '../../../state/actions/plansAction'
-import { plans } from '../../../json/plans.json'
-
-import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
-import { Container } from 'components/Container'
-import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
 import { Title } from 'components/GlobalComponents/Title'
+import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
+import { getCurrentPlan } from '../../../state/actions/plansAction'
+import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
 
 export const DetailsPlan = () => {
 	const { urlCode } = useParams()
