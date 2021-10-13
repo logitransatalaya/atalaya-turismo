@@ -5,9 +5,9 @@ from rest_framework import serializers
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from .serializers import CityIdSerializer, CitySerializer, HotelSerializer, PhotosSerializer
+from .serializers import CityIdSerializer, CitySerializer, HotelSerializer, PhotosSerializer, ReviewSerializer, ServiceSerializer
 
-from .models import Hotel, National_city, Service
+from .models import Hotel, National_city, Service, Photos, Review
 
 import json
 
@@ -32,10 +32,10 @@ def cityList(request):
     })
 
 @api_view(['GET'])
-def hotels(request):
+def hotels(request, name):
 
 
-    city = National_city.objects.filter(city__iexact='medellin')
+    city = National_city.objects.filter(city__iexact=name)
     city_id_serializer = CityIdSerializer(city, many=True)
     cityId = city_id_serializer.data[0]['id']
 
@@ -49,19 +49,32 @@ def hotels(request):
     )
 
 @api_view(['GET'])
-def hotel(request, pk):
+def hotel(request, name, pk):
 
-    hotel = Hotel.objects.filter(id=pk)
+    city = National_city.objects.filter(city__iexact=name)
+    serializer_city = CitySerializer(city, many=True)
+
+    hotel = Hotel.objects.filter(id=pk, id_city=serializer_city.data[0]['id'])
     serializer_hotel = HotelSerializer(hotel, many=True)
 
-    hotel_id = serializer_hotel.data
-    print(hotel_id)
-    
-    service = Service.objects.all()
-    serializer = HotelSerializer(hotel, many=True)
+    service = Service.objects.filter(id_hotel=pk)
+    serializer_service = ServiceSerializer(service, many=True)
+
+    photos = Photos.objects.filter(id_hotel=pk)
+    serializer_photos = PhotosSerializer(photos, many=True)
+
+    review = Review.objects.filter(id_hotel=pk)
+    serializer_review = ReviewSerializer(review, many=True)
 
     return Response({
-        'Testing': serializer_hotel.data
+        'hotel': serializer_hotel.data,
+        'more' : {
+            'services': serializer_service.data,
+            'photos': {
+                'photos1': serializer_photos.data,
+            },
+            'reviews': serializer_review.data
+        }
     })
 
 

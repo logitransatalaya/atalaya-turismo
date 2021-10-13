@@ -18,18 +18,18 @@ class ServiceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model =  Service
-        fields = ('__all__')
+        fields = ['services']
 
 class PhotosSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Photos
-        fields = ('__all__')
+        fields = ('main_1','main_2','main_3', 'main_4', 'hab_1', 'hab_2', 'hab_3', 'hab_4', 'hab_5')
 
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
-        fields = '__all__'
+        fields = ('user','review_text')
 
 class CityIdSerializer(serializers.ModelSerializer):
 

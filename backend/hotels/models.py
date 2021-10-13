@@ -14,6 +14,9 @@ class National_city(models.Model):
 class Hotel(models.Model):
     id_city = models.ForeignKey(National_city, on_delete=models.CASCADE, default=None)
     name = models.CharField(max_length=100, blank=False)
+    price = models.PositiveIntegerField()
+    address = models.CharField(max_length=150)
+    urlImg = models.URLField(max_length=250, blank=False)
     stars = models.PositiveIntegerField()
     # Pending Remove
     description = models.CharField(max_length=250)
