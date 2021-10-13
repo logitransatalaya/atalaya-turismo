@@ -1,7 +1,12 @@
 import { types } from 'state/actions/toolTipActions'
 
 export const initial_state = {
-	currentRoute: null
+	currentRoute: null,
+	currentMessage: {
+		route: '',
+		title: '',
+		page: ''
+	}
 }
 
 export const toolTipReducer = (state = initial_state, action) => {
@@ -11,6 +16,12 @@ export const toolTipReducer = (state = initial_state, action) => {
 				...state,
 				currentRoute: action.payload
 			}
+		case types.GET_MESSAGE: {
+			return {
+				...state,
+				currentMessage: action.payload
+			}
+		}
 		default:
 			return state
 	}

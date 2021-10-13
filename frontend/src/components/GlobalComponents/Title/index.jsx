@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleTitle } from './styles'
 
-export const Title = ({ text, color = false, about = true }) => {
+export const Title = ({ text, color, about = true }) => {
 	return (
 		<div>
 			<StyleTitle color={color} about={about}>

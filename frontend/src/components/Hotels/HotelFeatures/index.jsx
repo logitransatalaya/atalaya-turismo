@@ -2,14 +2,18 @@ import Bedrooms from './Bedrooms'
 import HotelInfo from './HotelInfo'
 import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { HeaderFeature } from './HeaderFeatur'
 import { Container } from 'components/Container'
 import { Title } from 'components/GlobalComponents/Title'
 import { MorePopularService } from 'components/Hotels/HotelFeatures/MorePopularService'
+import { getMessage } from 'state/actions/toolTipActions'
+import { useLocation } from 'react-router'
 
 export const HotelFeatures = () => {
+	const dispatch = useDispatch()
+	const location = useLocation()
 	const { getCurrentHotel } = useApi()
 	const { hotelId, locid, city } = useParams()
 	const { currentHotel, hotelsList } = useSelector(
@@ -20,6 +24,18 @@ export const HotelFeatures = () => {
 		() => getCurrentHotel(locid, hotelId, currentHotel, hotelsList),
 		[getCurrentHotel, hotelsList, currentHotel, hotelId, locid]
 	)
+
+	useEffect(() => {
+		if (currentHotel) {
+			dispatch(
+				getMessage({
+					route: location.pathname,
+					title: currentHotel.name,
+					page: 'hotel'
+				})
+			)
+		}
+	}, [dispatch, currentHotel, location])
 
 	return (
 		<>
