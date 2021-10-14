@@ -25,12 +25,31 @@ export const StyleNavbarBrayan = styled.div`
 			height: 100%;
 
 			.search {
-				padding-top: 2em;
+				background-color: #0a174e;
+				display: flex;
+				align-items: center;
+				flex-direction: row-reverse;
+				padding: 0.5em;
+				border-radius: 1em;
+				color: #fff;
+				margin-top: 2em;
 				input {
+					display: block;
+					background-color: transparent;
 					outline: none;
 					border: none;
-					padding: 5px 10px;
 					border-radius: 1em;
+					color: #fff;
+					font-size: 1.1rem;
+					&::placeholder {
+						color: #fff;
+						text-align: center;
+						font-weight: bold;
+					}
+				}
+
+				.styleIcon {
+					fill: #fff;
 				}
 			}
 
