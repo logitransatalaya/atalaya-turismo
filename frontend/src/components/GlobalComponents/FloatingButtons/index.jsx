@@ -45,7 +45,7 @@ const FloatingButtons = () => {
 				messageWsp: `Deseo%20reservar%20el%20plan%20a%20${currentMessage.title}`
 			})
 		}
-	}, [currentMessage])
+	}, [currentMessage, routes])
 
 	useEffect(() => {
 		if (currentMessage && currentMessage.route !== currentRoute) {
