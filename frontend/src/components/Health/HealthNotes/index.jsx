@@ -1,14 +1,15 @@
+import { Boximgsmall } from './styles'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
 import { HealthNotesInfo } from './HealthNotesInfo'
-import { ReactComponent as IconEdificio } from 'images/svg/icono-edificio.svg'
-import { ReactComponent as IconAmbulancia } from 'images/svg/icnono-ambulancia.svg'
-import { ReactComponent as IconNotas } from 'images/svg/icono-notas.svg'
-import { ReactComponent as IconCruz } from 'images/svg/icono-cruz.svg'
-import { ReactComponent as IconEstetoscopio } from 'images/svg/icono-estetoscopio.svg'
 import { Button } from 'components/GlobalComponents/Button'
 import imagenSaludSmall from 'images/img-bg-screen-small.png'
-import { Boximgsmall } from './styles'
+import { ReactComponent as IconCruz } from 'images/svg/icono-cruz.svg'
+import { ReactComponent as IconNotas } from 'images/svg/icono-notas.svg'
+import { ReactComponent as IconEdificio } from 'images/svg/icono-edificio.svg'
+import { ReactComponent as IconCalendario } from 'images/svg/icono-calendario.svg'
+import { ReactComponent as IconAmbulancia } from 'images/svg/icnono-ambulancia.svg'
+import { ReactComponent as IconEstetoscopio } from 'images/svg/icono-estetoscopio.svg'
 
 export const HealthNotes = () => {
 	const [screen, setScreen] = useState(window.innerWidth)
@@ -63,6 +64,10 @@ export const HealthNotes = () => {
 							'Medicos, especialistas y cirujanos altamente calificados y certidicados para cuidar de tu salud'
 						}
 						Icon={IconEstetoscopio}
+					/>
+					<HealthNotesInfo
+						text={'Citas y acompañamiento en todo el proceso'}
+						Icon={IconCalendario}
 					/>
 				</div>
 				{screen > 950 ? (
