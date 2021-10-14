@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HealthIncludes_styles = styled.div`
+export const HealthIncludesStyles = styled.div`
 	padding: 1em;
 
 	.desc {

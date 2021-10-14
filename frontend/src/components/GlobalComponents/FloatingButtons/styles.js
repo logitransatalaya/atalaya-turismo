@@ -8,7 +8,7 @@ export const ContainerBtns = styled.div`
 	z-index: 11111;
 
 	@media (max-width: 600px) {
-		top: 60px;
+		top: 100px;
 	}
 `
 
