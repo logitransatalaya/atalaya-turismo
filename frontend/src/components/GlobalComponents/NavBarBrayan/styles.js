@@ -27,6 +27,7 @@ export const StyleNavbarBrayan = styled.div`
 			.search {
 				padding-top: 2em;
 				input {
+					outline: none;
 					border: none;
 					padding: 5px 10px;
 					border-radius: 1em;
