@@ -42,7 +42,6 @@ const BtnContact = ({ icon, title, routes, onClick, state }) => {
 			) : (
 				<div className='acontainer'>
 					<img src={icon} alt={title} className='icons' />
-
 					<span className={handleDisappear().animationMail}>
 						Contactanos por correo
 					</span>

@@ -6,7 +6,7 @@ import { ReactComponent as IconGota } from 'images/svg/iconGota.svg'
 import { ReactComponent as IconCopa } from 'images/svg/iconCopa.svg'
 import { ReactComponent as IconWifi } from 'images/svg/iconWifi.svg'
 import { ReactComponent as IconAire } from 'images/svg/iconAire.svg'
-import { ReactComponent as IconMapa } from 'images/svg/iconMapa.svg'
+import { ReactComponent as IconTurista } from 'images/svg/iconTurista.svg'
 import { ReactComponent as IconPiscina } from 'images/svg/iconPiscina.svg'
 import { ReactComponent as IconMascota } from 'images/svg/iconMascota.svg'
 import { ReactComponent as IconRecepcion } from 'images/svg/iconRecepcion.svg'
@@ -16,16 +16,16 @@ import { ReactComponent as IconParqueadero } from 'images/svg/iconParqueadero.sv
 const icons = {
 	IconTasa,
 	IconGota,
+	IconCopa,
 	IconWifi,
+	IconRecepcion,
 	IconHabitacion,
 	IconAire,
 	IconPiscina,
 	IconParqueadero,
 	IconMascota,
-	IconMapa,
-	IconTv,
-	IconRecepcion,
-	IconCopa
+	IconTurista,
+	IconTv
 }
 
 export const InfoService = ({ iconName, text }) => {
