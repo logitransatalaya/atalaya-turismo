@@ -40,7 +40,7 @@ export const ToursDetails = () => {
 		<>
 			<Container>
 				<ToursDetailsStyled className='ToursDetails'>
-					<Title text={currentTour.title} about={false} />
+					<Title text={currentTour.title} />
 					<div className='description'>
 						<div className='descriptionImg-container'>
 							<img

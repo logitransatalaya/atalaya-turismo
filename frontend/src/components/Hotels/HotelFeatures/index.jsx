@@ -45,11 +45,11 @@ export const HotelFeatures = () => {
 						city={city}
 						photos={currentHotel.more.photos}
 					/>
-					<Title text={'SERVICIOS MÁS POPULARES'} />
+					<Title text={'SERVICIOS MÁS POPULARES'} about='true' />
 					<MorePopularService currentHotel={currentHotel} />
-					<Title text={'HABITACIONES DEL HOTEL'} />
+					<Title text={'HABITACIONES DEL HOTEL'} about='true' />
 					<Bedrooms img={currentHotel.more.photos.photos2} />
-					<Title text={'SOBRE EL HOTEL TRYP MEDELLíN'} />
+					<Title text={'SOBRE EL HOTEL TRYP MEDELLíN'} about='true' />
 					<HotelInfo />
 				</Container>
 			)}
