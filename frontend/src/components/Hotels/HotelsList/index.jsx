@@ -23,7 +23,7 @@ export const HotelsList = () => {
 		hotelsList && (
 			<Container>
 				<h2>
-					<Title text={`Ciudad ${city}`} about={false} />
+					<Title text={`Ciudad ${city}`} />
 				</h2>
 				<CityContainer>
 					{hotelsList.map((hotel, i) => (

@@ -16,8 +16,6 @@ export const DetailsPlan = () => {
 	const location = useLocation()
 	const { currentPlan } = useSelector((state) => state.PlansReducer)
 
-	console.log(currentPlan)
-
 	useEffect(() => {
 		if (!currentPlan) {
 			const [currentPlanJson] = plans.filter(
@@ -76,10 +74,7 @@ export const DetailsPlan = () => {
 						<CurrentPlanConatainer>
 							{
 								<>
-									<Title
-										text={currentPlan.name}
-										about={false}
-									/>
+									<Title text={currentPlan.name} />
 									{handleScreen > 600 ? (
 										<div className='containerImages'>
 											{currentPlan.photos.map(

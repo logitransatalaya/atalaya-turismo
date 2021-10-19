@@ -15,7 +15,7 @@ export const Home = () => {
 			<HomeStyled>
 				<HomePlans />
 				<SliderComponent />
-				<Title text={'OFERTAS FLASH'} about={false} />
+				<Title text={'OFERTAS FLASH'} />
 				<HomeOffersFlash image={image} />
 				<Benefits />
 			</HomeStyled>
