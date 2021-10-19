@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
+from plans.urls import router_destination, router_plan
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('hotels.urls') )
+    path('api/', include('hotels.urls') ),
+    path('api/', include(router_destination.urls)),
+    path('api/', include(router_plan.urls))
 ]

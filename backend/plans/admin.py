@@ -1,8 +1,13 @@
 from django.contrib import admin
-from hotels.models import Photos
 
-from plans.models import Destination, Include_plan, No_include, Notes, Photos_destination, Plan
+from plans.models import Destination, Plan
 
 # Register your models here.
 
-admin.site.register([Destination, Plan, Photos_destination, Include_plan, No_include, Notes])
+@admin.register(Destination)
+class DestinationAdmin(admin.ModelAdmin):
+    list_display = ['id', 'destination', 'url_image']
+
+@admin.register(Plan)
+class PlanAdmin(admin.ModelAdmin):
+    list_display = ['id', 'destination_name', 'url_img', 'description', 'id_destination']
