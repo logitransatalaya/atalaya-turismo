@@ -9,9 +9,28 @@ import { ReactComponent as IconAire } from 'images/svg/iconAire.svg'
 import { ReactComponent as IconTurista } from 'images/svg/iconTurista.svg'
 import { ReactComponent as IconPiscina } from 'images/svg/iconPiscina.svg'
 import { ReactComponent as IconMascota } from 'images/svg/iconMascota.svg'
+import { ReactComponent as IconPlaya } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconJacuzzi } from 'images/svg/iconParqueadero.svg'
 import { ReactComponent as IconRecepcion } from 'images/svg/iconRecepcion.svg'
+import { ReactComponent as IconGimnasio } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconLimpieza } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconBalneario } from 'images/svg/iconParqueadero.svg'
 import { ReactComponent as IconHabitacion } from 'images/svg/iconHabitacion.svg'
+import { ReactComponent as IconLavanderia } from 'images/svg/iconParqueadero.svg'
 import { ReactComponent as IconParqueadero } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconRestaurante } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconAlimentacion } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconJuegosDeMesa } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconCasaEnElArbol } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconFrenteLaPlaya } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconCentroDeBienestar } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconMovilidadReducida } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconHabitacionFamiliar } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconTrasladoAeropuerto } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconActividadesRecreativas } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconHabitacionesNoFumadores } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconTeteraCafeteraHaitaciones } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconInstalacionesParaConferencia } from 'images/svg/iconParqueadero.svg'
 
 const icons = {
 	IconTasa,
@@ -25,7 +44,26 @@ const icons = {
 	IconParqueadero,
 	IconMascota,
 	IconTurista,
-	IconTv
+	IconTv,
+	IconRestaurante,
+	IconHabitacionFamiliar,
+	IconActividadesRecreativas,
+	IconLimpieza,
+	IconAlimentacion,
+	IconCasaEnElArbol,
+	IconJuegosDeMesa,
+	IconCentroDeBienestar,
+	IconMovilidadReducida,
+	IconFrenteLaPlaya,
+	IconTrasladoAeropuerto,
+	IconGimnasio,
+	IconTeteraCafeteraHaitaciones,
+	IconHabitacionesNoFumadores,
+	IconJacuzzi,
+	IconPlaya,
+	IconInstalacionesParaConferencia,
+	IconBalneario,
+	IconLavanderia
 }
 
 export const InfoService = ({ iconName, text }) => {
