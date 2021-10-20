@@ -100,7 +100,7 @@ export const splideOptionsMessages = {
 	breakpoints: {
 		700: {
 			height: '450px',
-			perPage: 2,
+			perPage: 1,
 			arrows: true
 		}
 	}

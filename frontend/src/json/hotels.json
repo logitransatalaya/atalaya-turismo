@@ -13,31 +13,9 @@
 			"more": {
 				"services": [
 					{
-						"id": 1,
-						"iconName": "IconTasa",
-						"text": "Desayuno incluido"
-					},
-					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
 						"id": 6,
 						"iconName": "IconHabitacion",
 						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
 					},
 					{
 						"id": 8,
@@ -45,24 +23,31 @@
 						"text": "Piscina"
 					},
 					{
-						"id": 9,
-						"iconName": "IconParqueadero",
-						"text": "Parqueadero gratis"
+						"id": 21,
+						"iconName": "IconMovilidadReducida",
+						"text": "Adaptado para personas con movilidad reducida"
 					},
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
+						"id": 14,
+						"iconName": "IconHabitacionFamiliar",
+						"text": "Habitaciones familiares"
 					},
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
 					},
 					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
 					}
 				],
 				"photos": {
@@ -132,17 +117,27 @@
 			"more": {
 				"services": [
 					{
-						"id": 1,
-						"iconName": "IconTasa",
-						"text": "Desayuno incluido"
+						"id": 8,
+						"iconName": "IconPiscina",
+						"text": "Piscina"
 					},
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
 					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" }
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 14,
+						"iconName": "IconHabitacionFamiliar",
+						"text": "Habitaciones familiares"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" }
 				],
 				"photos": {
 					"photos1": [
@@ -216,25 +211,21 @@
 						"iconName": "IconPiscina",
 						"text": "Piscina"
 					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
 					{
-						"id": 9,
-						"iconName": "IconParqueadero",
-						"text": "Parqueadero gratis"
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
 					},
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
+						"id": 15,
+						"iconName": "IconActividadesRecreativas",
+						"text": "Actividades recreativas"
 					},
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
-					},
-					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
+						"id": 16,
+						"iconName": "IconLimpieza",
+						"text": "Servicios de limpieza"
 					}
 				],
 				"photos": {
@@ -303,37 +294,36 @@
 			"more": {
 				"services": [
 					{
-						"id": 1,
-						"iconName": "IconTasa",
-						"text": "Desayuno incluido"
+						"id": 17,
+						"iconName": "IconAlimentacion",
+						"text": "Servicios de alimentación"
 					},
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 9,
-						"iconName": "IconParqueadero",
-						"text": "Parqueadero gratis"
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
 					},
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
-					},
-					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
+						"id": 8,
+						"iconName": "IconPiscina",
+						"text": "Piscina"
 					},
 					{
 						"id": 12,
 						"iconName": "IconTv",
 						"text": "TV satelital"
-					}
+					},
+					{
+						"id": 18,
+						"iconName": "IconCasaEnElArbol",
+						"text": "Casa en el arbol"
+					},
+					{
+						"id": 19,
+						"iconName": "IconJuegosDeMesa",
+						"text": "Juegos de mesa"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" }
 				],
 				"photos": {
 					"photos1": [
@@ -401,32 +391,42 @@
 			"price": "220.000",
 			"more": {
 				"services": [
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
-					},
 					{
 						"id": 8,
 						"iconName": "IconPiscina",
 						"text": "Piscina"
 					},
 					{
+						"id": 20,
+						"iconName": "IconCentroDeBienestar",
+						"text": "Spa y centro de bienestar"
+					},
+					{
 						"id": 9,
 						"iconName": "IconParqueadero",
 						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 21,
+						"iconName": "IconMovilidadReducida",
+						"text": "Adaptado para personas con movilidad reducida"
+					},
+					{
+						"id": 22,
+						"iconName": "IconFrenteLaPlaya",
+						"text": "Situado frente a la playa"
+					},
+					{
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 15,
+						"iconName": "IconActividadesRecreativas",
+						"text": "Actividades recreativas"
 					}
 				],
 				"photos": {
@@ -500,21 +500,14 @@
 			"more": {
 				"services": [
 					{
-						"id": 1,
-						"iconName": "IconTasa",
-						"text": "Desayuno incluido"
+						"id": 8,
+						"iconName": "IconPiscina",
+						"text": "Piscina"
 					},
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
+						"id": 23,
+						"iconName": "IconTrasladoAeropuerto",
+						"text": "Traslado al aeropuerto"
 					},
 					{
 						"id": 9,
@@ -527,15 +520,16 @@
 						"text": "Nose admiten mascotas"
 					},
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
+						"id": 28,
+						"iconName": "IconPlaya",
+						"text": "Situado en frente de la playa"
 					},
 					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
-					}
+						"id": 1,
+						"iconName": "IconTasa",
+						"text": "Desayuno incluido"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" }
 				],
 				"photos": {
 					"photos1": [
@@ -606,41 +600,22 @@
 			"price": "220.000",
 			"more": {
 				"services": [
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
-					},
 					{
 						"id": 9,
 						"iconName": "IconParqueadero",
 						"text": "Parqueadero gratis"
 					},
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
 					{
 						"id": 10,
 						"iconName": "IconMascota",
 						"text": "Nose admiten mascotas"
 					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
-					},
-					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
+						"id": 1,
+						"iconName": "IconTasa",
+						"text": "Desayuno incluido"
 					}
 				],
 				"photos": {
@@ -712,27 +687,11 @@
 			"price": "240.000",
 			"more": {
 				"services": [
-					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
 					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
 					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
+						"id": 23,
+						"iconName": "IconTrasladoAeropuerto",
+						"text": "Traslado al aeropuerto"
 					},
 					{
 						"id": 9,
@@ -740,20 +699,26 @@
 						"text": "Parqueadero gratis"
 					},
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
+						"id": 24,
+						"iconName": "IconGimnasio",
+						"text": "Gimnasio"
 					},
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
+						"id": 14,
+						"iconName": "IconHabitacionFamiliar",
+						"text": "Habitaciones familiares"
 					},
 					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
-					}
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
+					},
+					{
+						"id": 25,
+						"iconName": "IconTeteraCafeteraHabitaciones",
+						"text": "Cafetera en las habitaciones"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" }
 				],
 				"photos": {
 					"photos1": [
@@ -824,27 +789,11 @@
 			"price": "240.000",
 			"more": {
 				"services": [
-					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
 					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
 					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
+						"id": 23,
+						"iconName": "IconTrasladoAeropuerto",
+						"text": "Traslado al aeropuerto"
 					},
 					{
 						"id": 9,
@@ -852,20 +801,21 @@
 						"text": "Parqueadero gratis"
 					},
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
 					},
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
+						"id": 26,
+						"iconName": "IconHabitacionesNoFumadores",
+						"text": "Habitaciones para no fumadores"
 					},
 					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
-					}
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" }
 				],
 				"photos": {
 					"photos1": [
@@ -937,46 +887,40 @@
 			"more": {
 				"services": [
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
+						"id": 8,
+						"iconName": "IconPiscina",
+						"text": "Piscina"
+					},
+					{
+						"id": 27,
+						"iconName": "IconJacuzzi",
+						"text": "Jacuzzi"
 					},
 					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
 					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
 					},
 					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
+						"id": 28,
+						"iconName": "IconPlaya",
+						"text": "Situado en frente de la playa"
 					},
 					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
+						"id": 29,
+						"iconName": "IconInstalacionesParaConferencia",
+						"text": "Instalaciones para conferencias"
 					},
 					{
-						"id": 9,
-						"iconName": "IconParqueadero",
-						"text": "Parqueadero gratis"
+						"id": 30,
+						"iconName": "IconBalneario",
+						"text": "Balneario"
 					},
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
-					},
-					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
-					},
-					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
+						"id": 31,
+						"iconName": "IconLavanderia",
+						"text": "Servicio de lavanderia"
 					}
 				],
 				"photos": {
@@ -1051,46 +995,25 @@
 			"more": {
 				"services": [
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
+						"id": 8,
+						"iconName": "IconPiscina",
+						"text": "Piscina"
 					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
 					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 14,
+						"iconName": "IconHabitacionFamiliar",
+						"text": "Habitaciones familiares"
+					},
+					{
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
+					},
 					{
 						"id": 5,
 						"iconName": "IconRecepcion",
 						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
-					},
-					{
-						"id": 9,
-						"iconName": "IconParqueadero",
-						"text": "Parqueadero gratis"
-					},
-					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
-					},
-					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
-					},
-					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
 					}
 				],
 				"photos": {
@@ -1163,47 +1086,11 @@
 			"more": {
 				"services": [
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
+						"id": 14,
+						"iconName": "IconHabitacionFamiliar",
+						"text": "Habitaciones familiares"
 					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
-					},
-					{
-						"id": 9,
-						"iconName": "IconParqueadero",
-						"text": "Parqueadero gratis"
-					},
-					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
-					},
-					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
-					},
-					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
-					}
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" }
 				],
 				"photos": {
 					"photos1": [
@@ -1273,47 +1160,12 @@
 			"more": {
 				"services": [
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
-					},
-					{
 						"id": 9,
 						"iconName": "IconParqueadero",
 						"text": "Parqueadero gratis"
 					},
-					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
-					},
-					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
-					},
-					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
-					}
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" }
 				],
 				"photos": {
 					"photos1": [
@@ -1384,48 +1236,33 @@
 			"price": "240.000",
 			"more": {
 				"services": [
-					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
 					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
-					},
 					{
 						"id": 9,
 						"iconName": "IconParqueadero",
 						"text": "Parqueadero gratis"
 					},
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
+						"id": 14,
+						"iconName": "IconHabitacionFamiliar",
+						"text": "Habitaciones familiares"
 					},
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
+						"id": 24,
+						"iconName": "IconGimnasio",
+						"text": "Gimnasio"
 					},
 					{
-						"id": 12,
-						"iconName": "IconTv",
-						"text": "TV satelital"
-					}
+						"id": 13,
+						"iconName": "IconRestaurante",
+						"text": "Restaurante"
+					},
+					{
+						"id": 26,
+						"iconName": "IconHabitacionesNoFumadores",
+						"text": "Habitaciones para no fumadores"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" }
 				],
 				"photos": {
 					"photos1": [
@@ -1497,46 +1334,45 @@
 			"more": {
 				"services": [
 					{
-						"id": 2,
-						"iconName": "IconGota",
-						"text": "Limpieza de habitación"
-					},
-					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
-					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
-					{
-						"id": 5,
-						"iconName": "IconRecepcion",
-						"text": "Recepción 24 horas"
-					},
-					{
-						"id": 6,
-						"iconName": "IconHabitacion",
-						"text": "Servicios de habitación"
-					},
-					{
-						"id": 7,
-						"iconName": "IconAire",
-						"text": "Aire acondicionado"
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
 					},
 					{
 						"id": 9,
 						"iconName": "IconParqueadero",
 						"text": "Parqueadero gratis"
 					},
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
 					{
-						"id": 10,
-						"iconName": "IconMascota",
-						"text": "Nose admiten mascotas"
+						"id": 8,
+						"iconName": "IconPiscina",
+						"text": "Piscina"
 					},
 					{
-						"id": 11,
-						"iconName": "IconTurista",
-						"text": "información turística"
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
 					},
 					{
 						"id": 12,
 						"iconName": "IconTv",
 						"text": "TV satelital"
+					},
+					{
+						"id": 31,
+						"iconName": "IconLavanderia",
+						"text": "Servicio de lavanderia"
+					},
+					{
+						"id": 14,
+						"iconName": "IconHabitacionFamiliar",
+						"text": "Habitaciones familiares"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
 					}
 				],
 				"photos": {

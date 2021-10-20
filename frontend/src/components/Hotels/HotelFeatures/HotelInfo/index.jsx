@@ -2,7 +2,7 @@ import React from 'react'
 import { splideOptionsMessages } from 'lib/splide'
 import { ContainerHotelInfo, Message } from './styles'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-import { ReactComponent as CajaTexto } from 'images/cajadetextoconusuario.svg'
+import { ReactComponent as IconUsuario } from 'images/iconUsuario.svg'
 
 const HotelInfo = ({ comentens, desc }) => {
 	return (
@@ -21,12 +21,14 @@ const HotelInfo = ({ comentens, desc }) => {
 						{comentens.map((coment, i) => (
 							<SplideSlide className='center' key={i}>
 								<Message>
-									<CajaTexto className='cajatexto' />
-									<div className='message-cont'>
-										<p className='text'>{coment.body}</p>
-										<span className='name'>
-											{coment.name}
-										</span>
+									<div className='box-message'>
+										<p>{coment.body}</p>
+									</div>
+									<div className='name'>
+										<div className='box-icon'>
+											<IconUsuario />
+										</div>
+										{coment.name}
 									</div>
 								</Message>
 							</SplideSlide>
