@@ -1,10 +1,11 @@
 {
 	"hotels": [
 		{
+			"borrar": "san andres",
 			"id": 1,
 			"idcity": 1,
-			"urlCode": "hotel-1",
-			"name": "hotel 1",
+			"urlCode": "hotel-samawi",
+			"name": "hotel samawi",
 			"urlImg": "https://i.ibb.co/JtXZSM0/1-hotel-Sucio.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
@@ -98,16 +99,32 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El Samawi Hotel se encuentra en San Andrés, a 300 metros de la playa de Spratt Bight, y ofrece piscina al aire libre, bar y vistas al mar. Este alojamiento cuenta con restaurante, servicio de habitaciones y recepción 24 horas, y WiFi gratuita. El hotel ofrece habitaciones familiares.",
+					"Las habitaciones del hotel disponen de aire acondicionado, escritorio, caja fuerte, TV de pantalla plana y baño privado con ducha. Todas las habitaciones del Samawi Hotel tienen zona de estar.",
+					"Se sirve un desayuno buffet o continental.",
+					"El Samawi Hotel tiene terraza.",
+					"Hay varios lugares de interés cerca del hotel, entre ellos la bahía de San Andrés, la zona de North End y la playa de Spratt Bight. El aeropuerto internacional Gustavo Rojas Pinilla, situado a 2 km del Samawi Hotel, es el más cercano."
+				],
+				"comentens": [
+					{
+						"name": "cristian",
+						"body": "Excelente hotel, desde las habitaciones el personal, desayuno, ubicación, piscina bar etc. La mejor opción. ¡¡Volveremos!!"
+					},
+					{
+						"name": "Gabriela",
+						"body": "El hotel es el más moderno de la zona, las habitaciones son muy limpias y cómodas, el baño es amplio y limpio. El servicio de limpieza de la habitación es muy adecuado. Te dan toallas incluso si sales del hotel. ¡El desayuno es tipo buffet y muy completo! Lo único es que la señal es pésima y el wifi no sirve, pero esto es algo común en toda la Isla. Está bien ubicado, pero no al lado de la playa."
+					}
+				]
 			}
 		},
 		{
+			"borrar": "santa marta",
 			"id": 2,
 			"idcity": 1,
 			"idLocation": 1,
-			"urlCode": "hotel-2",
-			"name": "hotel 2",
+			"urlCode": "hotel-sansiraka",
+			"name": "hotel sansiraka",
 			"urlImg": "https://i.ibb.co/wYj7cxK/1-hotel-Limpio.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
@@ -161,16 +178,33 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El Sansiraka ofrece alojamiento con balcón, conexión Wi-Fi gratuita y piscina al aire libre. El Hotel está situado en la zona turística de El Rodadero, a 13 km de Santa Marta.",
+					"Algunas habitaciones del Hotel Sansiraka cuentan con zona de estar con TV por cable y balcón privado.",
+					"Por las mañanas se sirve un desayuno americano. El bar ofrece bebidas frías y aperitivos.",
+					"El establecimiento cuenta con terraza junto a la piscina y jardín con mucha sombra.",
+					"El establecimiento ofrece diferentes excursiones y actividades para reservar durante su estancia en Santa Marta.",
+					"El Sansiraka se encuentra a 20 minutos en coche de la localidad de buceo de Taganga y a 16 km del aeropuerto internacional Simón Bolívar. Hay aparcamiento gratuito."
+				],
+				"comentens": [
+					{
+						"name": "Jessica",
+						"body": "El desayuno excelente y el trato del personal, muy amables y respetuosos."
+					},
+					{
+						"name": "Himmer",
+						"body": "El desayuno muy bueno junto con el servicio a la mesa. En general la comida del restaurante, excelente. Piscina en muy buen estado, amplia y limpia los días que la utilizamos."
+					}
+				]
 			}
 		},
 		{
+			"borrar": "amazonas",
 			"id": 3,
 			"idcity": 2,
 			"idLocation": 2,
-			"urlCode": "hotel-3",
-			"name": "hotel 3",
+			"urlCode": "hotel-amazon",
+			"name": "hotel amazon",
 			"urlImg": "https://i.ibb.co/3km1G11/2-hotel-Limpio.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
@@ -237,16 +271,31 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El On Vacation Amazon dispone de habitaciones con vistas al río Amazonas y se encuentra en el entorno rural de San José Vereda, en una reserva natural de la Amazonia. El aeropuerto Alfredo Vázquez está a 30 minutos en barco, mientras que la ciudad de Leticia se encuentra a 14 km. El precio del alojamiento incluye pensión completa.",
+					"El establecimiento dispone de WiFi gratuita en las zonas comunes.",
+					"El On Vacation Amazon dispone de habitaciones confortables con balcón con vistas al río Amazonas o a la selva, aire acondicionado, TV de pantalla plana y baño privado con ducha.",
+					"Un lugar mágico que está en la mitad del pulmón del mundo, el Amazonas. Este hotel fue ganador de los World Travel Awards como mejor hotel verde en el 2017 y el 2018, ubicado a 20 minutos en lancha de Leticia. Actualmente cuenta con comodidades únicas e inigualables con vista al Río Amazonas. Es un lugar para desconectarse de la rutina y conectarse con la naturaleza. Los únicos sonidos que disfrutarás son los de las miles de especies de aves que adornan los paisajes de nuestra selva colombiana. Los planes recomendados son: kayak, Canopy, Puerto Nariño, ir a conocer las comunidades indígenas, Isla de los micos e ir a ver delfines rosados en el Río Amazonas"
+				],
+				"comentens": [
+					{
+						"name": "German",
+						"body": "La ubicación diferente a lo que uno está acostumbrado, la atención, amabilidad del personal, puntualidad y responsabilidad en los viajes"
+					},
+					{
+						"name": "Oscar",
+						"body": "El hotel  lleno mis expectativas"
+					}
+				]
 			}
 		},
 		{
+			"borrar": "bogota",
 			"id": 4,
 			"idcity": 2,
 			"idLocation": 2,
-			"urlCode": "hotel-4",
-			"name": "hotel 4",
+			"urlCode": "hotel-bogota-100",
+			"name": "hotel bogota 100",
 			"urlImg": "https://i.ibb.co/6YV957h/2-hotel-Sucio.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
@@ -320,16 +369,32 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El Hotel Bogotá 100 se encuentra en la avenida Calle 100 de Bogotá, a solo 500 metros del animado parque de la 93 y cerca de varios restaurantes y bares. Ofrece habitaciones con conexión WiFi gratuita y TV de plasma. Se sirve desayuno. Además, hay aparcamiento gratuito y restaurante. El parque Virrey está a 600 metros.",
+					"Las habitaciones del Hotel Bogotá 100 presentan una decoración moderna e incluyen minibar, TV por cable y baño privado.",
+					"Todas las mañanas se sirve un desayuno buffet. El restaurante del establecimiento prepara platos étnicos internacionales.",
+					"El personal de la recepción 24 horas puede organizar un servicio de enlace con el aeropuerto. El Museo del Chicó se halla a 2 km.",
+					"Nuestros clientes dicen que esta parte de Bogotá es su favorita, según los comentarios independientes."
+				],
+				"comentens": [
+					{
+						"name": "Juan",
+						"body": "La ubicación es muy conveniente, la relación precio calidad sin duda es la mejor y el personal es muy amable"
+					},
+					{
+						"name": "Soraya",
+						"body": "La ubicación y el trato de los empleados es muy amable, la comodidad de la cama para un descanso reparador"
+					}
+				]
 			}
 		},
 		{
+			"borrar": "cartagena",
 			"id": 5,
 			"idcity": 3,
 			"idLocation": 3,
-			"urlCode": "hotel-5",
-			"name": "hotel 5",
+			"urlCode": "hotel-dorado-plaza",
+			"name": "hotel dorado plaza",
 			"urlImg": "https://i.ibb.co/yhMMxkH/3-hotel-Limpio.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
@@ -402,16 +467,32 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El Hotel Dorado Plaza Bocagrande All Inclusive está muy bien situado en Bocagrande, a 20 minutos en coche del aeropuerto Rafael Núñez. Ofrece regímenes de todo incluido y de solo desayuno.",
+					"Alberga 2 restaurantes, el Restaurante Italiano y el Cacique.",
+					"Sus habitaciones disponen de 1 cama doble o 2 camas individuales, aire acondicionado regulable, TV por cable y un baño con ducha. Las llamadas nacionales son gratuitas. Algunas habitaciones ofrecen conexión WiFi gratuita.",
+					"Hay una piscina, solárium y actividades de animación para niños y adultos.",
+					"Se encuentra a 10 minutos en coche del centro histórico de Cartagena."
+				],
+				"comentens": [
+					{
+						"name": "Gustavo",
+						"body": "EXCELENTE MENU, FRENTE A LA PLAYA. HABIATACION EXCELENTE VISTA. TODO EL PERSONAL EXCELENTE. GRACIAS A RONALD QUE EL PROGRAMA CULTURAL ME PERMITIO INTERPRETAR MI CANCION DESTILANDO AMOR Y EXALTAR A DIOS. ¡TODO INCLUIDO A BUEN PRECIO!"
+					},
+					{
+						"name": "Helmer",
+						"body": "Muy Limpio y organizado el hotel, la comida muy rica y siempre en el bufet abrían una barra adicional si había mucha gente y esto evitaba largas filas."
+					}
+				]
 			}
 		},
 		{
+			"borrar": "coveñas",
 			"id": 6,
 			"idcity": 4,
 			"idLocation": 3,
-			"urlCode": "hotel-6",
-			"name": "hotel 6",
+			"urlCode": "hotel-palma-linda",
+			"name": "hotel palma linda",
 			"urlImg": "https://i.ibb.co/QbyS6JL/3-hotel-Sucio.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
@@ -494,16 +575,31 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El Hotel Palma Linda está ubicado en Coveñas, a 800 metros de la segunda ensenada, y ofrece alojamiento, restaurante, bar, piscina al aire libre y aparcamiento privado gratuito. Hay recepción 24 horas, servicio de enlace con el aeropuerto, mostrador de información turística y WiFi gratuita en todas las zonas.",
+					"Las habitaciones del hotel disponen de baño privado y ropa de cama.",
+					"El Hotel Palma Linda sirve un desayuno buffet o a la carta cada día.",
+					"El aeropuerto de Corozal, situado a 42 km, es el más cercano."
+				],
+				"comentens": [
+					{
+						"name": "Carlos",
+						"body": "excelente el menú, te sirven un plato, sea el desayuno, almuerzo o comida, con el cual pueden comer dos personas, variado y mucha cantidad......eso me pareció genial."
+					},
+					{
+						"name": "Maira",
+						"body": "Todo, las instalaciones, el bar, las piscinas, la comida, el personal es muy atento, super limpio, super bonito, recomendado"
+					}
+				]
 			}
 		},
 		{
+			"borrar": "neiva",
 			"id": 7,
 			"idcity": 4,
 			"idLocation": 4,
-			"urlCode": "hotel-7",
-			"name": "hotel 7",
+			"urlCode": "hotel-ghl-neiva",
+			"name": "hotel GHL Neiva",
 			"urlImg": "https://i.ibb.co/K2zf5JT/4-hotel-Limpio.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
@@ -585,16 +681,31 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El establecimiento GHL Hotel Neiva está situado en Neiva, en el centro comercial San Pedro Plaza, y ofrece WiFi gratuita. Alberga un restaurante y un centro de negocios.",
+					"Las habitaciones del GHL Hotel Neiva son tranquilas y disponen de baño privado, TV de pantalla plana y aire acondicionado.",
+					"El establecimiento GHL Hotel Neiva cuenta con servicio de habitaciones y recepción, y también hay un bar que sirve aperitivos durante el día y servicio diario de camarera de pisos.",
+					"El GHL Hotel Neiva se encuentra a 30 minutos en coche del desierto de La Tatacoa y a 5 km del Museo de Arte Contemporáneo Huila. El aeropuerto Benito Salas queda a 6 km. Hay aparcamiento privado gratuito."
+				],
+				"comentens": [
+					{
+						"name": "German",
+						"body": "el personal es de excelente atención y servicial."
+					},
+					{
+						"name": "Claudia",
+						"body": "Las instalaciones, el personal, el desayuno, la limpieza, la comodidad de la habitación, en realidad todo fabuloso. La cercanía al centro comercial, lo convierte en una gran opción"
+					}
+				]
 			}
 		},
 		{
+			"borrar": "bogota",
 			"id": 8,
 			"idcity": 4,
 			"idLocation": 4,
-			"urlCode": "hotel-8",
-			"name": "hotel 8",
+			"urlCode": "hotel-hampton-by-hilton",
+			"name": "hotel hamton by hilton",
 			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
@@ -682,8 +793,807 @@
 						}
 					]
 				},
-				"description": "",
-				"comentens": ["", "", ""]
+				"description": [
+					"El Hampton By Hilton Bogota Airport se encuentra en Bogotá, a 7 km del centro internacional de exposiciones Corferias y a 8 km del estadio El Campín, y ofrece restaurante, centro de fitness, bar y WiFi gratuita. El establecimiento está a 11 km de la plaza de Bolívar, a 11 km de la biblioteca Luis Ángel Arango y a 11 km del Chorro de Quevedo. El hotel ofrece vistas a la ciudad, una terraza y una recepción abierta las 24 horas.",
+					"Las habitaciones están equipadas con TV de pantalla plana por cable, nevera, cafetera, ducha, secador de pelo y escritorio. Todas las habitaciones incluyen baño privado con artículos de aseo gratuitos.",
+					"El Hampton By Hilton Bogota Airport sirve un desayuno buffet o vegetariano.",
+					"El centro comercial Unicentro se encuentra a 12 km del alojamiento, mientras que la Zona T está a 13 km. El aeropuerto más cercano es el aeropuerto internacional de El Dorado, situado a 5 km del Hampton By Hilton Bogota Airport. El establecimiento ofrece servicio gratuito de enlace con el aeropuerto."
+				],
+				"comentens": [
+					{
+						"name": "Nelson",
+						"body": "Buen hotel cómodo limpio muy buen desayuno. Cama y almohadas excelentes para descansar después de un largo viaje. Buen wifi. recomendable"
+					},
+					{
+						"name": "Juan",
+						"body": " Está en una buena ubicación para los viajeros que necesitan tomar un vuelo. Las instalaciones son bonitas y modernas, las habitaciones son grandes y tiene mucha privacidad, y por el precio está muy bien"
+					}
+				]
+			}
+		},
+		{
+			"borrar": "bogota",
+			"id": 9,
+			"idcity": 4,
+			"idLocation": 4,
+			"urlCode": "hotel-santa-barbara-real",
+			"name": "hotel santa barbara real",
+			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"addres": "avenida 12 circular 2",
+			"calification": 3,
+			"price": "240.000",
+			"more": {
+				"services": [
+					{
+						"id": 2,
+						"iconName": "IconGota",
+						"text": "Limpieza de habitación"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{
+						"id": 6,
+						"iconName": "IconHabitacion",
+						"text": "Servicios de habitación"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
+					},
+					{
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 11,
+						"iconName": "IconTurista",
+						"text": "información turística"
+					},
+					{
+						"id": 12,
+						"iconName": "IconTv",
+						"text": "TV satelital"
+					}
+				],
+				"photos": {
+					"photos1": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						}
+					],
+					"photos2": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						}
+					]
+				},
+				"description": [
+					"El Santa Bárbara Real es un hotel de 4 estrellas, se encuentra en el barrio de Usaquen, junto al centro financiero de Bogotá, y ofrece habitaciones cómodas con TV LCD vía satélite. Además, proporciona WiFi gratuita, restaurante, bar y desayuno buffet diario.",
+					"Las habitaciones del Hotel Santa Bárbara Real disponen de camas amplias y zona de estar y presentan una decoración sencilla con muebles modernos y suelo de madera.",
+					"La recepción permanece abierta las 24 horas. El Café Rouge sirve cócteles clásicos, cervezas de gran calidad, licores y café de Colombia, además de aperitivos y comidas ligeras. Las llamadas locales e internacionales comportan un suplemento.",
+					"El aeropuerto internacional El Dorado está a 11 km y el establecimiento organiza un servicio de traslado por un suplemento."
+				],
+				"comentens": [
+					{
+						"name": "Norbey",
+						"body": "La ubicación del hotel es muy buena, la rapidez del check in y del Check out, el restaurante y su comida que se complementa con la buena atención de las personas que trabajan en este."
+					},
+					{
+						"name": "Fabian",
+						"body": "El servicio del restaurante excelente muy bien atendidos y lo desayunos súper ricos"
+					}
+				]
+			}
+		},
+		{
+			"borrar": "capurgana",
+			"id": 10,
+			"idcity": 4,
+			"idLocation": 4,
+			"urlCode": "hotel-nautilos-capurgana",
+			"name": "hotel nautilos capurgana",
+			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"addres": "avenida 12 circular 2",
+			"calification": 3,
+			"price": "240.000",
+			"more": {
+				"services": [
+					{
+						"id": 2,
+						"iconName": "IconGota",
+						"text": "Limpieza de habitación"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{
+						"id": 6,
+						"iconName": "IconHabitacion",
+						"text": "Servicios de habitación"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
+					},
+					{
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 11,
+						"iconName": "IconTurista",
+						"text": "información turística"
+					},
+					{
+						"id": 12,
+						"iconName": "IconTv",
+						"text": "TV satelital"
+					}
+				],
+				"photos": {
+					"photos1": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						}
+					],
+					"photos2": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						}
+					]
+				},
+				"description": [
+					"Capurganá es un corregimiento del municipio de Acandí, departamento del Chocó, en el el golfo de Urabá, cerca de la frontera Colombo-panameña. Un hermoso lugar bañado por las aguas del Caribe. Nuestro personal siempre amable lo espera para poder atenderlo mientras disfruta de nuestras instalaciones y servicios de la más alta calidad.",
+					"Único hotel ubicado frente a la playa en Capurganá",
+					"Garantizamos energía las 24 horas del dia.",
+					"Ofrecemos barra libre de 8.00am a 11.00pm. ( Licores Nacionales)",
+					"Manejamos nuestros propios vuelos en la ruta Medellin-Capurganá-Medellin, cupos garantizados desde el momento de la reserva.",
+					"Nuestro hotel se encuentra ubicado estratégicamente al frente de la mejor playa de Capurganá, caminando a solo 5 minutos del muelle o a 15 minutos desde el aeropuerto Narcisa Navas. Contamos con 48 confortables habitaciones tipo cabaña, todas con vista a la playa o al jardín principal y dotadas de: Camas dobles o sencillas, aire acondicionado, servicio de luz 24 horas, baños, closet y balcón."
+				],
+				"comentens": [
+					{
+						"name": "viviana",
+						"body": "Agradecer al personal de servicio y administrativo por su excelente atención y preocupación porque nuestra estadía fuera maravillosa, un lugar muy bonito, habitaciones limpias, amplias, con aire acondicionado, la cama super cómoda, proporciona un buen descanso, hotel frente al mar, la playa a unos cuantos pasos, buena alimentación, lo recomiendo"
+					},
+					{
+						"name": "Maria",
+						"body": "Estuve cinco días 4 noches en este lindo hotel, ubicado justo frente a la playa y muy cerca del muelle. Me gustaron sus instalaciones, la atención de sus empleados, la comida siempre abundante y variada."
+					}
+				]
+			}
+		},
+		{
+			"borrar": "santa marta",
+			"id": 11,
+			"idcity": 4,
+			"idLocation": 4,
+			"urlCode": "hotel-tayrona-del-mar",
+			"name": "hotel tayrona del mar",
+			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"addres": "avenida 12 circular 2",
+			"calification": 3,
+			"price": "240.000",
+			"more": {
+				"services": [
+					{
+						"id": 2,
+						"iconName": "IconGota",
+						"text": "Limpieza de habitación"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{
+						"id": 6,
+						"iconName": "IconHabitacion",
+						"text": "Servicios de habitación"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
+					},
+					{
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 11,
+						"iconName": "IconTurista",
+						"text": "información turística"
+					},
+					{
+						"id": 12,
+						"iconName": "IconTv",
+						"text": "TV satelital"
+					}
+				],
+				"photos": {
+					"photos1": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						}
+					],
+					"photos2": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						}
+					]
+				},
+				"description": [
+					"El Hotel Tayrona del Mar se encuentra en Santa Marta, a 600 metros de la playa de El Rodadero, y alberga una piscina al aire libre y un bar. El alojamiento está situado a poca distancia de varios lugares turísticos, como el Acuario y Museo del Mar del Rodadero y Playa Blanca. Asimismo, el establecimiento se halla a 3,8 km del puerto deportivo de Santa Marta y a 4,3 km de la catedral de Santa Marta.",
+					"Por las mañanas se sirve un desayuno americano. Además, el hotel alberga un restaurante que prepara platos locales, internacionales y latinoamericanos.",
+					"La recepción cuenta con mostrador de información turística",
+					"El Hotel Tayrona del Mar está ubicado a 4,3 km del parque Simón Bolívar y a 10 km del aeropuerto internacional Simón Bolívar."
+				],
+				"comentens": [
+					{
+						"name": "Laura",
+						"body": "La calidad del personal e instalaciones es un hotel muy completo, como observación se debería tener opciones para elegir en el restaurante en cuanto al desayuno"
+					},
+					{
+						"name": "Katherine",
+						"body": "Me gustó todo, es muy limpio, lindo, la atención es muy buena, los desayunos son deliciosos, la piscina es muy buena y hay una vista desde ella super bonita."
+					}
+				]
+			}
+		},
+		{
+			"borrar": "nuqui",
+			"id": 12,
+			"idcity": 4,
+			"idLocation": 4,
+			"urlCode": "hotel-arena-azul-nuqui",
+			"name": "hotel arena azul nuqui",
+			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"addres": "avenida 12 circular 2",
+			"calification": 3,
+			"price": "240.000",
+			"more": {
+				"services": [
+					{
+						"id": 2,
+						"iconName": "IconGota",
+						"text": "Limpieza de habitación"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{
+						"id": 6,
+						"iconName": "IconHabitacion",
+						"text": "Servicios de habitación"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
+					},
+					{
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 11,
+						"iconName": "IconTurista",
+						"text": "información turística"
+					},
+					{
+						"id": 12,
+						"iconName": "IconTv",
+						"text": "TV satelital"
+					}
+				],
+				"photos": {
+					"photos1": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						}
+					],
+					"photos2": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						}
+					]
+				},
+				"description": [
+					"El Hotel Arena Azul está situado en Nuquí.",
+					"El baño es privado e incluye ducha."
+				],
+				"comentens": [
+					{
+						"name": "Ana",
+						"body": "El lugar es super acogedor, la señora dueña del lugar es amable atenta y te hace recomendaciones idóneas con las personas de la región. Esta limpio todos los dias te organizan la habitación y es muy cerca al mar. Me encanto el lugar."
+					},
+					{
+						"name": "Ivan",
+						"body": "Un lugar excepcional para pasar unos días en el paraíso de Nuqui, es de los pocos de la zona que cuenta con aire acondicionado, a 100 metros esta la playa, se pueden observar muchas aves, mariposas y unos fabulosos atardeceres, la administradora Berta esta siempre atenta atender cualquier inquietud que se tenga"
+					}
+				]
+			}
+		},
+		{
+			"borrar": "huila",
+			"id": 13,
+			"idcity": 4,
+			"idLocation": 4,
+			"urlCode": "hotel-estorake-san-agustin",
+			"name": "hotel estorake san agustín",
+			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"addres": "avenida 12 circular 2",
+			"calification": 3,
+			"price": "240.000",
+			"more": {
+				"services": [
+					{
+						"id": 2,
+						"iconName": "IconGota",
+						"text": "Limpieza de habitación"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{
+						"id": 6,
+						"iconName": "IconHabitacion",
+						"text": "Servicios de habitación"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
+					},
+					{
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 11,
+						"iconName": "IconTurista",
+						"text": "información turística"
+					},
+					{
+						"id": 12,
+						"iconName": "IconTv",
+						"text": "TV satelital"
+					}
+				],
+				"photos": {
+					"photos1": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						}
+					],
+					"photos2": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						}
+					]
+				},
+				"description": [
+					"El Hotel Estorake San Agustin Huila se encuentra en San Agustín y ofrece alojamiento con bar y jardín. El alojamiento cuenta con recepción 24 horas, servicio de enlace con el aeropuerto, servicio de habitaciones y WiFi gratuita en todas las instalaciones.",
+					"Los alojamientos del hotel cuentan con zona de estar, TV de pantalla plana con canales por cable y baño privado con artículos de aseo gratuitos y ducha. También incluyen armario.",
+					"El Hotel Estorake San Agustin Huila sirve un desayuno americano.",
+					"El aeropuerto más cercano es el de Pitalito, ubicado a 22 km."
+				],
+				"comentens": [
+					{
+						"name": "Miguel",
+						"body": "Excelente de principio a fin, muy agradable, instalaciones perfectas para el descanso, mil gracias al señor Miguel por la acogida y servicio prestado."
+					},
+					{
+						"name": "José",
+						"body": "La amabilidad del dueño, sus indicaciones para conocer la región y sus sitios de interés. Las instalaciones son de muy buen gusto. Linda arquitectura y excelente presentación del entorno."
+					}
+				]
+			}
+		},
+		{
+			"borrar": "Medellin",
+			"id": 14,
+			"idcity": 4,
+			"idLocation": 4,
+			"urlCode": "hotel-los-sauces",
+			"name": "hotel los sauces",
+			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"addres": "avenida 12 circular 2",
+			"calification": 3,
+			"price": "240.000",
+			"more": {
+				"services": [
+					{
+						"id": 2,
+						"iconName": "IconGota",
+						"text": "Limpieza de habitación"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{
+						"id": 6,
+						"iconName": "IconHabitacion",
+						"text": "Servicios de habitación"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
+					},
+					{
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 11,
+						"iconName": "IconTurista",
+						"text": "información turística"
+					},
+					{
+						"id": 12,
+						"iconName": "IconTv",
+						"text": "TV satelital"
+					}
+				],
+				"photos": {
+					"photos1": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						}
+					],
+					"photos2": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						}
+					]
+				},
+				"description": [
+					"El Hotel Sauces del Estadio se encuentra en Medellín, a 5 minutos a pie de la estación de metro de Suramericana, y ofrece conexión WiFi gratuita y recepción abierta las 24 horas. El estadio Atanasio Girardot está a 3 minutos a pie.",
+					"Las habitaciones del Hotel Sauces del Estadio son tranquilas y disponen de baño privado, TV y minibar.",
+					"El restaurante del Hotel Sauces del Estadio sirve platos regionales e internacionales. El hotel cuenta con una terraza con vistas panorámicas al estadio, un baño de vapor turco y un centro de negocios.",
+					"El Hotel Sauces del Estadio está situado a 500 metros de los centros comerciales Obelisco y Diamante y a 5 minutos a pie de la estación de metro de Estadio. Se facilita aparcamiento privado gratuito."
+				],
+				"comentens": [
+					{
+						"name": "Oscar",
+						"body": "Realmente lo único que me gusto fue la ubicación y el amable servicio del personal de recepción."
+					},
+					{
+						"name": "Maria",
+						"body": "El hotel es bonito, muy limpio y la habitación tenía tina. La habitación es súper cómoda. ¡Además, la comida del restaurante es deliciosa!"
+					}
+				]
+			}
+		},
+		{
+			"borrar": "Neiva",
+			"id": 15,
+			"idcity": 4,
+			"idLocation": 4,
+			"urlCode": "hotel-colonial-villavieja",
+			"name": "hotel colonial villaviaeja",
+			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"addres": "avenida 12 circular 2",
+			"calification": 3,
+			"price": "240.000",
+			"more": {
+				"services": [
+					{
+						"id": 2,
+						"iconName": "IconGota",
+						"text": "Limpieza de habitación"
+					},
+					{ "id": 3, "iconName": "IconCopa", "text": "Bar" },
+					{ "id": 4, "iconName": "IconWifi", "text": "Wifi" },
+					{
+						"id": 5,
+						"iconName": "IconRecepcion",
+						"text": "Recepción 24 horas"
+					},
+					{
+						"id": 6,
+						"iconName": "IconHabitacion",
+						"text": "Servicios de habitación"
+					},
+					{
+						"id": 7,
+						"iconName": "IconAire",
+						"text": "Aire acondicionado"
+					},
+					{
+						"id": 9,
+						"iconName": "IconParqueadero",
+						"text": "Parqueadero gratis"
+					},
+					{
+						"id": 10,
+						"iconName": "IconMascota",
+						"text": "Nose admiten mascotas"
+					},
+					{
+						"id": 11,
+						"iconName": "IconTurista",
+						"text": "información turística"
+					},
+					{
+						"id": 12,
+						"iconName": "IconTv",
+						"text": "TV satelital"
+					}
+				],
+				"photos": {
+					"photos1": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+						}
+					],
+					"photos2": [
+						{
+							"name": "photo1",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo2",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo3",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						},
+						{
+							"name": "photo4",
+							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+						}
+					]
+				},
+				"description": [
+					"El Hotel Colonial Villavieja se encuentra en Villavieja y ofrece piscina al aire libre, salón compartido, jardín y WiFi gratuita en todas las instalaciones. El establecimiento ofrece aparcamiento privado gratuito y servicio de enlace con el aeropuerto por un suplemento.",
+					"El establecimiento sirve un desayuno americano.",
+					"El personal de la recepción habla inglés y español.",
+					"El Hotel Colonial Villavieja está a 39 km de Neiva. El aeropuerto Benito Salas es el más cercano y está a 31 km del hotel.",
+					"En respuesta al coronavirus (COVID-19), el alojamiento aplica medidas sanitarias y de seguridad adicionales en estos momentos."
+				],
+				"comentens": [
+					{
+						"name": "Juan pablo",
+						"body": "El personal es un encanto completo, te dan información de turismo, de restaurantes, están siempre atentos a lo que puedas necesitar. La habitación te la entregan super limpia, el ac funciona a la maravilla, le hacen aseo a la Habitación, ofrecen un buen desayuno."
+					},
+					{
+						"name": "Santiago",
+						"body": "Fuimos con amigos en Moto todo muy bien. El personal muy muy amable y cordial, eso hace que la estadía sea excelente. El desayuno lo preparan en el hotel y está bien. Aunque no tienen restaurante propio para los demás servicios como almuerzo o cena cuentan con un aliado donde la comida es rica y te la llevan hasta el hotel. También te dan información sobre las actividades que se desarrollan en el desierto. Definitivamente Volveríamos a Hospedarnos Allí y lo recomendamos a futuros viajeros tanto en moto como en automóvil"
+					}
+				]
 			}
 		}
 	]

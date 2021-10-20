@@ -50,7 +50,10 @@ export const HotelFeatures = () => {
 					<Title text={'HABITACIONES DEL HOTEL'} about='true' />
 					<Bedrooms img={currentHotel.more.photos.photos2} />
 					<Title text={'SOBRE EL HOTEL TRYP MEDELLíN'} about='true' />
-					<HotelInfo />
+					<HotelInfo
+						comentens={currentHotel.more.comentens}
+						desc={currentHotel.more.description}
+					/>
 				</Container>
 			)}
 		</>

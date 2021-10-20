@@ -29,7 +29,7 @@ import { ReactComponent as IconHabitacionFamiliar } from 'images/svg/iconParquea
 import { ReactComponent as IconTrasladoAeropuerto } from 'images/svg/iconParqueadero.svg'
 import { ReactComponent as IconActividadesRecreativas } from 'images/svg/iconParqueadero.svg'
 import { ReactComponent as IconHabitacionesNoFumadores } from 'images/svg/iconParqueadero.svg'
-import { ReactComponent as IconTeteraCafeteraHaitaciones } from 'images/svg/iconParqueadero.svg'
+import { ReactComponent as IconTeteraCafeteraHabitaciones } from 'images/svg/iconParqueadero.svg'
 import { ReactComponent as IconInstalacionesParaConferencia } from 'images/svg/iconParqueadero.svg'
 
 const icons = {
@@ -57,7 +57,7 @@ const icons = {
 	IconFrenteLaPlaya,
 	IconTrasladoAeropuerto,
 	IconGimnasio,
-	IconTeteraCafeteraHaitaciones,
+	IconTeteraCafeteraHabitaciones,
 	IconHabitacionesNoFumadores,
 	IconJacuzzi,
 	IconPlaya,
