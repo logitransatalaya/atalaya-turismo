@@ -1,7 +1,6 @@
 {
 	"hotels": [
 		{
-			"borrar": "san andres",
 			"id": 1,
 			"idcity": 4,
 			"urlCode": "hotel-samawi",
@@ -104,13 +103,12 @@
 			}
 		},
 		{
-			"borrar": "Santa marta",
 			"id": 2,
 			"idcity": 5,
 			"idLocation": 1,
 			"urlCode": "hotel-sansiraka",
 			"name": "Hotel Sansiraka",
-			"urlImg": "https://i.ibb.co/wYj7cxK/1-hotel-Limpio.jpg",
+			"urlImg": "https://i.ibb.co/w04kV4X/Hotel-sansiraka-fachada.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "140.000",
@@ -143,33 +141,33 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://cdn-3.expansion.mx/dims4/default/7dd1e2c/2147483647/strip/true/crop/1280x853+0+0/resize/1800x1200!/format/webp/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F68%2F8b%2F5faa52024be598130185eb70005d%2Fthe-royal-playa-del-carmen-quiet-pool-hr.jpeg"
+							"urlCode": "https://i.ibb.co/bKhJJv9/Hotel-sansiraka-lobby.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://cdn.forbes.com.mx/2020/07/hoteles-Grand-Velas-Resorts-e1596047698604-640x360.jpg"
+							"urlCode": "https://i.ibb.co/GxD4fsv/Hotel-sansiraka-comedor.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://exp.cdn-hotels.com/hotels/20000000/19300000/19295500/19295426/7ccfa5d3_z.jpg?impolicy=fcrop&w=500&h=333&q=medium"
+							"urlCode": "https://i.ibb.co/48tZtcS/Hotel-sansiraka-piscina.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "http://static1.eskypartners.com/travelguide/vancouver-hotels.jpg"
+							"urlCode": "https://i.ibb.co/HBw1ZfJ/Hotel-sansiraka-patio.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://www.aviatur.com/source/redes/hoteles-de-lujo-en-colombia-las-islas-cartagena-aviatur.jpg"
+							"urlCode": "https://i.ibb.co/8m886R7/Hotel-sansiraka-habitaci-n.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://aws.admagazine.com/prod/designs/v1/assets/767x384/61423.jpg"
+							"urlCode": "https://i.ibb.co/4szY5LD/Hotel-sansiraka-cuarto.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://www.hola.com/imagenes/viajes/20190208137104/mejores-hoteles-tripadvisor-2019/0-645-792/mejores-hoteles-del-mundo-tripadvisor-m.jpg"
+							"urlCode": "https://i.ibb.co/8m886R7/Hotel-sansiraka-habitaci-n.jpg"
 						}
 					]
 				},
@@ -194,9 +192,8 @@
 			}
 		},
 		{
-			"borrar": "Amazonas",
 			"id": 3,
-			"idcity": 2,
+			"idcity": 6,
 			"idLocation": 2,
 			"urlCode": "hotel-amazon",
 			"name": "hotel amazon",
@@ -232,7 +229,7 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							
+
 							"urlCode": "https://i.ibb.co/649rtrZ/Fachada-Amazon-2.jpg"
 						},
 						{
@@ -282,13 +279,12 @@
 			}
 		},
 		{
-			"borrar": "bogota",
 			"id": 4,
 			"idcity": 2,
 			"idLocation": 2,
 			"urlCode": "hotel-bogota-100",
 			"name": "hotel bogota 100",
-			"urlImg": "https://i.ibb.co/6YV957h/2-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/LhsfJK6/Hotel-bogot-100-fachada.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -330,33 +326,33 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://tecnohotelnews.com/wp-content/uploads/2020/04/hotel-atlantis-sanya.jpg"
+							"urlCode": "https://i.ibb.co/PZvKKD7/hotel-bogot-100-sala.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b3/42/8b/underwater-suite-bedroom.jpg?w=900&h=-1&s=1"
+							"urlCode": "https://i.ibb.co/Q9PKrY8/Hotel-bogot-100-bar.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://cnnespanol.cnn.com/wp-content/uploads/2021/06/2F210610151521-splurge-hotel-soneva-jani-super-tease.jpg?quality=100&strip=info"
+							"urlCode": "https://i.ibb.co/56JCz7K/Hotel-bogot-100-gym.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://cdn.cnn.com/cnnnext/dam/assets/180329162346-the-palm-resort---underwater-suite-the-palm-large-169.jpg"
+							"urlCode": "https://i.ibb.co/3vDkyCb/Hotel-bogota-100-comedor.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://img.nh-hotels.net/nh_royal_urban_26-016-rooms.jpg?output-quality=70&resize=550:*&composite-to=center,center|550:278&background-color=white"
+							"urlCode": "https://i.ibb.co/kq4HjRg/Hotel-bogot-100-habitaci-n-1.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://solucionesymediaciones.es/wp-content/uploads/2021/03/8904_TheWestinLima-ExecutiveSuiteRoom.CrditoTheWestinLimaHotel_amp_ConventionCenter.jpg"
+							"urlCode": "https://i.ibb.co/Fxk0ZnT/Hotel-bogot-100-Habitaci-n.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://exp.cdn-hotels.com/hotels/1000000/10000/9300/9257/52ecc395_y.jpg?impolicy=fcrop&w=500&h=333&q=high"
+							"urlCode": "https://i.ibb.co/3p11cQm/Habitaci-n-hotel-bogot.jpg"
 						}
 					]
 				},
@@ -380,13 +376,12 @@
 			}
 		},
 		{
-			"borrar": "cartagena",
 			"id": 5,
-			"idcity": 3,
+			"idcity": 7,
 			"idLocation": 3,
 			"urlCode": "hotel-dorado-plaza",
 			"name": "hotel dorado plaza",
-			"urlImg": "https://i.ibb.co/yhMMxkH/3-hotel-Limpio.jpg",
+			"urlImg": "https://i.ibb.co/44nRZSj/Fachada-hotel-dorado-plaza.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
 			"price": "220.000",
@@ -434,37 +429,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+							"urlCode": "https://i.ibb.co/BgzC4Sd/Recepecion-hotel-dorado-plaza.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+							"urlCode": "https://i.ibb.co/QmsMQWb/Lobby-hotel-dorado-plazaa.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+							"urlCode": "https://i.ibb.co/4KQJqPW/Hotel-dorado-plaza-piscina.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://images.unsplash.com/photo-1582301217431-c5f83dfd8ec7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+							"urlCode": "https://i.ibb.co/Vm4mcck/Hotel-dorado-plaza-comedor.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg"
+							"urlCode": "https://i.ibb.co/LpffVCh/Ba-o-hotel-dorado-plaza.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg"
+							"urlCode": "https://i.ibb.co/vhG7CxL/Habitacion-doble-hotel-dorado-plaza.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg"
+							"urlCode": "https://i.ibb.co/2sgDQhB/Habitacion-m-ltiple-hotel-dorado-plaza.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/5d/72/af/5d72af1ae9350157ac086211db168796.jpg"
+							"urlCode": "https://i.ibb.co/Xt65MbB/Habitacion-hotel-dorado-plaza.jpg"
 						}
 					]
 				},
@@ -490,11 +485,11 @@
 		{
 			"borrar": "coveñas",
 			"id": 6,
-			"idcity": 4,
+			"idcity": 8,
 			"idLocation": 3,
 			"urlCode": "hotel-palma-linda",
 			"name": "hotel palma linda",
-			"urlImg": "https://i.ibb.co/QbyS6JL/3-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/hWtMgxP/Cove-as-hotel-palma-linda-fachada.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -536,37 +531,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg"
+							"urlCode": "https://i.ibb.co/89Wn4rL/Hotel-palma-linda-vista-cove-as.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg"
+							"urlCode": "https://i.ibb.co/NNJ40RK/Piscina-hotel-palma-linda-cove-as.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg"
+							"urlCode": "https://i.ibb.co/ZctMf7d/Hotel-Palma-linda-cove-as-fachada.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_960_720.jpg"
+							"urlCode": "https://i.ibb.co/x84L5pp/Comedor-hotel-palma-linda.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg"
+							"urlCode": "https://i.ibb.co/1rmXHPy/Hotel-palma-linda-cove-as-recepci-n.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg"
+							"urlCode": "https://i.ibb.co/L0BdmYt/Habitaci-n-hotel-palma-linda-cove-as.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg"
+							"urlCode": "https://i.ibb.co/1rmXHPy/Hotel-palma-linda-cove-as-recepci-n.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://cdn.pixabay.com/photo/2015/09/28/21/32/the-palm-962785_960_720.jpg"
+							"urlCode": "https://i.ibb.co/L0BdmYt/Habitaci-n-hotel-palma-linda-cove-as.jpg"
 						}
 					]
 				},
@@ -591,11 +586,11 @@
 		{
 			"borrar": "neiva",
 			"id": 7,
-			"idcity": 4,
+			"idcity": 9,
 			"idLocation": 4,
 			"urlCode": "hotel-ghl-neiva",
 			"name": "hotel GHL Neiva",
-			"urlImg": "https://i.ibb.co/K2zf5JT/4-hotel-Limpio.jpg",
+			"urlImg": "https://i.ibb.co/W2LYCYs/Fachada-GHL-hotel-Neiva.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
 			"price": "220.000",
@@ -623,37 +618,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80"
+							"urlCode": "https://i.ibb.co/Pw4cQXh/Lobby-GHL-hotel-Neiva.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80"
+							"urlCode": "https://i.ibb.co/yX4pLRp/Comedor-GHL-hotel-Neiva.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80"
+							"urlCode": "https://i.ibb.co/9VsrQRL/Ba-o-GHL-hotel-Neiva.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://images.unsplash.com/photo-1624481431907-12efe69217c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80"
+							"urlCode": "https://i.ibb.co/W2LYCYs/Fachada-GHL-hotel-Neiva.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg"
+							"urlCode": "https://i.ibb.co/qMd750c/Habitaci-n-1-GHL-hotel-Neiva.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg"
+							"urlCode": "https://i.ibb.co/SVm0fc9/Habitaci-n-GHL-hotel-neiva.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg"
+							"urlCode": "https://i.ibb.co/qMd750c/Habitaci-n-1-GHL-hotel-Neiva.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_960_720.jpg"
+							"urlCode": "https://i.ibb.co/SVm0fc9/Habitaci-n-GHL-hotel-neiva.jpg"
 						}
 					]
 				},
@@ -678,11 +673,11 @@
 		{
 			"borrar": "bogota",
 			"id": 8,
-			"idcity": 4,
+			"idcity": 2,
 			"idLocation": 4,
 			"urlCode": "hotel-hampton-by-hilton",
 			"name": "hotel hamton by hilton",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/7VbLQrR/Fachada-hampton-by-hilton-bogot.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -725,37 +720,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/Xy6LXTY/work-office-hampton-by-hilton-bogot.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/BVQsZgD/Sala-de-conferencias-by-hilton-hampton.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/WsVnc2V/lobby-hampton-by-hilton-bogot.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/ky3Xz3b/Fachada-1-hampton-by-hilton-bogot.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/18m3WfM/hotel-hampton-b-y-hilton-bogot.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/58Q4K9S/Gym-by-hilton-by-bogot.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/Rc20YNp/ba-o-hampton-by-hilton-bogot.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/DR068tn/Bar-hampton-by-hilton-bogot.jpg"
 						}
 					]
 				},
@@ -780,11 +775,11 @@
 		{
 			"borrar": "bogota",
 			"id": 9,
-			"idcity": 4,
+			"idcity": 2,
 			"idLocation": 4,
 			"urlCode": "hotel-santa-barbara-real",
 			"name": "hotel santa barbara real",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/MPnSPbk/Hotel-santa-barbara-real-fachad.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -822,37 +817,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/M50LF5L/Hotel-santa-barbara-real-recepcion.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/MZfzCcG/Hotel-santa-barbara-real-pasillos.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/bLJntvv/Hotel-santa-barbara-real-comedor.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/MPnSPbk/Hotel-santa-barbara-real-fachad.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/ZWPG6pz/Hotel-santa-barbara-real-ba-o.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/DDkHT8q/Hotel-santa-barbara-real-hab.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/ZWPG6pz/Hotel-santa-barbara-real-ba-o.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/DDkHT8q/Hotel-santa-barbara-real-hab.jpg"
 						}
 					]
 				},
@@ -877,11 +872,11 @@
 		{
 			"borrar": "capurgana",
 			"id": 10,
-			"idcity": 4,
+			"idcity": 11,
 			"idLocation": 4,
 			"urlCode": "hotel-nautilos-capurgana",
 			"name": "hotel nautilos capurgana",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/4KQDNN9/Hotel-nautilos-capurgana-entrada.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -928,37 +923,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/fXM5bJp/Hotel-nautilos-capurgana-piscina.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/VC5dnL7/Hotel-nautilos-capurgana-fachada.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/SvspDJb/Capurgana-nautilos-balcon.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/MG97xVn/Capurgana-Piscina-nautilos.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/JQR5LsK/Hotel-nautilos-capurgana-habitacion.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/JQR5LsK/Hotel-nautilos-capurgana-habitacion.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/JQR5LsK/Hotel-nautilos-capurgana-habitacion.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/JQR5LsK/Hotel-nautilos-capurgana-habitacion.jpg"
 						}
 					]
 				},
@@ -985,11 +980,11 @@
 		{
 			"borrar": "santa marta",
 			"id": 11,
-			"idcity": 4,
+			"idcity": 5,
 			"idLocation": 4,
 			"urlCode": "hotel-tayrona-del-mar",
 			"name": "hotel tayrona del mar",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/Sy9YPwX/Hotel-tayrona-rodadero-fachada.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -1021,37 +1016,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/QXWfmgH/Hotel-tayrona-rodadero-piscina.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/MSWWfGv/Tayrona-hotel-rodadero-piscina.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/bQ2Zrm9/Hotel-tayrona-rodadero-lobby.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/Sy9YPwX/Hotel-tayrona-rodadero-fachada.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/RP6mkNS/tayrona-habi.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/5hHvc8Z/Hotel-tayrona-rodaero-ba-o.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/RP6mkNS/tayrona-habi.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/S5bW35f/Hotel-tayrona-rodadero-habitaci-n.jpg"
 						}
 					]
 				},
@@ -1076,11 +1071,11 @@
 		{
 			"borrar": "nuqui",
 			"id": 12,
-			"idcity": 4,
+			"idcity": 12,
 			"idLocation": 4,
 			"urlCode": "hotel-arena-azul-nuqui",
 			"name": "hotel arena azul nuqui",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/8gQGCN1/Hotel-arena-azul.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -1097,37 +1092,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/YNJvSQD/Hotel-arena-azul-nuqui.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/dmyx5dn/Hotel-arena-azul-recepcion.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/dtN7SVf/Lobby-arena-azul-nuqui.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/8gQGCN1/Hotel-arena-azul.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/JQspqFZ/Habitaci-n-Nuqui-arena-azul.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/C8dQ9rM/Hotel-arena-azul-habitaciones.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/JQspqFZ/Habitaci-n-Nuqui-arena-azul.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/C8dQ9rM/Hotel-arena-azul-habitaciones.jpg"
 						}
 					]
 				},
@@ -1150,11 +1145,11 @@
 		{
 			"borrar": "huila",
 			"id": 13,
-			"idcity": 4,
+			"idcity": 10,
 			"idLocation": 4,
 			"urlCode": "hotel-estorake-san-agustin",
 			"name": "hotel estorake san agustín",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/Swj9GXf/Hotel-Estorake-San-Agustin-Huila-fachada.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -1172,37 +1167,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/PGZmpSM/Hotel-Estorake-San-Agustin-Huila-fachada.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/Lgr6Xqs/Hotel-Estorake-San-Agustin-Huila-de-noche.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/L0q7Pmp/Hotel-Estorake-San-Agustin-Huila-comedor.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/wr5wgHj/Hotel-Estorake-San-Agustin-Huila-sala-de-estar.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/xLqPmb8/Hotel-Estorake-San-Agustin-Huila-cuarto.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/NYsvpCj/Hotel-Estorake-San-Agustin-Huila-ba-o.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/QMhBK9T/Hotel-Estorake-San-Agustin-Huila-cuarto-m-ltiple.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/xLqPmb8/Hotel-Estorake-San-Agustin-Huila-cuarto.jpg"
 						}
 					]
 				},
@@ -1231,7 +1226,7 @@
 			"idLocation": 4,
 			"urlCode": "hotel-los-sauces",
 			"name": "hotel los sauces",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/pPp27tw/Fachada.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -1269,37 +1264,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/whGtV42/Parqueadero-los-sauces.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/fMhvfPj/Gym-los-sauces.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/pPp27tw/Fachada.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/whGtV42/Parqueadero-los-sauces.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/YdSXGb1/Hotel-habitaciones.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/RQB2GB8/Habitacion-los-sauces.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/YdSXGb1/Hotel-habitaciones.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/RQB2GB8/Habitacion-los-sauces.jpg"
 						}
 					]
 				},
@@ -1324,11 +1319,11 @@
 		{
 			"borrar": "Neiva",
 			"id": 15,
-			"idcity": 4,
+			"idcity": 9,
 			"idLocation": 4,
 			"urlCode": "hotel-colonial-villavieja",
 			"name": "hotel colonial villaviaeja",
-			"urlImg": "https://i.ibb.co/L8q62XT/4-hotel-Sucio.jpg",
+			"urlImg": "https://i.ibb.co/qJsc9RT/Patio-Hotel-Colonial-Villavieja.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
 			"price": "240.000",
@@ -1380,37 +1375,37 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/MB5cwrS/Hotel-Colonial-Villavieja-comeedor.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/8gFGpsc/comedor-Hotel-Colonial-Villavieja.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/MB5cwrS/Hotel-Colonial-Villavieja-comeedor.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/7d/ca/fb/7dcafb1ec026eb48c3f6037150a09b3e.jpg"
+							"urlCode": "https://i.ibb.co/8gFGpsc/comedor-Hotel-Colonial-Villavieja.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/g40ZKrL/Habitaci-n-Hotel-Colonial-Villavieja.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/g40ZKrL/Habitaci-n-Hotel-Colonial-Villavieja.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/g40ZKrL/Habitaci-n-Hotel-Colonial-Villavieja.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "https://i.pinimg.com/564x/47/5f/a9/475fa996d76973014605e7843cf07e61.jpg"
+							"urlCode": "https://i.ibb.co/g40ZKrL/Habitaci-n-Hotel-Colonial-Villavieja.jpg"
 						}
 					]
 				},
