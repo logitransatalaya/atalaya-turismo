@@ -6,6 +6,10 @@ export const initial_state = {
 		route: '',
 		title: '',
 		page: ''
+	},
+	modalImages: {
+		stateShow: false,
+		urlImg: null
 	}
 }
 
@@ -20,6 +24,15 @@ export const toolTipReducer = (state = initial_state, action) => {
 			return {
 				...state,
 				currentMessage: action.payload
+			}
+		}
+		case types.HANDLE_MODAL_IMAGES: {
+			return {
+				...state,
+				modalImages: {
+					stateShow: !state.modalImages.stateShow,
+					urlImg: action.payload
+				}
 			}
 		}
 		default:
