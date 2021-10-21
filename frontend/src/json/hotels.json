@@ -3,10 +3,10 @@
 		{
 			"borrar": "san andres",
 			"id": 1,
-			"idcity": 1,
+			"idcity": 4,
 			"urlCode": "hotel-samawi",
-			"name": "hotel samawi",
-			"urlImg": "https://i.ibb.co/JtXZSM0/1-hotel-Sucio.jpg",
+			"name": "Hotel Samawi",
+			"urlImg": "https://i.ibb.co/1nr9ckp/SAMAWI.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
 			"price": "120.000",
@@ -54,33 +54,33 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg"
+							"urlCode": "https://i.ibb.co/1nr9ckp/SAMAWI.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://www.eluniversal.com.co/binrepository/1049x700/0c0/0d0/none/13704/PJFX/conrad-cartagena_3478046_20200811132538.jpg"
+							"urlCode": "https://i.ibb.co/FKTV2bR/SAMAWI-1.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://cnnespanol.cnn.com/wp-content/uploads/2021/06/2F210610151521-splurge-hotel-soneva-jani-super-tease.jpg?quality=100&strip=info"
+							"urlCode": "https://i.ibb.co/qr3f11x/AMAWI-2.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "http://static1.eskypartners.com/travelguide/vancouver-hotels.jpg"
+							"urlCode": "https://i.ibb.co/VCbNk6Q/SAMAWI-4.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/17/26/1726359_v5.jpeg"
+							"urlCode": "https://i.ibb.co/QKFMgD1/SAMAWI-5.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://dondealojarseen.com/wp-content/uploads/2019/10/The-Charlee-Hotel.jpg"
+							"urlCode": "https://i.ibb.co/qr3f11x/AMAWI-2.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://exp.cdn-hotels.com/hotels/1000000/10000/9300/9257/52ecc395_y.jpg?impolicy=fcrop&w=500&h=333&q=high"
+							"urlCode": "https://i.ibb.co/vDttLQ8/SAMAWI-3.jpg"
 						}
 					]
 				},
@@ -104,12 +104,12 @@
 			}
 		},
 		{
-			"borrar": "santa marta",
+			"borrar": "Santa marta",
 			"id": 2,
-			"idcity": 1,
+			"idcity": 5,
 			"idLocation": 1,
 			"urlCode": "hotel-sansiraka",
-			"name": "hotel sansiraka",
+			"name": "Hotel Sansiraka",
 			"urlImg": "https://i.ibb.co/wYj7cxK/1-hotel-Limpio.jpg",
 			"addres": "avenida 12 circular 2",
 			"calification": 3,
@@ -194,13 +194,13 @@
 			}
 		},
 		{
-			"borrar": "amazonas",
+			"borrar": "Amazonas",
 			"id": 3,
 			"idcity": 2,
 			"idLocation": 2,
 			"urlCode": "hotel-amazon",
 			"name": "hotel amazon",
-			"urlImg": "https://i.ibb.co/3km1G11/2-hotel-Limpio.jpg",
+			"urlImg": "https://i.ibb.co/t24jHX3/Hotel-Amazon-piscina-frontal.jpg",
 			"addres": "calle 1 carrera 45",
 			"calification": 4,
 			"price": "220.000",
@@ -232,33 +232,34 @@
 					"photos1": [
 						{
 							"name": "photo1",
-							"urlCode": "https://content.r9cdn.net/kimg/bc/8d/61fbd6eee1b62569.png"
+							
+							"urlCode": "https://i.ibb.co/649rtrZ/Fachada-Amazon-2.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://media-cdn.tripadvisor.com/media/photo-s/10/46/5a/d0/hotel-lucerna-tijuana.jpg"
+							"urlCode": "https://i.ibb.co/r7Pnzvd/Piscina-hotel-amazon.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://s4p5s7j9.stackpathcdn.com/wp-content/uploads/2019/11/hotel-tijuana.jpeg"
+							"urlCode": "https://i.ibb.co/4tD3Vjb/Hotel-Amazon-corredor.jpg"
 						},
 						{
 							"name": "photo4",
-							"urlCode": "http://www.balneariosmexico.com/IMG/arton1802.jpg"
+							"urlCode": "https://i.ibb.co/zHRbMQ8/Balc-n-Amazon.jpg"
 						}
 					],
 					"photos2": [
 						{
 							"name": "photo1",
-							"urlCode": "https://media-cdn.tripadvisor.com/media/photo-s/02/fe/50/cb/hotel-lucerna.jpg"
+							"urlCode": "https://i.ibb.co/g31bkXD/Fachada-amazon.jpg"
 						},
 						{
 							"name": "photo2",
-							"urlCode": "https://dondealojarseen.com/wp-content/uploads/2019/10/The-Charlee-Hotel.jpg"
+							"urlCode": "https://i.ibb.co/PYVgg8p/Hotel-amazon.jpg"
 						},
 						{
 							"name": "photo3",
-							"urlCode": "https://www.portafolio.co/files/article_multimedia/uploads/2021/06/07/60bedba57a5ae.jpeg"
+							"urlCode": "https://i.ibb.co/Wgc52VT/Habitaci-n-Amazon-2.jpg"
 						}
 					]
 				},
@@ -1226,7 +1227,7 @@
 		{
 			"borrar": "Medellin",
 			"id": 14,
-			"idcity": 4,
+			"idcity": 1,
 			"idLocation": 4,
 			"urlCode": "hotel-los-sauces",
 			"name": "hotel los sauces",

@@ -23,6 +23,12 @@
 			"urlCode": "san-andres",
 			"title": "san andres",
 			"urlImg": "https://i.ibb.co/Prd5StK/4-san-andres.jpg"
+		},
+		{
+			"id": 5,
+			"urlCode": "santa-marta",
+			"title": "santa marta",
+			"urlImg": "https://i.ibb.co/Prd5StK/4-san-andres.jpg"
 		}
 	]
 }
