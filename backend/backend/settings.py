@@ -40,8 +40,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_filters',
+    #local apps 
     'hotels',
-    'plans'
+    'plans',
+    'offers',
+    'toures'
 ]
 
 MIDDLEWARE = [
