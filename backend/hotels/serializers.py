@@ -1,11 +1,12 @@
 from django.db.models import fields
 from rest_framework import serializers
-from .models import Hotel, National_city, Review, Photos, Service
+from .models import Hotel, Review, Photos, Service
+from cities.models import Cities
 
 class CitySerializer(serializers.ModelSerializer):
     
     class Meta:
-        model = National_city
+        model = Cities
         fields = ('__all__')
 
 class HotelSerializer(serializers.ModelSerializer):
@@ -34,7 +35,7 @@ class ReviewSerializer(serializers.ModelSerializer):
 class CityIdSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = National_city
+        model = Cities
         fields = ('__all__')
 
 
