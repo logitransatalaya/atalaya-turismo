@@ -6,7 +6,8 @@ from rest_framework.response import Response
 
 from .serializers import CityIdSerializer, CitySerializer, HotelSerializer, PhotosSerializer, ReviewSerializer, ServiceSerializer
 
-from .models import Hotel, National_city, Service, Photos, Review
+from .models import Hotel, Service, Photos, Review
+from cities.models import Cities
 
 import json
 
@@ -23,7 +24,7 @@ def apiOverView(request):
 @api_view(['GET'])
 def cityList(request):
 
-    cities = National_city.objects.all()
+    cities = Cities.objects.all()
     serializer = CitySerializer(cities, many=True)
 
     return Response({
@@ -34,7 +35,7 @@ def cityList(request):
 def hotels(request, name):
 
 
-    city = National_city.objects.filter(city__iexact=name)
+    city = Cities.objects.filter(city__iexact=name)
     city_id_serializer = CityIdSerializer(city, many=True)
     cityId = city_id_serializer.data[0]['id']
 
@@ -50,7 +51,7 @@ def hotels(request, name):
 @api_view(['GET'])
 def hotel(request, name, pk):
 
-    city = National_city.objects.filter(city__iexact=name)
+    city = Cities.objects.filter(city__iexact=name)
     serializer_city = CitySerializer(city, many=True)
 
     hotel = Hotel.objects.filter(id=pk, id_city=serializer_city.data[0]['id'])
