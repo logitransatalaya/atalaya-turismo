@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.urls.resolvers import LocaleRegexDescriptor
 from rest_framework import serializers
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from .serializers import CityIdSerializer, CitySerializer, HotelSerializer, PhotosSerializer, ReviewSerializer, ServiceSerializer
 
-from .models import Hotel, Service, Photos, Review
+from .models import Hotel, Service, Photos, Review, National_city
 from cities.models import Cities
 
 import json
@@ -33,9 +34,9 @@ def cityList(request):
 
 @api_view(['GET'])
 def hotels(request, name):
-
-
-    city = Cities.objects.filter(city__iexact=name)
+    print('holaaa')
+    print(name)
+    city = National_city.objects.filter(city__iexact=name)
     city_id_serializer = CityIdSerializer(city, many=True)
     cityId = city_id_serializer.data[0]['id']
 
