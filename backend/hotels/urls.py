@@ -8,5 +8,4 @@ urlpatterns = [
     path('ciudades/', views.cityList, name='cities'),
     path('ciudades/<str:name>', views.hotels, name='hotels'),
     path('ciudades/<str:name>/<int:pk>', views.hotel, name='hotel')
-
 ]

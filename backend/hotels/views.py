@@ -48,24 +48,8 @@ def hotel(request, name, pk):
     hotel = Hotel.objects.filter(id=pk, id_city=serializer_city.data[0]['id'])
     serializer_hotel = HotelSerializer(hotel, many=True)
 
-    service = Service.objects.filter(id_hotel=pk)
-    serializer_service = ServiceSerializer(service, many=True)
-
-    photos = Photos.objects.filter(id_hotel=pk)
-    serializer_photos = PhotosSerializer(photos, many=True)
-
-    review = Review.objects.filter(id_hotel=pk)
-    serializer_review = ReviewSerializer(review, many=True)
-
     return Response({
         'hotel': serializer_hotel.data,
-        'more' : {
-            'services': serializer_service.data,
-            'photos': {
-                'photos1': serializer_photos.data,
-            },
-            'reviews': serializer_review.data
-        }
     })
 
 

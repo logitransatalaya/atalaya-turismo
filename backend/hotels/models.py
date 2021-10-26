@@ -44,7 +44,7 @@ class Review(models.Model):
     id_hotel = models.ForeignKey(Hotel, on_delete=models.DO_NOTHING)
     user = models.CharField(max_length=100)
     review_text = models.CharField(max_length=500)
- 
+
     def __str__(self):
         template = f'Review of {self.id_hotel.name} from {self.id_hotel.id_city.city}'
         return template.format(self)
