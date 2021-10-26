@@ -11,5 +11,4 @@ urlpatterns = [
     path('planstest/', views.apiOverView, name='plans'),
     path('plans/', views.allplansList, name='planslist'),
     path('plans/<str:name>', views.plansList, name='planlist'),
-    # path('ciudades/<str:name>/<int:pk>', views.hotel, name='hotel')
 ]
