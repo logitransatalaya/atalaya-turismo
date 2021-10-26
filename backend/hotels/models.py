@@ -1,9 +1,5 @@
 from os import name
-from typing import Tuple
 from django.db import models
-from django.db.models.fields.related import OneToOneField
-from rest_framework.fields import flatten_choices_dict
-
 from cities.models import Cities
 
 class Hotel(models.Model):

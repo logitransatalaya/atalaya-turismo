@@ -1,7 +1,6 @@
-from django.db.models import fields
+from cities.models import Cities
 from rest_framework import serializers
 from .models import Hotel, Review, Photos, Service
-from cities.models import Cities
 
 class CitySerializer(serializers.ModelSerializer):
     

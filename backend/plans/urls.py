@@ -2,8 +2,6 @@
 from os import name
 from plans import views
 from django.urls import path 
-from django.conf.urls import url
-from django.urls.resolvers import URLPattern 
 from rest_framework.routers import DefaultRouter
 
 router_destination = DefaultRouter()
