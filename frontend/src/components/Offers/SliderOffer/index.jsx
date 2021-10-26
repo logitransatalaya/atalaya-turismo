@@ -9,7 +9,12 @@ const SliderOffer = ({ photos }) => {
 			<Splide options={splideOptionsOfferts} classname='splider'>
 				{photos.map((img, i) => (
 					<SplideSlide key={i}>
-						<img src={img.url} alt={img.alt} width='100%' />
+						<img
+							src={img.url}
+							alt={img.alt}
+							width='100%'
+							height='100%'
+						/>
 					</SplideSlide>
 				))}
 			</Splide>
