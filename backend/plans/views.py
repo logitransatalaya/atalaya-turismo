@@ -1,9 +1,8 @@
 
-from rest_framework import serializers
 from .models import PhotosPlans, Plan
-from .serializers import PhotosPlansSerializer, PlanSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from .serializers import PhotosPlansSerializer, PlanSerializer
 
 @api_view(['GET'])
 def apiOverView(request):
