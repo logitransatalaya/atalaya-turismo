@@ -10,8 +10,6 @@ class Hotel(models.Model):
     urlImg = models.URLField(max_length=250, blank=False)
     stars = models.PositiveIntegerField()
     # Pending Remove
-    description = models.CharField(max_length=250)
-
     def __str__(self):
         template = f'{self.name} - {self.id_city.city}'
         return template.format(self)
