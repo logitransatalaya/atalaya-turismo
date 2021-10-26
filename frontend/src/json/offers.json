@@ -1,125 +1,121 @@
 {
-    "offers": [
-        {
-            "id": 1,
-            "idHotel": 1,
-            "name": "San Andrés",
-            "fromDate": "20 de Octubre",
-            "toDate": "31 de Octubre",
-            "price": "1'100.000",
-            "hotel": "Hotel Las Americas",
-            "photos": [
-                {
-                    "url": "https://cdn.pixabay.com/photo/2018/02/28/16/38/st-andrews-3188376_960_720.jpg" ,
-                    "alt":"San andres"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2017/08/02/01/53/palms-2569719_960_720.jpg",
-                    "alt": "San andres"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2013/09/09/20/42/colombia-180789_960_720.jpg",
-                    "alt":"San andres"
-                }
-            ],
-            "urlCode": "offer-1",
-            "services": [
-                "Tiquetes aéreos.", 
-                "Tarjeta de ingreso a la isla.", 
-                "Tarjeta de asistencia médica.", 
-                "Alojamiento 3 noches y 4 días.", 
-                "Alimentación en plan elegido.", 
-                "Snack de media tarde (plan full).",
-                "Bar abierto establecidos por los horarios del hotel elegido (plan full).",
-                "Traslado hotel aeropuerto, aeropuerto hotel.",
-                "Tour Jhony Cay.",
-                "Tour a la vuelta de la isla.",
-                "Paseo en yate por la bahía.",
-                "Vista al acuario."
-            ]
-        },
-        {
-            "id": 2,
-            "idHotel": 2,
-            "name": "Las Bahamas",
-            "fromDate": "06 de Noviembre",
-            "toDate": "11 de Noviembre",
-            "price": "1'500.000",
-            "hotel": "Hotel las Bahamas",
-            "photos": [
-                {
-                    "url": "https://cdn.pixabay.com/photo/2015/03/26/10/58/atlantis-692201_960_720.jpg",
-                    "alt": "Las bahamas"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2013/08/12/18/46/staniel-cay-171925_960_720.jpg",
-                    "alt":"Las bahamas"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2016/01/05/15/58/starfish-1122849_960_720.jpg",
-                    "alt": "Las bahamas"
-                }
-            ],
-            "urlCode": "offer-2",
-            "services": [
-                "Tiquetes aéreos.", 
-                "Tarjeta de ingreso a la isla.", 
-                "Tarjeta de asistencia médica.", 
-                "Alojamiento 5 noches y 4 días.", 
-                "Alimentación en plan elegido.", 
-                "Snack de media tarde (plan full).",
-                "Bar abierto establecidos por los horarios del hotel elegido (plan full).",
-                "Traslado hotel aeropuerto, aeropuerto hotel.",
-                "Tour por las bahamas.",
-                "Tour a la vuelta de la isla.",
-                "Paseo en yate por la bahía."
-            ]
-        },
-        {
-            "id": 3,
-            "idHotel": 3,
-            "name": "Desierto de la tatacoa",
-            "fromDate": "13 de Diciembre",
-            "toDate": "17 de Diciembre",
-            "price": "950.000",
-            "hotel": "Hotel la Tatacoa",
-            "photos": [
-                {
-                    "url": "https://rutasdelosandes.com/images/rutas/huila/desiertoTatacoa/slider3.JPG",
-                    "alt":"Desierto de la tatacoa"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2020/03/02/16/42/colombia-4896184_960_720.jpg" ,
-                    "alt":"Desierto de la tatacoa"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2019/12/26/06/30/cactus-4719749_960_720.jpg",
-                    "alt": "Desierto de la tatacoa"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2020/03/01/22/17/colombia-4894304_960_720.jpg",
-                    "alt":"Desierto de la tatacoa"
-                },
-                {
-                    "url": "https://cdn.pixabay.com/photo/2021/05/28/22/43/tatacoa-6292128_960_720.jpg",
-                    "alt": "Desierto de la tatacoa"
-                }
-            ],
-            "urlCode": "offer-3",
-            "services": [
-                "Tiquetes aéreos.", 
-                "Tarjeta de ingreso a la isla.", 
-                "Tarjeta de asistencia médica.", 
-                "Alojamiento 3 noches y 4 días.", 
-                "Alimentación en plan elegido.", 
-                "Snack de media tarde (plan full).",
-                "Bar abierto establecidos por los horarios del hotel elegido (plan full).",
-                "Traslado hotel aeropuerto, aeropuerto hotel.",
-                "Tour Jhony Cay.",
-                "Tour a la vuelta de la isla.",
-                "Paseo en bicicleta por el desierto.",
-                "Museo la tatacoa."
-            ]
-        }
-    ]
+	"offers": [
+		{
+			"id": 1,
+			"idHotel": 1,
+			"name": "SANTA MARTA",
+			"fromDate": "20 de Octubre",
+			"toDate": "31 de Octubre",
+			"price": "430.000 COP",
+			"hotel": "SANSIRAKA",
+			"photos": [
+				{
+					"url": "https://cdn.pixabay.com/photo/2018/02/28/16/38/st-andrews-3188376_960_720.jpg",
+					"alt": "San andres"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2017/08/02/01/53/palms-2569719_960_720.jpg",
+					"alt": "San andres"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2013/09/09/20/42/colombia-180789_960_720.jpg",
+					"alt": "San andres"
+				}
+			],
+			"urlCode": "offer-1",
+			"services": [
+				"3 o 4 noches de alojamiento en el hotel Sansiraka.",
+				"Traslados aeropuerto Santa Marta – hotel Sansiraka – aeropuerto Santa Marta.",
+				"Desayunos y cenas.",
+				"Tour Playa Blanca con almuerzo.",
+				"Tarjeta de asistencia médica."
+			],
+			"no_includes": [
+				"Tiquetes aéreos (consulta nuestras tarifas especiales).",
+				"Tarifa Administrativa del tiquete.",
+				"Alimentación y gastos no especificados.",
+				"Seguro hotelero (opcional)."
+			]
+		},
+		{
+			"id": 2,
+			"idHotel": 2,
+			"name": "CARTAGENA",
+			"fromDate": "06 de Noviembre",
+			"toDate": "11 de Noviembre",
+			"price": "539.2000 COP",
+			"hotel": "CAPILLA DEL MAR",
+			"photos": [
+				{
+					"url": "https://cdn.pixabay.com/photo/2015/03/26/10/58/atlantis-692201_960_720.jpg",
+					"alt": "Las bahamas"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2013/08/12/18/46/staniel-cay-171925_960_720.jpg",
+					"alt": "Las bahamas"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2016/01/05/15/58/starfish-1122849_960_720.jpg",
+					"alt": "Las bahamas"
+				}
+			],
+			"urlCode": "offer-2",
+			"services": [
+				"3 noches de alojamiento en el hotel Capilla del Mar.",
+				"Alimentación según el plan elegido.",
+				"Tarjeta de asistencia médica."
+			],
+			"no_includes": [
+				"Tiquetes aéreos (consulta nuestras tarifas especiales)",
+				"Tarifa Administrativa del tiquete ",
+				"Traslados aeropuerto – hotel – aeropuerto en Cartagena ",
+				"Alimentación y gastos no especificados"
+			]
+		},
+		{
+			"id": 3,
+			"idHotel": 3,
+			"name": "PUNTA CANA",
+			"fromDate": "13 de Diciembre",
+			"toDate": "17 de Diciembre",
+			"price": "827 USD",
+			"hotel": "GRAND BAVARO",
+			"photos": [
+				{
+					"url": "https://rutasdelosandes.com/images/rutas/huila/desiertoTatacoa/slider3.JPG",
+					"alt": "Desierto de la tatacoa"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2020/03/02/16/42/colombia-4896184_960_720.jpg",
+					"alt": "Desierto de la tatacoa"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2019/12/26/06/30/cactus-4719749_960_720.jpg",
+					"alt": "Desierto de la tatacoa"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2020/03/01/22/17/colombia-4894304_960_720.jpg",
+					"alt": "Desierto de la tatacoa"
+				},
+				{
+					"url": "https://cdn.pixabay.com/photo/2021/05/28/22/43/tatacoa-6292128_960_720.jpg",
+					"alt": "Desierto de la tatacoa"
+				}
+			],
+			"urlCode": "offer-3",
+			"services": [
+				"4 noches de alojamiento en el hotel Iberostar Grand Bavaro.",
+				"Traslados aeropuerto – hotel Punta Cana – aeropuerto en servicio regular.",
+				"Alimentación Todo Incluido.",
+				"Tarjeta de asistencia médica con cubrimiento de USD 35.000 (aplica suplemento para mayores de 70 años).",
+				"SimCard Usaálo con plan Full Ilimitado en llamadas e internet (No aplica para niños).",
+				"Fee bancario."
+			],
+			"no_includes": [
+				"Tiquetes aéreos (consulta nuestras tarifas especiales).",
+				"Tarifa Administrativa del tiquete.",
+				"Alimentación y gastos no especificados."
+			]
+		}
+	]
 }
