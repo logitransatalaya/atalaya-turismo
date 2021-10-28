@@ -26,4 +26,4 @@ urlpatterns = [
     path('api/', include('plans.urls')),
     path('api/', include('toures.urls')),
     path('api/', include('offers.urls'))
-] + static (settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
