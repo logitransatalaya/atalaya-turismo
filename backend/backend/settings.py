@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
-import dj_database_url
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,19 +23,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+n=ovv^(qj6yrw9m7_h#gvwo0!-9bq5kg(i28hfy+e1ey1vdn+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
-    'https://ata-turismo.herokuapp.com/'
+    'http://127.0.0.1:3000'
 ]
+
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://ata-turismo.herokuapp.com/$",
+    r"^https://127.0.0.1\.com$",
 ]
+
 CORS_ORIGIN_WHITLIST = [
-    'https://ata-turismo.herokuapp.com/'
+    'http://127.0.0.1:3000'
 ]
+
 CORS_ALLOW_HEADERS = [
     'accept',
     'accept-encoding',
@@ -51,7 +51,6 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -63,22 +62,25 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'hotels'
+    'django_filters',
+    #local apps 
+    'hotels',
+    'plans',
+    'offers',
+    'toures'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
+
+    'django.middleware.common.CommonMiddleware'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -111,21 +113,18 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'dijr9djrpb1ah',
-#         'USER': 'ohlubnlapfvpfn',
-#         'PASSWORD': 'ed94f717c7d6c8e1915bbcc0808f36323bbccce2b5fd9730d73d081de5ff4344',
-#         'HOST': 'ec2-35-169-204-98.compute-1.amazonaws.com',
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'turismo',
+        'USER': 'atalaya',
+        'PASSWORD': 'atalaya1234',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -166,16 +165,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

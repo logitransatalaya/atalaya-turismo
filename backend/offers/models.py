@@ -4,6 +4,7 @@ from django.db import models
 from hotels.models import Hotel
 from django.core.exceptions import ValidationError
 
+
 # Create your models here.
 
 """ Creamos el modelo que ira en la base de datos """
@@ -22,6 +23,7 @@ class Offers(models.Model):
         if self.to_date < date.today():
             raise ValidationError("The date cannot be in the past!")
         super(Offers, self).save(*args, **kwargs)
+
 
     """ convertir el modelo a string """
     def __str__(self):
