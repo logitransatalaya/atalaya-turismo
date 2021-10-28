@@ -1,48 +1,63 @@
-from os import name
 from django.db import models
-from cities.models import Cities
+
+# Create your models here.
+
+class City(models.Model):
+    name= models.CharField(max_length=100)
+    url_img= models.URLField(max_length=255)
+
+    def __str__(self):
+        return self.name
+
+class Services(models.Model):
+    name= models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
 
 class Hotel(models.Model):
-    id_city = models.ForeignKey(Cities, on_delete=models.CASCADE, default=None)
-    name = models.CharField(max_length=100, blank=False)
-    price = models.PositiveIntegerField()
-    address = models.CharField(max_length=150)
-    urlImg = models.URLField(max_length=250, blank=False)
-    stars = models.PositiveIntegerField()
-    # Pending Remove
-    def __str__(self):
-        template = f'{self.name} - {self.id_city.city}'
-        return template.format(self)
-
-class Service(models.Model):
-    id_hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
-    services = models.CharField(max_length=200)
+    id_city= models.ForeignKey(City, on_delete=models.CASCADE)
+    name= models.CharField(max_length=100)
+    stars= models.PositiveIntegerField()
+    price= models.PositiveIntegerField()
+    description= models.TextField()
+    addres = models.CharField(max_length=255)
+    url_img= models.URLField(max_length=255)
 
     def __str__(self):
-        template = f'{self.services} - {self.id_hotel.name}'
-        return template.format(self)
+        return self.name
 
-class Photos(models.Model):
-    id_hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
-    main_1 = models.URLField(max_length=250)
-    main_2 = models.URLField(max_length=250)
-    main_3 = models.URLField(max_length=250)
-    main_4 = models.URLField(max_length=250)
-    hab_1 = models.URLField(max_length=250)
-    hab_2 = models.URLField(max_length=250)
-    hab_3 = models.URLField(max_length=250)
-    hab_4 = models.URLField(max_length=250)
-    hab_5 = models.URLField(max_length=250)
+class Comments(models.Model):
+    id_hotel= models.ForeignKey(Hotel, related_name="comments",on_delete=models.CASCADE)
+    user_name= models.CharField(max_length=100)
+    content= models.TextField(max_length=400)
 
     def __str__(self):
-        template = f'Photos of {self.id_hotel.name} from {self.id_hotel.id_city.city}'
-        return template.format(self)
+        template = f'{self.user_name} - comentario - {self.id_hotel.name}'
+        return template
 
-class Review(models.Model):
-    id_hotel = models.ForeignKey(Hotel, on_delete=models.DO_NOTHING)
-    user = models.CharField(max_length=100)
-    review_text = models.CharField(max_length=500)
+class Photos_outside(models.Model):
+    id_hotel= models.ForeignKey(Hotel, related_name="photos_outside", on_delete=models.CASCADE)
+    url_img= models.URLField(max_length=255)
+    name_img= models.CharField(max_length=50)
 
     def __str__(self):
-        template = f'Review of {self.id_hotel.name} from {self.id_hotel.id_city.city}'
-        return template.format(self)
+        template = f'fotos facha de {self.id_hotel.name}'
+        return template
+
+class Photos_inside(models.Model):
+    id_hotel= models.ForeignKey(Hotel, related_name="photos_inside", on_delete=models.CASCADE)
+    url_img= models.URLField(max_length=255)
+    name_img= models.CharField(max_length=50)
+
+    def __str__(self):
+        template = f'fotos habitaciones de {self.id_hotel.name}'
+        return template
+
+class Services_hotel(models.Model):
+    id_hotel= models.ForeignKey(Hotel, related_name="services_hotel", on_delete=models.CASCADE)
+    id_service= models.ForeignKey(Services, on_delete=models.CASCADE)
+
+    def __str__(self):
+        template = f'servicio de {self.id_service.name} del hotel {self.id_hotel.name}'
+        return template

@@ -1,5 +1,5 @@
-from .models import *
 from django.contrib import admin
-# Register your models here.
+from .models import City,Services,Hotel,Comments,Photos_outside,Photos_inside,Services_hotel
 
-admin.site.register([Hotel])
+# Register your models here.
+admin.site.register([City,Services,Hotel,Comments,Photos_outside,Photos_inside,Services_hotel])
