@@ -41,7 +41,7 @@ const FloatingButtons = () => {
 		} else if (currentMessage && currentMessage.page === 'plans') {
 			setRoute({
 				...routes,
-				message: 'Resera este plan AQUÍ',
+				message: 'Reserva este plan AQUÍ',
 				messageWsp: `Deseo%20reservar%20el%20plan%20a%20${currentMessage.title}`
 			})
 		}
