@@ -6,23 +6,21 @@
 			"cardImg": "https://cdn2.civitatis.com/colombia/guatape/galeria/header/islas-embalse-guatape-desde-aire.jpg",
 			"descriptionImg": "https://cdn2.civitatis.com/colombia/guatape/galeria/header/islas-embalse-guatape-desde-aire.jpg",
 			"description": "Visita en este tour el municipio de el peñol con su templo roca única en Antioquia, la réplica del antiguo Peñol, la imponente piedra del Peñol y uno de los pueblos más coloridos de Suramérica: Guatapé.Visita en este tour el municipio de el peñol con su templo roca única en Antioquia, la réplica del antiguo Peñol, la imponente.",
-			"characteristics": {
-				"column1": [
+			"includeColumOne": [
 					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
 					"Tarjeta de asistencia médica.",
 					"Desayuno.",
 					"almuerzo según menú.",
 					"Paseo en barco por el embalse."
 				],
-				"column2": [
+			"includeColumTwo": [
 					"Visita al Municipio de Guatapé y el Peñol.",
 					"Visita el nuevo Peñol.",
 					"Visita a la réplica del antiguo Peñol.",
 					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
 					"Fechas de viaje: Todos los días."
 				],
-				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
-			}
+			"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
 		},
 		{
 			"urlCode": "graffiti-tour",
