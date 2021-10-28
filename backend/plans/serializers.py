@@ -2,13 +2,6 @@ from rest_framework import serializers
 from .models import  Plan,PhotosPlans,IncludesPlan,NoInclude,Notes
 
 
-class PlanSerializer(serializers.ModelSerializer):
-    
-    class Meta: 
-        model = Plan
-        fields = ['id', 'destination_name', 'url_img_card', 'description']
-        # fields = ('__all__')
-
 class PhotosPlansSerializer(serializers.ModelSerializer):
 
     class Meta:
@@ -34,3 +27,13 @@ class NotesSerializer(serializers.ModelSerializer):
         model = Notes
         fields = ('__all__')
         
+
+class PlanSerializer(serializers.ModelSerializer):
+    notes = NotesSerializer(many=True)
+    photos = PhotosPlansSerializer(many=True)
+    includes = IncludesPlanSerializer(many=True)
+    noIncludes = NoIncludeSerializer(many=True)
+    class Meta: 
+        model = Plan
+        fields = ['id', 'destination_name', 'url_img_card', 'description','photos','includes','noIncludes','notes']
+        # fields = ('__all__')

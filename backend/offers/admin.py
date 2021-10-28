@@ -3,4 +3,4 @@ from .models import *
 
 # Register your models here.
 
-admin.site.register([Offers])
+admin.site.register([Offers,Services,Photos,NoIncludes])
