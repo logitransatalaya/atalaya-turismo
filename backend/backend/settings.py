@@ -92,11 +92,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'turismo',
-        'USER': 'atalaya',
-        'PASSWORD': 'atalaya1234',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'NAME': 'dijr9djrpb1ah',
+        'USER': 'ohlubnlapfvpfn',
+        'PASSWORD': 'ed94f717c7d6c8e1915bbcc0808f36323bbccce2b5fd9730d73d081de5ff4344',
+        'HOST': 'ec2-35-169-204-98.compute-1.amazonaws.com',
     }
 }
 
