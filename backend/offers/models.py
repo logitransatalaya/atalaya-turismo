@@ -1,7 +1,10 @@
 
+from datetime import date
 from os import name
 from django.db import models
 from hotels.models import Hotel
+from plans.utils import validate_date
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 
@@ -16,6 +19,11 @@ class Offers(models.Model):
     price = models.BigIntegerField(blank=False)
     Hotel = models.CharField(max_length=250)
     url_code = models.CharField(max_length=250)
+    
+    def save(self, *args, **kwargs):
+        if self.to_date < date.today():
+            raise ValidationError("The date cannot be in the past!")
+        super(Offers, self).save(*args, **kwargs)
 
     """ convertir el modelo a string """
     def __str__(self):
