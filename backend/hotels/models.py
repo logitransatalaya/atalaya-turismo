@@ -10,10 +10,11 @@ class City(models.Model):
         return self.name
 
 class Services(models.Model):
-    name= models.CharField(max_length=100)
+    name_service = models.CharField(max_length=100)
+    text_service = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.name
+        return self.name_service
 
 class Hotel(models.Model):
     id_city= models.ForeignKey(City, on_delete=models.CASCADE)
@@ -59,5 +60,5 @@ class Services_hotel(models.Model):
     id_service= models.ForeignKey(Services, on_delete=models.CASCADE)
 
     def __str__(self):
-        template = f'servicio de {self.id_service.name} del hotel {self.id_hotel.name}'
+        template = f'servicio de {self.id_service.name_service} del hotel {self.id_hotel.name}'
         return template

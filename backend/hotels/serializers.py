@@ -46,7 +46,7 @@ class ServicesHotelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Services_hotel
-        fields = ['id', 'id_hotel', 'id_service']
+        fields = ('__all__')
 
 
 
