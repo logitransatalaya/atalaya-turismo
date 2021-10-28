@@ -1,19 +1,18 @@
-import { useParams } from 'react-router'
-import { plans } from '../../../json/plans.json'
-import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Title } from 'components/GlobalComponents/Title'
-import { getMessage } from 'state/actions/toolTipActions'
-import { useLocation } from 'react-router'
-import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
+import { useParams } from 'react-router'
+
 import { getCurrentPlan } from '../../../state/actions/plansAction'
+import { plans } from '../../../json/plans.json'
+
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
+import { Container } from 'components/Container'
+import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const DetailsPlan = () => {
 	const { urlCode } = useParams()
 	const dispatch = useDispatch()
-	const location = useLocation()
 	const { currentPlan } = useSelector((state) => state.PlansReducer)
 
 	useEffect(() => {
@@ -29,18 +28,6 @@ export const DetailsPlan = () => {
 			dispatch(getCurrentPlan(currentPlanJson))
 		}
 	}, [currentPlan, dispatch, urlCode])
-
-	useEffect(() => {
-		if (currentPlan) {
-			dispatch(
-				getMessage({
-					route: location.pathname,
-					title: currentPlan.name,
-					page: 'plans'
-				})
-			)
-		}
-	}, [currentPlan, dispatch, location])
 
 	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
 
@@ -74,7 +61,10 @@ export const DetailsPlan = () => {
 						<CurrentPlanConatainer>
 							{
 								<>
-									<Title text={currentPlan.name} />
+									<Title
+										text={currentPlan.name}
+										about={false}
+									/>
 									{handleScreen > 600 ? (
 										<div className='containerImages'>
 											{currentPlan.photos.map(

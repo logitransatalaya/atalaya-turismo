@@ -1,9 +1,9 @@
+import { combineReducers } from 'redux'
+import { hotelsReducer } from './hotelsReducer'
+import { toolTipReducer } from './toolTipReducer'
 import { tourReducer } from './toursReducer'
 import { PlansReducer } from './plansReducer'
-import { hotelsReducer } from './hotelsReducer'
 import { OffersReducer } from './offersReducer'
-import { toolTipReducer } from './toolTipReducer'
-import { combineReducers } from 'redux'
 
 export default combineReducers({
 	hotelsReducer,

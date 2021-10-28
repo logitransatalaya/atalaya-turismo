@@ -31,27 +31,15 @@ export const MorePopularService = ({ currentHotel }) => {
 
 	return (
 		<ContainerCards>
-			<div className='layoutD'>
-				{services &&
-					services.map((service, i) => (
-						<InfoService
-							key={i}
-							iconName={service.iconName}
-							text={service.text}
-						/>
-					))}
-			</div>
-			<div className='layoutM'>
-				{auxServices &&
-					auxServices.map((service, i) => (
-						<InfoService
-							key={i}
-							iconName={service.iconName}
-							text={service.text}
-						/>
-					))}
-				{ButtonPhoneServices}
-			</div>
+			{auxServices &&
+				auxServices.map((service, i) => (
+					<InfoService
+						key={i}
+						iconName={service.iconName}
+						text={service.text}
+					/>
+				))}
+			{ButtonPhoneServices}
 		</ContainerCards>
 	)
 }

@@ -10,12 +10,13 @@ import { getRoute } from 'state/actions/toolTipActions'
 const FloatingButtons = () => {
 	const location = useLocation()
 	const dispatch = useDispatch()
-	const { currentRoute, currentMessage } = useSelector(
-		(state) => state.toolTipReducer
-	)
+	const { currentRoute } = useSelector((state) => state.toolTipReducer)
+	const { currentHotel } = useSelector((state) => state.hotelsReducer)
+	const { currentTour } = useSelector((state) => state.tourReducer)
 	const [routes, setRoute] = useState({
-		message: 'Contactanos por WhatsApp',
-		messageWsp: 'Deseo%20contactarme%20con%20un%20asesor'
+		route: '',
+		message: '',
+		messageWsp: ''
 	})
 
 	useEffect(() => {
@@ -26,50 +27,37 @@ const FloatingButtons = () => {
 	}, [dispatch, location, currentRoute])
 
 	useEffect(() => {
-		if (currentMessage && currentMessage.page === 'hotel') {
+		if (currentHotel) {
+			// console.log('entro')
+			const { idcity, urlCode, name } = currentHotel
+			const hotel = name.replaceAll(' ', '%20')
 			setRoute({
 				...routes,
-				message: 'Reserva este hotel AQUÍ',
-				messageWsp: `Deseo%20reservar%20el%20hotel%20${currentMessage.title}`
-			})
-		} else if (currentMessage && currentMessage.page === 'tour') {
-			setRoute({
-				...routes,
-				message: 'Reserva este tour AQUÍ',
-				messageWsp: `Deseo%20reservar%20un%20cupo%20para%20el%20tour%20${currentMessage.title}`
-			})
-		} else if (currentMessage && currentMessage.page === 'plans') {
-			setRoute({
-				...routes,
-				message: 'Resera este plan AQUÍ',
-				messageWsp: `Deseo%20reservar%20el%20plan%20a%20${currentMessage.title}`
+				route: `/hoteles/${idcity}/${urlCode}`,
+				message: `Deseo reserval este hotel!`,
+				messageWsp: `Deseo%20reservar%20el%20hotel%20${hotel}`
 			})
 		}
-		// eslint-disable-next-line
-	}, [currentMessage])
-
-	useEffect(() => {
-		if (currentMessage && currentMessage.route !== currentRoute) {
+		if (currentTour) {
+			// console.log('entro')
+			const { title, urlCode } = currentTour
+			const tour = title.replaceAll(' ', '%20')
 			setRoute({
-				message: 'Contactanos por WhatsApp',
-				messageWsp: 'Deseo%20contactarme%20con%20un%20asesor'
+				...routes,
+				route: `/tours/${urlCode}`,
+				message: `Deseo reservar este tour`,
+				messageWsp: `Deseo%20reservar%20un%20cupo%20para%20${tour}`
 			})
 		}
-	}, [currentRoute, currentMessage])
-
-	const handleAction = () => {
-		window.open(`https://wa.me/573145554761?text=${routes.messageWsp}`)
-	}
+	}, [currentHotel, currentTour, routes.route])
 
 	return (
 		<ContainerBtns>
 			<BtnContact
-				state={currentMessage}
 				icon={wspweb}
 				title='Whatsapp'
 				pathname={currentRoute}
 				routes={routes}
-				onClick={handleAction}
 			/>
 			<BtnContact icon={mailweb} title='viajes y turismo' />
 		</ContainerBtns>

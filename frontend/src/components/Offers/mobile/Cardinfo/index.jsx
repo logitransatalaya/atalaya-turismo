@@ -7,9 +7,7 @@ const Cardinfo = ({ data }) => {
 	const { fromDate, toDate, price, hotel } = data
 
 	const handleBooking = () => {
-		window.open(
-			`https://wa.me/573145554761?text=Me%20interesa%20comprar%20esta%20ofera.`
-		)
+		console.log('me hicieron click')
 	}
 
 	return (

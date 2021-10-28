@@ -1,10 +1,10 @@
 import React from 'react'
-import { HealthIncludesStyles } from './styles'
+import { HealthIncludes_styles } from './styles'
 import { ReactComponent as IconSalud } from '../../../images/iconSaludWhite.svg'
 
 export const HealthIncludes = () => {
 	return (
-		<HealthIncludesStyles>
+		<HealthIncludes_styles>
 			<div className='healtInl_grid'>
 				<div className='desc'>
 					<div className='box_icon'>
@@ -58,6 +58,6 @@ export const HealthIncludes = () => {
 					</ul>
 				</div>
 			</div>
-		</HealthIncludesStyles>
+		</HealthIncludes_styles>
 	)
 }

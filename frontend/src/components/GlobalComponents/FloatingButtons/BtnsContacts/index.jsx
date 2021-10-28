@@ -1,25 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { Button } from '../styles'
 
-const BtnContact = ({ icon, title, routes, onClick, state }) => {
+const BtnContact = ({ icon, title, pathname, routes }) => {
 	const [showToolTip, setShowToolTip] = useState(true)
 
 	useEffect(() => {
-		if (state && state.page === 'hotel') {
-			setShowToolTip(true)
-		} else if (state && state.page === 'tour') {
-			setShowToolTip(true)
-		} else if (state && state.page === 'plans') {
-			setShowToolTip(true)
-		}
-
 		const handleToolTip = () => {
 			setTimeout(() => {
 				setShowToolTip(false)
 			}, 4000)
 		}
 		handleToolTip()
-	}, [state])
+	}, [])
 
 	const handleDisappear = () => {
 		const animationMail =
@@ -30,22 +22,33 @@ const BtnContact = ({ icon, title, routes, onClick, state }) => {
 	}
 
 	return (
-		<Button onClick={onClick}>
+		<Button>
 			{title === 'Whatsapp' ? (
-				<div className='acontainer'>
+				<a
+					href='https://www.google.com/?hl=es'
+					target='_blank'
+					rel='noreferrer'
+					className='acontainer'
+				>
 					<img src={icon} alt={title} className='icons' />
 
 					<span className={handleDisappear().animationwsp}>
 						{routes.message}
 					</span>
-				</div>
+				</a>
 			) : (
-				<div className='acontainer'>
+				<a
+					href='https://www.google.com/?hl=es'
+					target='_blank'
+					rel='noreferrer'
+					className='acontainer'
+				>
 					<img src={icon} alt={title} className='icons' />
+
 					<span className={handleDisappear().animationMail}>
 						Contactanos por correo
 					</span>
-				</div>
+				</a>
 			)}
 		</Button>
 	)

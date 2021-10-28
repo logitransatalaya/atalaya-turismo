@@ -1,18 +1,14 @@
 import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { ToursDetailsStyled } from './styles'
 import { Skeleton } from 'components/Skeletons'
 import { Container } from 'components/Container'
-import { Title } from 'components/GlobalComponents/Title'
-import { getMessage } from 'state/actions/toolTipActions'
-import { useLocation } from 'react-router'
 import { Footer } from 'components/GlobalComponents/Footer'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const ToursDetails = () => {
-	const dispatch = useDispatch()
-	const location = useLocation()
 	const { urlCode } = useParams()
 	const { getCurrentTour } = useApi()
 	const { currentTour } = useSelector((state) => state.tourReducer)
@@ -22,25 +18,13 @@ export const ToursDetails = () => {
 		[getCurrentTour, currentTour, urlCode]
 	)
 
-	useEffect(() => {
-		if (currentTour) {
-			dispatch(
-				getMessage({
-					route: location.pathname,
-					title: currentTour.title,
-					page: 'tour'
-				})
-			)
-		}
-	}, [dispatch, currentTour, location])
-
 	return !currentTour ? (
 		<Skeleton type='toursDescription' />
 	) : (
 		<>
 			<Container>
 				<ToursDetailsStyled className='ToursDetails'>
-					<Title text={currentTour.title} />
+					<Title text={currentTour.title} about={false} />
 					<div className='description'>
 						<div className='descriptionImg-container'>
 							<img

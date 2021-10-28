@@ -1,8 +1,8 @@
-import React from 'react'
-import { OffersCard } from '../OffersCard'
-import { splideOptionsOffers } from 'lib/splide'
 import Splide from '@splidejs/react-splide/dist/js/components/Splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
+import { splideOptionsOffers } from 'lib/splide'
+import React from 'react'
+import { OffersCard } from '../OffersCard'
 
 export const HomeOffersFlash = ({ image }) => {
 	return (

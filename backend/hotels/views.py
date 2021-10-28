@@ -1,14 +1,30 @@
+from django.shortcuts import render
+from django.http import JsonResponse
 from rest_framework import serializers
-from rest_framework.response import Response
+
 from rest_framework.decorators import api_view
-from .serializers import CitySerializer, CityIdSerializer, HotelSerializer, ServiceSerializer
+from rest_framework.response import Response
 
-from .models import City, Hotel, Services, Services_hotel
+from .serializers import CityIdSerializer, CitySerializer, HotelSerializer, PhotosSerializer
 
-# Create your views here.
+from .models import Hotel, National_city, Service
+
+import json
+
+from collections import OrderedDict
+
+@api_view(['GET'])
+def apiOverView(request):
+    test = {
+        'test': 'test'
+    
+    }
+    return Response(test)
+
 @api_view(['GET'])
 def cityList(request):
-    cities = City.objects.all()
+
+    cities = National_city.objects.all()
     serializer = CitySerializer(cities, many=True)
 
     return Response({
@@ -16,22 +32,16 @@ def cityList(request):
     })
 
 @api_view(['GET'])
-#!name_city es lo que viene por parametros en la url
-def hotels(request, name_city):
-    #!En la variable city me queda el query despues de filtrar por el nombre 
-    #!debo de pasarlo por el serializer el cual me devuelve un array 
-    #!como es uno le pongo cero y extraigo el id
+def hotels(request):
 
-    city = City.objects.filter(name__iexact=name_city)
-    city_name = CityIdSerializer(city, many=True)
-    cityId = city_name.data[0]['id']
 
-    #!teniendo el id, voy a irme a la tabla de hoteles y voy a filtrar por 
-    #!el campo id con cityId despues de esto serializo los datos
+    city = National_city.objects.filter(city__iexact='medellin')
+    city_id_serializer = CityIdSerializer(city, many=True)
+    cityId = city_id_serializer.data[0]['id']
 
     hotels = Hotel.objects.filter(id_city=cityId)
-    serializer = HotelSerializer(hotels, many=True)
 
+    serializer = HotelSerializer(hotels, many=True)
 
     return Response({
             'hotels' : serializer.data
@@ -39,12 +49,20 @@ def hotels(request, name_city):
     )
 
 @api_view(['GET'])
-def hotel(request, name_city, pk):
-    hotel = Hotel.objects.filter(id=pk)
+def hotel(request, pk):
 
+    hotel = Hotel.objects.filter(id=pk)
     serializer_hotel = HotelSerializer(hotel, many=True)
 
+    hotel_id = serializer_hotel.data
+    print(hotel_id)
+    
+    service = Service.objects.all()
+    serializer = HotelSerializer(hotel, many=True)
+
     return Response({
-            'hotel' : serializer_hotel.data,
-        }
-    )
+        'Testing': serializer_hotel.data
+    })
+
+
+

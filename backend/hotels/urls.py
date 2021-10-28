@@ -1,9 +1,14 @@
 from os import name
+from django.conf.urls import url
+from django.urls.resolvers import URLPattern 
 from django.urls import path 
 from hotels import views
 
+
 urlpatterns = [
-    path('ciudades/', views.cityList, name='cities'),
-    path('ciudades/<str:name_city>', views.hotels, name='hotels'),
-    path('ciudades/<str:name_city>/<int:pk>', views.hotel, name='hotel')
+    path('test', views.apiOverView, name='api-overview'),
+    path('cities/', views.cityList, name='cities'),
+    path('hotels/', views.hotels, name='hotels'),
+    path('hotel/<int:pk>', views.hotel, name='hotel')
+
 ]

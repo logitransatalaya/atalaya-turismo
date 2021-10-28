@@ -1,48 +1,30 @@
 import styled from 'styled-components'
 
 export const ContainerCards = styled.div`
-	.layoutD {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-content: center;
-		gap: 1em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	gap: 1em;
 
-		@media (max-width: 800px) {
-			display: none;
-		}
-	}
+	@media (max-width: 950px) {
+		grid-template-columns: 1fr;
+		justify-content: space-between;
+		align-items: center;
+		width: 70%;
+		margin: auto;
 
-	.layoutM {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-content: center;
-		gap: 1em;
-		display: none;
-
-		@media (max-width: 800px) {
-			grid-template-columns: 1fr;
-			justify-content: space-between;
-			align-items: center;
-			width: 70%;
+		.cardButton {
 			margin: auto;
-			display: block;
+			cursor: pointer;
+			font-size: 1.5rem;
+			color: #10216f;
+			font-weight: bold;
+			cursor: pointer;
+			transition: transform 0.5s;
+		}
 
-			.cardButton {
-				text-align: center;
-				display: block;
-				width: 100%;
-				margin: auto;
-				cursor: pointer;
-				font-size: 1.5rem;
-				color: #10216f;
-				font-weight: bold;
-				cursor: pointer;
-				transition: transform 0.5s;
-			}
-
-			.cardButtonRotate {
-				transform: rotate(180deg);
-			}
+		.cardButtonRotate {
+			transform: rotate(180deg);
 		}
 	}
 `

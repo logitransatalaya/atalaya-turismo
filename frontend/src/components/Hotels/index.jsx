@@ -4,8 +4,8 @@ import { HotelsContainer } from './styles'
 import { cities } from '../../json/cities.json'
 import { Container } from 'components/Container'
 import { useSelector, useDispatch } from 'react-redux'
-import { Title } from 'components/GlobalComponents/Title'
 import { updatecityList } from '../../state/actions/hotelsActions'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const Hotels = () => {
 	const dispatch = useDispatch()
@@ -17,7 +17,7 @@ export const Hotels = () => {
 
 	return (
 		<Container>
-			<Title text={`HOTELES`} />
+			<Title text={`HOTELES`} about={false} />
 			<HotelsContainer>
 				{cityList &&
 					cityList.map((city, i) => (

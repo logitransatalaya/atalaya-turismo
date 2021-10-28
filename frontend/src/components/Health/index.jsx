@@ -1,9 +1,9 @@
-import React from 'react'
-import { StyleHealth } from './styles'
-import { HealthNotes } from './HealthNotes'
-import { HealthHeader } from './HealthHeader'
 import { Container } from 'components/Container'
+import React from 'react'
+import { HealthHeader } from './HealthHeader'
 import { HealthIncludes } from './HealthIncludes'
+import { HealthNotes } from './HealthNotes'
+import { StyleHealth } from './styles'
 
 export const Health = () => {
 	return (

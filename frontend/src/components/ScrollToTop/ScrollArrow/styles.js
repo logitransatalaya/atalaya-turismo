@@ -16,8 +16,8 @@ export const ArrowScroll = styled.div`
 	color: #fff;
 	background-color: orange;
 	position: fixed;
-	right: 10px;
-	bottom: 50px;
+	bottom: 100px;
+	right: 50px;
 	z-index: 1;
 	border-radius: 30px;
 	display: ${({ display }) => display};
@@ -31,12 +31,7 @@ export const ArrowScroll = styled.div`
 		width: 70%;
 	}
 
-	@media (min-width: 800px) {
-		bottom: 100px;
-		right: 50px;
-
-		&:hover {
-			background-color: #10216f;
-		}
+	&:hover {
+		background-color: #10216f;
 	}
 `

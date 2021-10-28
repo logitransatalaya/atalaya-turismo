@@ -1,8 +1,8 @@
 import React from 'react'
-import { PlansCard } from './PlansCard'
 import { splideOptions } from 'lib/splide.js'
 import Splide from '@splidejs/react-splide/dist/js/components/Splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
+import { PlansCard } from './PlansCard'
 
 export const HomePlans = () => {
 	return (
