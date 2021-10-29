@@ -1,11 +1,10 @@
+import { Link } from 'react-router-dom'
+import { PlansContainer } from './styles'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
-import { PlansContainer } from './styles'
-import { plans } from '../../json/plans'
 import { useDispatch, useSelector } from 'react-redux'
-import { getAllPlans } from '../../state/actions/plansAction'
-import { Link } from 'react-router-dom'
 import { Title } from 'components/GlobalComponents/Title'
+import { getAllPlans } from '../../state/actions/plansAction'
 
 export const Plans = () => {
 	const dispatch = useDispatch()

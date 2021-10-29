@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { ContainerBtns } from './styles'
 import BtnContact from './BtnsContacts'
 import wspweb from 'images/svg/wspweb.svg'
-import mailweb from 'images/svg/mailweb.svg'
 import { useDispatch, useSelector } from 'react-redux'
 import { useLocation } from 'react-router'
 import { getRoute } from 'state/actions/toolTipActions'
@@ -13,11 +12,11 @@ const FloatingButtons = () => {
 	const { currentRoute, currentMessage } = useSelector(
 		(state) => state.toolTipReducer
 	)
+
 	const [routes, setRoute] = useState({
 		message: 'Contactanos por WhatsApp',
 		messageWsp: 'Deseo%20contactarme%20con%20un%20asesor'
 	})
-
 	useEffect(() => {
 		const currentPath = location.pathname
 		if (!currentRoute || currentRoute) {
@@ -64,14 +63,13 @@ const FloatingButtons = () => {
 	return (
 		<ContainerBtns>
 			<BtnContact
-				state={currentMessage}
 				icon={wspweb}
 				title='Whatsapp'
-				pathname={currentRoute}
 				routes={routes}
+				state={currentMessage}
 				onClick={handleAction}
+				pathname={currentRoute}
 			/>
-			<BtnContact icon={mailweb} title='viajes y turismo' />
 		</ContainerBtns>
 	)
 }

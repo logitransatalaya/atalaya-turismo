@@ -10,10 +10,13 @@ const Bedrooms = ({ img }) => {
 		<SliderRooms>
 			<div className='containerRooms'>
 				<Splide options={splideOptionsBedrooms}>
-					{img.map((imges, i) => (
+					{img.map((images, i) => (
 						<SplideSlide key={i} className='splideslide'>
 							<Room>
-								<img src={imges.urlCode} alt={imges.name} />
+								<img
+									src={images.url_img}
+									alt={images.name_img}
+								/>
 							</Room>
 						</SplideSlide>
 					))}

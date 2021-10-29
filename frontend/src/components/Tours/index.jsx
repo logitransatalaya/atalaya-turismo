@@ -1,25 +1,25 @@
 import { ToursStyled } from './styles'
-import { tours } from 'json/tours.json'
 import React, { useEffect } from 'react'
 import { Container } from 'components/Container'
 import { Link, useHistory } from 'react-router-dom'
-import { Title } from 'components/GlobalComponents/Title'
-import { useDispatch, useSelector } from 'react-redux'
+import { tours as toursJson } from 'json/tours.json'
 import { getTours } from 'state/actions/toursActions'
+import { useDispatch, useSelector } from 'react-redux'
+import { Title } from 'components/GlobalComponents/Title'
 
 export const Tours = () => {
-	const dispatch = useDispatch()
-	const { tourss } = useSelector((state) => state.tourReducer)
 	const history = useHistory()
+	const dispatch = useDispatch()
+	const { tours } = useSelector((state) => state.tourReducer)
 
 	useEffect(() => {
-		if (!tourss) {
+		if (!tours) {
 			;(async () => {
 				const response = await fetch('http://127.0.0.1:8000/api/tours/')
 				const data = await response.json()
 				console.log(data)
 			})()
-			dispatch(getTours(tours))
+			dispatch(getTours(toursJson))
 		}
 		history.replace('/tours')
 	}, [history, dispatch, tours])
@@ -29,7 +29,7 @@ export const Tours = () => {
 			<ToursStyled>
 				<Title text={'TOURES ANTIOQUEÑOS'} />
 				<div className='ToursCards-container'>
-					{tours.map((tour, i) => (
+					{tours?.map((tour, i) => (
 						<Link to={`tours/${tour.urlCode}`} key={i}>
 							<div className='hotelCard'>
 								<div className='hotelCardBoxImg'>
