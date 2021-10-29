@@ -3,7 +3,6 @@ from datetime import date
 from os import name
 from django.db import models
 from hotels.models import Hotel
-from plans.utils import validate_date
 from django.core.exceptions import ValidationError
 
 # Create your models here.
