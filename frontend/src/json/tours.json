@@ -6,23 +6,21 @@
 			"cardImg": "https://cdn2.civitatis.com/colombia/guatape/galeria/header/islas-embalse-guatape-desde-aire.jpg",
 			"descriptionImg": "https://cdn2.civitatis.com/colombia/guatape/galeria/header/islas-embalse-guatape-desde-aire.jpg",
 			"description": "Visita en este tour el municipio de el peñol con su templo roca única en Antioquia, la réplica del antiguo Peñol, la imponente piedra del Peñol y uno de los pueblos más coloridos de Suramérica: Guatapé.Visita en este tour el municipio de el peñol con su templo roca única en Antioquia, la réplica del antiguo Peñol, la imponente.",
-			"characteristics": {
-				"column1": [
+			"includeColumOne": [
 					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
 					"Tarjeta de asistencia médica.",
 					"Desayuno.",
 					"almuerzo según menú.",
 					"Paseo en barco por el embalse."
 				],
-				"column2": [
+			"includeColumTwo": [
 					"Visita al Municipio de Guatapé y el Peñol.",
 					"Visita el nuevo Peñol.",
 					"Visita a la réplica del antiguo Peñol.",
 					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
 					"Fechas de viaje: Todos los días."
 				],
-				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
-			}
+			"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
 		},
 		{
 			"urlCode": "graffiti-tour",
@@ -32,18 +30,15 @@
 			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem ad nulla numquam nostrum rem illo laudantium aut natus labore aliquam, esse, repellendus fugiat ab, modi consequuntur reiciendis ipsum. Temporibus, earum! Libero provident aliquam numquam animi ad laborum blanditiis mollitia.",
 			"characteristics": {
 				"column1": [
-					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
-					"Tarjeta de asistencia médica.",
-					"Desayuno.",
-					"almuerzo según menú.",
-					"Paseo en barco por el embalse."
+					"Traslado en vehículo según el número de personas que viajan.",
+					"Visita, recorrido a pie de las galerías al aire libre de los graffitis.",
+					"Visita y recorrido por las escaleras eléctricas a pie.",
+					"Guía local en los recorridos por las galerías y escaleras."
 				],
 				"column2": [
-					"Visita al Municipio de Guatapé y el Peñol.",
-					"Visita el nuevo Peñol.",
-					"Visita a la réplica del antiguo Peñol.",
-					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
-					"Fechas de viaje: Todos los días."
+					"Helado artesanal para cada participante del recorrido.",
+					"Conversatorio sobre la transformación social de los jóvenes de la comuna con el guía.",
+					"Tarjeta de asistencia médica."
 				],
 				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
 			}
@@ -57,17 +52,15 @@
 			"characteristics": {
 				"column1": [
 					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
-					"Tarjeta de asistencia médica.",
-					"Desayuno.",
-					"almuerzo según menú.",
-					"Paseo en barco por el embalse."
+					"Refrigerio caliente AM",
+					"Almuerzo según menú.",
+					"Visita guiada al Puente de Occidente declarado monumento nacional."
 				],
 				"column2": [
-					"Visita al Municipio de Guatapé y el Peñol.",
-					"Visita el nuevo Peñol.",
-					"Visita a la réplica del antiguo Peñol.",
-					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
-					"Fechas de viaje: Todos los días."
+					"Visita e ingreso al Museo Juan del Corral en Santa Fé de Antioquia.",
+					"Uso de las instalaciones del Parque Acuático Kanaloa.",
+					"Acompañamiento de un guía profesional de turismo. ",
+					"Tarjeta de asistencia médica."
 				],
 				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
 			}
@@ -81,17 +74,15 @@
 			"characteristics": {
 				"column1": [
 					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
-					"Tarjeta de asistencia médica.",
+					"Tarjeta de asistencia médica",
 					"Desayuno.",
-					"almuerzo según menú.",
-					"Paseo en barco por el embalse."
+					"Almuerzo según menú."
 				],
 				"column2": [
-					"Visita al Municipio de Guatapé y el Peñol.",
-					"Visita el nuevo Peñol.",
-					"Visita a la réplica del antiguo Peñol.",
-					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
-					"Fechas de viaje: Todos los días."
+					"Recorrido con guía local.",
+					"Breve paseo en chiva o gusanito.",
+					"Acompañamiento de Guía Profesional de turismo.",
+					"Refrigerio."
 				],
 				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
 			}
@@ -104,18 +95,16 @@
 			"description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem ad nulla numquam nostrum rem illo laudantium aut natus labore aliquam, esse, repellendus fugiat ab, modi consequuntur reiciendis ipsum. Temporibus, earum! Libero provident aliquam numquam animi ad laborum blanditiis mollitia.",
 			"characteristics": {
 				"column1": [
-					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
-					"Tarjeta de asistencia médica.",
-					"Desayuno.",
-					"almuerzo según menú.",
-					"Paseo en barco por el embalse."
+					"Transporte en van o bus de turismo.",
+					"Noche de alojamiento en el hotel Río Claro o Similar en acomodación múltiple.",
+					"2 desayunos 1 almuerzo y 1 cena",
+					"Ingreso a la hacienda Nápoles con el pasaporte Safari."
 				],
 				"column2": [
-					"Visita al Municipio de Guatapé y el Peñol.",
-					"Visita el nuevo Peñol.",
-					"Visita a la réplica del antiguo Peñol.",
-					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
-					"Fechas de viaje: Todos los días."
+					"Entrada al refugio de la reserva natural del Río claro. (No incluye actividades al interior de la reserva)",
+					"Acompañamiento de guía profesional de turismo.",
+					"",
+					"Tarjeta asistencia médica."
 				],
 				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
 			}
@@ -131,15 +120,13 @@
 					"Transporte en van o bus de turismo de acuerdo al número de pasajeros.",
 					"Tarjeta de asistencia médica.",
 					"Desayuno.",
-					"almuerzo según menú.",
-					"Paseo en barco por el embalse."
+					"Acompañamiento de Guía Profesional."
 				],
 				"column2": [
-					"Visita al Municipio de Guatapé y el Peñol.",
-					"Visita el nuevo Peñol.",
-					"Visita a la réplica del antiguo Peñol.",
-					"Visita a la base de la piedra del Peñol (no incluye el ascenso).",
-					"Fechas de viaje: Todos los días."
+					"Recorrido por sitios referentes de Carolina del Príncipe en moto taxi.",
+					"Recorrido guiado en el parque, estatua de Juanes e interior del templo.",
+					"Visita a los charcos de la vega.",
+					"Almuerzo según menú."
 				],
 				"unique": "Acompañamiento de un guía profesional de turismo (solo español). En caso de necesitar guía bilingüe puede solicitarse este servicio con solicitud previa y con suplemento tarifario."
 			}

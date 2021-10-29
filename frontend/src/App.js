@@ -2,19 +2,19 @@ import React from 'react'
 import { Home } from './components/Home'
 import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
+import { Health } from 'components/Health'
 import { Hotels } from './components/Hotels'
 import { Offers } from './components/Offers'
+import ScrollToTop from 'components/ScrollToTop'
 import { HotelsList } from 'components/Hotels/HotelsList'
 import { DetailsPlan } from 'components/Plans/DetailsPlan'
+import ScrollArrow from 'components/ScrollToTop/ScrollArrow'
 import { ToursDetails } from 'components/Tours/ToursDetails'
 import { Footer } from './components/GlobalComponents/Footer'
-import { NavBar } from './components/GlobalComponents/NavBar'
 import { HotelFeatures } from 'components/Hotels/HotelFeatures'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { NavBarBrayan } from 'components/GlobalComponents/NavBarBrayan'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
-import { Health } from 'components/Health'
-import ScrollToTop from 'components/ScrollToTop'
-import ScrollArrow from 'components/ScrollToTop/ScrollArrow'
 
 export default function App() {
 	return (
@@ -23,7 +23,7 @@ export default function App() {
 			<div>
 				<FloatingButtons />
 				<ScrollArrow />
-				<NavBar />
+				<NavBarBrayan />
 				<Switch>
 					<Route exact path='/'>
 						<Home />

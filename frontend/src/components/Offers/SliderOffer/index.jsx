@@ -1,7 +1,7 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide'
-import { splideOptionsOfferts } from 'lib/splide'
 import React from 'react'
 import { ContainerSplider } from './styles'
+import { splideOptionsOfferts } from 'lib/splide'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
 
 const SliderOffer = ({ photos }) => {
 	return (
@@ -9,7 +9,12 @@ const SliderOffer = ({ photos }) => {
 			<Splide options={splideOptionsOfferts} classname='splider'>
 				{photos.map((img, i) => (
 					<SplideSlide key={i}>
-						<img src={img.url} alt={img.alt} width='100%' />
+						<img
+							src={img.url}
+							alt={img.alt}
+							width='100%'
+							height='100%'
+						/>
 					</SplideSlide>
 				))}
 			</Splide>

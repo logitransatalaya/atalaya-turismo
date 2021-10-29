@@ -65,12 +65,21 @@ export const CardGrid = styled.div`
 		width: 100%;
 		height: 100%;
 	}
+	.card_hidden {
+		overflow: hidden;
+		border-radius: 1em;
+	}
 	.box_img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
 		border-radius: 1em;
-		overflow: hidden;
+		transition: transform 0.5s;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 `

@@ -4,25 +4,67 @@
 			"id": 1,
 			"urlCode": "medellin",
 			"title": "medellin",
-			"urlImg": "https://i.ibb.co/Srys23k/1-medellin.jpg"
+			"urlImg": "https://i.ibb.co/8rr7KVv/medellin.jpg"
 		},
 		{
 			"id": 2,
 			"urlCode": "bogota",
 			"title": "bogota",
-			"urlImg": "https://i.ibb.co/d57Kjkk/2-bogota.jpg"
-		},
-		{
-			"id": 3,
-			"urlCode": "cali",
-			"title": "cali",
-			"urlImg": "https://i.ibb.co/VmkLXt9/3-cali.jpg"
+			"urlImg": "https://i.ibb.co/gMH9wwF/bogota.jpg"
 		},
 		{
 			"id": 4,
 			"urlCode": "san-andres",
 			"title": "san andres",
+			"urlImg": "https://i.ibb.co/XpZXsKC/san-andres.webp"
+		},
+		{
+			"id": 5,
+			"urlCode": "santa-marta",
+			"title": "santa marta",
+			"urlImg": "https://i.ibb.co/L9Hfdw6/santa-marta.jpg"
+		},
+		{
+			"id": 6,
+			"urlCode": "amazonas",
+			"title": "amazonas",
+			"urlImg": "https://i.ibb.co/vwM8Z00/Amazonas.jpg"
+		},
+		{
+			"id": 7,
+			"urlCode": "cartagena",
+			"title": "cartagena",
 			"urlImg": "https://i.ibb.co/Prd5StK/4-san-andres.jpg"
+		},
+		{
+			"id": 8,
+			"urlCode": "coveñas",
+			"title": "coveñas",
+			"urlImg": "https://i.ibb.co/YNPXXPB/cartagena.jpg"
+		},
+		{
+			"id": 9,
+			"urlCode": "neiva",
+			"title": "neiva",
+			"urlImg": "https://i.ibb.co/HFzSDd2/neiva.jpg"
+		},
+		{
+			"id": 10,
+			"urlCode": "huila",
+			"title": "huila",
+			"urlImg": "https://i.ibb.co/BtL0r1R/huila.jpg"
+		},
+		{
+			"id": 11,
+			"urlCode": "capurgana",
+			"title": "capurgana",
+			"urlImg": "https://i.ibb.co/GFDvJjs/capurgana.jpg"
+		},
+		{
+			"id": 12,
+			"urlCode": "nuqui",
+			"title": "nuqui",
+			"urlImg": "https://i.ibb.co/hF4cXhL/nuqui.jpg"
 		}
 	]
 }

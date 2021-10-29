@@ -85,43 +85,28 @@ export const ContainerHotelInfo = styled.div`
 `
 export const Message = styled.div`
 	width: 300px;
-	height: 200px;
-	position: relative;
 	color: #fff;
 
-	.cajatexto {
-		width: 100%;
+	.box-message {
+		border: 3px solid orange;
+		padding: 1em;
+		border-radius: 2em;
+		text-align: justify;
 	}
-
-	.text {
-		position: absolute;
-		top: 20px;
-		left: 0;
-		width: 90%;
-		font-size: 1.3rem;
-		padding: 10px 30px;
-	}
-
 	.name {
-		position: absolute;
-		bottom: -25px;
-		left: 70px;
-		font-size: 1.2rem;
-	}
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 50px;
+		gap: 0.5em;
 
-	@media (max-width: 700px) {
-		width: 250px;
+		.box-icon {
+			width: 20px;
+			height: 20px;
 
-		.text {
-			font-size: 1rem;
-			padding: 10px;
-			top: 40px;
-			left: 5px;
-		}
-
-		.name {
-			left: 55px;
-			bottom: 8px;
+			svg {
+				width: 100%;
+			}
 		}
 	}
 `

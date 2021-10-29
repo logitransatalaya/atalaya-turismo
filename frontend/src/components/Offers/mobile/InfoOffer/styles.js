@@ -48,6 +48,12 @@ export const InfoO = styled.div`
 			width: 70%;
 			padding-top: 5px;
 
+			.title_includes {
+				font-size: 1.5rem;
+				color: #10216f;
+				margin: 0 0 0.5em 0;
+			}
+
 			.service {
 				color: orange;
 
@@ -55,6 +61,11 @@ export const InfoO = styled.div`
 					color: #10216f;
 				}
 			}
+		}
+
+		.content_button {
+			text-align: center;
+			padding-bottom: 1em;
 		}
 	}
 
