@@ -1,35 +1,38 @@
-import { useApi } from 'hooks/useApi'
 import { Link } from 'react-router-dom'
 import React, { useEffect } from 'react'
 import { CityContainer } from './styles'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
 import { Title } from 'components/GlobalComponents/Title'
 import { Button } from 'components/GlobalComponents/Button'
 import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
+import { updateHotelsList } from 'state/actions/hotelsActions'
 
 export const HotelsList = () => {
-	const { locid, city } = useParams()
-	const { getHotels } = useApi()
+	const { locid } = useParams()
 	const { hotelsList } = useSelector((state) => state.hotelsReducer)
-
-	useEffect(
-		() => getHotels(locid, hotelsList),
-		[getHotels, locid, hotelsList]
-	)
-
+	const dispatch = useDispatch()
+	useEffect(() => {
+		;(async () => {
+			const response = await fetch(
+				`http://127.0.0.1:8000/api/hotels/${locid}`
+			)
+			const data = await response.json()
+			dispatch(updateHotelsList(data.hotels))
+		})()
+	}, [locid])
 	return (
 		hotelsList && (
 			<Container>
 				<h2>
-					<Title text={`Ciudad ${city}`} />
+					<Title text={`Ciudad ${'Medellin'}`} />
 				</h2>
 				<CityContainer>
 					{hotelsList.map((hotel, i) => (
 						<div className='cityCard' key={i}>
 							<div className='cityBoxImg'>
-								<img src={hotel.urlImg} alt={hotel.name} />
+								<img src={hotel.url_img} alt={hotel.name} />
 							</div>
 							<div className='cityInfo'>
 								<p className='cityInfo_title'>{hotel.name}</p>
@@ -37,7 +40,7 @@ export const HotelsList = () => {
 									<small>Dirección: {hotel.addres}</small>
 								</p>
 								<div className='cityInfoCalification'>
-									<Qualification stars={hotel.calification} />
+									<Qualification stars={hotel.stars} />
 								</div>
 							</div>
 							<div className='cityPrice'>
@@ -55,7 +58,7 @@ export const HotelsList = () => {
 											tarjeta sujeta a disponibilidad
 										</small>
 									</p>
-									<Link to={`${locid}/${hotel.urlCode}`}>
+									<Link to={`${locid}/${hotel.id}`}>
 										<Button
 											text={'Ver más'}
 											bgColor={'#10216f'}

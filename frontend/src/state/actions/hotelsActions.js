@@ -5,9 +5,9 @@ export const types = {
 	UPDATE_CURRENT_HOTEL: 'UPDATE_CURRENT_HOTEL'
 }
 
-export const updateHotelsList = (id) => ({
+export const updateHotelsList = (data) => ({
 	type: types.UPDATE_HOTELS_LIST,
-	payload: id
+	payload: data
 })
 
 export const updatecityList = (data) => ({

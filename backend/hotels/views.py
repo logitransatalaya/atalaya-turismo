@@ -1,13 +1,11 @@
-from rest_framework import serializers
+from .models import City, Hotel
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from .serializers import CitySerializer, CityIdSerializer, HotelSerializer, ServiceSerializer
+from .serializers import CitySerializer, HotelSerializer
 
-from .models import City, Hotel, Services, Services_hotel
-
-# Create your views here.
 @api_view(['GET'])
 def cityList(request):
+    """ Traemos todas las ciudades """
     cities = City.objects.all()
     serializer = CitySerializer(cities, many=True)
 
@@ -16,22 +14,11 @@ def cityList(request):
     })
 
 @api_view(['GET'])
-#!name_city es lo que viene por parametros en la url
-def hotels(request, name_city):
-    #!En la variable city me queda el query despues de filtrar por el nombre 
-    #!debo de pasarlo por el serializer el cual me devuelve un array 
-    #!como es uno le pongo cero y extraigo el id
+def hotels(request, id_city):
 
-    city = City.objects.filter(name__iexact=name_city)
-    city_name = CityIdSerializer(city, many=True)
-    cityId = city_name.data[0]['id']
-
-    #!teniendo el id, voy a irme a la tabla de hoteles y voy a filtrar por 
-    #!el campo id con cityId despues de esto serializo los datos
-
-    hotels = Hotel.objects.filter(id_city=cityId)
+    """ filtramos todos los hoteles que tengan el id del parametro de la url """
+    hotels = Hotel.objects.filter(id_city=id_city)
     serializer = HotelSerializer(hotels, many=True)
-
 
     return Response({
             'hotels' : serializer.data
@@ -39,12 +26,15 @@ def hotels(request, name_city):
     )
 
 @api_view(['GET'])
-def hotel(request, name_city, pk):
-    hotel = Hotel.objects.filter(id=pk)
-
+def hotel(request, name_city, id_hotel):
+    """ filtramos por el id del hotel indicado """
+    hotel = Hotel.objects.filter(id=id_hotel)
     serializer_hotel = HotelSerializer(hotel, many=True)
 
+    cities = City.objects.filter(id=name_city)
+    serializer = CitySerializer(cities, many=True)
     return Response({
             'hotel' : serializer_hotel.data,
+            'city': serializer.data
         }
     )

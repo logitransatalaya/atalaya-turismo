@@ -1,9 +1,9 @@
 from os import name
-from django.urls import path 
 from hotels import views
+from django.urls import path 
 
 urlpatterns = [
     path('ciudades/', views.cityList, name='cities'),
-    path('ciudades/<str:name_city>', views.hotels, name='hotels'),
-    path('ciudades/<str:name_city>/<int:pk>', views.hotel, name='hotel')
+    path('hotels/<int:id_city>', views.hotels, name='hotels'),
+    path('hotels/<str:name_city>/<int:id_hotel>', views.hotel, name='hotel')
 ]

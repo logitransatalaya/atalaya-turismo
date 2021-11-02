@@ -3,7 +3,7 @@ import { InfoService } from './InfoService'
 import React, { useEffect, useState } from 'react'
 
 export const MorePopularService = ({ currentHotel }) => {
-	const { services } = currentHotel?.more
+	const { services_hotel } = currentHotel
 	const [countServices, setCountServices] = useState(false)
 	const [handleWidth, setHandleWidth] = useState(window.innerWidth)
 
@@ -17,7 +17,9 @@ export const MorePopularService = ({ currentHotel }) => {
 		setCountServices(!countServices)
 	}
 
-	const auxServices = countServices ? services : services.slice(0, 4)
+	const auxServices = countServices
+		? services_hotel
+		: services_hotel.slice(0, 4)
 	const auxIcon = countServices
 		? 'cardButton cardButtonRotate'
 		: ' cardButton'
@@ -32,22 +34,24 @@ export const MorePopularService = ({ currentHotel }) => {
 	return (
 		<ContainerCards>
 			<div className='layoutD'>
-				{services &&
-					services.map((service, i) => (
-						<InfoService
-							key={i}
-							iconName={service.iconName}
-							text={service.text}
-						/>
-					))}
+				{services_hotel &&
+					services_hotel.map((service, i) => {
+						return (
+							<InfoService
+								key={i}
+								iconName={service.id_service.name_service}
+								text={service.id_service.text_service}
+							/>
+						)
+					})}
 			</div>
 			<div className='layoutM'>
 				{auxServices &&
 					auxServices.map((service, i) => (
 						<InfoService
 							key={i}
-							iconName={service.iconName}
-							text={service.text}
+							iconName={service.id_service.name_service}
+							text={service.id_service.text_service}
 						/>
 					))}
 				{ButtonPhoneServices}
