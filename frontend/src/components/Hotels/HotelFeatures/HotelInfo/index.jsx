@@ -9,9 +9,7 @@ const HotelInfo = ({ comentens, desc }) => {
 		<ContainerHotelInfo>
 			<div className='item1'>
 				<div className='info'>
-					{desc.map((e, i) => (
-						<p key={i}>{e}</p>
-					))}
+					<p>{desc}</p>
 				</div>
 			</div>
 			<div className='item2'>
@@ -22,13 +20,13 @@ const HotelInfo = ({ comentens, desc }) => {
 							<SplideSlide className='center' key={i}>
 								<Message>
 									<div className='box-message'>
-										<p>{coment.body}</p>
+										<p>{coment.content}</p>
 									</div>
 									<div className='name'>
 										<div className='box-icon'>
 											<IconUsuario />
 										</div>
-										{coment.name}
+										{coment.user_name}
 									</div>
 								</Message>
 							</SplideSlide>
