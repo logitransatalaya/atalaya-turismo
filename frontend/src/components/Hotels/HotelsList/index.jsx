@@ -21,7 +21,7 @@ export const HotelsList = () => {
 			const data = await response.json()
 			dispatch(updateHotelsList(data.hotels))
 		})()
-	}, [locid])
+	}, [locid, dispatch])
 	return (
 		hotelsList && (
 			<Container>
