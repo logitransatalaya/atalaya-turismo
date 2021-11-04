@@ -119,19 +119,23 @@ export const DetailsPlan = () => {
 						) : (
 							<div className='contentMovile_s'>
 								<IncludesMovile
+									currentPlan={currentPlan.includes}
+									keyContent={'infoIncludes'}
 									infoIncludes={infoIncludes}
 									handleContentInfo={handleContentInfo}
 									title={'INCLUYE'}
 								/>
 								<IncludesMovile
-									infoIncludes={infoIncludes}
-									infoNoIncludes={infoNoIncludes}
+									currentPlan={currentPlan.noIncludes}
+									keyContent={'infoNoIncludes'}
+									infoIncludes={infoNoIncludes}
 									handleContentInfo={handleContentInfo}
 									title={'NO INCLUYE'}
 								/>
 								<IncludesMovile
-									infoIncludes={infoIncludes}
-									infoNotes={infoNotes}
+									currentPlan={currentPlan.notes}
+									keyContent={'infoNotes'}
+									infoIncludes={infoNotes}
 									handleContentInfo={handleContentInfo}
 									title={'NOTAS'}
 								/>
