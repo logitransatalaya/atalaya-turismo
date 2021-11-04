@@ -4,8 +4,7 @@ import plane from 'images/svg/iconoavionblanco.svg'
 import { Button } from 'components/GlobalComponents/Button'
 
 const Cardinfo = ({ data }) => {
-	const { fromDate, toDate, price, hotel } = data
-
+	const { from_date, to_date, price, Hotel } = data
 	const handleBooking = () => {
 		window.open(
 			`https://wa.me/573145554761?text=Me%20interesa%20comprar%20esta%20ofera.`
@@ -18,13 +17,13 @@ const Cardinfo = ({ data }) => {
 				<img src={plane} alt='plane' />
 			</div>
 			<div className='text'>
-				<p className='white bold'>Del {fromDate}</p>
-				<p className='white'>al {toDate}</p>
+				<p className='white bold'>Del {from_date}</p>
+				<p className='white'>al {to_date}</p>
 			</div>
 			<div className='line'></div>
 			<div className='text'>
 				<p className='blue bold'>Precio: ${price}</p>
-				<p className='blue bold'>{hotel}</p>
+				<p className='blue bold'>{Hotel}</p>
 			</div>
 			{/* <button className='reserve'>Reservar</button> */}
 			<Button

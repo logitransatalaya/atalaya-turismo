@@ -20,38 +20,11 @@ export const StyleNavbarBrayan = styled.div`
 		.content_options {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: flex-end;
 			align-items: center;
 			height: 100%;
-
-			.search {
-				background-color: #0a174e;
-				display: flex;
-				align-items: center;
-				flex-direction: row-reverse;
-				padding: 0.5em;
-				border-radius: 1em;
-				color: #fff;
-				margin-top: 2em;
-				input {
-					display: block;
-					background-color: transparent;
-					outline: none;
-					border: none;
-					border-radius: 1em;
-					color: #fff;
-					font-size: 1.1rem;
-					&::placeholder {
-						color: #fff;
-						text-align: center;
-						font-weight: bold;
-					}
-				}
-
-				.styleIcon {
-					fill: #fff;
-				}
-			}
+			margin-bottom: 25px;
+			margin-right: 50px;
 
 			.navigation {
 				display: flex;
@@ -68,6 +41,7 @@ export const StyleNavbarBrayan = styled.div`
 						text-decoration: none;
 						color: orange;
 						font-weight: bold;
+						font-size: 22px;
 					}
 				}
 			}
@@ -123,6 +97,7 @@ export const StyleNavbarBrayan = styled.div`
 						a {
 							text-decoration: none;
 							color: orange;
+							font-size: 19px;
 						}
 					}
 				}

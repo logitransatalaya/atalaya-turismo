@@ -7,16 +7,18 @@ const SliderOffer = ({ photos }) => {
 	return (
 		<ContainerSplider>
 			<Splide options={splideOptionsOfferts} classname='splider'>
-				{photos.map((img, i) => (
-					<SplideSlide key={i}>
-						<img
-							src={img.url}
-							alt={img.alt}
-							width='100%'
-							height='100%'
-						/>
-					</SplideSlide>
-				))}
+				{photos.map((img, i) => {
+					return (
+						<SplideSlide key={i}>
+							<img
+								src={img.url_img}
+								alt={img.name_img}
+								width='100%'
+								height='100%'
+							/>
+						</SplideSlide>
+					)
+				})}
 			</Splide>
 		</ContainerSplider>
 	)

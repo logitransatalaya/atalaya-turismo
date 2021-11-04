@@ -56,17 +56,13 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 							<FooterWe>
 								<FooterTitle>ACERCA DE NOSOTROS</FooterTitle>
 								<li>
-									<a
-										href='https://www.google.com/?hl=es'
-										target='_blank'
-										rel='noreferrer'
-									>
+									<a href='' target='_blank' rel='noreferrer'>
 										Nuestra Historia
 									</a>
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -75,7 +71,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -84,7 +80,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -93,7 +89,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -105,7 +101,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								<FooterTitle>OTROS SERVICIOS</FooterTitle>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -114,7 +110,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -123,7 +119,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -132,7 +128,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -141,7 +137,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								</li>
 								<li>
 									<a
-										href='https://www.google.com/?hl=es'
+										href='#'
 										target='_blank'
 										rel='noreferrer'
 									>

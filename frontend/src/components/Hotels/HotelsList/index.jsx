@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom'
-import React, { useEffect } from 'react'
 import { CityContainer } from './styles'
-import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { Button } from 'components/GlobalComponents/Button'
-import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
 import { updateHotelsList } from 'state/actions/hotelsActions'
+import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
 
 export const HotelsList = () => {
 	const { locid } = useParams()
 	const { hotelsList } = useSelector((state) => state.hotelsReducer)
 	const dispatch = useDispatch()
+	const [nameCity, setNameCity] = useState('')
+
 	useEffect(() => {
 		;(async () => {
 			const response = await fetch(
@@ -20,13 +22,15 @@ export const HotelsList = () => {
 			)
 			const data = await response.json()
 			dispatch(updateHotelsList(data.hotels))
+			setNameCity(data.city[0].name)
 		})()
-	}, [locid])
+	}, [locid, dispatch])
+
 	return (
 		hotelsList && (
 			<Container>
 				<h2>
-					<Title text={`Ciudad ${'Medellin'}`} />
+					<Title text={`Ciudad ${nameCity}`} />
 				</h2>
 				<CityContainer>
 					{hotelsList.map((hotel, i) => (

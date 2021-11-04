@@ -7,13 +7,15 @@ import React, { useEffect, useState } from 'react'
 const CardOffer = ({ data }) => {
 	const [width, setWidth] = useState(0)
 	const { photos } = data
-
 	useEffect(() => {
 		setWidth(window.innerWidth)
 		window.onresize = () => {
 			setWidth(window.innerWidth)
 		}
 	}, [width])
+
+	console.log(data)
+	console.log(photos)
 
 	return (
 		<Card>

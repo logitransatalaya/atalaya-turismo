@@ -39,7 +39,7 @@ export const HotelFeatures = () => {
 				setCity(data.city[0].name)
 			})()
 		}
-	}, [locid, hotelId])
+	}, [locid, hotelId, currentHotel, dispatch])
 
 	// cambio del mensaje para el boton de whatsapp
 	useEffect(() => {
@@ -53,6 +53,7 @@ export const HotelFeatures = () => {
 			)
 		}
 	}, [dispatch, currentHotel, location])
+
 	return (
 		<>
 			{currentHotel && (

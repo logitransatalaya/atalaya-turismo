@@ -2,7 +2,6 @@ import { ToursStyled } from './styles'
 import React, { useEffect } from 'react'
 import { Container } from 'components/Container'
 import { Link, useHistory } from 'react-router-dom'
-import { tours as toursJson } from 'json/tours.json'
 import { getTours } from 'state/actions/toursActions'
 import { useDispatch, useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
@@ -17,9 +16,8 @@ export const Tours = () => {
 			;(async () => {
 				const response = await fetch('http://127.0.0.1:8000/api/tours/')
 				const data = await response.json()
-				console.log(data)
+				dispatch(getTours(data.Toures))
 			})()
-			dispatch(getTours(toursJson))
 		}
 		history.replace('/tours')
 	}, [history, dispatch, tours])
@@ -30,10 +28,13 @@ export const Tours = () => {
 				<Title text={'TOURES ANTIOQUEÑOS'} />
 				<div className='ToursCards-container'>
 					{tours?.map((tour, i) => (
-						<Link to={`tours/${tour.urlCode}`} key={i}>
+						<Link to={`tours/${tour.id}`} key={i}>
 							<div className='hotelCard'>
 								<div className='hotelCardBoxImg'>
-									<img src={tour.cardImg} alt={tour.title} />
+									<img
+										src={tour.url_img_card}
+										alt={tour.title}
+									/>
 									<div className='hotelCardTitle'>
 										<h3>{tour.title}</h3>
 									</div>

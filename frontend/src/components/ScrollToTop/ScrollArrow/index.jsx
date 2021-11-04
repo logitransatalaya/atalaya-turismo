@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
 import { ArrowScroll } from './styles'
-import arrowTop from '../../../images/svg/iconoavionblanco.svg'
+import React, { useEffect, useState } from 'react'
+import arrowTop from '../../../images/svg/arrow.svg'
 
 const ScrollArrow = () => {
 	const [showScroll, setShowScroll] = useState(false)

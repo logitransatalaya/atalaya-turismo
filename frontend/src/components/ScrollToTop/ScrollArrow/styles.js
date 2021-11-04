@@ -14,7 +14,7 @@ export const ArrowScroll = styled.div`
 	width: 60px;
 	height: 60px;
 	color: #fff;
-	background-color: orange;
+	background-color: #10216f;
 	position: fixed;
 	right: 10px;
 	bottom: 50px;

@@ -1,12 +1,19 @@
 import React from 'react'
 
-export const IncludesMovile = ({ infoIncludes, handleContentInfo, title }) => {
+export const IncludesMovile = ({
+	keyContent,
+	infoIncludes,
+	handleContentInfo,
+	title,
+	currentPlan
+}) => {
+	console.log(currentPlan)
 	return (
 		<div
 			className={
 				infoIncludes ? 'includesMovile_s bg_active' : 'includesMovile_s'
 			}
-			onClick={() => handleContentInfo('infoIncludes', !infoIncludes)}
+			onClick={() => handleContentInfo(keyContent, !infoIncludes)}
 		>
 			<div
 				className={infoIncludes ? 'boxInfo boxInfo_active' : 'boxInfo'}
@@ -16,10 +23,17 @@ export const IncludesMovile = ({ infoIncludes, handleContentInfo, title }) => {
 			</div>
 			{infoIncludes && (
 				<div className='contentInfo'>
-					<p>Hola</p>
-					<p>que</p>
-					<p>hace</p>
-					<p>Hola</p>
+					{currentPlan.map((des) => {
+						if (des.includes_description) {
+							return <p>{des.includes_description}</p>
+						}
+						if (des.noIncludes_description) {
+							return <p>{des.noIncludes_description}</p>
+						}
+						if (des.note) {
+							return <p>{des.note}</p>
+						}
+					})}
 				</div>
 			)}
 		</div>
