@@ -32,16 +32,18 @@ class Offers(models.Model):
 
 
 class Photos(models.Model):
-    id_offer = models.ForeignKey(Offers,on_delete=models.CASCADE)
+    id_offer = models.ForeignKey(Offers,related_name='photos',on_delete=models.CASCADE)
     url_img = models.URLField(max_length=250)
+    name_img = models.CharField(max_length=250)
+ 
 
 class Services(models.Model):
     """ Modelo de servicios de oferta """
-    id_offer = models.ForeignKey(Offers, on_delete=models.CASCADE)
+    id_offer = models.ForeignKey(Offers,related_name='services', on_delete=models.CASCADE)
     Description_service = models.CharField(max_length=250)
 
 
 class NoIncludes(models.Model):
     """ Modelo no includes """
-    id_offer = models.ForeignKey(Offers, on_delete=models.CASCADE)
+    id_offer = models.ForeignKey(Offers,related_name='noincludes', on_delete=models.CASCADE)
     Description_no_include = models.CharField(max_length=250)
