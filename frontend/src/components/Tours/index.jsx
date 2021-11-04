@@ -17,7 +17,6 @@ export const Tours = () => {
 				const response = await fetch('http://127.0.0.1:8000/api/tours/')
 				const data = await response.json()
 				dispatch(getTours(data.Toures))
-				console.log(data.Toures)
 			})()
 		}
 		history.replace('/tours')

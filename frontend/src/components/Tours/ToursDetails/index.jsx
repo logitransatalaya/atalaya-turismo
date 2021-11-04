@@ -14,12 +14,18 @@ export const ToursDetails = () => {
 	const dispatch = useDispatch()
 	const location = useLocation()
 	const { urlCode } = useParams()
-
 	const { currentTour } = useSelector((state) => state.tourReducer)
 
 	useEffect(() => {
-		console.log(currentTour)
 		if (!currentTour) {
+			;(async () => {
+				const response = await fetch(
+					`http://127.0.0.1:8000/api/tours/${urlCode}`
+				)
+				const data = await response.json()
+				dispatch(updateCurrentTour(data.Toures[0]))
+			})()
+		} else if (currentTour.id !== parseInt(urlCode)) {
 			;(async () => {
 				const response = await fetch(
 					`http://127.0.0.1:8000/api/tours/${urlCode}`
@@ -41,7 +47,7 @@ export const ToursDetails = () => {
 			)
 		}
 	}, [dispatch, currentTour, location])
-	console.log(currentTour)
+
 	return !currentTour ? (
 		<Skeleton type='toursDescription' />
 	) : (
@@ -52,7 +58,7 @@ export const ToursDetails = () => {
 					<div className='description'>
 						<div className='descriptionImg-container'>
 							<img
-								src={currentTour.description}
+								src={currentTour.url_image_description}
 								alt={currentTour.title}
 							/>
 						</div>
@@ -62,15 +68,19 @@ export const ToursDetails = () => {
 						<h5>INCLUYE:</h5>
 						<div className='characteristics-content'>
 							<div>
-								{currentTour.include.map((text, i) => (
-									<p key={i}>
-										<img
-											src={`/tours/column1-${i + 1}.svg`}
-											alt=''
-										/>
-										{text}
-									</p>
-								))}
+								{currentTour.include.map((text, i) => {
+									return (
+										<p key={i}>
+											<img
+												src={`/tours/column1-${
+													i + 1
+												}.svg`}
+												alt=''
+											/>
+											{text.text_include}
+										</p>
+									)
+								})}
 							</div>
 							<div>
 								{currentTour.include.map((text, i) => (
@@ -80,7 +90,7 @@ export const ToursDetails = () => {
 											alt=''
 										/>
 
-										{text}
+										{text.text_include}
 									</p>
 								))}
 							</div>
