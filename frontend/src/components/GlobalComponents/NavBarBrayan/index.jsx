@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ButtonHandleNav } from '../ButtonHandleNav'
 import { StyleNavbarBrayan, StyleButton } from './styles'
-import { ReactComponent as IconSearch } from '../../../images/iconSearch.svg'
 
 export const NavBarBrayan = () => {
 	const [handleNav, setHandleNav] = useState(false)
@@ -22,10 +21,6 @@ export const NavBarBrayan = () => {
 						<img src='/logo.png' alt='logoAtalaya' />
 					</Link>
 					<div className='content_options'>
-						<label className='search'>
-							<input type='text' placeholder='BUSCAR' />
-							<IconSearch className='styleIcon' />
-						</label>
 						<ul className='navigation'>
 							<li onClick={handleOpenNav}>
 								<Link to='/'>INICIO</Link>
