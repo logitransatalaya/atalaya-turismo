@@ -53,6 +53,7 @@ export const HotelFeatures = () => {
 			)
 		}
 	}, [dispatch, currentHotel, location])
+
 	return (
 		<>
 			{currentHotel && (

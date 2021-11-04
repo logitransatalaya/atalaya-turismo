@@ -13,7 +13,7 @@ export const Home = () => {
 	return (
 		<Container>
 			<HomeStyled>
-				<HomePlans />
+				{/* <HomePlans /> */}
 				<SliderComponent />
 				<Title text={'OFERTAS FLASH'} />
 				<HomeOffersFlash image={image} />
