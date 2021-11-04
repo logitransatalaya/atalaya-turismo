@@ -20,8 +20,11 @@ def hotels(request, id_city):
     hotels = Hotel.objects.filter(id_city=id_city)
     serializer = HotelSerializer(hotels, many=True)
 
+    cities = City.objects.filter(id=id_city)
+    serializer_cities = CitySerializer(cities, many=True)
     return Response({
-            'hotels' : serializer.data
+            'hotels' : serializer.data,
+            'city': serializer_cities.data
         }
     )
 
