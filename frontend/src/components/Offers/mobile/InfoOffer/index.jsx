@@ -4,11 +4,10 @@ import React, { useEffect, useState } from 'react'
 import { Button } from 'components/GlobalComponents/Button'
 
 const InfoOffer = ({ data }) => {
-	console.log(data.no_includes)
 	const [accordion, setAccordion] = useState(false)
+	const [showInfo, setShowInfo] = useState(true)
 	const [width, setWidth] = useState(0)
-	const { name } = data
-	const { services, no_includes } = data
+	const { name, services, noincludes } = data
 
 	const handleAccordion = () => {
 		if (width < 800) {
@@ -30,8 +29,6 @@ const InfoOffer = ({ data }) => {
 		}
 	}, [width, accordion])
 
-	const [showInfo, setShowInfo] = useState(true)
-
 	const handleShowInfo = () => {
 		setShowInfo(!showInfo)
 	}
@@ -50,12 +47,14 @@ const InfoOffer = ({ data }) => {
 					{showInfo
 						? services.map((service) => (
 								<li key={service} className='service'>
-									<span>{service}</span>
+									<span>{service.Description_service}</span>
 								</li>
 						  ))
-						: no_includes.map((service) => (
+						: noincludes.map((service) => (
 								<li key={service} className='service'>
-									<span>{service}</span>
+									<span>
+										{service.Description_no_include}
+									</span>
 								</li>
 						  ))}
 				</ul>

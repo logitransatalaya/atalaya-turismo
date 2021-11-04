@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { offers } from '../../json/offers'
 import CardOffer from './mobile/CardOffer'
 import { Container } from 'components/Container'
 import { useDispatch, useSelector } from 'react-redux'
@@ -12,17 +11,22 @@ export const Offers = () => {
 
 	useEffect(() => {
 		if (!offersReducer) {
-			dispatch(getAllOffers(offers))
+			;(async () => {
+				const response = await fetch(
+					`http://127.0.0.1:8000/api/offers/`
+				)
+				const data = await response.json()
+				dispatch(getAllOffers(data.offers))
+			})()
 		}
 	}, [offersReducer, dispatch])
-
 	return (
 		<Container>
 			<Title text={'NUESTRAS OFERTAS'} />
 			{offersReducer &&
-				offersReducer.map((offer) => (
-					<CardOffer data={offer} key={offer.id} />
-				))}
+				offersReducer.map((offer) => {
+					return <CardOffer data={offer} key={offer.id} />
+				})}
 		</Container>
 	)
 }
