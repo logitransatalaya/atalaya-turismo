@@ -48,6 +48,8 @@ export const ToursDetails = () => {
 		}
 	}, [dispatch, currentTour, location])
 
+	console.log(currentTour)
+
 	return !currentTour ? (
 		<Skeleton type='toursDescription' />
 	) : (
@@ -83,14 +85,14 @@ export const ToursDetails = () => {
 								})}
 							</div>
 							<div>
-								{currentTour.include.map((text, i) => (
+								{currentTour.text_include_two.map((text, i) => (
 									<p key={i}>
 										<img
 											src={`/tours/column2-${i + 1}.svg`}
 											alt=''
 										/>
 
-										{text.text_include}
+										{text.text_include_two}
 									</p>
 								))}
 							</div>
