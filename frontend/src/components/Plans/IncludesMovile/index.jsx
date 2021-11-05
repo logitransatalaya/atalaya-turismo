@@ -33,6 +33,7 @@ export const IncludesMovile = ({
 						if (des.note) {
 							return <p>{des.note}</p>
 						}
+						return null
 					})}
 				</div>
 			)}
