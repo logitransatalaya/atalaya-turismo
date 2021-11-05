@@ -48,8 +48,6 @@ export const ToursDetails = () => {
 		}
 	}, [dispatch, currentTour, location])
 
-	console.log(currentTour)
-
 	return !currentTour ? (
 		<Skeleton type='toursDescription' />
 	) : (

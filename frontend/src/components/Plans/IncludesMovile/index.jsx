@@ -7,7 +7,6 @@ export const IncludesMovile = ({
 	title,
 	currentPlan
 }) => {
-	console.log(currentPlan)
 	return (
 		<div
 			className={
