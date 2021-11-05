@@ -33,29 +33,29 @@ DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE', 'False') == 'True'
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOST', '127.0.0.1,localhost').split(',')
 
-CORS_ALLOWED_ORIGINS = [
-    'http://127.0.0.1:3000'
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://127.0.0.1:3000'
+# ]
 
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://127.0.0.1\.com$",
-]
+# CORS_ALLOWED_ORIGIN_REGEXES = [
+#     r"^https://127.0.0.1\.com$",
+# ]
 
-CORS_ORIGIN_WHITLIST = [
-    'http://127.0.0.1:3000'
-]
+# CORS_ORIGIN_WHITLIST = [
+#     'http://127.0.0.1:3000'
+# ]
 
-CORS_ALLOW_HEADERS = [
-    'accept',
-    'accept-encoding',
-    'authorization',
-    'content-type',
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
-]
+# CORS_ALLOW_HEADERS = [
+#     'accept',
+#     'accept-encoding',
+#     'authorization',
+#     'content-type',
+#     'dnt',
+#     'origin',
+#     'user-agent',
+#     'x-csrftoken',
+#     'x-requested-with',
+# ]
 
 # Application definition
 
