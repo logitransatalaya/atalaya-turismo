@@ -14,9 +14,6 @@ const CardOffer = ({ data }) => {
 		}
 	}, [width])
 
-	console.log(data)
-	console.log(photos)
-
 	return (
 		<Card>
 			{data && (
