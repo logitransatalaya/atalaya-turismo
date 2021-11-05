@@ -1,5 +1,4 @@
 import React from 'react'
-import { HomePlans } from './HomePlans'
 import { HomeStyled } from './styles.js'
 import image from '../../images/btn.png'
 import { Benefits } from './BenefitsSection'
@@ -13,7 +12,7 @@ export const Home = () => {
 	return (
 		<Container>
 			<HomeStyled>
-				<HomePlans />
+				{/* <HomePlans /> */}
 				<SliderComponent />
 				<Title text={'OFERTAS FLASH'} />
 				<HomeOffersFlash image={image} />

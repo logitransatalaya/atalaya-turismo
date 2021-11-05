@@ -7,7 +7,7 @@ export const ToursStyled = styled.div`
 		grid-template-columns: repeat(auto, minmax(300px, 1fr));
 		grid-template-rows: auto;
 		gap: 1em;
-		padding: 1.9em 0em 2em 0em;
+		padding: 1.9em 1em 2em 1em;
 		animation: ${animationAppear} 2s ease forwards;
 	}
 

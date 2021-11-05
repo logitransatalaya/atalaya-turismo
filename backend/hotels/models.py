@@ -24,6 +24,8 @@ class Hotel(models.Model):
     description= models.TextField()
     addres = models.CharField(max_length=255)
     url_img= models.URLField(max_length=255)
+    addres_hotel = models.CharField(max_length=255)
+    
 
     def __str__(self):
         return self.name

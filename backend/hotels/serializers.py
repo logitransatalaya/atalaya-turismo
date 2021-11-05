@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from rest_framework.fields import SerializerMethodField
 from .models import City, Hotel, Comments, Photos_outside, Photos_inside, Services, Services_hotel
 
 class ServiceSerializer(serializers.ModelSerializer):
@@ -55,6 +54,7 @@ class HotelSerializer(serializers.ModelSerializer):
     photos_outside = PhotosOutsideSerializer(many=True)
     photos_inside = PhotosInsideSerializer(many=True)
     services_hotel = ServicesHotelSerializer(many=True)
+    
     class Meta:
         model = Hotel
-        fields = ['id', 'id_city', 'name', 'stars', 'price', 'description', 'url_img', 'comments', 'photos_outside', 'photos_inside', 'services_hotel',]
+        fields = ['id','addres', 'id_city', 'name', 'stars', 'price', 'description', 'url_img', 'comments', 'photos_outside', 'photos_inside', 'services_hotel']

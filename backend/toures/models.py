@@ -21,3 +21,7 @@ class IncludeColumnOne(models.Model):
     id_tour = models.ForeignKey(Tours, related_name='include', on_delete=models.CASCADE)
     text_include = models.CharField(max_length=250, blank=False )
 
+class IncludeColumnTwo(models.Model):
+    """ Modelo para lo que incluye """
+    id_tour = models.ForeignKey(Tours, related_name='text_include_two', on_delete=models.CASCADE)
+    text_include_two = models.CharField(max_length=250, blank=False )

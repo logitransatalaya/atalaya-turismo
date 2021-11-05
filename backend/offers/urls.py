@@ -9,5 +9,4 @@ router_plan = DefaultRouter()
 urlpatterns = [
     path('offerstest/', views.apiOverView, name='offers'),
     path('offers/', views.AllOfferList, name='allofferlist'),
-    # path('plans/<str:name>', views.TourList, name='Tourlist'),
 ]

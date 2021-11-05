@@ -1,70 +1,67 @@
+import { api } from 'helpers/api'
 import { useParams } from 'react-router'
-import { plans } from '../../../json/plans.json'
+import { useLocation } from 'react-router'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { getMessage } from 'state/actions/toolTipActions'
-import { useLocation } from 'react-router'
 import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
-import { getCurrentPlan } from '../../../state/actions/plansAction'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
+import { IncludesMovile } from '../IncludesMovile'
 
 export const DetailsPlan = () => {
-	const { urlCode } = useParams()
-	const dispatch = useDispatch()
-	const location = useLocation()
-	const { currentPlan } = useSelector((state) => state.PlansReducer)
-
-	useEffect(() => {
-		if (!currentPlan) {
-			const [currentPlanJson] = plans.filter(
-				(plan) => plan.urlCode === urlCode
-			)
-			dispatch(getCurrentPlan(currentPlanJson))
-		} else if (currentPlan.urlCode !== urlCode) {
-			const [currentPlanJson] = plans.filter(
-				(plan) => plan.urlCode === urlCode
-			)
-			dispatch(getCurrentPlan(currentPlanJson))
-		}
-	}, [currentPlan, dispatch, urlCode])
-
-	useEffect(() => {
-		if (currentPlan) {
-			dispatch(
-				getMessage({
-					route: location.pathname,
-					title: currentPlan.name,
-					page: 'plans'
-				})
-			)
-		}
-	}, [currentPlan, dispatch, location])
-
-	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
-
-	useEffect(() => {
-		window.onresize = function () {
-			setHandleScreen(window.innerWidth)
-		}
-	}, [handleScreen])
-
 	const stateOpenInfo = {
 		infoIncludes: false,
 		infoNoIncludes: false,
 		infoNotes: false
 	}
 
+	const dispatch = useDispatch()
+	const location = useLocation()
+	const { urlCode } = useParams()
 	const [openInfo, setOpenInfo] = useState(stateOpenInfo)
 	const { infoIncludes, infoNoIncludes, infoNotes } = openInfo
+	const { currentPlan } = useSelector((state) => state.PlansReducer)
+	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
 
-	const handleContentInfo = (k, v) => {
+	const handleContentInfo = (key, value) => {
 		setOpenInfo({
 			...openInfo,
-			[k]: v
+			[key]: value
 		})
 	}
+
+	useEffect(() => {
+		if (!currentPlan) {
+			// Hacemos la petición por primera vez
+			api(urlCode, dispatch)
+			//
+		} else if (currentPlan.id !== parseInt(urlCode)) {
+			// si la url es diferente se hace la nueva peticion
+			api(urlCode, dispatch)
+		}
+	}, [currentPlan, dispatch, urlCode])
+
+	useEffect(() => {
+		// hacemos el cambio ne redux para el mensaje de wpp
+		if (currentPlan) {
+			dispatch(
+				getMessage({
+					route: location.pathname,
+					title: currentPlan.destination_name,
+					page: 'plans'
+				})
+			)
+		}
+	}, [currentPlan, dispatch, location])
+
+	useEffect(() => {
+		// funcion que calcula los cambios de pantalla
+		window.onresize = function () {
+			setHandleScreen(window.innerWidth)
+		}
+	}, [handleScreen])
 
 	return (
 		<>
@@ -72,30 +69,26 @@ export const DetailsPlan = () => {
 				<>
 					<Container>
 						<CurrentPlanConatainer>
-							{
-								<>
-									<Title text={currentPlan.name} />
-									{handleScreen > 600 ? (
-										<div className='containerImages'>
-											{currentPlan.photos.map(
-												(url, i) => (
-													<img
-														key={i}
-														src={url.urlCode}
-														alt={url.name}
-													/>
-												)
-											)}
-										</div>
-									) : (
-										<Bedrooms img={currentPlan.photos} />
-									)}
+							<Title text={currentPlan.destination_name} />
+							{handleScreen > 600 ? (
+								<div className='containerImages'>
+									{currentPlan.photos.map((url, i) => {
+										return (
+											<img
+												key={i}
+												src={url.url_img}
+												alt={url.name_img}
+											/>
+										)
+									})}
+								</div>
+							) : (
+								<Bedrooms img={currentPlan.photos} />
+							)}
 
-									<div className='currentPlan_desc'>
-										<p>{currentPlan.desc}</p>
-									</div>
-								</>
-							}
+							<div className='currentPlan_desc'>
+								<p>{currentPlan.description}</p>
+							</div>
 						</CurrentPlanConatainer>
 					</Container>
 					<CurrentPlanServices>
@@ -103,16 +96,20 @@ export const DetailsPlan = () => {
 							<div className='contentMax_services'>
 								<h2>INCLUYE</h2>
 								<div className='services_content'>
-									{currentPlan.IncludesPlan.map(
-										(service, i) => (
+									{currentPlan.includes.map((service, i) => {
+										return (
 											<div
 												key={i}
 												className='box_services'
 											>
-												<span>{service.des}</span>
+												<span>
+													{
+														service.includes_description
+													}
+												</span>
 											</div>
 										)
-									)}
+									})}
 								</div>
 								<div className='box_buttons'>
 									<span>No incluye</span>
@@ -121,102 +118,27 @@ export const DetailsPlan = () => {
 							</div>
 						) : (
 							<div className='contentMovile_s'>
-								<div
-									className={
-										infoIncludes
-											? 'includesMovile_s bg_active'
-											: 'includesMovile_s'
-									}
-									onClick={() =>
-										handleContentInfo(
-											'infoIncludes',
-											!infoIncludes
-										)
-									}
-								>
-									<div
-										className={
-											infoIncludes
-												? 'boxInfo boxInfo_active'
-												: 'boxInfo'
-										}
-									>
-										<h4>INCLUYE</h4>
-										<span>V</span>
-									</div>
-									{infoIncludes && (
-										<div className='contentInfo'>
-											<p>Hola</p>
-											<p>que</p>
-											<p>hace</p>
-											<p>Hola</p>
-										</div>
-									)}
-								</div>
-								<div
-									className={
-										infoNoIncludes
-											? 'noIncludesMovile_s bg_active'
-											: 'noIncludesMovile_s'
-									}
-									onClick={() =>
-										handleContentInfo(
-											'infoNoIncludes',
-											!infoNoIncludes
-										)
-									}
-								>
-									<div
-										className={
-											infoNoIncludes
-												? 'boxInfo boxInfo_active'
-												: 'boxInfo'
-										}
-									>
-										<h4>NO INCLUYE</h4>
-										<span>V</span>
-									</div>
-									{infoNoIncludes && (
-										<div className='contentInfo'>
-											<p>Hola</p>
-											<p>que</p>
-											<p>hace</p>
-											<p>Hola</p>
-										</div>
-									)}
-								</div>
-								<div
-									className={
-										infoNotes
-											? 'notesMovile_s bg_active'
-											: 'notesMovile_s'
-									}
-									onClick={() =>
-										handleContentInfo(
-											'infoNotes',
-											!infoNotes
-										)
-									}
-								>
-									<div
-										className={
-											infoNotes
-												? 'boxInfo boxInfo_active'
-												: 'boxInfo'
-										}
-									>
-										<h4>NOTAS</h4>
-										<span>V</span>
-									</div>
-									{infoNotes && (
-										<div className='contentInfo'>
-											<p>Hola</p>
-											<p>que</p>
-											<p>hace</p>
-											<p>Hola</p>
-										</div>
-									)}
-								</div>
+								<IncludesMovile
+									currentPlan={currentPlan.includes}
+									keyContent={'infoIncludes'}
+									infoIncludes={infoIncludes}
+									handleContentInfo={handleContentInfo}
+									title={'INCLUYE'}
+								/>
+								<IncludesMovile
+									currentPlan={currentPlan.noIncludes}
+									keyContent={'infoNoIncludes'}
+									infoIncludes={infoNoIncludes}
+									handleContentInfo={handleContentInfo}
+									title={'NO INCLUYE'}
+								/>
+								<IncludesMovile
+									currentPlan={currentPlan.notes}
+									keyContent={'infoNotes'}
+									infoIncludes={infoNotes}
+									handleContentInfo={handleContentInfo}
+									title={'NOTAS'}
+								/>
 							</div>
 						)}
 					</CurrentPlanServices>

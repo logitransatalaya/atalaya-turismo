@@ -7,7 +7,6 @@ import React, { useEffect, useState } from 'react'
 const CardOffer = ({ data }) => {
 	const [width, setWidth] = useState(0)
 	const { photos } = data
-
 	useEffect(() => {
 		setWidth(window.innerWidth)
 		window.onresize = () => {

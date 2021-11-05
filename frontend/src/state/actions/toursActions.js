@@ -4,9 +4,9 @@ export const types = {
 	UPDATE_CURRENT_TOUR: 'UPDATE_CURRENT_TOUR'
 }
 
-export const getTours = (array) => ({
+export const getTours = (data) => ({
 	type: types.GET_TOURS,
-	payload: array
+	payload: data
 })
 
 export const updateCurrentTour = (data) => ({

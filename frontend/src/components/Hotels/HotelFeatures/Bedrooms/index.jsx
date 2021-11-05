@@ -6,21 +6,24 @@ import { splideOptionsBedrooms } from 'lib/splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
 
 const Bedrooms = ({ img }) => {
-	return (
+	return img ? (
 		<SliderRooms>
 			<div className='containerRooms'>
 				<Splide options={splideOptionsBedrooms}>
-					{img.map((imges, i) => (
+					{img.map((images, i) => (
 						<SplideSlide key={i} className='splideslide'>
 							<Room>
-								<img src={imges.urlCode} alt={imges.name} />
+								<img
+									src={images.url_img}
+									alt={images.name_img}
+								/>
 							</Room>
 						</SplideSlide>
 					))}
 				</Splide>
 			</div>
 		</SliderRooms>
-	)
+	) : null
 }
 
 export default Bedrooms
