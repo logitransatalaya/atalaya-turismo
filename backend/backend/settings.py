@@ -15,6 +15,7 @@ from django.core.management.utils import get_random_secret_key
 import os 
 import sys
 import dj_database_url
+from urllib.parse import urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -36,6 +37,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE', 'False') == 'True'
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOST', '127.0.0.1,localhost').split(',')
+DATABASE_URL = os.getenv('DATABASE_URL', None)
+
 
 # CORS_ALLOWED_ORIGINS = [
 #     'http://127.0.0.1:3000'
@@ -121,18 +124,25 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if DEVELOPMENT_MODE is True:
-    DATABASE  = {
+if not DATABASE_URL:
+    DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME':os.path.join(BASE_DIR, 'db.sqlite3'),
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
-    if os.getenv('DATABASE_URL', None) is None:
-        raise Exception('DATABASE_URL enviroment varibale not defined')
-    DATA = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+else:
+    db_info = urlparse(DATABASE_URL)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'turismo',
+            'USER': 'doadmin',
+            'PASSWORD': '3ElR6ySU2IL9QDi6',
+            'HOST': 'db-postgresql-nyc3-18486-do-user-10170432-0.b.db.ondigitalocean.com',
+            'PORT': '25060',
+            'OPTIONS': {'sslmode': 'require'},
+        }
     }
 
 # Password validation
