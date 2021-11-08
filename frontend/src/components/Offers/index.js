@@ -12,11 +12,15 @@ export const Offers = () => {
 	useEffect(() => {
 		if (!offersReducer) {
 			;(async () => {
-				const response = await fetch(
-					`http://127.0.0.1:8000/api/offers/`
-				)
-				const data = await response.json()
-				dispatch(getAllOffers(data.offers))
+				try {
+					const response = await fetch(
+						`http://50.62.81.171:5000/api/offers/`
+					)
+					const data = await response.json()
+					dispatch(getAllOffers(data.offers))
+				} catch (error) {
+					console.error(error)
+				}
 			})()
 		}
 	}, [offersReducer, dispatch])
