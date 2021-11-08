@@ -9,6 +9,8 @@ import { getMessage } from 'state/actions/toolTipActions'
 import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
 import { IncludesMovile } from '../IncludesMovile'
+import { Button } from 'components/GlobalComponents/Button'
+import { Includes } from './Includes'
 
 export const DetailsPlan = () => {
 	const stateOpenInfo = {
@@ -24,6 +26,7 @@ export const DetailsPlan = () => {
 	const { infoIncludes, infoNoIncludes, infoNotes } = openInfo
 	const { currentPlan } = useSelector((state) => state.PlansReducer)
 	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
+	const [include, setInclude] = useState(true)
 
 	const handleContentInfo = (key, value) => {
 		setOpenInfo({
@@ -31,7 +34,7 @@ export const DetailsPlan = () => {
 			[key]: value
 		})
 	}
-
+	// funcion que hace la peticion a la db
 	useEffect(() => {
 		if (!currentPlan) {
 			// Hacemos la petición por primera vez
@@ -42,9 +45,8 @@ export const DetailsPlan = () => {
 			api(urlCode, dispatch)
 		}
 	}, [currentPlan, dispatch, urlCode])
-
+	// funcion que hace el cambio en redux para el mensaje de wpp
 	useEffect(() => {
-		// hacemos el cambio ne redux para el mensaje de wpp
 		if (currentPlan) {
 			dispatch(
 				getMessage({
@@ -55,13 +57,16 @@ export const DetailsPlan = () => {
 			)
 		}
 	}, [currentPlan, dispatch, location])
-
+	// funcion que calcula los cambios de pantalla
 	useEffect(() => {
-		// funcion que calcula los cambios de pantalla
 		window.onresize = function () {
 			setHandleScreen(window.innerWidth)
 		}
 	}, [handleScreen])
+
+	const handleInclude = () => {
+		setInclude(!include)
+	}
 
 	return (
 		<>
@@ -96,24 +101,26 @@ export const DetailsPlan = () => {
 							<div className='contentMax_services'>
 								<h2>INCLUYE</h2>
 								<div className='services_content'>
-									{currentPlan.includes.map((service, i) => {
-										return (
-											<div
-												key={i}
-												className='box_services'
-											>
-												<span>
-													{
-														service.includes_description
-													}
-												</span>
-											</div>
-										)
-									})}
+									{include ? (
+										<>
+											<Includes
+												includes={currentPlan.includes}
+											/>
+										</>
+									) : (
+										<Includes
+											includes={currentPlan.noIncludes}
+										/>
+									)}
 								</div>
 								<div className='box_buttons'>
-									<span>No incluye</span>
-									<span>Notas</span>
+									<Button
+										onClick={handleInclude}
+										text={
+											include ? 'No Incluye' : 'incluye'
+										}
+										bgColor='#10216f'
+									/>
 								</div>
 							</div>
 						) : (

@@ -14,9 +14,15 @@ export const Plans = () => {
 	useEffect(() => {
 		if (!plansReducer) {
 			;(async () => {
-				const response = await fetch('http://127.0.0.1:8000/api/plans/')
-				const data = await response.json()
-				setDataInfo(data)
+				try {
+					const response = await fetch(
+						'http://50.62.81.171:5000/api/plans/'
+					)
+					const data = await response.json()
+					setDataInfo(data)
+				} catch (error) {
+					console.error(error)
+				}
 			})()
 			if (dataInfo) {
 				dispatch(getAllPlans(dataInfo.planes))
