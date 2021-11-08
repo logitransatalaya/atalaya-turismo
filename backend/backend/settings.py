@@ -11,33 +11,46 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from django.core.management.utils import get_random_secret_key
+import os 
+import sys
+import dj_database_url
+from urllib.parse import urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/ 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+n=ovv^(qj6yrw9m7_h#gvwo0!-9bq5kg(i28hfy+e1ey1vdn+'
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', get_random_secret_key)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'False') == True
 
-ALLOWED_HOSTS = []
+WSGI_APPLICATION = 'config.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = [
-    'http://127.0.0.1:3000'
-]
 
-CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://127.0.0.1\.com$",
-]
+DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE', 'False') == 'True'
 
-CORS_ORIGIN_WHITLIST = [
-    'http://127.0.0.1:3000'
-]
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOST', '127.0.0.1,localhost').split(',')
+DATABASE_URL = os.getenv('DATABASE_URL', None)
+
+
+# CORS_ALLOWED_ORIGINS = [
+#     'http://127.0.0.1:3000'
+# ]
+
+# CORS_ALLOWED_ORIGIN_REGEXES = [
+#     r"^https://127.0.0.1\.com$",
+# ]
+
+# CORS_ORIGIN_WHITLIST = [
+#     'http://127.0.0.1:3000'
+# ]
 
 CORS_ALLOW_HEADERS = [
     'accept',
@@ -62,8 +75,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'django_filters',
-    #local apps 
     'hotels',
     'plans',
     'offers',
@@ -113,18 +124,26 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'turismo',
-        'USER': 'atalaya',
-        'PASSWORD': 'atalaya1234',
-        'HOST': 'localhost',
-        'PORT': '5432'
+if not DATABASE_URL:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
-
-
+else:
+    db_info = urlparse(DATABASE_URL)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'turismo',
+            'USER': 'doadmin',
+            'PASSWORD': '3ElR6ySU2IL9QDi6',
+            'HOST': 'db-postgresql-nyc3-18486-do-user-10170432-0.b.db.ondigitalocean.com',
+            'PORT': '25060',
+            'OPTIONS': {'sslmode': 'require'},
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -166,6 +185,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

@@ -1,7 +1,7 @@
 import React from 'react'
-// import { HomePlans } from './HomePlans'
 import { HomeStyled } from './styles.js'
 import image from '../../images/btn.png'
+// import { HomePlans } from './HomePlans'
 import { Benefits } from './BenefitsSection'
 import SliderComponent from './Slider/index.jsx'
 import { HomeOffersFlash } from './HomeOffersFlash'
