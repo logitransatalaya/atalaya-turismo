@@ -17,12 +17,16 @@ export const HotelsList = () => {
 
 	useEffect(() => {
 		;(async () => {
-			const response = await fetch(
-				`http://127.0.0.1:8000/api/hotels/${locid}`
-			)
-			const data = await response.json()
-			dispatch(updateHotelsList(data.hotels))
-			setNameCity(data.city[0].name)
+			try {
+				const response = await fetch(
+					`http://50.62.81.171:5000/api/hotels/${locid}`
+				)
+				const data = await response.json()
+				dispatch(updateHotelsList(data.hotels))
+				setNameCity(data.city[0].name)
+			} catch (error) {
+				console.error(error)
+			}
 		})()
 	}, [locid, dispatch])
 

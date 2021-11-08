@@ -13,11 +13,15 @@ export const Hotels = () => {
 	useEffect(() => {
 		if (!cityList) {
 			;(async () => {
-				const response = await fetch(
-					'http://127.0.0.1:8000/api/ciudades/'
-				)
-				const data = await response.json()
-				dispatch(updatecityList(data.cities))
+				try {
+					const response = await fetch(
+						'http://50.62.81.171:5000/api/ciudades/'
+					)
+					const data = await response.json()
+					dispatch(updatecityList(data.cities))
+				} catch (error) {
+					console.error(error)
+				}
 			})()
 		}
 	}, [cityList, dispatch])

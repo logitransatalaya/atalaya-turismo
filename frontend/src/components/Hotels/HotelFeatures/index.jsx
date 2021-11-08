@@ -22,21 +22,29 @@ export const HotelFeatures = () => {
 	useEffect(() => {
 		if (!currentHotel) {
 			;(async () => {
-				const response = await fetch(
-					`http://127.0.0.1:8000/api/hotels/${locid}/${hotelId}`
-				)
-				const data = await response.json()
-				dispatch(updateCurrentHotel(data.hotel[0]))
-				setCity(data.city[0].name)
+				try {
+					const response = await fetch(
+						`http://50.62.81.171:5000/api/hotels/${locid}/${hotelId}`
+					)
+					const data = await response.json()
+					dispatch(updateCurrentHotel(data.hotel[0]))
+					setCity(data.city[0].name)
+				} catch (error) {
+					console.error(error)
+				}
 			})()
 		} else if (currentHotel.id !== parseInt(hotelId)) {
 			;(async () => {
-				const response = await fetch(
-					`http://127.0.0.1:8000/api/hotels/${locid}/${hotelId}`
-				)
-				const data = await response.json()
-				dispatch(updateCurrentHotel(data.hotel[0]))
-				setCity(data.city[0].name)
+				try {
+					const response = await fetch(
+						`http://50.62.81.171:5000/api/hotels/${locid}/${hotelId}`
+					)
+					const data = await response.json()
+					dispatch(updateCurrentHotel(data.hotel[0]))
+					setCity(data.city[0].name)
+				} catch (error) {
+					console.error(error)
+				}
 			})()
 		}
 	}, [locid, hotelId, currentHotel, dispatch])
