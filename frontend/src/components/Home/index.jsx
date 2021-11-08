@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomePlans } from './HomePlans'
+// import { HomePlans } from './HomePlans'
 import { HomeStyled } from './styles.js'
 import image from '../../images/btn.png'
 import { Benefits } from './BenefitsSection'
