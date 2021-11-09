@@ -1,32 +1,21 @@
+import { useApi } from 'hooks/useApi'
 import { ToursStyled } from './styles'
 import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { Container } from 'components/Container'
 import { Link, useHistory } from 'react-router-dom'
-import { getTours } from 'state/actions/toursActions'
-import { useDispatch, useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 
 export const Tours = () => {
 	const history = useHistory()
-	const dispatch = useDispatch()
 	const { tours } = useSelector((state) => state.tourReducer)
-
+	const { getToursApi } = useApi()
 	useEffect(() => {
 		if (!tours) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						'http://50.62.81.171:5000/api/tours/'
-					)
-					const data = await response.json()
-					dispatch(getTours(data.Toures))
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getToursApi()
 		}
 		history.replace('/tours')
-	}, [history, dispatch, tours])
+	}, [history, getToursApi, tours])
 
 	return (
 		<Container>
