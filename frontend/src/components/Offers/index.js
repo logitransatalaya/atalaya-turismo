@@ -1,29 +1,20 @@
+import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import CardOffer from './mobile/CardOffer'
 import { Container } from 'components/Container'
-import { useDispatch, useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
-import { getAllOffers } from '../../state/actions/offersActions'
 
 export const Offers = () => {
-	const dispatch = useDispatch()
 	const { offersReducer } = useSelector((state) => state.OffersReducer)
+	const { getOffers } = useApi()
 
 	useEffect(() => {
 		if (!offersReducer) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						`http://50.62.81.171:5000/api/offers/`
-					)
-					const data = await response.json()
-					dispatch(getAllOffers(data.offers))
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getOffers()
 		}
-	}, [offersReducer, dispatch])
+	}, [offersReducer, getOffers])
+
 	return (
 		<Container>
 			<Title text={'NUESTRAS OFERTAS'} />

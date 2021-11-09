@@ -1,3 +1,4 @@
+import { useApi } from 'hooks/useApi'
 import { Link } from 'react-router-dom'
 import { PlansContainer } from './styles'
 import { Container } from 'components/Container'
@@ -10,25 +11,16 @@ export const Plans = () => {
 	const dispatch = useDispatch()
 	const { plansReducer } = useSelector((state) => state.PlansReducer)
 	const [dataInfo, setDataInfo] = useState(null)
+	const { getPlans } = useApi()
 
 	useEffect(() => {
 		if (!plansReducer) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						'http://50.62.81.171:5000/api/plans/'
-					)
-					const data = await response.json()
-					setDataInfo(data)
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getPlans(setDataInfo)
 			if (dataInfo) {
 				dispatch(getAllPlans(dataInfo.planes))
 			}
 		}
-	}, [plansReducer, dispatch, dataInfo])
+	}, [plansReducer, getPlans, dataInfo, dispatch])
 	return (
 		<Container>
 			{plansReducer && (

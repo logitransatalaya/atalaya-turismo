@@ -3,32 +3,21 @@ import { CityContainer } from './styles'
 import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { Button } from 'components/GlobalComponents/Button'
-import { updateHotelsList } from 'state/actions/hotelsActions'
 import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
+import { useApi } from 'hooks/useApi'
 
 export const HotelsList = () => {
 	const { locid } = useParams()
 	const { hotelsList } = useSelector((state) => state.hotelsReducer)
-	const dispatch = useDispatch()
 	const [nameCity, setNameCity] = useState('')
+	const { getHotelList } = useApi()
 
 	useEffect(() => {
-		;(async () => {
-			try {
-				const response = await fetch(
-					`http://50.62.81.171:5000/api/hotels/${locid}`
-				)
-				const data = await response.json()
-				dispatch(updateHotelsList(data.hotels))
-				setNameCity(data.city[0].name)
-			} catch (error) {
-				console.error(error)
-			}
-		})()
-	}, [locid, dispatch])
+		getHotelList(locid, setNameCity)
+	}, [locid, getHotelList, setNameCity])
 
 	return (
 		hotelsList && (

@@ -1,60 +1,97 @@
 import {
+	updatecityList,
 	updateCurrentHotel,
 	updateHotelsList
 } from 'state/actions/hotelsActions'
-import { tours } from 'json/tours.json'
+import { api2 } from 'helpers/api2'
 import { useDispatch } from 'react-redux'
-import { hotels } from 'json/hotels.json'
-import { updateCurrentTour } from 'state/actions/toursActions'
+import { getCurrentPlan } from 'state/actions/plansAction'
+import { getAllOffers } from 'state/actions/offersActions'
+import { getTours, updateCurrentTour } from 'state/actions/toursActions'
 
 export const useApi = () => {
 	const dispatch = useDispatch()
 
-	const getHotels = (locid, hotelsList) => {
-		const cityId = parseInt(locid)
-		const currentHotelsListCityId = hotelsList && hotelsList[0].idcity
-
-		if (!hotelsList) {
-			const res = hotels.filter((hotel) => hotel.idcity === cityId)
-			dispatch(updateHotelsList(res))
-		} else if (cityId !== currentHotelsListCityId) {
-			const res = hotels.filter((hotel) => hotel.idcity === cityId)
-			dispatch(updateHotelsList(res))
-		}
+	const getCities = async () => {
+		const data = await api2({
+			url1: 'ciudades',
+			url2: null,
+			url3: null
+		})
+		dispatch(updatecityList(data.cities))
 	}
 
-	const getCurrentHotel = (locid, hotelId, currentHotel, hotelsList) => {
-		const cityId = parseInt(locid)
-		const currentHotelCityId = currentHotel?.urlCode
-
-		if (!currentHotel) {
-			const [hotel] = hotels
-				.filter((hotel) => hotel.idcity === cityId)
-				.filter((hotel) => hotel.urlCode === hotelId)
-			dispatch(updateCurrentHotel(hotel))
-		} else if (hotelId !== currentHotelCityId) {
-			const [hotel] = hotelsList.filter(
-				(hotel) => hotel.urlCode === hotelId
-			)
-			dispatch(updateCurrentHotel(hotel))
-		}
+	const getHotelList = async (locid, setNameCity) => {
+		const data = await api2({
+			url1: 'hotels',
+			url2: locid,
+			url3: null
+		})
+		dispatch(updateHotelsList(data.hotels))
+		setNameCity(data.city[0].name)
 	}
 
-	const getCurrentTour = (urlCode, currentTour) => {
-		const currentUrlCode = currentTour?.urlCode
+	const getHotelFeatures = async (locid, hotelId, setCity) => {
+		const data = await api2({
+			url1: 'hotels',
+			url2: locid,
+			url3: hotelId
+		})
+		dispatch(updateCurrentHotel(data.hotel[0]))
+		setCity(data.city[0].name)
+	}
 
-		if (!currentTour) {
-			const [tour] = tours.filter((el) => el.urlCode === urlCode)
-			dispatch(updateCurrentTour(tour))
-		} else if (currentUrlCode !== urlCode) {
-			const [tour] = tours.filter((el) => el.urlCode === urlCode)
-			dispatch(updateCurrentTour(tour))
-		}
+	const getOffers = async () => {
+		const data = await api2({
+			url1: 'offers',
+			url2: null,
+			url3: null
+		})
+		dispatch(getAllOffers(data.offers))
+	}
+	const getPlans = async (setDataInfo) => {
+		const data = await api2({
+			url1: 'plans',
+			url2: null,
+			url3: null
+		})
+		setDataInfo(data)
+	}
+	const getDetailsPlans = async (urlCode) => {
+		const data = await api2({
+			url1: 'plans',
+			url2: urlCode,
+			url3: null
+		})
+		dispatch(getCurrentPlan(data.planes[0]))
+	}
+
+	const getToursApi = async () => {
+		const data = await api2({
+			url1: 'tours',
+			url2: null,
+			url3: null
+		})
+		dispatch(getTours(data.Toures))
+		dispatch(updateCurrentTour(data.Toures[0]))
+	}
+	const getCurrentTour = async (urlCode) => {
+		const data = await api2({
+			url1: 'tours',
+			url2: urlCode,
+			url3: null
+		})
+		dispatch(updateCurrentTour(data.Toures[0]))
 	}
 
 	return {
-		getHotels,
-		getCurrentHotel,
-		getCurrentTour
+		getPlans,
+		getCities,
+		getOffers,
+		getToursApi,
+		getHotelList,
+		getCurrentTour,
+		getDetailsPlans,
+		getHotelFeatures
 	}
 }

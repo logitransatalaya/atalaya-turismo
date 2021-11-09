@@ -1,30 +1,20 @@
+import { useApi } from 'hooks/useApi'
 import { Link } from 'react-router-dom'
 import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { HotelsContainer } from './styles'
 import { Container } from 'components/Container'
-import { useSelector, useDispatch } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
-import { updatecityList } from '../../state/actions/hotelsActions'
 
 export const Hotels = () => {
-	const dispatch = useDispatch()
 	const { cityList } = useSelector((state) => state.hotelsReducer)
+	const { getCities } = useApi()
 
 	useEffect(() => {
 		if (!cityList) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						'http://50.62.81.171:5000/api/ciudades/'
-					)
-					const data = await response.json()
-					dispatch(updatecityList(data.cities))
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getCities()
 		}
-	}, [cityList, dispatch])
+	}, [cityList, getCities])
 	return (
 		<Container>
 			<Title text={`HOTELES`} />

@@ -1,3 +1,4 @@
+import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
 import { useLocation } from 'react-router'
@@ -8,41 +9,21 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { getMessage } from 'state/actions/toolTipActions'
 import { Footer } from 'components/GlobalComponents/Footer'
-import { updateCurrentTour } from 'state/actions/toursActions'
 
 export const ToursDetails = () => {
 	const dispatch = useDispatch()
 	const location = useLocation()
 	const { urlCode } = useParams()
 	const { currentTour } = useSelector((state) => state.tourReducer)
+	const { getCurrentTour } = useApi()
 
 	useEffect(() => {
 		if (!currentTour) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						`http://50.62.81.171:5000/api/tours/${urlCode}`
-					)
-					const data = await response.json()
-					dispatch(updateCurrentTour(data.Toures[0]))
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getCurrentTour(urlCode)
 		} else if (currentTour.id !== parseInt(urlCode)) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						`http://50.62.81.171:5000/api/tours/${urlCode}`
-					)
-					const data = await response.json()
-					dispatch(updateCurrentTour(data.Toures[0]))
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getCurrentTour(urlCode)
 		}
-	}, [urlCode, currentTour, dispatch])
+	}, [urlCode, currentTour, getCurrentTour])
 
 	useEffect(() => {
 		if (currentTour) {

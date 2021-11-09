@@ -1,16 +1,16 @@
-import { api } from 'helpers/api'
+import { useApi } from 'hooks/useApi'
+import { Includes } from './Includes'
 import { useParams } from 'react-router'
 import { useLocation } from 'react-router'
 import { Container } from 'components/Container'
+import { IncludesMovile } from '../IncludesMovile'
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { getMessage } from 'state/actions/toolTipActions'
+import { Button } from 'components/GlobalComponents/Button'
 import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
-import { IncludesMovile } from '../IncludesMovile'
-import { Button } from 'components/GlobalComponents/Button'
-import { Includes } from './Includes'
 
 export const DetailsPlan = () => {
 	const stateOpenInfo = {
@@ -27,24 +27,25 @@ export const DetailsPlan = () => {
 	const { currentPlan } = useSelector((state) => state.PlansReducer)
 	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
 	const [include, setInclude] = useState(true)
+	const { getDetailsPlans } = useApi()
 
+	// funcion para abrir los menus en moiles
 	const handleContentInfo = (key, value) => {
 		setOpenInfo({
 			...openInfo,
 			[key]: value
 		})
 	}
+
 	// funcion que hace la peticion a la db
 	useEffect(() => {
 		if (!currentPlan) {
-			// Hacemos la petición por primera vez
-			api(urlCode, dispatch)
-			//
+			getDetailsPlans(getDetailsPlans)
 		} else if (currentPlan.id !== parseInt(urlCode)) {
-			// si la url es diferente se hace la nueva peticion
-			api(urlCode, dispatch)
+			getDetailsPlans(getDetailsPlans)
 		}
-	}, [currentPlan, dispatch, urlCode])
+	}, [currentPlan, getDetailsPlans, urlCode])
+
 	// funcion que hace el cambio en redux para el mensaje de wpp
 	useEffect(() => {
 		if (currentPlan) {
@@ -57,6 +58,7 @@ export const DetailsPlan = () => {
 			)
 		}
 	}, [currentPlan, dispatch, location])
+
 	// funcion que calcula los cambios de pantalla
 	useEffect(() => {
 		window.onresize = function () {
