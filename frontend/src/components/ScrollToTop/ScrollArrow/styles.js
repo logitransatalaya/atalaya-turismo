@@ -18,7 +18,7 @@ export const ArrowScroll = styled.div`
 	position: fixed;
 	right: 10px;
 	bottom: 50px;
-	z-index: 1;
+	z-index: 101;
 	border-radius: 30px;
 	display: ${({ display }) => display};
 	cursor: pointer;
