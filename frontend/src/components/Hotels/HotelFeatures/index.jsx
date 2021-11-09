@@ -8,8 +8,8 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { getMessage } from 'state/actions/toolTipActions'
 import { Title } from 'components/GlobalComponents/Title'
-import { updateCurrentHotel } from 'state/actions/hotelsActions'
 import { MorePopularService } from 'components/Hotels/HotelFeatures/MorePopularService'
+import { useApi } from 'hooks/useApi'
 
 export const HotelFeatures = () => {
 	const dispatch = useDispatch()
@@ -17,37 +17,16 @@ export const HotelFeatures = () => {
 	const { hotelId, locid } = useParams()
 	const { currentHotel } = useSelector((state) => state.hotelsReducer)
 	const [city, setCity] = useState('')
+	const { getHotelFeatures } = useApi()
 
 	// peticion a la api mediante el id del hotel
 	useEffect(() => {
 		if (!currentHotel) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						`http://50.62.81.171:5000/api/hotels/${locid}/${hotelId}`
-					)
-					const data = await response.json()
-					dispatch(updateCurrentHotel(data.hotel[0]))
-					setCity(data.city[0].name)
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getHotelFeatures(locid, hotelId, setCity)
 		} else if (currentHotel.id !== parseInt(hotelId)) {
-			;(async () => {
-				try {
-					const response = await fetch(
-						`http://50.62.81.171:5000/api/hotels/${locid}/${hotelId}`
-					)
-					const data = await response.json()
-					dispatch(updateCurrentHotel(data.hotel[0]))
-					setCity(data.city[0].name)
-				} catch (error) {
-					console.error(error)
-				}
-			})()
+			getHotelFeatures(locid, hotelId, setCity)
 		}
-	}, [locid, hotelId, currentHotel, dispatch])
+	}, [locid, hotelId, currentHotel, getHotelFeatures])
 
 	// cambio del mensaje para el boton de whatsapp
 	useEffect(() => {
