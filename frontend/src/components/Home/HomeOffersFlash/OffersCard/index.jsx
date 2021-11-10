@@ -14,7 +14,7 @@ export const OffersCard = ({ title }) => {
 			<div className='offersCard-textContent'>
 				<p>DESDE</p>
 				<p className='offersCard-price'>COP 2'2960.000</p>
-				<p>por persona</p>
+				<p>Por persona</p>
 			</div>
 			<button className='btn btn_offert'>VER OFERTA</button>
 		</CardStyle>
