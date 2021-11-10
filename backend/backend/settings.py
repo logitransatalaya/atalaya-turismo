@@ -14,7 +14,6 @@ from pathlib import Path
 from django.core.management.utils import get_random_secret_key
 import os 
 import sys
-import dj_database_url
 from urllib.parse import urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', get_random_secret_key)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == True
+DEBUG = True
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
@@ -74,6 +73,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'offersflash',
     'corsheaders',
     'hotels',
     'plans',
@@ -124,26 +124,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if not DATABASE_URL:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR,'db.sqlite3'),
     }
-else:
-    db_info = urlparse(DATABASE_URL)
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'turismo',
-            'USER': 'doadmin',
-            'PASSWORD': '3ElR6ySU2IL9QDi6',
-            'HOST': 'db-postgresql-nyc3-18486-do-user-10170432-0.b.db.ondigitalocean.com',
-            'PORT': '25060',
-            'OPTIONS': {'sslmode': 'require'},
-        }
-    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

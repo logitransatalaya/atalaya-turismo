@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const ToursStyled = styled.div`
+	min-height: 50vh;
 	.ToursCards-container {
 		display: grid;
 		grid-template-columns: repeat(auto, minmax(300px, 1fr));

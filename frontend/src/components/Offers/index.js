@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux'
 import CardOffer from './mobile/CardOffer'
 import { Container } from 'components/Container'
 import { Title } from 'components/GlobalComponents/Title'
+import { ContainerOffers } from './style'
+import { Loader } from 'components/GlobalComponents/Loader'
 
 export const Offers = () => {
 	const { offersReducer } = useSelector((state) => state.OffersReducer)
@@ -16,12 +18,17 @@ export const Offers = () => {
 	}, [offersReducer, getOffers])
 
 	return (
-		<Container>
-			<Title text={'NUESTRAS OFERTAS'} />
-			{offersReducer &&
-				offersReducer.map((offer) => {
-					return <CardOffer data={offer} key={offer.id} />
-				})}
-		</Container>
+		<ContainerOffers>
+			<Container>
+				<Title text={'NUESTRAS OFERTAS'} />
+				{offersReducer ? (
+					offersReducer.map((offer) => {
+						return <CardOffer data={offer} key={offer.id} />
+					})
+				) : (
+					<Loader />
+				)}
+			</Container>
+		</ContainerOffers>
 	)
 }

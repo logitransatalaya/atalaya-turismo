@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const PlansContainer = styled.div`
+	min-height: 50vh;
 	.plansContent {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);

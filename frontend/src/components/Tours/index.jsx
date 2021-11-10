@@ -10,6 +10,7 @@ export const Tours = () => {
 	const history = useHistory()
 	const { tours } = useSelector((state) => state.tourReducer)
 	const { getToursApi } = useApi()
+
 	useEffect(() => {
 		if (!tours) {
 			getToursApi()
