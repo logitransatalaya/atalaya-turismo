@@ -19,6 +19,7 @@ export async function api2({ url1, url2, url3 }) {
 				`https://50.62.81.171:5000/api/${url1}/`
 			)
 			const data = await response.json()
+			console.log(data)
 			return data
 		}
 	} catch (error) {

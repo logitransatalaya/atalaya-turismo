@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import { HotelsContainer } from './styles'
 import { Container } from 'components/Container'
 import { Title } from 'components/GlobalComponents/Title'
+import { Loader } from 'components/GlobalComponents/Loader'
 
 export const Hotels = () => {
 	const { cityList } = useSelector((state) => state.hotelsReducer)
@@ -19,7 +20,7 @@ export const Hotels = () => {
 		<Container>
 			<Title text={`HOTELES`} />
 			<HotelsContainer>
-				{cityList &&
+				{cityList ? (
 					cityList.map((city, i) => (
 						<Link key={i} to={`hoteles/${city.id}`}>
 							<div className='hotelCard'>
@@ -31,7 +32,10 @@ export const Hotels = () => {
 								</div>
 							</div>
 						</Link>
-					))}
+					))
+				) : (
+					<Loader />
+				)}
 			</HotelsContainer>
 		</Container>
 	)
