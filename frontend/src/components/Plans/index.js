@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { getAllPlans } from '../../state/actions/plansAction'
+import { Loader } from 'components/GlobalComponents/Loader'
 
 export const Plans = () => {
 	const dispatch = useDispatch()
@@ -21,11 +22,12 @@ export const Plans = () => {
 			}
 		}
 	}, [plansReducer, getPlans, dataInfo, dispatch])
+
 	return (
 		<Container>
-			{plansReducer && (
+			<Title text={'PLANES NACIONALES'} />
+			{plansReducer ? (
 				<PlansContainer>
-					<Title text={'PLANES NACIONALES'} />
 					<div className='plansContent'>
 						{plansReducer?.map((img, i) => {
 							return (
@@ -46,6 +48,8 @@ export const Plans = () => {
 						})}
 					</div>
 				</PlansContainer>
+			) : (
+				<Loader />
 			)}
 		</Container>
 	)
