@@ -1,6 +1,5 @@
 import React from 'react'
 import { HomeStyled } from './styles.js'
-import image from '../../images/btn.png'
 // import { HomePlans } from './HomePlans'
 import { Benefits } from './BenefitsSection'
 import SliderComponent from './Slider/index.jsx'
@@ -16,7 +15,7 @@ export const Home = () => {
 				{/* <HomePlans /> */}
 				<SliderComponent />
 				<Title text={'OFERTAS FLASH'} />
-				<HomeOffersFlash image={image} />
+				<HomeOffersFlash />
 				<Benefits />
 			</HomeStyled>
 		</Container>
