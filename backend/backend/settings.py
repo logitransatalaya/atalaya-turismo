@@ -14,7 +14,6 @@ from pathlib import Path
 from django.core.management.utils import get_random_secret_key
 import os 
 import sys
-import dj_database_url
 from urllib.parse import urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -74,6 +73,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'offersflash'
     'corsheaders',
     'hotels',
     'plans',
@@ -128,7 +128,7 @@ if not DATABASE_URL:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'NAME': os.path.join(BASE_DIR,'db.sqlite3'),
         }
     }
 else:
