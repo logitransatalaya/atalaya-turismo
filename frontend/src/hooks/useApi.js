@@ -5,9 +5,10 @@ import {
 } from 'state/actions/hotelsActions'
 import { api2 } from 'helpers/api2'
 import { useDispatch } from 'react-redux'
-import { getCurrentPlan } from 'state/actions/plansAction'
+import { getAllPlans, getCurrentPlan } from 'state/actions/plansAction'
 import { getAllOffers } from 'state/actions/offersActions'
 import { getTours, updateCurrentTour } from 'state/actions/toursActions'
+import { getAllOffersFlash } from 'state/actions/offersflash'
 
 export const useApi = () => {
 	const dispatch = useDispatch()
@@ -18,7 +19,9 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		dispatch(updatecityList(data.cities))
+		data
+			? dispatch(updatecityList(data.cities))
+			: dispatch(updatecityList(null))
 	}
 
 	const getHotelList = async (locid, setNameCity) => {
@@ -27,8 +30,8 @@ export const useApi = () => {
 			url2: locid,
 			url3: null
 		})
-		dispatch(updateHotelsList(data.hotels))
-		setNameCity(data.city[0].name)
+		dispatch(updateHotelsList(data?.hotels))
+		setNameCity(data?.city[0].name)
 	}
 
 	const getHotelFeatures = async (locid, hotelId, setCity) => {
@@ -37,8 +40,8 @@ export const useApi = () => {
 			url2: locid,
 			url3: hotelId
 		})
-		dispatch(updateCurrentHotel(data.hotel[0]))
-		setCity(data.city[0].name)
+		dispatch(updateCurrentHotel(data?.hotel[0]))
+		setCity(data?.city[0].name)
 	}
 
 	const getOffers = async () => {
@@ -47,15 +50,15 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		dispatch(getAllOffers(data.offers))
+		dispatch(getAllOffers(data?.offers))
 	}
-	const getPlans = async (setDataInfo) => {
+	const getPlans = async () => {
 		const data = await api2({
 			url1: 'plans',
 			url2: null,
 			url3: null
 		})
-		setDataInfo(data)
+		dispatch(getAllPlans(data.planes))
 	}
 	const getDetailsPlans = async (urlCode) => {
 		const data = await api2({
@@ -63,7 +66,7 @@ export const useApi = () => {
 			url2: urlCode,
 			url3: null
 		})
-		dispatch(getCurrentPlan(data.planes[0]))
+		dispatch(getCurrentPlan(data?.planes[0]))
 	}
 
 	const getToursApi = async () => {
@@ -72,8 +75,8 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		dispatch(getTours(data.Toures))
-		dispatch(updateCurrentTour(data.Toures[0]))
+		dispatch(getTours(data?.Toures))
+		dispatch(updateCurrentTour(data?.Toures[0]))
 	}
 	const getCurrentTour = async (urlCode) => {
 		const data = await api2({
@@ -81,7 +84,15 @@ export const useApi = () => {
 			url2: urlCode,
 			url3: null
 		})
-		dispatch(updateCurrentTour(data.Toures[0]))
+		dispatch(updateCurrentTour(data?.Toures[0]))
+	}
+	const getOffersFlash = async () => {
+		const data = await api2({
+			url1: 'offersflash',
+			url2: null,
+			url3: null
+		})
+		dispatch(getAllOffersFlash(data))
 	}
 
 	return {
@@ -91,6 +102,7 @@ export const useApi = () => {
 		getToursApi,
 		getHotelList,
 		getCurrentTour,
+		getOffersFlash,
 		getDetailsPlans,
 		getHotelFeatures
 	}

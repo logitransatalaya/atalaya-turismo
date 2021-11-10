@@ -2,26 +2,20 @@ import { useApi } from 'hooks/useApi'
 import { Link } from 'react-router-dom'
 import { PlansContainer } from './styles'
 import { Container } from 'components/Container'
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
-import { getAllPlans } from '../../state/actions/plansAction'
 import { Loader } from 'components/GlobalComponents/Loader'
 
 export const Plans = () => {
-	const dispatch = useDispatch()
 	const { plansReducer } = useSelector((state) => state.PlansReducer)
-	const [dataInfo, setDataInfo] = useState(null)
 	const { getPlans } = useApi()
 
 	useEffect(() => {
 		if (!plansReducer) {
-			getPlans(setDataInfo)
-			if (dataInfo) {
-				dispatch(getAllPlans(dataInfo.planes))
-			}
+			getPlans()
 		}
-	}, [plansReducer, getPlans, dataInfo, dispatch])
+	}, [plansReducer, getPlans])
 
 	return (
 		<Container>
