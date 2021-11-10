@@ -19,9 +19,8 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		data
-			? dispatch(updatecityList(data.cities))
-			: dispatch(updatecityList(null))
+
+		dispatch(updatecityList(data?.cities))
 	}
 
 	const getHotelList = async (locid, setNameCity) => {
@@ -58,7 +57,7 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		dispatch(getAllPlans(data.planes))
+		dispatch(getAllPlans(data?.planes))
 	}
 	const getDetailsPlans = async (urlCode) => {
 		const data = await api2({

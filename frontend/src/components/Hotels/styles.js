@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const HotelsContainer = styled.div`
-	min-height: 50vh;
+	min-height: 30vh;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1em;
