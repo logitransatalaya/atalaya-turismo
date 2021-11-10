@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-import offersflash
-
+from .models import Offersflash
 # Register your models here.
 
-admin.site.register([offersflash])
+admin.site.register([Offersflash])
