@@ -1,14 +1,14 @@
+import { useApi } from 'hooks/useApi'
 import { Link } from 'react-router-dom'
 import { CityContainer } from './styles'
+import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
+import { Loader } from 'components/GlobalComponents/Loader'
 import { Button } from 'components/GlobalComponents/Button'
 import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
-import { useApi } from 'hooks/useApi'
-import { Loader } from 'components/GlobalComponents/Loader'
 
 export const HotelsList = () => {
 	const { locid } = useParams()

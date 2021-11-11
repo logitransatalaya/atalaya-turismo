@@ -1,7 +1,7 @@
 import React from 'react'
 import { CardStyle } from './styles'
 
-export const OffersCard = ({ image, title, cop }) => {
+export const HomeOffersCard = ({ image, title, cop }) => {
 	return (
 		<CardStyle>
 			<div className='offersCard-imgContainer'>

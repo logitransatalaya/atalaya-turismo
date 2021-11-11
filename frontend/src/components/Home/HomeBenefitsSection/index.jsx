@@ -1,6 +1,7 @@
 import React from 'react'
-import { BenefitsCard } from './BenefitsCard'
 import { BenefitsSectionStyled } from './styles.js'
+import { HomeBenefitsCard } from './HomeBenefitsCard'
+import { Title } from 'components/GlobalComponents/Title'
 import { ReactComponent as IconMapa } from 'images/icono-mapa.svg'
 import { ReactComponent as IconBarco } from 'images/icono-barco.svg'
 import { ReactComponent as IconAvion } from 'images/icono-avion.svg'
@@ -8,13 +9,16 @@ import { ReactComponent as IconMundo } from 'images/icono-mundo.svg'
 import { ReactComponent as IconMaleta } from 'images/icono-maleta.svg'
 import { ReactComponent as IconPalmera } from 'images/icono-palmera.svg'
 
-export const Benefits = () => {
+export const HomeBenefitsSection = () => {
 	return (
 		<BenefitsSectionStyled>
-			<div className='line-separator'></div>
-			<h3>¿POR QUÉ ATALAYA VIAJES Y TURISMO?</h3>
+			<Title
+				text={'¿POR QUÉ ATALAYA VIAJES Y TURISMO?'}
+				about
+				fontWeight
+			/>
 			<div className='benefitsCards-container'>
-				<BenefitsCard
+				<HomeBenefitsCard
 					Icon={IconMundo}
 					title='Hoteles Exclusivos'
 					text='Contamos con el portafolio
@@ -23,7 +27,7 @@ export const Benefits = () => {
 					internacionales y urbanos
 					más cotizados.'
 				/>
-				<BenefitsCard
+				<HomeBenefitsCard
 					bg
 					Icon={IconBarco}
 					title='Comodidad'
@@ -34,7 +38,7 @@ export const Benefits = () => {
 					visitar siempre tendremos una
 					opción exclusiva para ti.'
 				/>
-				<BenefitsCard
+				<HomeBenefitsCard
 					Icon={IconMapa}
 					title='Acompañamiento'
 					text='Con nosotros encontrarás un
@@ -42,7 +46,7 @@ export const Benefits = () => {
 					para que disfrutes cada destino
 					de una forma única e inolvidable.'
 				/>
-				<BenefitsCard
+				<HomeBenefitsCard
 					bg
 					Icon={IconAvion}
 					title='Beneficios Especiales'
@@ -52,7 +56,7 @@ export const Benefits = () => {
 					vez que compres obtengas
 					muchos beneficios.'
 				/>
-				<BenefitsCard
+				<HomeBenefitsCard
 					Icon={IconPalmera}
 					title='Facilidad de Pago'
 					text='Contamos con diferentes
@@ -60,7 +64,7 @@ export const Benefits = () => {
 					seguridad y comodidad a la hora
 					de realizar tus transacciones.'
 				/>
-				<BenefitsCard
+				<HomeBenefitsCard
 					bg
 					Icon={IconMaleta}
 					title='Respaldo de calidad '

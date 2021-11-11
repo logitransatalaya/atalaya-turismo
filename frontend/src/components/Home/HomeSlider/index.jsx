@@ -5,15 +5,18 @@ import slideMobile from 'images/imagenbannerhomemovil.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import slideDefault from '../../../images/bannerdestinosdestacados.png'
 
-const SliderComponent = () => {
+const HomeSlider = () => {
+	// Estado para capturar el tamaño de la pantalla
 	const [handleWidth, setHandleWidth] = useState(window.innerWidth)
 
+	// funcion para capturar el tamaño de pantalla
 	useEffect(() => {
 		window.onresize = () => {
 			setHandleWidth(window.innerWidth)
 		}
 	}, [handleWidth])
 
+	// funcion para agregar las imagenes dependiendo del tamaño de pantalla
 	const handleImage = () => {
 		return handleWidth < 900 ? slideMobile : slideDefault
 	}
@@ -47,4 +50,4 @@ const SliderComponent = () => {
 	)
 }
 
-export default SliderComponent
+export default HomeSlider

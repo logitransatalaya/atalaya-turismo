@@ -1,7 +1,7 @@
 import React from 'react'
 import { BenefitsCardStyled } from './styles.js'
 
-export const BenefitsCard = ({ bg, Icon, title, text }) => {
+export const HomeBenefitsCard = ({ bg, Icon, title, text }) => {
 	return (
 		<BenefitsCardStyled bg={bg}>
 			<div className='benefitsCard-icon'>

@@ -14,7 +14,7 @@ export const BenefitsCardStyled = styled.div`
 		display: flex;
 		flex-direction: column;
 		justify-content: start;
-		width: 12%;
+		width: 9%;
 	}
 
 	.benefitsCard-icon svg {
@@ -41,6 +41,7 @@ export const BenefitsCardStyled = styled.div`
 		margin: 0;
 		font-size: 1.1rem;
 		width: 98%;
+		font-family: 'Times New Roman', Times, serif;
 	}
 
 	@media (min-width: 950px) {
