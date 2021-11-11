@@ -6,6 +6,7 @@ import { splideOptionsOffers } from 'lib/splide'
 import { HomeOffersCard } from './HomeOffersCard'
 import Splide from '@splidejs/react-splide/dist/js/components/Splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
+import { Title } from 'components/GlobalComponents/Title'
 
 // const offersflash = [
 // 	{
@@ -40,7 +41,7 @@ export const HomeOffersFlash = () => {
 	const { offersflash } = useSelector((state) => state.OffersFlashReducer)
 
 	useEffect(() => {
-		if (!offersflash) {
+		if (offersflash === null) {
 			getOffersFlash()
 		}
 	}, [offersflash, getOffersFlash])
