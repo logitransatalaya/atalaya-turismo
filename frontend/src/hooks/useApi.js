@@ -3,7 +3,7 @@ import {
 	updateCurrentHotel,
 	updateHotelsList
 } from 'state/actions/hotelsActions'
-import { api2 } from 'helpers/api2'
+import { api } from 'helpers/api'
 import { useDispatch } from 'react-redux'
 import { getAllPlans, getCurrentPlan } from 'state/actions/plansAction'
 import { getAllOffers } from 'state/actions/offersActions'
@@ -14,7 +14,7 @@ export const useApi = () => {
 	const dispatch = useDispatch()
 
 	const getCities = async () => {
-		const data = await api2({
+		const data = await api({
 			url1: 'ciudades',
 			url2: null,
 			url3: null
@@ -24,7 +24,7 @@ export const useApi = () => {
 	}
 
 	const getHotelList = async (locid, setNameCity) => {
-		const data = await api2({
+		const data = await api({
 			url1: 'hotels',
 			url2: locid,
 			url3: null
@@ -34,7 +34,7 @@ export const useApi = () => {
 	}
 
 	const getHotelFeatures = async (locid, hotelId, setCity) => {
-		const data = await api2({
+		const data = await api({
 			url1: 'hotels',
 			url2: locid,
 			url3: hotelId
@@ -44,7 +44,7 @@ export const useApi = () => {
 	}
 
 	const getOffers = async () => {
-		const data = await api2({
+		const data = await api({
 			url1: 'offers',
 			url2: null,
 			url3: null
@@ -52,7 +52,7 @@ export const useApi = () => {
 		dispatch(getAllOffers(data?.offers))
 	}
 	const getPlans = async () => {
-		const data = await api2({
+		const data = await api({
 			url1: 'plans',
 			url2: null,
 			url3: null
@@ -60,7 +60,7 @@ export const useApi = () => {
 		dispatch(getAllPlans(data?.planes))
 	}
 	const getDetailsPlans = async (urlCode) => {
-		const data = await api2({
+		const data = await api({
 			url1: 'plans',
 			url2: urlCode,
 			url3: null
@@ -69,7 +69,7 @@ export const useApi = () => {
 	}
 
 	const getToursApi = async () => {
-		const data = await api2({
+		const data = await api({
 			url1: 'tours',
 			url2: null,
 			url3: null
@@ -77,22 +77,23 @@ export const useApi = () => {
 		dispatch(getTours(data?.Toures))
 		dispatch(updateCurrentTour(data?.Toures[0]))
 	}
+
 	const getCurrentTour = async (urlCode) => {
-		const data = await api2({
+		const data = await api({
 			url1: 'tours',
 			url2: urlCode,
 			url3: null
 		})
-		dispatch(updateCurrentTour(data?.Toures[0]))
+		dispatch(updateCurrentTour(undefined))
 	}
+
 	const getOffersFlash = async () => {
-		const data = await api2({
+		const data = await api({
 			url1: 'offersflash',
 			url2: null,
 			url3: null
 		})
-		console.log(data)
-		dispatch(getAllOffersFlash(data.offers))
+		dispatch(getAllOffersFlash(data?.offers))
 	}
 
 	return {
