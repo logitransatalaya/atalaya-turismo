@@ -73,9 +73,6 @@ export const HomeBenefitsSection = () => {
 					para cumplir tus expectativas'
 				/>
 			</div>
-			<div className='benefitsSection-imageBackground'>
-				<img src='/home/benefitsSection-background.png' alt='' />
-			</div>
 		</BenefitsSectionStyled>
 	)
 }

@@ -10,34 +10,22 @@ export const BenefitsSectionStyled = styled.div`
 	}
 
 	.benefitsCards-container {
-		padding: 0 1rem;
 		display: grid;
+		gap: 1rem;
 		grid-template-columns: 100%;
 		grid-template-rows: repeat(6, 1fr);
-		gap: 1rem;
-	}
 
-	.benefitsSection-imageBackground {
-		width: 100%;
-		height: 420px;
-		img {
-			height: 100%;
-			width: 100%;
-		}
+		padding: 0 1rem;
 	}
 
 	@media (min-width: 950px) {
 		.benefitsCards-container {
-			margin-top: 5rem;
 			display: grid;
+			gap: 2rem;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: 61% 60%;
-			gap: 2rem;
-		}
 
-		.benefitsSection-imageBackground {
-			margin-top: -15rem;
-			height: 630px;
+			margin-top: 5rem;
 		}
 
 		.line-separator {

@@ -25,9 +25,30 @@ export const HomeStyled = styled.div`
 		justify-content: center;
 	}
 
+	.benefitsSection-imageBackground {
+		width: 100%;
+		height: 200px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	@media (min-width: 350px) {
+		.benefitsSection-imageBackground {
+			width: 100%;
+			height: 320px;
+		}
+	}
+
 	@media (min-width: 950px) {
 		.plansCard-container {
 			margin: 2rem 0;
+		}
+
+		.benefitsSection-imageBackground {
+			margin-top: -20rem;
+			height: 800px;
 		}
 	}
 `
