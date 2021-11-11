@@ -1,6 +1,6 @@
 import React from 'react'
-import { PlansCard } from './PlansCard'
 import { splideOptions } from 'lib/splide.js'
+import { HomePlansCard } from './HomePlansCard'
 import Splide from '@splidejs/react-splide/dist/js/components/Splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
 
@@ -10,14 +10,14 @@ export const HomePlans = () => {
 			<Splide options={splideOptions}>
 				<SplideSlide>
 					<div className='plansCard-slide'>
-						<PlansCard text='REGIONALES' color='orange' />
-						<PlansCard text='NACIONALES' color='yellow' />
+						<HomePlansCard text='REGIONALES' color='orange' />
+						<HomePlansCard text='NACIONALES' color='yellow' />
 					</div>
 				</SplideSlide>
 				<SplideSlide>
 					<div className='plansCard-slide'>
-						<PlansCard text='INTERNACIONALES' color='orange' />
-						<PlansCard text='CORPORATIVOS' color='yellow' />
+						<HomePlansCard text='INTERNACIONALES' color='orange' />
+						<HomePlansCard text='CORPORATIVOS' color='yellow' />
 					</div>
 				</SplideSlide>
 			</Splide>

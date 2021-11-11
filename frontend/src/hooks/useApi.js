@@ -91,7 +91,8 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		dispatch(getAllOffersFlash(data))
+		console.log(data)
+		dispatch(getAllOffersFlash(data.offers))
 	}
 
 	return {

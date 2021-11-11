@@ -28,7 +28,7 @@ export const StyleCard = styled.div`
 			grid-template-columns: 2fr 10fr;
 			margin: auto;
 			.icon {
-				height: 3rem;
+				height: 2rem;
 				padding: 1rem 0em 0em 0em;
 			}
 		}
