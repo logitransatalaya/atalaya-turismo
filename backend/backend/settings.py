@@ -35,7 +35,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE', 'False') == 'True'
 
-ALLOWED_HOSTS = ['django.atalayaviajesyturismo.com']
+ALLOWED_HOSTS = ['django.atalayaviajesyturismo.com', 'localhost']
 
 DATABASE_URL = os.getenv('DATABASE_URL', None)
 
