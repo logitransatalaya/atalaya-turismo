@@ -22,7 +22,7 @@ export const Tours = () => {
 	return (
 		<Container>
 			<ToursStyled>
-				<Title text={'TOURES ANTIOQUEÑOS'} />
+				<Title text={'TOURES ANTIOQUEÑOS'} fontWeight />
 				{tours ? (
 					<div className='ToursCards-container'>
 						{tours?.map((tour, i) => (

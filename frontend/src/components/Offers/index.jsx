@@ -20,7 +20,7 @@ export const Offers = () => {
 	return (
 		<ContainerOffers>
 			<Container>
-				<Title text={'NUESTRAS OFERTAS'} />
+				<Title text={'NUESTRAS OFERTAS'} fontWeight />
 				{offersReducer ? (
 					offersReducer.map((offer) => {
 						return <CardOffer data={offer} key={offer.id} />

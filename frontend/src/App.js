@@ -13,7 +13,7 @@ import { ToursDetails } from 'components/Tours/ToursDetails'
 import { Footer } from './components/GlobalComponents/Footer'
 import { HotelFeatures } from 'components/Hotels/HotelFeatures'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import { NavBarBrayan } from 'components/GlobalComponents/NavBarBrayan'
+import { NavBar } from 'components/GlobalComponents/NavBar'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
 			<div>
 				<FloatingButtons />
 				<ScrollArrow />
-				<NavBarBrayan />
+				<NavBar />
 				<Switch>
 					<Route exact path='/'>
 						<Home />

@@ -24,7 +24,7 @@ export const ContainerHotelInfo = styled.div`
 
 		.sliderContain {
 			width: 90%;
-			height: 800px;
+			height: 500px;
 			border-radius: 40px;
 			background: #053b77;
 			display: flex;

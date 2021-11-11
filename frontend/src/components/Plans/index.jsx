@@ -19,7 +19,7 @@ export const Plans = () => {
 
 	return (
 		<Container>
-			<Title text={'PLANES NACIONALES'} />
+			<Title text={'PLANES NACIONALES'} fontWeight />
 			{plansReducer ? (
 				<PlansContainer>
 					<div className='plansContent'>

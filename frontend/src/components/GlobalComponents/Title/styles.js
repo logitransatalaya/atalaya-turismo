@@ -8,6 +8,7 @@ export const StyleTitle = styled.div`
 	align-items: center;
 	position: relative;
 	animation: ${animationUpload} 0.5s;
+
 	.title {
 		font-size: 1.85rem;
 		color: #053b77;

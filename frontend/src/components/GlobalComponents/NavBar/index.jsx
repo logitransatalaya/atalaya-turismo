@@ -1,90 +1,55 @@
-import { Link } from 'react-router-dom'
-import { NavbarStyled } from './styles.js'
-import React, { useEffect, useRef, useState } from 'react'
 import { Container } from 'components/Container'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { ButtonHandleNav } from '../ButtonHandleNav'
+import { StyleNavbarBrayan, StyleButton } from './styles'
 
 export const NavBar = () => {
-	const state = {
-		true: '/home/boton-x.png',
-		false: '/home/burgerMenu-navbar.png'
-	}
-	const navbarRef = useRef(null)
-	const [urlImg, setUrlImg] = useState(state.false)
-	const [scree, setScreen] = useState(window.innerWidth)
+	const [handleNav, setHandleNav] = useState(false)
 
-	const openNavbar = () => {
-		navbarRef.current.classList.toggle('navbarVisible')
-		if (urlImg === state.true) setUrlImg(state.false)
-		else setUrlImg(state.true)
-	}
+	const styleNav = handleNav ? 'navbar navbar_active' : 'navbar'
 
-	useEffect(() => {
-		window.onresize = () => setScreen(window.innerWidth)
-	}, [scree])
+	const handleOpenNav = () => {
+		setHandleNav(!handleNav)
+	}
 
 	return (
-		<NavbarStyled>
+		<StyleNavbarBrayan>
 			<Container>
-				<nav className='navBar-container'>
-					<span className='logoContainer'>
-						<img src='/logo.png' alt='' />
-					</span>
-					<div className='iconsContainer'>
-						<a className='loginIcon' href='/'>
-							<img src='/home/user-navbar.png' alt='' />
-						</a>
-						<span className='burgerIcon' onClick={openNavbar}>
-							<img src={urlImg} alt='' />
-						</span>
-					</div>
-					<div ref={navbarRef} className='navbarDesktop'>
-						<div className='navbarButtonsContainer'>
-							<button>REGISTRATE</button>
-							<button>INICIA SESIÓN</button>
-						</div>
-
-						<ul className='navbarList'>
-							{scree < 950 ? (
-								<span className='logoContainerMenu'>
-									<img src='/logo.png' alt='' />
-								</span>
-							) : (
-								''
-							)}
-							<li>
-								<Link onClick={openNavbar} to='/'>
-									INICIO
-								</Link>
+				<nav className={styleNav}>
+					<Link className='box_imgLogo' to='/'>
+						<img src='/logo.png' alt='logoAtalaya' />
+					</Link>
+					<div className='content_options'>
+						<ul className='navigation'>
+							<li onClick={handleOpenNav}>
+								<Link to='/'>INICIO</Link>
 							</li>
-							<li>
-								<Link onClick={openNavbar} to='/hoteles'>
-									HOTELES
-								</Link>{' '}
+							<li onClick={handleOpenNav}>
+								<Link to='/hoteles'>HOTELES</Link>{' '}
 							</li>
-							<li>
-								<Link onClick={openNavbar} to='/planes'>
-									PLANES
-								</Link>
+							<li onClick={handleOpenNav}>
+								<Link to='/planes'>PLANES</Link>
 							</li>
-							<li>
-								<Link onClick={openNavbar} to='/tours'>
-									TOURS
-								</Link>
+							<li onClick={handleOpenNav}>
+								<Link to='/tours'>TOURS</Link>
 							</li>
-							<li>
-								<Link onClick={openNavbar} to='/ofertas'>
-									OFERTAS
-								</Link>
+							<li onClick={handleOpenNav}>
+								<Link to='/ofertas'>OFERTAS</Link>
 							</li>
-							<li>
-								<Link onClick={openNavbar} to='/salud'>
-									SALUD
-								</Link>
+							<li onClick={handleOpenNav}>
+								<Link to='/salud'>SALUD</Link>
 							</li>
 						</ul>
 					</div>
 				</nav>
 			</Container>
-		</NavbarStyled>
+			<StyleButton onClick={handleOpenNav}>
+				<ButtonHandleNav
+					handleNav={handleNav}
+					handleOpenNav={handleOpenNav}
+				/>
+			</StyleButton>
+		</StyleNavbarBrayan>
 	)
 }

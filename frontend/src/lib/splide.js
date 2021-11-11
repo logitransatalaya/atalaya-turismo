@@ -91,14 +91,16 @@ export const splideOptionsBedrooms = {
 
 export const splideOptionsMessages = {
 	type: 'slide',
-	perPage: 2,
+	perPage: 1,
 	perMove: 1,
 	gap: '2rem',
 	height: '700px',
-	direction: 'ttb',
 	arrows: false,
+	width: '30em',
+	height: 400,
 	breakpoints: {
 		700: {
+			width: '15em',
 			height: '450px',
 			perPage: 1,
 			arrows: true
