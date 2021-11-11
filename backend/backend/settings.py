@@ -28,14 +28,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', get_random_secret_key)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
 DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE', 'False') == 'True'
 
-ALLOWED_HOSTS = ['68.183.55.170', 'djangoatalayaviajesyturismo.com', 'localhost']
+ALLOWED_HOSTS = ['django.atalayaviajesyturismo.com']
+
 DATABASE_URL = os.getenv('DATABASE_URL', None)
 
 
@@ -172,6 +173,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+
+if DEBUG:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
 
 
 # Default primary key field type
