@@ -1,5 +1,5 @@
 import Bedrooms from './Bedrooms'
-import HotelInfo from './HotelInfo'
+import HotelComments from './HotelComments'
 import { useLocation } from 'react-router'
 import { useParams } from 'react-router-dom'
 import { HeaderFeature } from './HeaderFeatur'
@@ -10,6 +10,7 @@ import { getMessage } from 'state/actions/toolTipActions'
 import { Title } from 'components/GlobalComponents/Title'
 import { MorePopularService } from 'components/Hotels/HotelFeatures/MorePopularService'
 import { useApi } from 'hooks/useApi'
+import { Loader } from 'components/GlobalComponents/Loader'
 
 export const HotelFeatures = () => {
 	const dispatch = useDispatch()
@@ -43,7 +44,7 @@ export const HotelFeatures = () => {
 
 	return (
 		<>
-			{currentHotel && (
+			{currentHotel ? (
 				<Container>
 					<HeaderFeature
 						stars={currentHotel.stars}
@@ -56,11 +57,13 @@ export const HotelFeatures = () => {
 					<Title text={'HABITACIONES DEL HOTEL'} about='true' />
 					<Bedrooms img={currentHotel.photos_outside} />
 					<Title text={'SOBRE EL HOTEL TRYP MEDELLíN'} about='true' />
-					<HotelInfo
+					<HotelComments
 						comentens={currentHotel.comments}
 						desc={currentHotel.description}
 					/>
 				</Container>
+			) : (
+				<Loader />
 			)}
 		</>
 	)
