@@ -35,7 +35,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE', 'False') == 'True'
 
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOST', '127.0.0.1,localhost').split(',')
+ALLOWED_HOSTS = ['68.183.55.170', 'djangoatalayaviajesyturismo.com', 'localhost']
 DATABASE_URL = os.getenv('DATABASE_URL', None)
 
 
@@ -93,6 +93,7 @@ MIDDLEWARE = [
 
     'django.middleware.common.CommonMiddleware'
 ]
+
 
 CORS_ORIGIN_ALLOW_ALL = True
 
