@@ -11,14 +11,17 @@ import { HomeBenefitsSection } from './HomeBenefitsSection/index.jsx'
 // componente global de home
 export const Home = () => {
 	return (
-		<Container>
-			<HomeStyled>
+		<HomeStyled>
+			<Container>
 				{/* <HomePlans /> */}
 				<HomeSlider />
 				<Title text={'OFERTAS FLASH'} />
 				<HomeOffersFlash />
 				<HomeBenefitsSection />
-			</HomeStyled>
-		</Container>
+			</Container>
+			<div className='benefitsSection-imageBackground'>
+				<img src='/home/benefitsSection-background.png' alt='' />
+			</div>
+		</HomeStyled>
 	)
 }
