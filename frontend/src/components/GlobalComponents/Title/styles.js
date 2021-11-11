@@ -8,12 +8,11 @@ export const StyleTitle = styled.div`
 	align-items: center;
 	position: relative;
 	animation: ${animationUpload} 0.5s;
-
 	.title {
 		font-size: 1.85rem;
 		color: #053b77;
 		text-transform: uppercase;
-		font-weight: 500;
+		font-weight: ${({ fontWeight }) => (fontWeight ? `800` : `500`)};
 	}
 
 	.line {
