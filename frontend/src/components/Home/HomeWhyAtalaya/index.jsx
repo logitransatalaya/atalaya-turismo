@@ -9,7 +9,7 @@ import { ReactComponent as IconMundo } from 'images/icono-mundo.svg'
 import { ReactComponent as IconMaleta } from 'images/icono-maleta.svg'
 import { ReactComponent as IconPalmera } from 'images/icono-palmera.svg'
 
-export const HomeBenefitsSection = () => {
+export const HomeWhyAtalaya = () => {
 	return (
 		<BenefitsSectionStyled>
 			<Title
