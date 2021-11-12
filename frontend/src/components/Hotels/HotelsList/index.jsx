@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
 import { Button } from 'components/GlobalComponents/Button'
-import { Qualification } from 'components/Hotels/HotelFeatures/Qualification'
+import { HotelQualification } from 'components/Hotels/HotelFeatures/HotelQualification'
 
 export const HotelsList = () => {
 	const { locid } = useParams()
@@ -17,7 +17,7 @@ export const HotelsList = () => {
 	const { getHotelList } = useApi()
 
 	useEffect(() => {
-		if (!hotelsList) {
+		if (hotelsList === null) {
 			getHotelList(locid, setNameCity)
 		}
 	}, [getHotelList, hotelsList, locid])
@@ -39,7 +39,7 @@ export const HotelsList = () => {
 								<small>Dirección: {hotel.addres}</small>
 							</p>
 							<div className='cityInfoCalification'>
-								<Qualification stars={hotel.stars} />
+								<HotelQualification stars={hotel.stars} />
 							</div>
 						</div>
 						<div className='cityPrice'>

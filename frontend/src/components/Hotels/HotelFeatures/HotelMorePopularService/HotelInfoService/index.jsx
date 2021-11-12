@@ -66,7 +66,7 @@ const icons = {
 	IconLavanderia
 }
 
-export const InfoService = ({ iconName, text }) => {
+export const HotelInfoService = ({ iconName, text }) => {
 	const Component = icons[iconName] || null
 
 	return (

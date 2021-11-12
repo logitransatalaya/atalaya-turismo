@@ -5,7 +5,7 @@ import { Splide } from '@splidejs/react-splide'
 import { splideOptionsBedrooms } from 'lib/splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
 
-const Bedrooms = ({ img }) => {
+const HotelBedrooms = ({ img }) => {
 	return img ? (
 		<SliderRooms>
 			<div className='containerRooms'>
@@ -26,4 +26,4 @@ const Bedrooms = ({ img }) => {
 	) : null
 }
 
-export default Bedrooms
+export default HotelBedrooms

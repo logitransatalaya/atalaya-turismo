@@ -1,8 +1,8 @@
 import { ContainerCards } from './style'
-import { InfoService } from './InfoService'
+import { HotelInfoService } from './HotelInfoService'
 import React, { useEffect, useState } from 'react'
 
-export const MorePopularService = ({ currentHotel }) => {
+export const HotelMorePopularService = ({ currentHotel }) => {
 	const { services_hotel } = currentHotel
 	const [countServices, setCountServices] = useState(false)
 	const [handleWidth, setHandleWidth] = useState(window.innerWidth)
@@ -37,7 +37,7 @@ export const MorePopularService = ({ currentHotel }) => {
 				{services_hotel &&
 					services_hotel.map((service, i) => {
 						return (
-							<InfoService
+							<HotelInfoService
 								key={i}
 								iconName={service.id_service.name_service}
 								text={service.id_service.text_service}
@@ -48,7 +48,7 @@ export const MorePopularService = ({ currentHotel }) => {
 			<div className='layoutM'>
 				{auxServices &&
 					auxServices.map((service, i) => (
-						<InfoService
+						<HotelInfoService
 							key={i}
 							iconName={service.id_service.name_service}
 							text={service.id_service.text_service}

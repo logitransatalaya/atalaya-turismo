@@ -1,13 +1,13 @@
-import Bedrooms from '../Bedrooms'
+import Bedrooms from '../HotelBedrooms'
 import { useDispatch } from 'react-redux'
-import { Qualification } from '../Qualification'
+import { HotelQualification } from '../HotelQualification'
 import React, { useEffect, useState } from 'react'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ModalImg } from 'components/GlobalComponents/ModalImg'
 import { ReactComponent as IconLocation } from 'images/ubicacion.svg'
 import { handleModalImages } from '../../../../state/actions/toolTipActions'
 
-export const HeaderFeature = ({ stars, cityName, city, photos }) => {
+export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 	const dispatch = useDispatch()
 	const [screen, setScreen] = useState(window.innerWidth)
 
@@ -32,7 +32,7 @@ export const HeaderFeature = ({ stars, cityName, city, photos }) => {
 						<p>{cityName}</p>
 					</div>
 					<div>
-						<Qualification stars={stars} />
+						<HotelQualification stars={stars} />
 					</div>
 				</div>
 			</HeaderCardStyled>
