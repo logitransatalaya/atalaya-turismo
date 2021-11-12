@@ -7,7 +7,7 @@ import { Hotels } from './components/Hotels'
 import { Offers } from './components/Offers'
 import ScrollToTop from 'components/ScrollToTop'
 import { HotelsList } from 'components/Hotels/HotelsList'
-import { DetailsPlan } from 'components/Plans/DetailsPlan'
+import { PlansDetails } from 'components/Plans/PlansDetails'
 import ScrollArrow from 'components/ScrollToTop/ScrollArrow'
 import { ToursDetails } from 'components/Tours/ToursDetails'
 import { Footer } from './components/GlobalComponents/Footer'
@@ -46,7 +46,7 @@ export default function App() {
 						<Footer />
 					</Route>
 					<Route exact path='/planes/:urlCode'>
-						<DetailsPlan />
+						<PlansDetails />
 						<Footer />
 					</Route>
 					<Route exact path='/tours'>

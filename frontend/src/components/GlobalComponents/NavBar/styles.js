@@ -47,7 +47,7 @@ export const StyleNavbarBrayan = styled.div`
 			}
 		}
 
-		@media (max-width: 600px) {
+		@media (max-width: 840px) {
 			background-color: #0f216f;
 			height: 100vh;
 			flex-direction: column;
@@ -116,7 +116,7 @@ export const StyleButton = styled.div`
 	display: none;
 	z-index: 1000;
 
-	@media (max-width: 600px) {
+	@media (max-width: 840px) {
 		display: block;
 	}
 `

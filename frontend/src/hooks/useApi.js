@@ -5,10 +5,10 @@ import {
 } from 'state/actions/hotelsActions'
 import { api } from 'helpers/api'
 import { useDispatch } from 'react-redux'
-import { getAllPlans, getCurrentPlan } from 'state/actions/plansAction'
 import { getAllOffers } from 'state/actions/offersActions'
-import { getTours, updateCurrentTour } from 'state/actions/toursActions'
 import { getAllOffersFlash } from 'state/actions/offersflash'
+import { getAllPlans, getCurrentPlan } from 'state/actions/plansAction'
+import { getTours, updateCurrentTour } from 'state/actions/toursActions'
 
 export const useApi = () => {
 	const dispatch = useDispatch()
@@ -84,7 +84,7 @@ export const useApi = () => {
 			url2: urlCode,
 			url3: null
 		})
-		dispatch(updateCurrentTour(undefined))
+		dispatch(updateCurrentTour(data?.Toures[0]))
 	}
 
 	const getOffersFlash = async () => {
