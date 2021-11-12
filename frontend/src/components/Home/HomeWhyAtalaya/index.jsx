@@ -14,8 +14,8 @@ export const HomeWhyAtalaya = () => {
 		<BenefitsSectionStyled>
 			<Title
 				text={'¿POR QUÉ ATALAYA VIAJES Y TURISMO?'}
-				about
-				fontWeight
+				about='true'
+				fontWeight='true'
 			/>
 			<div className='benefitsCards-container'>
 				<HomeBenefitsCard

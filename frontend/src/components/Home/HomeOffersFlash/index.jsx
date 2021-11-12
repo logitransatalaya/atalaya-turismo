@@ -6,7 +6,6 @@ import { splideOptionsOffers } from 'lib/splide'
 import { HomeOffersCard } from './HomeOffersCard'
 import Splide from '@splidejs/react-splide/dist/js/components/Splide'
 import SplideSlide from '@splidejs/react-splide/dist/js/components/SplideSlide'
-import { Title } from 'components/GlobalComponents/Title'
 
 // const offersflash = [
 // 	{

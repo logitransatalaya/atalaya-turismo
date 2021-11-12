@@ -6,6 +6,7 @@ import { Container } from 'components/Container'
 import { Link, useHistory } from 'react-router-dom'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
+import { CardImagesGradiants } from 'components/GlobalComponents/CardImagesGradiants'
 
 export const Tours = () => {
 	const history = useHistory()
@@ -22,22 +23,16 @@ export const Tours = () => {
 	return (
 		<Container>
 			<ToursStyled>
-				<Title text={'TOURES ANTIOQUEÑOS'} fontWeight />
+				<Title text={'TOURES ANTIOQUEÑOS'} fontWeight='true' />
 				{tours ? (
 					<div className='ToursCards-container'>
 						{tours?.map((tour, i) => (
 							<Link to={`tours/${tour.id}`} key={i}>
-								<div className='hotelCard'>
-									<div className='hotelCardBoxImg'>
-										<img
-											src={tour.url_img_card}
-											alt={tour.title}
-										/>
-										<div className='hotelCardTitle'>
-											<h3>{tour.title}</h3>
-										</div>
-									</div>
-								</div>
+								<CardImagesGradiants
+									url={tour.url_img_card}
+									alt={tour.title}
+									name={tour.title}
+								/>
 							</Link>
 						))}
 					</div>

@@ -14,11 +14,11 @@ export const ToursStyled = styled.div`
 
 	.hotelCard {
 		height: 300px;
-		background-color: #fff;
 		text-align: center;
 		border-radius: 1em;
 		overflow: hidden;
 		cursor: pointer;
+		background-color: #fff;
 
 		.hotelCardBoxImg {
 			width: 100%;

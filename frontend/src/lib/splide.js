@@ -94,7 +94,6 @@ export const splideOptionsMessages = {
 	perPage: 1,
 	perMove: 1,
 	gap: '2rem',
-	height: '700px',
 	arrows: false,
 	width: '30em',
 	height: 400,

@@ -15,7 +15,7 @@ export const Home = () => {
 			<Container>
 				{/* <HomePlans /> */}
 				<HomeSlider />
-				<Title text={'OFERTAS FLASH'} fontWeight />
+				<Title text={'OFERTAS FLASH'} fontWeight='true' />
 				<HomeOffersFlash />
 				<HomeWhyAtalaya />
 			</Container>

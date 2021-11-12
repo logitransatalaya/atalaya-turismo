@@ -6,6 +6,7 @@ import { HotelsContainer } from './styles'
 import { Container } from 'components/Container'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
+import { CardImagesGradiants } from 'components/GlobalComponents/CardImagesGradiants'
 
 export const Hotels = () => {
 	const { cityList } = useSelector((state) => state.hotelsReducer)
@@ -16,21 +17,19 @@ export const Hotels = () => {
 			getCities()
 		}
 	}, [cityList, getCities])
+
 	return (
 		<Container>
-			<Title text={`HOTELES`} fontWeight />
+			<Title text={`HOTELES`} fontWeight='true' />
 			<HotelsContainer>
 				{cityList ? (
 					cityList.map((city, i) => (
 						<Link key={i} to={`hoteles/${city.id}`}>
-							<div className='hotelCard'>
-								<div className='hotelCardBoxImg'>
-									<img src={city.url_img} alt={city.name} />
-									<div className='hotelCardTitle'>
-										<h3>{city.name}</h3>
-									</div>
-								</div>
-							</div>
+							<CardImagesGradiants
+								url={city.url_img}
+								alt={city.name}
+								name={city.name}
+							/>
 						</Link>
 					))
 				) : (
