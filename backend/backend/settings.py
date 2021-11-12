@@ -124,10 +124,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'turismo',
-        'USER': 'django',
+        'NAME': 'defaultdb',
+        'USER': 'doadmin',
         'PASSWORD': os.environ.get('DJANGO_DB_PASSWORD', None),
-        'HOST': 'django-db-do-user-10170432-0.b.db.ondigitalocean.com',
+        'HOST': 'private-django-db-do-user-10170432-0.b.db.ondigitalocean.com',
         'PORT': 25060,
 
     }
