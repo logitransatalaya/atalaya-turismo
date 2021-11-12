@@ -7,6 +7,6 @@ router_destination = DefaultRouter()
 router_plan = DefaultRouter()
 
 urlpatterns = [
-    path('offerflashtest/', views.apiOverView, name='offersflash'),
-    path('offersflash/', views.AllOfferflashList, name='allofferflahslist'),
+    path('offerflashtest/', views.apiOverView, name='offersflashtest'),
+    path('offersflash/', views.AllOfferflashList, name='allofferflahslist')
 ]

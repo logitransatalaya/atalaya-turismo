@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 from django.core.management.utils import get_random_secret_key
 import os
-import sys
 from urllib.parse import urlparse
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,16 +27,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', None)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE', 'False') == 'True'
-
 ALLOWED_HOSTS = ['django.atalayaviajesyturismo.com', 'localhost']
-
-DATABASE_URL = os.getenv('DATABASE_URL', None)
 
 
 # CORS_ALLOWED_ORIGINS = [
@@ -132,7 +127,7 @@ DATABASES = {
         'NAME': 'turismo',
         'USER': 'django',
         'PASSWORD': os.environ.get('DJANGO_DB_PASSWORD', None),
-        'HOST': 'private-django-db-do-user-10170432-0.b.db.ondigitalocean.com',
+        'HOST': 'django-db-do-user-10170432-0.b.db.ondigitalocean.com',
         'PORT': 25060,
 
     }

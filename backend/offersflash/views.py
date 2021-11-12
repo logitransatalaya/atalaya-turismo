@@ -18,5 +18,5 @@ def AllOfferflashList(request):
     serializer = OffersFlashSerializer(offers_flash, many=True)
 
     return Response({
-        'offers': serializer.data
+        'offersflash': serializer.data
     })
