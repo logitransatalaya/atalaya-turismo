@@ -3,7 +3,7 @@ import { ContainerSplider } from './styles'
 import { splideOptionsOfferts } from 'lib/splide'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 
-const SliderOffer = ({ photos }) => {
+const OffersSlider = ({ photos }) => {
 	return (
 		<ContainerSplider>
 			<Splide options={splideOptionsOfferts} classname='splider'>
@@ -24,4 +24,4 @@ const SliderOffer = ({ photos }) => {
 	)
 }
 
-export default SliderOffer
+export default OffersSlider

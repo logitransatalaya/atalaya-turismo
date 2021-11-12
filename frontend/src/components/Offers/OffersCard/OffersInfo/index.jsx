@@ -1,9 +1,9 @@
 import { InfoO } from './styles'
-import Cardinfo from '../Cardinfo'
 import React, { useEffect, useState } from 'react'
 import { Button } from 'components/GlobalComponents/Button'
+import OffersCardinfo from '../OffersCardinfo'
 
-const InfoOffer = ({ data }) => {
+const OffersInfo = ({ data }) => {
 	const [accordion, setAccordion] = useState(false)
 	const [showInfo, setShowInfo] = useState(true)
 	const [width, setWidth] = useState(0)
@@ -69,10 +69,10 @@ const InfoOffer = ({ data }) => {
 						bgColor='#10216f'
 					/>
 				</div>
-				{width < 800 && <Cardinfo data={data} />}
+				{width < 800 && <OffersCardinfo data={data} />}
 			</div>
 		</InfoO>
 	)
 }
 
-export default InfoOffer
+export default OffersInfo

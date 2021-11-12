@@ -3,7 +3,7 @@ import { ContainerCard } from './styles'
 import plane from 'images/svg/iconoavionblanco.svg'
 import { Button } from 'components/GlobalComponents/Button'
 
-const Cardinfo = ({ data }) => {
+const OffersCardinfo = ({ data }) => {
 	const { from_date, to_date, price, Hotel } = data
 	const handleBooking = () => {
 		window.open(
@@ -25,7 +25,6 @@ const Cardinfo = ({ data }) => {
 				<p className='blue bold'>Precio: ${price}</p>
 				<p className='blue bold'>{Hotel}</p>
 			</div>
-			{/* <button className='reserve'>Reservar</button> */}
 			<Button
 				onClick={handleBooking}
 				text='Reservar'
@@ -36,4 +35,4 @@ const Cardinfo = ({ data }) => {
 	)
 }
 
-export default Cardinfo
+export default OffersCardinfo

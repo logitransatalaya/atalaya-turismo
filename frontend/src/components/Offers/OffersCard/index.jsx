@@ -1,10 +1,10 @@
 import { Card } from './styles'
-import Cardinfo from '../Cardinfo'
-import InfoOffer from '../InfoOffer'
-import SliderOffer from '../../SliderOffer'
+import OffersInfo from './OffersInfo'
+import OffersSlider from './OffersSlider'
 import React, { useEffect, useState } from 'react'
+import OffersCardinfo from './OffersCardinfo'
 
-const CardOffer = ({ data }) => {
+const OffersCard = ({ data }) => {
 	const [width, setWidth] = useState(0)
 	const { photos } = data
 	useEffect(() => {
@@ -18,13 +18,13 @@ const CardOffer = ({ data }) => {
 		<Card>
 			{data && (
 				<div className='containerSF'>
-					<SliderOffer photos={photos} />
-					<InfoOffer data={data} />
+					<OffersSlider photos={photos} />
+					<OffersInfo data={data} />
 				</div>
 			)}
-			{width > 800 && <Cardinfo data={data} />}
+			{width > 800 && <OffersCardinfo data={data} />}
 		</Card>
 	)
 }
 
-export default CardOffer
+export default OffersCard

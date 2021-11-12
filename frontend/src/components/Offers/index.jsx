@@ -1,7 +1,7 @@
 import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import CardOffer from './mobile/CardOffer'
+import OffersCard from './OffersCard'
 import { Container } from 'components/Container'
 import { Title } from 'components/GlobalComponents/Title'
 import { ContainerOffers } from './style'
@@ -12,7 +12,7 @@ export const Offers = () => {
 	const { getOffers } = useApi()
 
 	useEffect(() => {
-		if (!offersReducer) {
+		if (offersReducer === null) {
 			getOffers()
 		}
 	}, [offersReducer, getOffers])
@@ -23,7 +23,7 @@ export const Offers = () => {
 				<Title text={'NUESTRAS OFERTAS'} fontWeight />
 				{offersReducer ? (
 					offersReducer.map((offer) => {
-						return <CardOffer data={offer} key={offer.id} />
+						return <OffersCard data={offer} key={offer.id} />
 					})
 				) : (
 					<Loader />
