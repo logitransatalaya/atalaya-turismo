@@ -19,7 +19,6 @@ export async function api({ url1, url2, url3 }) {
 				`https://django.atalayaviajesyturismo.com/api/${url1}/`
 			)
 			const data = await response.json()
-			console.log(data)
 			return data
 		}
 	} catch (error) {

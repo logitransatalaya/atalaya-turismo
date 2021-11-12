@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { getMessage } from 'state/actions/toolTipActions'
 import { Footer } from 'components/GlobalComponents/Footer'
+import { ToursCharacteristics } from './ToursCharacteristics'
 
 export const ToursDetails = () => {
 	const dispatch = useDispatch()
@@ -17,14 +18,16 @@ export const ToursDetails = () => {
 	const { currentTour } = useSelector((state) => state.tourReducer)
 	const { getCurrentTour } = useApi()
 
+	// Funcion para peticion de la base de datos
 	useEffect(() => {
-		if (!currentTour) {
+		if (currentTour === null) {
 			getCurrentTour(urlCode)
 		} else if (currentTour.id !== parseInt(urlCode)) {
 			getCurrentTour(urlCode)
 		}
 	}, [urlCode, currentTour, getCurrentTour])
 
+	// Funcion para cambiar el mensaje de wpp
 	useEffect(() => {
 		if (currentTour) {
 			dispatch(
@@ -56,33 +59,14 @@ export const ToursDetails = () => {
 					<div className='characteristics-container'>
 						<h5>INCLUYE:</h5>
 						<div className='characteristics-content'>
-							<div>
-								{currentTour.include.map((text, i) => {
-									return (
-										<p key={i}>
-											<img
-												src={`/tours/column1-${
-													i + 1
-												}.svg`}
-												alt=''
-											/>
-											{text.text_include}
-										</p>
-									)
-								})}
-							</div>
-							<div>
-								{currentTour.text_include_two.map((text, i) => (
-									<p key={i}>
-										<img
-											src={`/tours/column2-${i + 1}.svg`}
-											alt=''
-										/>
-
-										{text.text_include_two}
-									</p>
-								))}
-							</div>
+							<ToursCharacteristics
+								data={currentTour.include}
+								num={'1'}
+							/>
+							<ToursCharacteristics
+								data={currentTour.text_include_two}
+								num={'2'}
+							/>
 						</div>
 						<p className='characteristics-specialItem'>
 							<img src='/tours/icono-mapa.svg' alt='' />

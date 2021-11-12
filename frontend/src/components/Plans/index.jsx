@@ -12,7 +12,7 @@ export const Plans = () => {
 	const { getPlans } = useApi()
 
 	useEffect(() => {
-		if (!plansReducer) {
+		if (plansReducer === null) {
 			getPlans()
 		}
 	}, [plansReducer, getPlans])

@@ -12,7 +12,7 @@ export const Hotels = () => {
 	const { getCities } = useApi()
 
 	useEffect(() => {
-		if (!cityList) {
+		if (cityList === null) {
 			getCities()
 		}
 	}, [cityList, getCities])

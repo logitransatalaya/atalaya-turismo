@@ -6,7 +6,7 @@ import { HomeOffersFlash } from './HomeOffersFlash'
 import { Title } from 'components/GlobalComponents/Title'
 import { Container } from 'components/Container/index.jsx'
 import '@splidejs/splide/dist/css/themes/splide-default.min.css'
-import { HomeBenefitsSection } from './HomeBenefitsSection/index.jsx'
+import { HomeWhyAtalaya } from './HomeWhyAtalaya/index.jsx'
 
 // componente global de home
 export const Home = () => {
@@ -17,7 +17,7 @@ export const Home = () => {
 				<HomeSlider />
 				<Title text={'OFERTAS FLASH'} fontWeight />
 				<HomeOffersFlash />
-				<HomeBenefitsSection />
+				<HomeWhyAtalaya />
 			</Container>
 			<div className='benefitsSection-imageBackground'>
 				<img src='/home/benefitsSection-background.png' alt='' />
