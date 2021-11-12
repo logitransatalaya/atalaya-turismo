@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Includes = ({ includes }) => {
+export const PlansIncludesInfo = ({ includes }) => {
 	return (
 		<div>
 			{includes.map((service, i) => (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const IncludesMovile = ({
+export const PlansIncludesMovileInfo = ({
 	keyContent,
 	infoIncludes,
 	handleContentInfo,

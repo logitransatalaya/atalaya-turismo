@@ -1,18 +1,19 @@
 import { useApi } from 'hooks/useApi'
-import { Includes } from './Includes'
 import { useParams } from 'react-router'
 import { useLocation } from 'react-router'
 import { Container } from 'components/Container'
-import { IncludesMovile } from '../IncludesMovile'
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
 import { getMessage } from 'state/actions/toolTipActions'
-import { Button } from 'components/GlobalComponents/Button'
-import Bedrooms from 'components/Hotels/HotelFeatures/Bedrooms'
+import Bedrooms from 'components/Hotels/HotelFeatures/HotelBedrooms'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
+import { PlansInclude } from './PlansInclude'
+import { PlansIncludesMovil } from './PlansIncludeMovil'
+import { PlansImages } from './PlansImages'
 
-export const DetailsPlan = () => {
+export const PlansDetails = () => {
+	// Estado inicial para abrir los servicios en pantalla movil
 	const stateOpenInfo = {
 		infoIncludes: false,
 		infoNoIncludes: false,
@@ -29,7 +30,7 @@ export const DetailsPlan = () => {
 	const [include, setInclude] = useState(true)
 	const { getDetailsPlans } = useApi()
 
-	// funcion para abrir los menus en moiles
+	// funcion para abrir los menus en moviles
 	const handleContentInfo = (key, value) => {
 		setOpenInfo({
 			...openInfo,
@@ -39,7 +40,7 @@ export const DetailsPlan = () => {
 
 	// funcion que hace la peticion a la db
 	useEffect(() => {
-		if (!currentPlan) {
+		if (currentPlan === null) {
 			getDetailsPlans(getDetailsPlans)
 		} else if (currentPlan.id !== parseInt(urlCode)) {
 			getDetailsPlans(getDetailsPlans)
@@ -66,6 +67,7 @@ export const DetailsPlan = () => {
 		}
 	}, [handleScreen])
 
+	// funcion para cambiar el texto del botton(Include-NoInclude)
 	const handleInclude = () => {
 		setInclude(!include)
 	}
@@ -78,21 +80,10 @@ export const DetailsPlan = () => {
 						<CurrentPlanConatainer>
 							<Title text={currentPlan.destination_name} />
 							{handleScreen > 600 ? (
-								<div className='containerImages'>
-									{currentPlan.photos.map((url, i) => {
-										return (
-											<img
-												key={i}
-												src={url.url_img}
-												alt={url.name_img}
-											/>
-										)
-									})}
-								</div>
+								<PlansImages currentPlan={currentPlan} />
 							) : (
 								<Bedrooms img={currentPlan.photos} />
 							)}
-
 							<div className='currentPlan_desc'>
 								<p>{currentPlan.description}</p>
 							</div>
@@ -100,55 +91,18 @@ export const DetailsPlan = () => {
 					</Container>
 					<CurrentPlanServices>
 						{handleScreen > 600 ? (
-							<div className='contentMax_services'>
-								<h2>INCLUYE</h2>
-								<div className='services_content'>
-									{include ? (
-										<>
-											<Includes
-												includes={currentPlan.includes}
-											/>
-										</>
-									) : (
-										<Includes
-											includes={currentPlan.noIncludes}
-										/>
-									)}
-								</div>
-								<div className='box_buttons'>
-									<Button
-										onClick={handleInclude}
-										text={
-											include ? 'No Incluye' : 'incluye'
-										}
-										bgColor='#10216f'
-									/>
-								</div>
-							</div>
+							<PlansInclude
+								handleInclude={handleInclude}
+								currentPlan={currentPlan}
+								include={include}
+							/>
 						) : (
-							<div className='contentMovile_s'>
-								<IncludesMovile
-									currentPlan={currentPlan.includes}
-									keyContent={'infoIncludes'}
-									infoIncludes={infoIncludes}
-									handleContentInfo={handleContentInfo}
-									title={'INCLUYE'}
-								/>
-								<IncludesMovile
-									currentPlan={currentPlan.noIncludes}
-									keyContent={'infoNoIncludes'}
-									infoIncludes={infoNoIncludes}
-									handleContentInfo={handleContentInfo}
-									title={'NO INCLUYE'}
-								/>
-								<IncludesMovile
-									currentPlan={currentPlan.notes}
-									keyContent={'infoNotes'}
-									infoIncludes={infoNotes}
-									handleContentInfo={handleContentInfo}
-									title={'NOTAS'}
-								/>
-							</div>
+							<PlansIncludesMovil
+								infoIncludes={infoIncludes}
+								infoNoIncludes={infoNoIncludes}
+								infoNotes={infoNotes}
+								handleContentInfo={handleContentInfo}
+							/>
 						)}
 					</CurrentPlanServices>
 				</>
