@@ -13,7 +13,7 @@ export const Tours = () => {
 	const { getToursApi } = useApi()
 
 	useEffect(() => {
-		if (!tours) {
+		if (tours === null) {
 			getToursApi()
 		}
 		history.replace('/tours')
