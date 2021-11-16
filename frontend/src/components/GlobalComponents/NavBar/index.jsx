@@ -1,8 +1,8 @@
-import { Container } from 'components/Container'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Container } from 'components/Container'
 import { ButtonHandleNav } from '../ButtonHandleNav'
-import { StyleNavbarBrayan, StyleButton } from './styles'
+import { StyleNavbar, StyleButton } from './styles'
 
 export const NavBar = () => {
 	const [handleNav, setHandleNav] = useState(false)
@@ -14,11 +14,11 @@ export const NavBar = () => {
 	}
 
 	return (
-		<StyleNavbarBrayan>
+		<StyleNavbar>
 			<Container>
 				<nav className={styleNav}>
 					<Link className='box_imgLogo' to='/'>
-						<img src='/logo.png' alt='logoAtalaya' />
+						<img src='/logo.svg' alt='logoAtalaya' />
 					</Link>
 					<div className='content_options'>
 						<ul className='navigation'>
@@ -50,6 +50,6 @@ export const NavBar = () => {
 					handleOpenNav={handleOpenNav}
 				/>
 			</StyleButton>
-		</StyleNavbarBrayan>
+		</StyleNavbar>
 	)
 }

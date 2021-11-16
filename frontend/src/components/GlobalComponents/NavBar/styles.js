@@ -1,19 +1,23 @@
 import styled from 'styled-components'
 
-export const StyleNavbarBrayan = styled.div`
+export const StyleNavbar = styled.div`
 	background-color: #0f216f;
 
 	.navbar {
-		height: 130px;
+		height: 80px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
 		.box_imgLogo {
-			width: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
 
 			img {
-				width: 100%;
+				width: 86%;
+				height: 86%;
 			}
 		}
 
@@ -41,7 +45,7 @@ export const StyleNavbarBrayan = styled.div`
 						text-decoration: none;
 						color: orange;
 						font-weight: 600;
-						font-size: 20px;
+						font-size: 1.1rem;
 					}
 				}
 			}
