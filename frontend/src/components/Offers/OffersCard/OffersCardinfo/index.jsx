@@ -7,7 +7,7 @@ const OffersCardinfo = ({ data }) => {
 	const { from_date, to_date, price, Hotel } = data
 	const handleBooking = () => {
 		window.open(
-			`https://wa.me/573145554761?text=Me%20interesa%20comprar%20esta%20ofera.`
+			`https://wa.me/573205701705?text=Me%20interesa%20comprar%20esta%20ofera.`
 		)
 	}
 

@@ -18,11 +18,18 @@ export const HealthNotes = () => {
 		window.onresize = () => setScreen(window.innerWidth)
 	}, [screen])
 
+	const handleBooking = () => {
+		window.open(
+			`https://wa.me/573205701705?text=Me%20interesa%20solicitar%20informacion%20sobre%20el%20plan%20salud.`
+		)
+	}
+
 	return (
 		<Container>
 			{screen < 950 ? (
 				<div className='bg'>
 					<Button
+						onClick={handleBooking}
 						text={'Reservar'}
 						bgColor={'#53a8c6'}
 						wDesc={'48%'}
@@ -72,9 +79,9 @@ export const HealthNotes = () => {
 				</div>
 				{screen > 950 ? (
 					<div className='Healt_content_button'>
-						<div></div>
 						<div className='bg'>
 							<Button
+								onClick={handleBooking}
 								text={'Reservar'}
 								bgColor={'#53a8c6'}
 								wDesc={'48%'}
@@ -88,7 +95,6 @@ export const HealthNotes = () => {
 			</div>
 			<Boximgsmall>
 				<img src={imagenSaludSmall} alt='imagen' />
-
 				<div className='boxWhite'></div>
 			</Boximgsmall>
 		</Container>

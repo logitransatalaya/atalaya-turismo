@@ -19,7 +19,6 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-
 		dispatch(updatecityList(data?.cities))
 	}
 
@@ -93,7 +92,7 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		dispatch(getAllOffersFlash(data?.offers))
+		dispatch(getAllOffersFlash(data?.offersflash))
 	}
 
 	return {

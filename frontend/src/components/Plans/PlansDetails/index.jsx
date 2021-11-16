@@ -29,6 +29,7 @@ export const PlansDetails = () => {
 			if (currentPlan.id !== parseInt(urlCode)) {
 				getDetailsPlans(urlCode)
 			}
+			console.log(location.pathname, currentPlan.destination_name)
 			messageWhatsapp(
 				location.pathname,
 				currentPlan.destination_name,
