@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardStyle } from 'components/Home/HomeOffersFlash/HomeOffersCard/styles'
+import { CardStyle } from './style'
 
 export const CardImagesGradiants = ({ url, alt, name }) => {
 	return (

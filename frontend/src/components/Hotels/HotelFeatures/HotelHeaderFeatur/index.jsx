@@ -38,21 +38,22 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 			</HeaderCardStyled>
 			{screen > 850 ? (
 				<CardGrid>
-					{photos.map((photo, i) => {
-						return (
-							<div
-								className={`card_${i + 1} card_hidden`}
-								key={i}
-								onClick={() => handleShow(photo.url_img)}
-							>
-								<img
-									className='box_img'
-									src={photo.url_img}
-									alt={`img${i + 1}`}
-								/>
-							</div>
-						)
-					})}
+					{photos.map(
+						(photo, i) =>
+							i < 4 && (
+								<div
+									className={`card_${i + 1} card_hidden`}
+									key={i}
+									onClick={() => handleShow(photo.url_img)}
+								>
+									<img
+										className='box_img'
+										src={photo.url_img}
+										alt={`img${i + 1}`}
+									/>
+								</div>
+							)
+					)}
 				</CardGrid>
 			) : (
 				<Bedrooms img={photos} />

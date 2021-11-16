@@ -17,10 +17,10 @@ export const HotelsList = () => {
 	const { getHotelList } = useApi()
 
 	useEffect(() => {
-		if (hotelsList === null) {
+		if (hotelsList === null || nameCity === '') {
 			getHotelList(locid, setNameCity)
 		}
-	}, [getHotelList, hotelsList, locid])
+	}, [getHotelList, hotelsList, locid, nameCity])
 
 	return hotelsList ? (
 		<Container>

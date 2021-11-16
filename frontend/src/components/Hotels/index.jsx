@@ -23,15 +23,17 @@ export const Hotels = () => {
 			<Title text={`HOTELES`} fontWeight='true' />
 			<HotelsContainer>
 				{cityList ? (
-					cityList.map((city, i) => (
-						<Link key={i} to={`hoteles/${city.id}`}>
-							<CardImagesGradiants
-								url={city.url_img}
-								alt={city.name}
-								name={city.name}
-							/>
-						</Link>
-					))
+					<div className='content'>
+						{cityList.map((city, i) => (
+							<Link key={i} to={`hoteles/${city.id}`}>
+								<CardImagesGradiants
+									url={city.url_img}
+									alt={city.name}
+									name={city.name}
+								/>
+							</Link>
+						))}
+					</div>
 				) : (
 					<Loader />
 				)}

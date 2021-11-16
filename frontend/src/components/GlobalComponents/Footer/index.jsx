@@ -37,7 +37,7 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								<li>
 									<img src='/footer/chulito.svg' alt='' />
 									Registro Nacional de Turismo:{' '}
-									<b>RNT 00000</b>
+									<b>RNT 102055</b>
 								</li>
 								<li>
 									<img src='/footer/correo.svg' alt='' />
