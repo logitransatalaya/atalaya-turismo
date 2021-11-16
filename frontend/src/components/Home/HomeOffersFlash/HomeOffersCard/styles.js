@@ -12,7 +12,7 @@ export const CardStyle = styled.div`
 	gap: 1rem;
 	margin: 2rem 0;
 	animation: ${animationAppear} 0.6s;
-
+	height: 430px;
 	h1 {
 		margin: 0;
 		width: 100%;
@@ -21,11 +21,11 @@ export const CardStyle = styled.div`
 	}
 
 	.offersCard-imgContainer {
-		height: 12rem;
+		height: 10rem;
 		width: 100%;
 		img {
 			width: 100%;
-			height: 100%;
+			height: 170px;
 			border-radius: 20px 20px 0 0;
 		}
 	}

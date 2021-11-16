@@ -1,13 +1,57 @@
 import { Slider } from './styles'
 import { splideOptionsLoop } from 'lib/splide'
 import React, { useEffect, useState } from 'react'
-import slideMobile from 'images/imagenbannerhomemovil.png'
+import slideDefault from '../../../images/caño-movil.jpg'
+import slideDefault1 from '../../../images/caño.png'
+import slideDefault3 from '../../../images/guatape.png'
+import slideDefault4 from '../../../images/desierto.png'
+import slideDefault5 from '../../../images/cartagena.png'
+import slideDefault2 from '../../../images/san-andres.png'
+import slideDefault6 from '../../../images/mina-de-sal.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-import slideDefault from '../../../images/bannerdestinosdestacados.png'
 
+const arrayInfo = [
+	{
+		url: slideDefault1,
+		urlMovil: slideDefault,
+		alt: 'mas destacados'
+	},
+	{
+		url: slideDefault2,
+		urlMovil: slideDefault,
+		alt: 'mas destacados'
+	},
+	{
+		url: slideDefault3,
+		urlMovil: slideDefault,
+		alt: 'mas destacados'
+	},
+	{
+		url: slideDefault4,
+		urlMovil: slideDefault,
+		alt: 'mas destacados'
+	},
+	{
+		url: slideDefault5,
+		urlMovil: slideDefault,
+		alt: 'mas destacados'
+	},
+	{
+		url: slideDefault6,
+		urlMovil: slideDefault,
+		alt: 'mas destacados'
+	}
+]
 const HomeSlider = () => {
 	// Estado para capturar el tamaño de la pantalla
 	const [handleWidth, setHandleWidth] = useState(window.innerWidth)
+
+	// funcion para hacer la peticion a la db
+	useEffect(() => {
+		// if (offersflash === null) {
+		// 	getOffersFlash()
+		// }
+	}, [])
 
 	// funcion para capturar el tamaño de pantalla
 	useEffect(() => {
@@ -16,35 +60,18 @@ const HomeSlider = () => {
 		}
 	}, [handleWidth])
 
-	// funcion para agregar las imagenes dependiendo del tamaño de pantalla
-	const handleImage = () => {
-		return handleWidth < 900 ? slideMobile : slideDefault
-	}
-
 	return (
 		<Slider>
 			<Splide options={splideOptionsLoop}>
-				<SplideSlide>
-					<img
-						src={handleImage()}
-						alt='mas destacados'
-						width='100%'
-					/>
-				</SplideSlide>
-				<SplideSlide>
-					<img
-						src={handleImage()}
-						alt='mas destacados'
-						width='100%'
-					/>
-				</SplideSlide>
-				<SplideSlide>
-					<img
-						src={handleImage()}
-						alt='mas destacados'
-						width='100%'
-					/>
-				</SplideSlide>
+				{arrayInfo.map((data, i) => (
+					<SplideSlide key={i}>
+						<img
+							src={handleWidth > 650 ? data.url : data.urlMovil}
+							alt={data.alt}
+							width='100%'
+						/>
+					</SplideSlide>
+				))}
 			</Splide>
 		</Slider>
 	)

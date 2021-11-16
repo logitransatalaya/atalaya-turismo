@@ -41,6 +41,7 @@ export const BenefitsCardStyled = styled.div`
 		font-size: 1.1rem;
 		width: 98%;
 		font-weight: 600;
+		text-align: justify;
 	}
 
 	@media (min-width: 950px) {
