@@ -84,7 +84,7 @@ export const CurrentPlanServices = styled.div`
 
 			.box_services {
 				padding-bottom: 1.5em;
-
+				text-align: justify;
 				span {
 					color: #10216f;
 					font-size: 1.3rem;
@@ -152,6 +152,12 @@ export const CurrentPlanServices = styled.div`
 			text-align: center;
 			color: #fff;
 			transition: background-color 0.5s;
+		}
+		.arrow2 {
+			margin-right: 15px;
+		}
+		.arrow3 {
+			margin-left: 12px;
 		}
 
 		.noIncludesMovile_s {

@@ -1,64 +1,41 @@
 import { useApi } from 'hooks/useApi'
 import { useParams } from 'react-router'
+import { useSelector } from 'react-redux'
 import { useLocation } from 'react-router'
+import { PlansImages } from './PlansImages'
+import { PlansInclude } from './PlansInclude'
+import { useWhatsapp } from 'hooks/useWhatsapp'
 import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { PlansIncludesMovil } from './PlansIncludeMovil'
 import { Title } from 'components/GlobalComponents/Title'
-import { getMessage } from 'state/actions/toolTipActions'
+import { Loader } from 'components/GlobalComponents/Loader'
 import Bedrooms from 'components/Hotels/HotelFeatures/HotelBedrooms'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
-import { PlansInclude } from './PlansInclude'
-import { PlansIncludesMovil } from './PlansIncludeMovil'
-import { PlansImages } from './PlansImages'
 
 export const PlansDetails = () => {
-	// Estado inicial para abrir los servicios en pantalla movil
-	const stateOpenInfo = {
-		infoIncludes: false,
-		infoNoIncludes: false,
-		infoNotes: false
-	}
-
-	const dispatch = useDispatch()
 	const location = useLocation()
 	const { urlCode } = useParams()
-	const [openInfo, setOpenInfo] = useState(stateOpenInfo)
-	const { infoIncludes, infoNoIncludes, infoNotes } = openInfo
 	const { currentPlan } = useSelector((state) => state.PlansReducer)
 	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
-	const [include, setInclude] = useState(true)
 	const { getDetailsPlans } = useApi()
+	const { messageWhatsapp } = useWhatsapp()
 
-	// funcion para abrir los menus en moviles
-	const handleContentInfo = (key, value) => {
-		setOpenInfo({
-			...openInfo,
-			[key]: value
-		})
-	}
-
-	// funcion que hace la peticion a la db
+	// funcion que hace la peticion a la db y cambia le mensaje de wpp
 	useEffect(() => {
 		if (currentPlan === null) {
-			getDetailsPlans(getDetailsPlans)
-		} else if (currentPlan.id !== parseInt(urlCode)) {
-			getDetailsPlans(getDetailsPlans)
-		}
-	}, [currentPlan, getDetailsPlans, urlCode])
-
-	// funcion que hace el cambio en redux para el mensaje de wpp
-	useEffect(() => {
-		if (currentPlan) {
-			dispatch(
-				getMessage({
-					route: location.pathname,
-					title: currentPlan.destination_name,
-					page: 'plans'
-				})
+			getDetailsPlans(urlCode)
+		} else if (currentPlan) {
+			if (currentPlan.id !== parseInt(urlCode)) {
+				getDetailsPlans(urlCode)
+			}
+			messageWhatsapp(
+				location.pathname,
+				currentPlan.destination_name,
+				'plans'
 			)
 		}
-	}, [currentPlan, dispatch, location])
+	}, [currentPlan, getDetailsPlans, urlCode, location, messageWhatsapp])
 
 	// funcion que calcula los cambios de pantalla
 	useEffect(() => {
@@ -67,14 +44,9 @@ export const PlansDetails = () => {
 		}
 	}, [handleScreen])
 
-	// funcion para cambiar el texto del botton(Include-NoInclude)
-	const handleInclude = () => {
-		setInclude(!include)
-	}
-
 	return (
 		<>
-			{currentPlan && (
+			{currentPlan ? (
 				<>
 					<Container>
 						<CurrentPlanConatainer>
@@ -91,21 +63,14 @@ export const PlansDetails = () => {
 					</Container>
 					<CurrentPlanServices>
 						{handleScreen > 600 ? (
-							<PlansInclude
-								handleInclude={handleInclude}
-								currentPlan={currentPlan}
-								include={include}
-							/>
+							<PlansInclude currentPlan={currentPlan} />
 						) : (
-							<PlansIncludesMovil
-								infoIncludes={infoIncludes}
-								infoNoIncludes={infoNoIncludes}
-								infoNotes={infoNotes}
-								handleContentInfo={handleContentInfo}
-							/>
+							<PlansIncludesMovil currentPlan={currentPlan} />
 						)}
 					</CurrentPlanServices>
 				</>
+			) : (
+				<Loader />
 			)}
 		</>
 	)

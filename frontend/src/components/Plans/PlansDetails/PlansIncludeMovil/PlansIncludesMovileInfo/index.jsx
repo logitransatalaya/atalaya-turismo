@@ -5,7 +5,8 @@ export const PlansIncludesMovileInfo = ({
 	infoIncludes,
 	handleContentInfo,
 	title,
-	currentPlan
+	currentPlan,
+	arrow
 }) => {
 	return (
 		<div
@@ -18,7 +19,7 @@ export const PlansIncludesMovileInfo = ({
 				className={infoIncludes ? 'boxInfo boxInfo_active' : 'boxInfo'}
 			>
 				<h4>{title}</h4>
-				<span>V</span>
+				<span className={`arrow${arrow}`}>V</span>
 			</div>
 			{infoIncludes && (
 				<div className='contentInfo'>

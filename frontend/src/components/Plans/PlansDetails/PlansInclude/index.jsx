@@ -1,11 +1,18 @@
 import { Button } from 'components/GlobalComponents/Button'
-import React from 'react'
+import React, { useState } from 'react'
 import { PlansIncludesInfo } from './PlansIncludesInfo'
 
-export const PlansInclude = ({ currentPlan, include, handleInclude }) => {
+export const PlansInclude = ({ currentPlan }) => {
+	const [include, setInclude] = useState(true)
+
+	// funcion para cambiar el texto del botton(Include-NoInclude)
+	const handleInclude = () => {
+		setInclude(!include)
+	}
+
 	return (
 		<div className='contentMax_services'>
-			<h2>INCLUYE</h2>
+			<h2>{include ? 'INCLUYE' : 'NO INCLUYE'}</h2>
 			<div className='services_content'>
 				{include ? (
 					<PlansIncludesInfo includes={currentPlan.includes} />
