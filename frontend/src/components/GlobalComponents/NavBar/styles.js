@@ -40,8 +40,8 @@ export const StyleNavbarBrayan = styled.div`
 					a {
 						text-decoration: none;
 						color: orange;
-						font-weight: 400;
-						font-size: 22px;
+						font-weight: 600;
+						font-size: 20px;
 					}
 				}
 			}
