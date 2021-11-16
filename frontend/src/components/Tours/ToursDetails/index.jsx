@@ -5,40 +5,30 @@ import { useLocation } from 'react-router'
 import { ToursDetailsStyled } from './styles'
 import { Skeleton } from 'components/Skeletons'
 import { Container } from 'components/Container'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
-import { getMessage } from 'state/actions/toolTipActions'
 import { Footer } from 'components/GlobalComponents/Footer'
 import { ToursCharacteristics } from './ToursCharacteristics'
+import { useWhatsapp } from 'hooks/useWhatsapp'
 
 export const ToursDetails = () => {
-	const dispatch = useDispatch()
 	const location = useLocation()
 	const { urlCode } = useParams()
 	const { currentTour } = useSelector((state) => state.tourReducer)
 	const { getCurrentTour } = useApi()
+	const { messageWhatsapp } = useWhatsapp()
 
-	// Funcion para peticion de la base de datos
+	// Funcion para peticion de la base de datos y cambiar el estado de wpp
 	useEffect(() => {
 		if (currentTour === null) {
 			getCurrentTour(urlCode)
-		} else if (currentTour.id !== parseInt(urlCode)) {
-			getCurrentTour(urlCode)
+		} else if (currentTour) {
+			if (currentTour.id !== parseInt(urlCode)) {
+				getCurrentTour(urlCode)
+			}
+			messageWhatsapp(location.pathname, currentTour.title, 'tour')
 		}
-	}, [urlCode, currentTour, getCurrentTour])
-
-	// Funcion para cambiar el mensaje de wpp
-	useEffect(() => {
-		if (currentTour) {
-			dispatch(
-				getMessage({
-					route: location.pathname,
-					title: currentTour.title,
-					page: 'tour'
-				})
-			)
-		}
-	}, [dispatch, currentTour, location])
+	}, [urlCode, currentTour, getCurrentTour, location, messageWhatsapp])
 
 	return !currentTour ? (
 		<Skeleton type='toursDescription' />

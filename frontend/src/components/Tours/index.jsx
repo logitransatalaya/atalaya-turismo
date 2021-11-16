@@ -25,7 +25,7 @@ export const Tours = () => {
 			<ToursStyled>
 				<Title text={'TOURES ANTIOQUEÑOS'} fontWeight='true' />
 				{tours ? (
-					<div className='ToursCards-container'>
+					<div className='content'>
 						{tours?.map((tour, i) => (
 							<Link to={`tours/${tour.id}`} key={i}>
 								<CardImagesGradiants

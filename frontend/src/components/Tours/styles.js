@@ -3,17 +3,23 @@ import { animationAppear } from 'components/GlobalComponents/animations'
 
 export const ToursStyled = styled.div`
 	min-height: 50vh;
-	.ToursCards-container {
+	.content {
 		display: grid;
-		grid-template-columns: repeat(auto, minmax(300px, 1fr));
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
 		gap: 1em;
 		padding: 1.9em 1em 2em 1em;
+		padding-bottom: 1em;
 		animation: ${animationAppear} 2s ease forwards;
+
+		@media (max-width: 800px) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	.hotelCard {
-		height: 300px;
+		width: 100%;
+		height: 350px;
 		text-align: center;
 		border-radius: 1em;
 		overflow: hidden;
