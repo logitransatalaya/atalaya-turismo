@@ -1,7 +1,7 @@
 import { useApi } from 'hooks/useApi'
 import { Link } from 'react-router-dom'
 import { PlansContainer } from './styles'
-import { Container } from 'components/Container'
+import { Container } from 'components/GlobalComponents/Container'
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'

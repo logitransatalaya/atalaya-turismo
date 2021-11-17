@@ -1,6 +1,9 @@
+
+import { Container } from 'components/GlobalComponents/Container'
+
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Container } from 'components/Container'
+
 import { ButtonHandleNav } from '../ButtonHandleNav'
 import { StyleNavbar, StyleButton } from './styles'
 
