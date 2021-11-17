@@ -5,7 +5,9 @@ export const HealthNotesInfo = ({ text, Icon }) => {
 	return (
 		<StyleCard>
 			<div className='row'>
-				<Icon className='icon' />
+				<div className='icon__content'>
+					<Icon className='icon' />
+				</div>
 				<div className='Healt_text'>
 					<p>{text}</p>
 				</div>
