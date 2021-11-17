@@ -32,20 +32,19 @@ export const StyleNavbar = styled.div`
 
 			.navigation {
 				display: flex;
+				gap: 0.6rem;
 				list-style: none;
 
 				li {
-					margin-right: 1em;
-
-					&:hover {
-						opacity: 0.8;
-					}
-
 					a {
 						text-decoration: none;
-						color: orange;
-						font-weight: 600;
-						font-size: 1.1rem;
+						color: #ff8b1e;
+						font-weight: 700;
+						font-size: 1rem;
+
+						&:hover {
+							color: orange;
+						}
 					}
 				}
 			}
@@ -67,12 +66,21 @@ export const StyleNavbar = styled.div`
 			margin-left: -100%;
 			transition: margin-left 0.5s;
 
+			.box_imgLogo {
+				height: auto;
+
+				img {
+					width: 70%;
+				}
+			}
+
 			.content_options {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				height: 50%;
+				margin-right: 0;
 
 				.search {
 					align-items: center;
