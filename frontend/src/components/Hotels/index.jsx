@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom'
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { HotelsContainer } from './styles'
-import { Container } from 'components/Container'
+import { Container } from 'components/GlobalComponents/Container'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
 import { CardImagesGradiants } from 'components/GlobalComponents/CardImagesGradiants'
 
 export const Hotels = () => {
-	const { cityList } = useSelector((state) => state.hotelsReducer)
+	// estados locales
 	const { getCities } = useApi()
+	const { cityList } = useSelector((state) => state.hotelsReducer)
 
+	// peticion a la db
 	useEffect(() => {
 		if (cityList === null) {
 			getCities()
@@ -20,7 +22,7 @@ export const Hotels = () => {
 
 	return (
 		<Container>
-			<Title text={`HOTELES`} fontWeight='true' />
+			<Title text={`HOTELES NACIONALES`} fontWeight='true' />
 			<HotelsContainer>
 				{cityList ? (
 					<div className='content'>

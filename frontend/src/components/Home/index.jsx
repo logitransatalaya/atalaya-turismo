@@ -4,11 +4,11 @@ import { HomeStyled } from './styles.js'
 import HomeSlider from './HomeSlider/index.jsx'
 import { HomeOffersFlash } from './HomeOffersFlash'
 import { Title } from 'components/GlobalComponents/Title'
-import { Container } from 'components/Container/index.jsx'
-import '@splidejs/splide/dist/css/themes/splide-default.min.css'
 import { HomeWhyAtalaya } from './HomeWhyAtalaya/index.jsx'
+import '@splidejs/splide/dist/css/themes/splide-default.min.css'
+import { Container } from 'components/GlobalComponents/Container/index.jsx'
 
-// componente global de home
+// componente global del home
 export const Home = () => {
 	return (
 		<HomeStyled>

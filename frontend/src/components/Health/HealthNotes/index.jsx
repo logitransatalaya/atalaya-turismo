@@ -1,5 +1,5 @@
 import { Boximgsmall } from './styles'
-import { Container } from 'components/Container'
+import { Container } from 'components/GlobalComponents/Container'
 import React, { useEffect, useState } from 'react'
 import { HealthNotesInfo } from './HealthNotesInfo'
 import { Button } from 'components/GlobalComponents/Button'

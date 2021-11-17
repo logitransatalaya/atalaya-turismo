@@ -5,16 +5,16 @@ import { Plans } from './components/Plans'
 import { Health } from 'components/Health'
 import { Hotels } from './components/Hotels'
 import { Offers } from './components/Offers'
-import ScrollToTop from 'components/ScrollToTop'
 import { HotelsList } from 'components/Hotels/HotelsList'
 import { NavBar } from 'components/GlobalComponents/NavBar'
 import { PlansDetails } from 'components/Plans/PlansDetails'
-import ScrollArrow from 'components/ScrollToTop/ScrollArrow'
 import { ToursDetails } from 'components/Tours/ToursDetails'
 import { Footer } from './components/GlobalComponents/Footer'
 import { HotelFeatures } from 'components/Hotels/HotelFeatures'
+import ScrollToTop from 'components/GlobalComponents/ScrollToTop'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
+import ScrollArrow from 'components/GlobalComponents/ScrollToTop/ScrollArrow'
 
 export default function App() {
 	return (

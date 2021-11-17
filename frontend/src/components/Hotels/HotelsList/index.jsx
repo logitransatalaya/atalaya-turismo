@@ -1,21 +1,21 @@
 import { useApi } from 'hooks/useApi'
-import { Link } from 'react-router-dom'
 import { CityContainer } from './styles'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { Container } from 'components/Container'
 import React, { useEffect, useState } from 'react'
+import { HotelListCardInfo } from './HotelListCardInfo'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
-import { Button } from 'components/GlobalComponents/Button'
-import { HotelQualification } from 'components/Hotels/HotelFeatures/HotelQualification'
+import { Container } from 'components/GlobalComponents/Container'
 
 export const HotelsList = () => {
+	// Estados del componente
 	const { locid } = useParams()
-	const { hotelsList } = useSelector((state) => state.hotelsReducer)
-	const [nameCity, setNameCity] = useState('')
 	const { getHotelList } = useApi()
+	const [nameCity, setNameCity] = useState('')
+	const { hotelsList } = useSelector((state) => state.hotelsReducer)
 
+	// Peticion a la db
 	useEffect(() => {
 		if (hotelsList === null || nameCity === '') {
 			getHotelList(locid, setNameCity)
@@ -28,45 +28,11 @@ export const HotelsList = () => {
 			<CityContainer>
 				{hotelsList?.length ? (
 					hotelsList.map((hotel, i) => (
-						<div className='cityCard' key={i}>
-							<div className='cityBoxImg'>
-								<img src={hotel.url_img} alt={hotel.name} />
-							</div>
-							<div className='cityInfo'>
-								<p className='cityInfo_title'>{hotel.name}</p>
-								<p>
-									<small>Dirección: {hotel.addres}</small>
-								</p>
-								<div className='cityInfoCalification'>
-									<HotelQualification stars={hotel.stars} />
-								</div>
-							</div>
-							<div className='cityPrice'>
-								<div>
-									<p className='cityPrice_title'>
-										Cop: <b>{hotel.price}</b>
-									</p>
-								</div>
-								<div>
-									<p className='cityPrice_subTitle'>
-										DESDE Cop {hotel.price}
-									</p>
-									<p className='cityPrice_card'>
-										<small>
-											tarjeta sujeta a disponibilidad
-										</small>
-									</p>
-									<Link to={`${locid}/${hotel.id}`}>
-										<Button
-											text={'Ver más'}
-											bgColor={'#10216f'}
-											color={'#fff'}
-											wRes={'100%'}
-										/>
-									</Link>
-								</div>
-							</div>
-						</div>
+						<HotelListCardInfo
+							hotel={hotel}
+							key={i}
+							locid={locid}
+						/>
 					))
 				) : (
 					<Loader />

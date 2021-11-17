@@ -13,7 +13,7 @@ import {
 	FooterTours
 } from './styles'
 import React from 'react'
-import { Container } from 'components/Container'
+import { Container } from 'components/GlobalComponents/Container'
 import waveOrange from 'images/orangeWave.png'
 import iconFacebook from 'images/iconFacebook.svg'
 import iconInstagram from 'images/iconInstagram.svg'

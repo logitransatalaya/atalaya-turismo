@@ -1,6 +1,6 @@
 import { ArrowScroll } from './styles'
 import React, { useEffect, useState } from 'react'
-import arrowTop from '../../../images/svg/arrow.svg'
+import arrowTop from '../../../../images/svg/arrow.svg'
 
 const ScrollArrow = () => {
 	const [showScroll, setShowScroll] = useState(false)
