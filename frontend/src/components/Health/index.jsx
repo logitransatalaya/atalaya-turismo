@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { StyleHealth } from './styles'
 import { HealthNotes } from './HealthNotes'
 import { HealthHeader } from './HealthHeader'
@@ -6,14 +6,20 @@ import { Container } from 'components/GlobalComponents/Container'
 import { HealthIncludes } from './HealthIncludes'
 
 export const Health = () => {
+	const [screen, setScreen] = useState(window.innerWidth)
+
+	useEffect(() => {
+		window.onresize = () => setScreen(window.innerWidth)
+	}, [screen])
+
 	return (
 		<StyleHealth>
-			<HealthHeader />
+			<HealthHeader screen={screen} />
 			<Container>
 				<HealthIncludes />
 			</Container>
 			<div className='bg-image'>
-				<HealthNotes />
+				<HealthNotes screen={screen} />
 			</div>
 		</StyleHealth>
 	)

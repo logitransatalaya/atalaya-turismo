@@ -1,19 +1,23 @@
 import styled from 'styled-components'
 
-export const StyleNavbarBrayan = styled.div`
+export const StyleNavbar = styled.div`
 	background-color: #0f216f;
 
 	.navbar {
-		height: 130px;
+		height: 80px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
 		.box_imgLogo {
-			width: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
 
 			img {
-				width: 100%;
+				width: 86%;
+				height: 86%;
 			}
 		}
 
@@ -28,20 +32,19 @@ export const StyleNavbarBrayan = styled.div`
 
 			.navigation {
 				display: flex;
+				gap: 0.6rem;
 				list-style: none;
 
 				li {
-					margin-right: 1em;
-
-					&:hover {
-						opacity: 0.8;
-					}
-
 					a {
 						text-decoration: none;
-						color: orange;
-						font-weight: 400;
-						font-size: 22px;
+						color: #ff8b1e;
+						font-weight: 700;
+						font-size: 1rem;
+
+						&:hover {
+							color: orange;
+						}
 					}
 				}
 			}
@@ -63,12 +66,21 @@ export const StyleNavbarBrayan = styled.div`
 			margin-left: -100%;
 			transition: margin-left 0.5s;
 
+			.box_imgLogo {
+				height: auto;
+
+				img {
+					width: 70%;
+				}
+			}
+
 			.content_options {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				height: 50%;
+				margin-right: 0;
 
 				.search {
 					align-items: center;
