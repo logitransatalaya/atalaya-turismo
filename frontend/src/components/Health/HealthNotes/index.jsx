@@ -1,6 +1,6 @@
+import React from 'react'
 import { Boximgsmall } from './styles'
 import { Container } from 'components/Container'
-import React, { useEffect, useState } from 'react'
 import { HealthNotesInfo } from './HealthNotesInfo'
 import { Button } from 'components/GlobalComponents/Button'
 import imagenSaludSmall from 'images/img-bg-screen-small.png'
@@ -11,18 +11,12 @@ import { ReactComponent as IconCalendario } from 'images/svg/icono-calendario.sv
 import { ReactComponent as IconAmbulancia } from 'images/svg/icnono-ambulancia.svg'
 import { ReactComponent as IconEstetoscopio } from 'images/svg/icono-estetoscopio.svg'
 
-export const HealthNotes = () => {
-	const [screen, setScreen] = useState(window.innerWidth)
-
+export const HealthNotes = ({ screen }) => {
 	const handleBooking = () => {
 		window.open(
 			`https://wa.me/573205701705?text=Me%20interesa%20solicitar%20informacion%20sobre%20el%20plan%20salud.`
 		)
 	}
-
-	useEffect(() => {
-		window.onresize = () => setScreen(window.innerWidth)
-	}, [screen])
 
 	return (
 		<Container>

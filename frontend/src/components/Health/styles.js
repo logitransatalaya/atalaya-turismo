@@ -21,7 +21,6 @@ export const StyleHealth = styled.div`
 	}
 
 	.bg-image {
-		padding-top: 4rem;
 		margin-top: 2rem;
 		background-image: url(${image});
 		background-size: cover;
