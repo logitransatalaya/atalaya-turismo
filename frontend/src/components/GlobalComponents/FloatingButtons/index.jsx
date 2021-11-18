@@ -57,7 +57,7 @@ const FloatingButtons = () => {
 	}, [currentRoute, currentMessage])
 
 	const handleAction = () => {
-		window.open(`https://wa.me/573205701705?text=${routes.messageWsp}`)
+		window.open(`https://wa.me/573205702937?text=${routes.messageWsp}`)
 	}
 
 	return (
