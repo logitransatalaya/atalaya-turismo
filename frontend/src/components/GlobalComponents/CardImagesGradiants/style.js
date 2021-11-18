@@ -5,7 +5,6 @@ export const CardStyle = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1em;
-	/* padding: 2em 1em; */
 	animation: ${animationAppear} 2s ease forwards;
 
 	.CardImagesGradiantsCard {
