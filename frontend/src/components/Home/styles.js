@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const HomeStyled = styled.div`
 	.recomendedCard-container {
 		margin-top: 2rem;
+		min-height: 20vh;
 	}
 
 	.plansCard-slide {
