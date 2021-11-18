@@ -47,7 +47,7 @@ export const HomeStyled = styled.div`
 		}
 
 		.benefitsSection-imageBackground {
-			margin-top: -20rem;
+			margin-top: -12rem;
 			height: 800px;
 		}
 	}

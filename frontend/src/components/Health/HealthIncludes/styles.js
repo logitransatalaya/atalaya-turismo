@@ -12,8 +12,9 @@ export const HealthIncludesStyles = styled.div`
 		align-items: center;
 		position: relative;
 
-		.text-m {
-			display: none;
+		.text {
+			text-align: justify;
+			padding: 0 2rem;
 		}
 
 		@media (max-width: 1000px) {
@@ -25,12 +26,8 @@ export const HealthIncludesStyles = styled.div`
 			grid-template-columns: 1fr;
 			padding: 1em 5em;
 
-			.text-d {
-				display: none;
-			}
-
-			.text-m {
-				display: block;
+			.text {
+				padding: 0;
 			}
 		}
 
@@ -72,14 +69,13 @@ export const HealthIncludesStyles = styled.div`
 
 			p {
 				color: #fff;
-				font-size: 2rem;
+				font-size: 1.5rem;
 
 				@media (max-width: 1000px) {
 					column-gap: 1em;
-					font-size: 1.7rem;
 				}
 
-				@media (max-width: 600px) {
+				@media (max-width: 650px) {
 					font-size: 1.2rem;
 				}
 			}

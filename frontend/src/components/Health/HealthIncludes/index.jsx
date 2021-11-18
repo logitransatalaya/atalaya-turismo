@@ -12,14 +12,7 @@ export const HealthIncludes = () => {
 					</div>
 					<div className='box_line'></div>
 					<div className='box_desc'>
-						<p className='text-d'>
-							Con el turismo médico nuestro principal objetivo es{' '}
-							<br />
-							cuidar de tu salud, por eso para nosotros es vital{' '}
-							<br />
-							acompañarte en este proceso.
-						</p>
-						<p className='text-m'>
+						<p className='text'>
 							Con el turismo médico nuestro principal objetivo es
 							cuidar de tu salud, por eso para nosotros es vital
 							acompañarte en este proceso.
