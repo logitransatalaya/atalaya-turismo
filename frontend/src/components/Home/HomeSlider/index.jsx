@@ -82,25 +82,15 @@ const HomeSlider = () => {
 	return (
 		<Slider>
 			<Splide options={splideOptionsLoop}>
-				{handleWidth > 650
-					? arrayInfo.map((data, i) => (
-							<SplideSlide key={i}>
-								<img
-									src={data.url}
-									alt={data.alt}
-									width='100%'
-								/>
-							</SplideSlide>
-					  ))
-					: arrayInfo.map((data, i) => (
-							<SplideSlide key={i}>
-								<img
-									src={data.urlMovil}
-									alt={data.alt}
-									width='100%'
-								/>
-							</SplideSlide>
-					  ))}
+				{arrayInfo.map((data, i) => (
+					<SplideSlide key={i}>
+						<img
+							src={handleWidth > 650 ? data.url : data.urlMovil}
+							alt={data.alt}
+							width='100%'
+						/>
+					</SplideSlide>
+				))}
 			</Splide>
 		</Slider>
 	)
