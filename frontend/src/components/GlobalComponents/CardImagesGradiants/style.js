@@ -2,11 +2,10 @@ import styled from 'styled-components'
 import { animationAppear } from '../animations'
 
 export const CardStyle = styled.div`
-	min-height: 40vh;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 1em;
-	padding: 2em 1em;
+	/* padding: 2em 1em; */
 	animation: ${animationAppear} 2s ease forwards;
 
 	.CardImagesGradiantsCard {
