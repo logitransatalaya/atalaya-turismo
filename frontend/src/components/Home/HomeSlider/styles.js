@@ -6,4 +6,7 @@ export const Slider = styled.div`
 	margin: 40px 0;
 	animation: ${animationUpload} 0.5s;
 	position: relative;
+	@media (max-width: 650px) {
+		margin: 0px 0;
+	}
 `
