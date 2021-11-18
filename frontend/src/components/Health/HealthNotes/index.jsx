@@ -16,7 +16,7 @@ import { ReactComponent as IconEstetoscopio } from 'images/svg/icono-estetoscopi
 export const HealthNotes = ({ screen }) => {
 	const handleBooking = () => {
 		window.open(
-			`https://wa.me/573205701705?text=Me%20interesa%20solicitar%20informacion%20sobre%20el%20plan%20salud.`
+			`https://wa.me/573205702937?text=Me%20interesa%20solicitar%20informacion%20sobre%20el%20plan%20salud.`
 		)
 	}
 
