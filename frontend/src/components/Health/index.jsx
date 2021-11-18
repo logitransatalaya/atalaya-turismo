@@ -1,9 +1,9 @@
 import { StyleHealth } from './styles'
 import { HealthNotes } from './HealthNotes'
 import { HealthHeader } from './HealthHeader'
-import { Container } from 'components/GlobalComponents/Container'
 import { HealthIncludes } from './HealthIncludes'
 import React, { useEffect, useState } from 'react'
+import { Container } from 'components/GlobalComponents/Container'
 
 export const Health = () => {
 	const [screen, setScreen] = useState(window.innerWidth)

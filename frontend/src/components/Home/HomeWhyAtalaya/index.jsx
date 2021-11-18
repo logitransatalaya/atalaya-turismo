@@ -2,12 +2,12 @@ import React from 'react'
 import { BenefitsSectionStyled } from './styles.js'
 import { HomeBenefitsCard } from './HomeBenefitsCard'
 import { Title } from 'components/GlobalComponents/Title'
-import { ReactComponent as IconMapa } from 'images/icono-mapa.svg'
-import { ReactComponent as IconBarco } from 'images/icono-barco.svg'
-import { ReactComponent as IconAvion } from 'images/icono-avion.svg'
-import { ReactComponent as IconMundo } from 'images/icono-mundo.svg'
-import { ReactComponent as IconMaleta } from 'images/icono-maleta.svg'
-import { ReactComponent as IconPalmera } from 'images/icono-palmera.svg'
+import { ReactComponent as IconMapa } from 'images/svg/icono-mapa.svg'
+import { ReactComponent as IconBarco } from 'images/svg/icono-barco.svg'
+import { ReactComponent as IconAvion } from 'images/svg/icono-avion.svg'
+import { ReactComponent as IconMundo } from 'images/svg/icono-mundo.svg'
+import { ReactComponent as IconMaleta } from 'images/svg/icono-maleta.svg'
+import { ReactComponent as IconPalmera } from 'images/svg/icono-palmera.svg'
 
 export const HomeWhyAtalaya = () => {
 	return (

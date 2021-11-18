@@ -1,6 +1,6 @@
 import React from 'react'
 import { HealthIncludesStyles } from './styles'
-import { ReactComponent as IconSalud } from '../../../images/iconSaludWhite.svg'
+import { ReactComponent as IconSalud } from '../../../images/svg/iconSaludWhite.svg'
 
 export const HealthIncludes = () => {
 	return (

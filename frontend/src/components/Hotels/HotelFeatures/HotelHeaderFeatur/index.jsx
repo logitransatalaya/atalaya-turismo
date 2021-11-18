@@ -4,7 +4,7 @@ import { HotelQualification } from '../HotelQualification'
 import React, { useEffect, useState } from 'react'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ModalImg } from 'components/GlobalComponents/ModalImg'
-import { ReactComponent as IconLocation } from 'images/ubicacion.svg'
+import { ReactComponent as IconLocation } from 'images/svg/ubicacion.svg'
 import { handleModalImages } from '../../../../state/actions/toolTipActions'
 
 export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {

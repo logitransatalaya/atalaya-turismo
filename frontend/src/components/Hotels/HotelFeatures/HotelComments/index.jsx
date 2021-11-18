@@ -2,7 +2,7 @@ import React from 'react'
 import { splideOptionsMessages } from 'lib/splide'
 import { ContainerHotelInfo, Message } from './styles'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-import { ReactComponent as IconUsuario } from 'images/iconUsuario.svg'
+import { ReactComponent as IconUsuario } from 'images/svg/iconUsuario.svg'
 
 const HotelInfo = ({ comentens, desc }) => {
 	return (
