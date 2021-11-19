@@ -13,7 +13,7 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 
 	useEffect(() => {
 		window.onresize = () => setScreen(window.innerWidth)
-	}, [screen])
+	}, [])
 
 	const handleShow = (img) => {
 		dispatch(handleModalImages(img))

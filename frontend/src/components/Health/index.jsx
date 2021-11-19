@@ -10,7 +10,7 @@ export const Health = () => {
 
 	useEffect(() => {
 		window.onresize = () => setScreen(window.innerWidth)
-	}, [screen])
+	}, [])
 
 	return (
 		<StyleHealth>

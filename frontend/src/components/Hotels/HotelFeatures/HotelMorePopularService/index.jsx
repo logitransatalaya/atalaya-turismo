@@ -11,7 +11,7 @@ export const HotelMorePopularService = ({ currentHotel }) => {
 		window.onresize = function () {
 			setHandleWidth(window.innerWidth)
 		}
-	}, [handleWidth])
+	}, [])
 
 	const handleServices = () => {
 		setCountServices(!countServices)

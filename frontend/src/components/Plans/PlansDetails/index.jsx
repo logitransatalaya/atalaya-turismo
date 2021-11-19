@@ -16,10 +16,10 @@ import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
 export const PlansDetails = () => {
 	const location = useLocation()
 	const { urlCode } = useParams()
-	const { currentPlan } = useSelector((state) => state.PlansReducer)
-	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
 	const { getDetailsPlans } = useApi()
 	const { messageWhatsapp } = useWhatsapp()
+	const { currentPlan } = useSelector((state) => state.PlansReducer)
+	const [handleScreen, setHandleScreen] = useState(window.innerWidth)
 
 	// funcion que hace la peticion a la db y cambia le mensaje de wpp
 	useEffect(() => {
@@ -43,7 +43,7 @@ export const PlansDetails = () => {
 		window.onresize = function () {
 			setHandleScreen(window.innerWidth)
 		}
-	}, [handleScreen])
+	}, [])
 
 	return (
 		<>

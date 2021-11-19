@@ -74,10 +74,8 @@ const HomeSlider = () => {
 
 	// funcion para capturar el tamaño de pantalla
 	useEffect(() => {
-		window.onresize = () => {
-			setHandleWidth(window.innerWidth)
-		}
-	}, [handleWidth])
+		window.onresize = () => setHandleWidth(window.innerWidth)
+	}, [])
 
 	return (
 		<Slider>
