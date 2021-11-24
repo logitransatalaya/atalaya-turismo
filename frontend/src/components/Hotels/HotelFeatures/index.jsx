@@ -5,11 +5,11 @@ import HotelBedrooms from './HotelBedrooms'
 import HotelComments from './HotelComments'
 import { useParams } from 'react-router-dom'
 import { useWhatsapp } from 'hooks/useWhatsapp'
-import { Container } from 'components/GlobalComponents/Container'
 import React, { useEffect, useState } from 'react'
 import { HotelHeaderFeatur } from './HotelHeaderFeatur'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
+import { Container } from 'components/GlobalComponents/Container'
 import { HotelMorePopularService } from 'components/Hotels/HotelFeatures/HotelMorePopularService'
 
 export const HotelFeatures = () => {
@@ -30,16 +30,15 @@ export const HotelFeatures = () => {
 			}
 			messageWhatsapp(location.pathname, currentHotel.name, 'hotel')
 		}
-		console.log('hola')
 	}, [
 		locid,
 		hotelId,
 		currentHotel,
 		getHotelFeatures,
 		location,
-		messageWhatsapp
+		messageWhatsapp,
+		city
 	])
-	console.log(city)
 	return (
 		<>
 			{currentHotel ? (
