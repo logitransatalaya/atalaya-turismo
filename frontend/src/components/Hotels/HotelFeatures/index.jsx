@@ -25,11 +25,12 @@ export const HotelFeatures = () => {
 	useEffect(() => {
 		if (currentHotel === null) getHotelFeatures(locid, hotelId, setCity)
 		else if (currentHotel) {
-			if (currentHotel.id !== parseInt(hotelId)) {
+			if (currentHotel.id !== parseInt(hotelId) || city === '') {
 				getHotelFeatures(locid, hotelId, setCity)
 			}
 			messageWhatsapp(location.pathname, currentHotel.name, 'hotel')
 		}
+		console.log('hola')
 	}, [
 		locid,
 		hotelId,
@@ -38,7 +39,7 @@ export const HotelFeatures = () => {
 		location,
 		messageWhatsapp
 	])
-
+	console.log(city)
 	return (
 		<>
 			{currentHotel ? (
@@ -53,7 +54,7 @@ export const HotelFeatures = () => {
 					<HotelMorePopularService currentHotel={currentHotel} />
 					<Title text={'HABITACIONES DEL HOTEL'} about='true' />
 					<HotelBedrooms img={currentHotel.photos_outside} />
-					<Title text={'SOBRE EL HOTEL TRYP MEDELLíN'} about='true' />
+					<Title text={` HOTEL ${currentHotel.name}`} about='true' />
 					<HotelComments
 						comentens={currentHotel.comments}
 						desc={currentHotel.description}

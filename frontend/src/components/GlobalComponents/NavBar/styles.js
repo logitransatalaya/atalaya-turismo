@@ -8,19 +8,16 @@ export const StyleNavbar = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
 		.box_imgLogo {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 85%;
-
+			height: 75%;
 			img {
 				width: 100%;
 				height: 86%;
 			}
 		}
-
 		.content_options {
 			display: flex;
 			flex-direction: column;
@@ -34,7 +31,6 @@ export const StyleNavbar = styled.div`
 				display: flex;
 				gap: 0.6rem;
 				list-style: none;
-
 				li {
 					a {
 						text-decoration: none;
