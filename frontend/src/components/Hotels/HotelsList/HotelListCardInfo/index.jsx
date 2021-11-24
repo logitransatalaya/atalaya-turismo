@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'components/GlobalComponents/Button'
 import { HotelQualification } from 'components/Hotels/HotelFeatures/HotelQualification'
+import { formatNumber } from 'helpers/formatNumber'
 
 export const HotelListCardInfo = ({ hotel, locid }) => {
 	return (
@@ -21,12 +22,12 @@ export const HotelListCardInfo = ({ hotel, locid }) => {
 			<div className='cityPrice'>
 				<div>
 					<p className='cityPrice_title'>
-						Cop: <b>{hotel.price}</b>
+						Cop: <b>{formatNumber(hotel.price)}</b>
 					</p>
 				</div>
 				<div>
 					<p className='cityPrice_subTitle'>
-						DESDE Cop {hotel.price}
+						DESDE Cop {formatNumber(hotel.price)}
 					</p>
 					<p className='cityPrice_card'>
 						<small>tarjeta sujeta a disponibilidad</small>

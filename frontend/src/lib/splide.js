@@ -29,6 +29,19 @@ export const splideOptions = {
 	}
 }
 
+export const splideOptionsBedroomsModal = {
+	type: 'slide',
+	perPage: 1,
+	speed: 600,
+	interval: 200,
+	gap: '2.5rem',
+	arrows: false,
+	padding: {
+		left: '0.5rem',
+		right: '0.5rem'
+	}
+}
+
 export const splideOptionsOffers = {
 	type: 'slide',
 	perPage: 4,
