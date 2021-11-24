@@ -9,7 +9,8 @@ export const initial_state = {
 	},
 	modalImages: {
 		stateShow: false,
-		urlImg: null
+		urlImg: null,
+		numImg: null
 	}
 }
 
@@ -31,7 +32,8 @@ export const toolTipReducer = (state = initial_state, action) => {
 				...state,
 				modalImages: {
 					stateShow: !state.modalImages.stateShow,
-					urlImg: action.payload
+					urlImg: action.payload,
+					numImg: action.payload
 				}
 			}
 		}

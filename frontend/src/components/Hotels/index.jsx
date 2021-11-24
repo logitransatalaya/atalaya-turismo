@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { HotelsContainer } from './styles'
-import { Container } from 'components/GlobalComponents/Container'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
+import { Container } from 'components/GlobalComponents/Container'
 import { CardImagesGradiants } from 'components/GlobalComponents/CardImagesGradiants'
 
 export const Hotels = () => {

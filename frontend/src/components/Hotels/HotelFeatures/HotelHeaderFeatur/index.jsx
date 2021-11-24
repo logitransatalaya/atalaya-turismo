@@ -15,14 +15,14 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 		window.onresize = () => setScreen(window.innerWidth)
 	}, [])
 
-	const handleShow = (img) => {
-		dispatch(handleModalImages(img))
+	const handleShow = (img, num) => {
+		dispatch(handleModalImages({ img, num }))
 	}
 
 	return (
 		<>
 			<HeaderCardStyled>
-				<ModalImg handleShow={handleShow} />
+				<ModalImg handleShow={handleShow} photos={photos} />
 				<div>
 					<div className='card_title'>{city}</div>
 					<div className='card_location'>
@@ -38,13 +38,15 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 			</HeaderCardStyled>
 			{screen > 850 ? (
 				<CardGrid>
-					{photos.map(
-						(photo, i) =>
+					{photos.map((photo, i) => {
+						return (
 							i < 4 && (
 								<div
 									className={`card_${i + 1} card_hidden`}
 									key={i}
-									onClick={() => handleShow(photo.url_img)}
+									onClick={() => {
+										handleShow(photo.url_img, i + 1)
+									}}
 								>
 									<img
 										className='box_img'
@@ -53,7 +55,8 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 									/>
 								</div>
 							)
-					)}
+						)
+					})}
 				</CardGrid>
 			) : (
 				<Bedrooms img={photos} />
