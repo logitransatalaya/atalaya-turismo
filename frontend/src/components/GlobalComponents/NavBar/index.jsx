@@ -1,11 +1,8 @@
-
-import { Container } from 'components/GlobalComponents/Container'
-
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
-import { ButtonHandleNav } from '../ButtonHandleNav'
 import { StyleNavbar, StyleButton } from './styles'
+import { ButtonHandleNav } from '../ButtonHandleNav'
+import { Container } from 'components/GlobalComponents/Container'
 
 export const NavBar = () => {
 	const [handleNav, setHandleNav] = useState(false)
@@ -21,7 +18,7 @@ export const NavBar = () => {
 			<Container>
 				<nav className={styleNav}>
 					<Link className='box_imgLogo' to='/'>
-						<img src='/logo.svg' alt='logoAtalaya' />
+						<img src='/logo-navbar.png' alt='logoAtalaya' />
 					</Link>
 					<div className='content_options'>
 						<ul className='navigation'>

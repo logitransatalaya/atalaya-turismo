@@ -13,10 +13,10 @@ export const StyleNavbar = styled.div`
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 100%;
+			height: 85%;
 
 			img {
-				width: 86%;
+				width: 100%;
 				height: 86%;
 			}
 		}
