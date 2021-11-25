@@ -1,6 +1,22 @@
 from django.db import models
+from django.db.models.fields import NullBooleanField
 
 # Create your models here.
+
+ONE = '1'
+TWO = '2'
+THREE = '3'
+FOUR = '4'
+NULL = 'null'
+
+POSITION_CHOICES = (
+    (ONE, '1'),
+    (TWO, '2'),
+    (THREE, '3'),
+    (FOUR, '4'),
+    (NULL, 'Nulo')
+)
+
 
 class City(models.Model):
     name= models.CharField(max_length=100)
@@ -52,6 +68,9 @@ class Photos_inside(models.Model):
     id_hotel= models.ForeignKey(Hotel, related_name="photos_inside", on_delete=models.CASCADE)
     url_img= models.URLField(max_length=255)
     name_img= models.CharField(max_length=50)
+    position= models.CharField(max_length=4, 
+                choices=POSITION_CHOICES,
+                default='Nulo') 
 
     def __str__(self):
         template = f'fotos habitaciones de {self.id_hotel.name}'

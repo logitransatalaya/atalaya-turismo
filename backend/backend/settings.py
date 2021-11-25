@@ -1,8 +1,5 @@
 from django.core.management.utils import get_random_secret_key
 import os 
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,10 +9,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/ 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', get_random_secret_key)
+SECRET_KEY = get_random_secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #CORS
 ALLOWED_HOSTS = ['*', 'http://localhost:3000', 'https://atalayaviajesyturismo.com']
@@ -54,12 +51,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #database connection
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DATABASE_NAME'),
-        'USER': os.getenv('DATABASE_USER') ,
-        'PASSWORD':  os.getenv('DATABASE_PASS'),
-        'HOST':  os.getenv('HOST') ,
-        'PORT':  os.getenv('PORT') ,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'yourdatabasename.db'),
     }
 }
 
@@ -81,6 +74,7 @@ INSTALLED_APPS = [
     'plans',
     'offers',
     'toures',
+    'home',
 ]
 
 MIDDLEWARE = [
