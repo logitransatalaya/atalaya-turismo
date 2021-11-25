@@ -18,11 +18,14 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 	const handleShow = (img, num) => {
 		dispatch(handleModalImages({ img, num }))
 	}
+	const photosSort = photos.sort((a, b) =>
+		a.position.localeCompare(b.position)
+	)
 
 	return (
 		<>
 			<HeaderCardStyled>
-				<ModalImg handleShow={handleShow} photos={photos} />
+				<ModalImg handleShow={handleShow} photos={photosSort} />
 				<div>
 					<div className='card_title'>{city}</div>
 					<div className='card_location'>
@@ -38,7 +41,7 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 			</HeaderCardStyled>
 			{screen > 850 ? (
 				<CardGrid>
-					{photos.map((photo, i) => {
+					{photosSort?.map((photo, i) => {
 						return (
 							i < 4 && (
 								<div
