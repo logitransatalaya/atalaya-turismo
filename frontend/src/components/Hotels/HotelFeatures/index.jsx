@@ -39,7 +39,6 @@ export const HotelFeatures = () => {
 		messageWhatsapp,
 		city
 	])
-	console.log(currentHotel?.photos_inside)
 	return (
 		<>
 			{currentHotel ? (

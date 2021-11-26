@@ -101,7 +101,6 @@ export const useApi = () => {
 			url2: null,
 			url3: null
 		})
-		console.log(data)
 		dispatch(getAllBanner(data))
 	}
 
