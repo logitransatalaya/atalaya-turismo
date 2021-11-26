@@ -5,6 +5,7 @@ import { OffersReducer } from './offersReducer'
 import { toolTipReducer } from './toolTipReducer'
 import { combineReducers } from 'redux'
 import { OffersFlashReducer } from './offersFlashReducer'
+import { bannerHomeReducer } from './bannerHomeReducer'
 
 export default combineReducers({
 	hotelsReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
 	toolTipReducer,
 	PlansReducer,
 	OffersReducer,
-	OffersFlashReducer
+	OffersFlashReducer,
+	bannerHomeReducer
 })

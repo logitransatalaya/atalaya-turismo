@@ -18,7 +18,8 @@ import slideDefault4 from '../../../images/desierto.png'
 import slideDefault5 from '../../../images/cartagena.png'
 import slideDefault6 from '../../../images/mina-de-sal.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-
+import { useSelector } from 'react-redux'
+import { useApi } from '../../../hooks/useApi'
 const arrayInfo = [
 	{
 		url: slideDefault0,
@@ -64,13 +65,15 @@ const arrayInfo = [
 const HomeSlider = () => {
 	// Estado para capturar el tamaño de la pantalla
 	const [handleWidth, setHandleWidth] = useState(window.innerWidth)
+	const { banners } = useSelector((state) => state.bannerHomeReducer)
+	const { getBanners } = useApi()
 
 	// funcion para hacer la peticion a la db
 	useEffect(() => {
-		// if (offersflash === null) {
-		// 	getOffersFlash()
-		// }
-	}, [])
+		if (banners === null) {
+			getBanners()
+		}
+	}, [banners, getBanners])
 
 	// funcion para capturar el tamaño de pantalla
 	useEffect(() => {
@@ -80,11 +83,11 @@ const HomeSlider = () => {
 	return (
 		<Slider>
 			<Splide options={splideOptionsLoop}>
-				{arrayInfo.map((data, i) => (
+				{arrayInfo?.map((data, i) => (
 					<SplideSlide key={i}>
 						<img
 							src={handleWidth > 650 ? data.url : data.urlMovil}
-							alt={data.alt}
+							alt={data.description}
 							width='100%'
 						/>
 					</SplideSlide>

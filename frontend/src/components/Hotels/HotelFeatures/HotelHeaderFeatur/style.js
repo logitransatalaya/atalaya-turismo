@@ -82,4 +82,8 @@ export const CardGrid = styled.div`
 			transform: scale(1.1);
 		}
 	}
+	@media (max-width: 1380px) {
+		width: 90%;
+		margin: auto;
+	}
 `

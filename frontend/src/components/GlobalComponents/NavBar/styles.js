@@ -9,6 +9,7 @@ export const StyleNavbar = styled.div`
 		justify-content: space-between;
 		align-items: center;
 		.box_imgLogo {
+			margin-left: 1rem;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -64,9 +65,8 @@ export const StyleNavbar = styled.div`
 
 			.box_imgLogo {
 				height: auto;
-
 				img {
-					width: 70%;
+					width: 90%;
 				}
 			}
 

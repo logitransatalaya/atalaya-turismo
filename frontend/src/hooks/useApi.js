@@ -9,6 +9,7 @@ import { getAllOffers } from 'state/actions/offersActions'
 import { getAllOffersFlash } from 'state/actions/offersflash'
 import { getAllPlans, getCurrentPlan } from 'state/actions/plansAction'
 import { getTours, updateCurrentTour } from 'state/actions/toursActions'
+import { getAllBanner } from 'state/actions/bannerHomeAction'
 
 export const useApi = () => {
 	const dispatch = useDispatch()
@@ -94,6 +95,15 @@ export const useApi = () => {
 		})
 		dispatch(getAllOffersFlash(data?.offersflash))
 	}
+	const getBanners = async () => {
+		const data = await api({
+			url1: 'banners',
+			url2: null,
+			url3: null
+		})
+		console.log(data)
+		dispatch(getAllBanner(data))
+	}
 
 	return {
 		getPlans,
@@ -104,6 +114,7 @@ export const useApi = () => {
 		getCurrentTour,
 		getOffersFlash,
 		getDetailsPlans,
-		getHotelFeatures
+		getHotelFeatures,
+		getBanners
 	}
 }

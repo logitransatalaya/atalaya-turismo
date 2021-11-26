@@ -5,9 +5,10 @@ export const Info = styled.div`
 	padding: 5px;
 	justify-content: flex-start;
 	align-items: center;
-	width: 50%;
+	width: 100%;
 
 	.icon {
+		margin-left: 50px;
 		width: 2rem;
 		padding-right: 20px;
 		color: #1a2a75;

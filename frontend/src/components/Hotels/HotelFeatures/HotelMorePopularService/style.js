@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 export const ContainerCards = styled.div`
+	width: 95%;
+	margin: auto;
 	.layoutD {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		justify-content: center;
-		gap: 1em;
+		gap: 0.3em;
 
 		@media (max-width: 800px) {
 			display: none;
