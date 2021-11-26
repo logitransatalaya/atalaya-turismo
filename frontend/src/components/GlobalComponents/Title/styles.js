@@ -13,12 +13,14 @@ export const StyleTitle = styled.div`
 		font-size: 1.85rem;
 		color: #053b77;
 		text-transform: uppercase;
+		text-align: center;
 		font-weight: ${({ fontWeight }) => (fontWeight ? `800` : `500`)};
 	}
 
 	.line {
+		margin: auto;
 		height: 3px;
-		width: ${({ about }) => (about ? `30%` : `35%`)};
+		width: ${({ about }) => (about ? `25%` : `35%`)};
 		background: ${({ color }) => (color ? `orange` : `#053b77`)};
 	}
 

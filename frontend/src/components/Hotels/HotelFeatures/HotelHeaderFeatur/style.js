@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const HeaderCardStyled = styled.div`
-	margin-top: 2.8rem;
+	margin-top: 2.5rem;
+	margin-left: 35px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

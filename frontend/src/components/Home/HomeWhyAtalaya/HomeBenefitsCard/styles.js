@@ -38,10 +38,9 @@ export const BenefitsCardStyled = styled.div`
 
 	.benefitsCard-description {
 		margin: 0;
-		font-size: 1.1rem;
-		width: 98%;
-		font-weight: 600;
-		text-align: justify;
+		width: 95%;
+		font-weight: 400;
+		text-align: unset;
 	}
 
 	@media (min-width: 950px) {

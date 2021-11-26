@@ -17,8 +17,8 @@ export const SliderRooms = styled.div`
 `
 
 export const Room = styled.div`
-	width: 850px;
-	height: 700px;
+	width: 750px;
+	height: 500px;
 	border-radius: 40px;
 
 	img {

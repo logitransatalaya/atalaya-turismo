@@ -5,12 +5,12 @@ export const ContainerHotelInfo = styled.div`
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
 	padding: 80px 0;
-
+	width: 90%;
+	margin: auto;
 	.item1 {
 		display: flex;
 		justify-content: flex-start;
 		color: #1a2a75;
-
 		.info {
 			width: 90%;
 			font-size: 1.7rem;
