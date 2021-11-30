@@ -10,17 +10,15 @@ import { CardImagesGradiants } from 'components/GlobalComponents/CardImagesGradi
 
 export const CitiesInternational = () => {
 	// estados locales
-	const { getCities } = useApi()
-	const { cityList, cityInternatinalList } = useSelector(
-		(state) => state.hotelsReducer
-	)
+	const { getInternationalCities } = useApi()
+	const { internationalCities } = useSelector((state) => state.hotelsReducer)
 
 	// peticion a la db
 	useEffect(() => {
-		if (cityList === null) {
-			getCities()
+		if (internationalCities === null) {
+			getInternationalCities()
 		}
-	}, [cityList, getCities])
+	}, [internationalCities, getInternationalCities])
 
 	return (
 		<Container>
@@ -30,9 +28,9 @@ export const CitiesInternational = () => {
 				about='true'
 			/>
 			<HotelsContainer>
-				{cityList ? (
+				{internationalCities ? (
 					<div className='content'>
-						{cityList.map((city, i) => (
+						{internationalCities?.map((city, i) => (
 							<Link key={i} to={`hoteles/${city.id}`}>
 								<CardImagesGradiants
 									url={city.url_img}

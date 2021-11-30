@@ -22,12 +22,12 @@ export async function api({ url1, url2, url3 }) {
 		}
 		if (url1) {
 			const response = await fetch(
-				`https://django.atalayaviajesyturismo.com/api/${url1}/`
+				`https://django.atalayaviajesyturismo.com/api/${url1}`
 			)
 			const data = await response.json()
-			// if (Object.values(data).every((x) => !x.length)) {
-			// 	return undefined
-			// }
+			if (Object.values(data).every((x) => !x.length)) {
+				return undefined
+			}
 			return data
 		}
 	} catch (error) {

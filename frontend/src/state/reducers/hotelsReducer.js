@@ -4,9 +4,9 @@ export const initial_state = {
 	cityList: null,
 	hotelsList: null,
 	currentHotel: null,
-	cityInternatinalList: null,
-	hotelInternationalList: null,
-	currentInternationalHotel: null
+	internationalCities: null,
+	InternationalHotel: null,
+	aboutInternationalHotel: null
 }
 
 export const hotelsReducer = (state = initial_state, action) => {
@@ -29,21 +29,21 @@ export const hotelsReducer = (state = initial_state, action) => {
 				currentHotel: action.payload
 			}
 
-		case types.INTERNACIONAL_LIST_HOTELS:
+		case types.INTERNATIONAL_CITIES:
 			return {
 				...state,
-				cityInternatinalList: action.payload
+				internationalCities: action.payload
 			}
 
-		case types.CITY_INTERNATIONAL_LIST:
+		case types.INTERNACIONAL_HOTELS:
 			return {
 				...state,
-				hotelInternationalList: action.payload
+				InternationalHotel: action.payload
 			}
-		case types.INTERNATIONAL_HOTEL:
+		case types.ABOUT_INTERNACIONAL_HOTEL:
 			return {
 				...state,
-				currentInternationalHotel: action.payload
+				aboutInternationalHotel: action.payload
 			}
 		default:
 			return state

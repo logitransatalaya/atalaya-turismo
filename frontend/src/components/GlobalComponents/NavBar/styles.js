@@ -104,7 +104,6 @@ export const StyleNavbar = styled.div`
 
 						a {
 							text-decoration: none;
-							color: orange;
 							font-size: 19px;
 						}
 					}
