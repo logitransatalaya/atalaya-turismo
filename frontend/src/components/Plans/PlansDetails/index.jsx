@@ -10,7 +10,7 @@ import React, { useEffect, useState } from 'react'
 import { PlansIncludesMovil } from './PlansIncludeMovil'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
-import Bedrooms from 'components/Hotels/HotelFeatures/HotelBedrooms'
+import Bedrooms from 'components/Hotels/Nationals/HotelFeatures/HotelBedrooms'
 import { CurrentPlanConatainer, CurrentPlanServices } from './styles'
 
 export const PlansDetails = () => {

@@ -25,8 +25,30 @@ export const NavBar = () => {
 							<li onClick={handleOpenNav}>
 								<Link to='/'>INICIO</Link>
 							</li>
-							<li onClick={handleOpenNav}>
-								<Link to='/hoteles'>HOTELES</Link>{' '}
+							<li>
+								<div className='topnav' id='myTopnav'>
+									<div className='dropdown'>
+										<button className='dropbtn'>
+											HOTELES
+											<i className='fa fa-caret-down'></i>
+										</button>
+										<div className='dropdown-content'>
+											<Link
+												onClick={handleOpenNav}
+												to='/hoteles'
+												href='#'
+											>
+												NACIONALES
+											</Link>
+											<Link
+												onClick={handleOpenNav}
+												to='/hoteles-internacionales'
+											>
+												INTERNACIONALES
+											</Link>
+										</div>
+									</div>
+								</div>
 							</li>
 							<li onClick={handleOpenNav}>
 								<Link to='/planes'>PLANES</Link>

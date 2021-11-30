@@ -3,18 +3,19 @@ import { Home } from './components/Home'
 import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
 import { Health } from 'components/Health'
-import { Hotels } from './components/Hotels'
 import { Offers } from './components/Offers'
-import { HotelsList } from 'components/Hotels/HotelsList'
+import { Hotels } from './components/Hotels/Nationals'
 import { NavBar } from 'components/GlobalComponents/NavBar'
 import { PlansDetails } from 'components/Plans/PlansDetails'
 import { ToursDetails } from 'components/Tours/ToursDetails'
 import { Footer } from './components/GlobalComponents/Footer'
-import { HotelFeatures } from 'components/Hotels/HotelFeatures'
 import ScrollToTop from 'components/GlobalComponents/ScrollToTop'
+import { HotelsList } from 'components/Hotels/Nationals/HotelsList'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { HotelFeatures } from 'components/Hotels/Nationals/HotelFeatures'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
 import ScrollArrow from 'components/GlobalComponents/ScrollToTop/ScrollArrow'
+import { CitiesInternational } from 'components/Hotels/International'
 
 export default function App() {
 	return (
@@ -31,6 +32,10 @@ export default function App() {
 					</Route>
 					<Route exact path='/hoteles'>
 						<Hotels />
+						<Footer />
+					</Route>
+					<Route exact path='/hoteles-internacionales'>
+						<CitiesInternational />
 						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid'>
