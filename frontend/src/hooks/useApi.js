@@ -1,4 +1,7 @@
 import {
+	aboutInternationalHotel,
+	internationalCities,
+	internationalHotels,
 	updatecityList,
 	updateCurrentHotel,
 	updateHotelsList
@@ -14,6 +17,7 @@ import { getAllBanner } from 'state/actions/bannerHomeAction'
 export const useApi = () => {
 	const dispatch = useDispatch()
 
+	// == HOTELES NACIONALES == //
 	const getCities = async () => {
 		const data = await api({
 			url1: 'ciudades',
@@ -42,6 +46,36 @@ export const useApi = () => {
 		dispatch(updateCurrentHotel(data?.hotel[0]))
 		setCity(data?.city[0].name)
 	}
+
+	// == HOTELES INTERNACIONALES == //
+	const getInternationalCities = async () => {
+		const data = await api({
+			url1: 'internacionales',
+			url2: null,
+			url3: null
+		})
+		dispatch(internationalCities(data?.cities))
+	}
+
+	const getInternationalHotels = async () => {
+		const data = await api({
+			url1: 'hotels-international',
+			url2: null,
+			url3: null
+		})
+		dispatch(internationalHotels(data))
+	}
+
+	const getAboutInternationalHotel = async () => {
+		const data = await api({
+			url1: 'about-hotels-international',
+			url2: null,
+			url3: null
+		})
+		dispatch(aboutInternationalHotel(data))
+	}
+
+	// == OFERTAS  == //
 
 	const getOffers = async () => {
 		const data = await api({
@@ -108,12 +142,15 @@ export const useApi = () => {
 		getPlans,
 		getCities,
 		getOffers,
+		getBanners,
 		getToursApi,
 		getHotelList,
 		getCurrentTour,
 		getOffersFlash,
 		getDetailsPlans,
 		getHotelFeatures,
-		getBanners
+		getInternationalCities,
+		getInternationalHotels,
+		getAboutInternationalHotel
 	}
 }

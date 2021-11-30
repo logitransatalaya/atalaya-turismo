@@ -1,11 +1,11 @@
 // creamos la accion
 export const types = {
-	UPDATE_HOTELS_LIST: 'UPDATE_HOTELS_LIST',
 	UPDATE_CITY_LIST: 'UPDATE_CITY_LIST',
+	UPDATE_HOTELS_LIST: 'UPDATE_HOTELS_LIST',
+	INTERNATIONAL_HOTEL: 'INTERNATIONAL_HOTEL',
+	INTERNATIONAL_CITIES: 'INTERNATIONAL_CITIES',
 	UPDATE_CURRENT_HOTEL: 'UPDATE_CURRENT_HOTEL',
-	INTERNACIONAL_LIST_HOTELS: 'INTERNACIONAL_LIST_HOTELS',
-	CITY_INTERNATIONAL_LIST: 'CITY_INTERNATIONAL_LIST',
-	INTERNATIONAL_HOTEL: 'INTERNATIONAL_HOTEL'
+	ABOUT_INTERNACIONAL_HOTEL: 'ABOUT_INTERNACIONAL_HOTEL'
 }
 // == Nacionales == //
 export const updateHotelsList = (data) => ({
@@ -24,17 +24,17 @@ export const updateCurrentHotel = (data) => ({
 })
 
 // == Internacionales == //
-export const internationalListHotels = (data) => ({
-	type: types.INTERNACIONAL_LIST_HOTELS,
+export const internationalCities = (data) => ({
+	type: types.INTERNATIONAL_CITIES,
 	payload: data
 })
 
-export const cityInternationalList = (data) => ({
-	type: types.CITY_INTERNATIONAL_LIST,
+export const internationalHotels = (data) => ({
+	type: types.INTERNACIONAL_HOTELS,
 	payload: data
 })
 
-export const InternationalHotel = (data) => ({
-	type: types.INTERNATIONAL_HOTEL,
+export const aboutInternationalHotel = (data) => ({
+	type: types.ABOUT_INTERNACIONAL_HOTEL,
 	payload: data
 })

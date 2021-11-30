@@ -18,13 +18,13 @@ export const ToursDetailsStyled = styled.div`
 
 		.descriptionImg-container {
 			height: 100%;
-			width: calc(100% - 2rem);
+			width: 100%;
 
 			img {
 				display: block;
 				margin: 0 auto;
 				border-radius: 1.5rem;
-				width: 100%;
+				width: 80%;
 				height: 100%;
 			}
 		}
