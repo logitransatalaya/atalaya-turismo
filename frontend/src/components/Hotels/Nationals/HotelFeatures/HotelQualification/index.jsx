@@ -16,7 +16,7 @@ export const HotelQualification = ({ stars }) => {
 	useEffect(() => {
 		handleStarClick(stars - 1)
 		// eslint-disable-next-line
-	}, [])
+	}, [stars])
 	return (
 		<ContainerStars>
 			<div>

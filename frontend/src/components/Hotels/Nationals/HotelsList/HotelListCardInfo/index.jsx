@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'components/GlobalComponents/Button'
-import { HotelQualification } from 'components/Hotels/HotelFeatures/HotelQualification'
+import { HotelQualification } from 'components/Hotels/Nationals/HotelFeatures/HotelQualification'
 import { formatNumber } from 'helpers/formatNumber'
 
 export const HotelListCardInfo = ({ hotel, locid }) => {

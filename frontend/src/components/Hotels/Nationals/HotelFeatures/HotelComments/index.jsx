@@ -16,7 +16,7 @@ const HotelInfo = ({ comentens, desc }) => {
 				{/* slider */}
 				<div className='sliderContain'>
 					<Splide options={splideOptionsMessages} className='splideC'>
-						{comentens.map((coment, i) => (
+						{comentens?.map((coment, i) => (
 							<SplideSlide className='center' key={i}>
 								<Message>
 									<div className='box-message'>

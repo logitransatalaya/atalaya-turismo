@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { HeaderCardStyled, CardGrid } from './style'
 import { ModalImg } from 'components/GlobalComponents/ModalImg'
 import { ReactComponent as IconLocation } from 'images/svg/ubicacion.svg'
-import { handleModalImages } from '../../../../state/actions/toolTipActions'
+import { handleModalImages } from '../../../../../state/actions/toolTipActions'
 
 export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 	const dispatch = useDispatch()
@@ -18,10 +18,9 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 	const handleShow = (img, num) => {
 		dispatch(handleModalImages({ img, num }))
 	}
-	const photosSort = photos.sort((a, b) =>
+	const photosSort = photos?.sort((a, b) =>
 		a.position.localeCompare(b.position)
 	)
-
 	return (
 		<>
 			<HeaderCardStyled>

@@ -10,7 +10,7 @@ import { HotelHeaderFeatur } from './HotelHeaderFeatur'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
 import { Container } from 'components/GlobalComponents/Container'
-import { HotelMorePopularService } from 'components/Hotels/HotelFeatures/HotelMorePopularService'
+import { HotelMorePopularService } from 'components/Hotels/Nationals/HotelFeatures/HotelMorePopularService'
 
 export const HotelFeatures = () => {
 	//
