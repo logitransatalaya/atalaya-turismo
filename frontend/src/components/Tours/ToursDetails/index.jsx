@@ -49,17 +49,16 @@ export const ToursDetails = () => {
 					<div className='characteristics-container'>
 						<h5>INCLUYE:</h5>
 						<div className='characteristics-content'>
-							<ToursCharacteristics
-								data={currentTour.include}
-								num={'1'}
-							/>
+							<ToursCharacteristics data={currentTour.include} />
 							<ToursCharacteristics
 								data={currentTour.text_include_two}
-								num={'2'}
 							/>
 						</div>
 						<p className='characteristics-specialItem'>
-							<img src='/tours/icono-mapa.svg' alt='' />
+							<img
+								src={`/tours/${currentTour.icon_unique}.svg`}
+								alt=''
+							/>
 							{currentTour.unique}
 						</p>
 					</div>
