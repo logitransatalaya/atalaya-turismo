@@ -18,7 +18,8 @@ export const useApi = () => {
 	const dispatch = useDispatch()
 
 	// == HOTELES NACIONALES == //
-	const getCities = async () => {
+	const getCities = async (idCitie) => {
+		console.log(idCitie)
 		const data = await api({
 			url1: 'ciudades',
 			url2: null,

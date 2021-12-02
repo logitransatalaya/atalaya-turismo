@@ -4,7 +4,7 @@ import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
 import { Health } from 'components/Health'
 import { Offers } from './components/Offers'
-import { Hotels } from './components/Hotels/Nationals'
+import { Cities } from './components/Hotels/Nationals'
 import { NavBar } from 'components/GlobalComponents/NavBar'
 import { PlansDetails } from 'components/Plans/PlansDetails'
 import { ToursDetails } from 'components/Tours/ToursDetails'
@@ -30,12 +30,12 @@ export default function App() {
 						<Home />
 						<Footer />
 					</Route>
-					<Route exact path='/hoteles'>
-						<Hotels />
+					<Route exact path='/paises'>
+						<CitiesInternational />
 						<Footer />
 					</Route>
-					<Route exact path='/hoteles-internacionales'>
-						<CitiesInternational />
+					<Route exact path='/ciudades'>
+						<Cities idCitie={1} />
 						<Footer />
 					</Route>
 					<Route exact path='/hoteles/:locid'>
