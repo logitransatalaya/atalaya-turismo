@@ -22,11 +22,7 @@ export const CitiesInternational = () => {
 
 	return (
 		<Container>
-			<Title
-				text={`HOTELES INTERNACIONALES`}
-				fontWeight='true'
-				about='true'
-			/>
+			<Title text={`PAISES`} fontWeight='true' />
 			<HotelsContainer>
 				{internationalCities ? (
 					<div className='content'>

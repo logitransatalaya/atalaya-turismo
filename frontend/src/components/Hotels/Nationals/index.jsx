@@ -8,21 +8,20 @@ import { Loader } from 'components/GlobalComponents/Loader'
 import { Container } from 'components/GlobalComponents/Container'
 import { CardImagesGradiants } from 'components/GlobalComponents/CardImagesGradiants'
 
-export const Hotels = () => {
+export const Cities = ({ idCitie }) => {
 	// estados locales
 	const { getCities } = useApi()
 	const { cityList } = useSelector((state) => state.hotelsReducer)
-
 	// peticion a la db
 	useEffect(() => {
 		if (cityList === null) {
-			getCities()
+			getCities(idCitie)
 		}
 	}, [cityList, getCities])
 
 	return (
 		<Container>
-			<Title text={`HOTELES NACIONALES`} fontWeight='true' />
+			<Title text={`CIUDADES`} fontWeight='true' />
 			<HotelsContainer>
 				{cityList ? (
 					<div className='content'>

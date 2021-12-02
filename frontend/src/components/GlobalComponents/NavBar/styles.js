@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const StyleNavbar = styled.div`
 	background-color: #0f216f;
-
 	.navbar {
 		height: 80px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
 		.box_imgLogo {
 			margin-left: 1rem;
 			display: flex;
@@ -33,6 +33,7 @@ export const StyleNavbar = styled.div`
 				gap: 0.6rem;
 				list-style: none;
 				li {
+					align-self: center;
 					a {
 						text-decoration: none;
 						color: #ff8b1e;
@@ -42,6 +43,25 @@ export const StyleNavbar = styled.div`
 						&:hover {
 							color: orange;
 						}
+					}
+				}
+			}
+		}
+
+		.traslate {
+			height: 100%;
+			background-color: transparent;
+			align-self: center;
+			width: 100%;
+			border-radius: 100px;
+
+			div {
+				border: none;
+				div {
+					background-color: transparent;
+
+					a {
+						display: none;
 					}
 				}
 			}
