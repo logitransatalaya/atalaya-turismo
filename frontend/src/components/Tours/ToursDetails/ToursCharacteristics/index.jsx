@@ -3,7 +3,7 @@ import React from 'react'
 export const ToursCharacteristics = ({ data }) => {
 	return (
 		<div>
-			{data.map((text, i) => (
+			{data?.map((text, i) => (
 				<p key={i}>
 					<img
 						src={`/tours/${

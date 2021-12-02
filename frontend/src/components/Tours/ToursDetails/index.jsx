@@ -49,9 +49,11 @@ export const ToursDetails = () => {
 					<div className='characteristics-container'>
 						<h5>INCLUYE:</h5>
 						<div className='characteristics-content'>
-							<ToursCharacteristics data={currentTour.include} />
 							<ToursCharacteristics
-								data={currentTour.text_include_two}
+								data={currentTour.column_one}
+							/>
+							<ToursCharacteristics
+								data={currentTour.column_two}
 							/>
 						</div>
 						<p className='characteristics-specialItem'>
@@ -64,7 +66,7 @@ export const ToursDetails = () => {
 					</div>
 				</ToursDetailsStyled>
 			</Container>
-			<Footer type='tours' imageUrl={currentTour.url_image_description} />
+			<Footer type='tours' imageUrl={currentTour.url_img_bottom} />
 		</>
 	)
 }
