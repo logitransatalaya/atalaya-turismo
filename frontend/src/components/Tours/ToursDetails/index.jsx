@@ -50,22 +50,23 @@ export const ToursDetails = () => {
 						<h5>INCLUYE:</h5>
 						<div className='characteristics-content'>
 							<ToursCharacteristics
-								data={currentTour.include}
-								num={'1'}
+								data={currentTour.column_one}
 							/>
 							<ToursCharacteristics
-								data={currentTour.text_include_two}
-								num={'2'}
+								data={currentTour.column_two}
 							/>
 						</div>
 						<p className='characteristics-specialItem'>
-							<img src='/tours/icono-mapa.svg' alt='' />
+							<img
+								src={`/tours/${currentTour.icon_unique}.svg`}
+								alt=''
+							/>
 							{currentTour.unique}
 						</p>
 					</div>
 				</ToursDetailsStyled>
 			</Container>
-			<Footer type='tours' imageUrl={currentTour.url_image_description} />
+			<Footer type='tours' imageUrl={currentTour.url_img_bottom} />
 		</>
 	)
 }
