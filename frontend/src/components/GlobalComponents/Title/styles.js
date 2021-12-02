@@ -11,7 +11,7 @@ export const StyleTitle = styled.div`
 
 	.title {
 		font-size: 1.85rem;
-		color: #053b77;
+		color: #10216f;
 		text-transform: uppercase;
 		text-align: center;
 		font-weight: ${({ fontWeight }) => (fontWeight ? `800` : `500`)};
@@ -21,7 +21,7 @@ export const StyleTitle = styled.div`
 		margin: auto;
 		height: 3px;
 		width: ${({ about }) => (about ? `25%` : `35%`)};
-		background: ${({ color }) => (color ? `orange` : `#053b77`)};
+		background: ${({ color }) => (color ? `orange` : `#10216f`)};
 	}
 
 	@media (max-width: 700px) {

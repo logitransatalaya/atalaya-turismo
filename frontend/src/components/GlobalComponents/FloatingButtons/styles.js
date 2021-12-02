@@ -61,7 +61,7 @@ export const Button = styled.div`
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 		right: 70px;
 		transition: all 0.5s ease;
-		background-color: #053b77;
+		background-color: #10216f;
 	}
 
 	.tiptextW::after,

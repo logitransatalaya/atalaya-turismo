@@ -26,7 +26,7 @@ export const ContainerHotelInfo = styled.div`
 			width: 90%;
 			height: 500px;
 			border-radius: 40px;
-			background: #053b77;
+			background: #10216f;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
