@@ -1,11 +1,12 @@
 import { types } from '../actions/hotelsActions'
 
 export const initial_state = {
-	cityList: null,
 	hotelsList: null,
+	stateNacionality: null,
 	currentHotel: null,
-	internationalCities: null,
+	CitiesOrCountries: null,
 	InternationalHotel: null,
+	internationalCities: null,
 	aboutInternationalHotel: null
 }
 
@@ -20,7 +21,7 @@ export const hotelsReducer = (state = initial_state, action) => {
 		case types.UPDATE_CITY_LIST:
 			return {
 				...state,
-				cityList: action.payload
+				CitiesOrCountries: action.payload
 			}
 
 		case types.UPDATE_CURRENT_HOTEL:
@@ -45,6 +46,12 @@ export const hotelsReducer = (state = initial_state, action) => {
 				...state,
 				aboutInternationalHotel: action.payload
 			}
+		case types.CHANGE_NATIONALITY:
+			return {
+				...state,
+				stateNacionality: action.payload
+			}
+
 		default:
 			return state
 	}
