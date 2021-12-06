@@ -4,7 +4,7 @@ import { Button } from 'components/GlobalComponents/Button'
 import { HotelQualification } from 'components/Hotels/Nationals/HotelFeatures/HotelQualification'
 import { formatNumber } from 'helpers/formatNumber'
 
-export const HotelListCardInfo = ({ hotel, locid }) => {
+export const HotelListCardInfo = ({ city, nacionality, hotel, locid }) => {
 	return (
 		<div className='cityCard'>
 			<div className='cityBoxImg'>
@@ -32,7 +32,9 @@ export const HotelListCardInfo = ({ hotel, locid }) => {
 					<p className='cityPrice_card'>
 						<small>tarjeta sujeta a disponibilidad</small>
 					</p>
-					<Link to={`${locid}/${hotel.id}`}>
+					<Link
+						to={`/ciudades/hoteles/${nacionality}/${city}/${hotel.id}`}
+					>
 						<Button
 							text={'Ver más'}
 							bgColor={'#10216f'}

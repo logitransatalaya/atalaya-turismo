@@ -1,11 +1,11 @@
 import { useApi } from 'hooks/useApi'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useLocation } from 'react-router'
 import HotelBedrooms from './HotelBedrooms'
 import HotelComments from './HotelComments'
 import { useParams } from 'react-router-dom'
 import { useWhatsapp } from 'hooks/useWhatsapp'
-import React, { useEffect, useState } from 'react'
 import { HotelHeaderFeatur } from './HotelHeaderFeatur'
 import { Title } from 'components/GlobalComponents/Title'
 import { Loader } from 'components/GlobalComponents/Loader'
@@ -15,29 +15,28 @@ import { HotelMorePopularService } from 'components/Hotels/Nationals/HotelFeatur
 export const HotelFeatures = () => {
 	//
 	const location = useLocation()
-	const [city, setCity] = useState('')
 	const { currentHotel } = useSelector((state) => state.hotelsReducer)
-	const { hotelId, locid } = useParams()
+	const { city, nacionality, hotelId } = useParams()
 	const { messageWhatsapp } = useWhatsapp()
 	const { getHotelFeatures } = useApi()
 
 	// peticion a la api mediante el id del hotel
 	useEffect(() => {
-		if (currentHotel === null) getHotelFeatures(locid, hotelId, setCity)
+		if (currentHotel === null) getHotelFeatures(nacionality, city, hotelId)
 		else if (currentHotel) {
-			if (currentHotel.id !== parseInt(hotelId) || city === '') {
-				getHotelFeatures(locid, hotelId, setCity)
+			if (currentHotel.id !== parseInt(hotelId)) {
+				getHotelFeatures(nacionality, city, hotelId)
 			}
 			messageWhatsapp(location.pathname, currentHotel.name, 'hotel')
 		}
 	}, [
-		locid,
+		city,
 		hotelId,
+		location,
+		nacionality,
 		currentHotel,
 		getHotelFeatures,
-		location,
-		messageWhatsapp,
-		city
+		messageWhatsapp
 	])
 	return (
 		<>
