@@ -169,9 +169,10 @@ export const StyleNavbar = styled.div`
 
 	/* Style the dropdown content (hidden by default) */
 	.dropdown-content {
+		background-color: gray;
 		display: none;
 		position: absolute;
-		background-color: #f9f9f9;
+		background-color: #0f216f;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 		z-index: 1;
@@ -195,7 +196,7 @@ export const StyleNavbar = styled.div`
 
 	/* Add a grey background to dropdown links on hover */
 	.dropdown-content a:hover {
-		background-color: #0f216f;
+		background-color: #fff;
 		color: #ff8b1e;
 	}
 
@@ -249,7 +250,8 @@ export const StyleNavbar = styled.div`
 			display: none;
 			transition: all ease-in-out 2s;
 			position: absolute;
-			background-color: #f9f9f9;
+			background-color: #0f216f;
+
 			max-width: 240px;
 			left: 15px;
 			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
