@@ -10,48 +10,47 @@ import { api } from 'helpers/api'
 import { useDispatch } from 'react-redux'
 import { getAllOffers } from 'state/actions/offersActions'
 import { getAllOffersFlash } from 'state/actions/offersflash'
+import { getAllBanner } from 'state/actions/bannerHomeAction'
 import { getAllPlans, getCurrentPlan } from 'state/actions/plansAction'
 import { getTours, updateCurrentTour } from 'state/actions/toursActions'
-import { getAllBanner } from 'state/actions/bannerHomeAction'
 
 export const useApi = () => {
 	const dispatch = useDispatch()
 
 	// == HOTELES NACIONALES == //
-	const getCities = async (idCitie) => {
-		console.log(idCitie)
+	const getCities = async (nacionality) => {
 		const data = await api({
-			url1: 'ciudades',
-			url2: null,
+			url1: 'hoteles',
+			url2: nacionality,
 			url3: null
 		})
-		dispatch(updatecityList(data?.cities))
+		dispatch(updatecityList(data?.location))
 	}
 
-	const getHotelList = async (locid, setNameCity) => {
+	const getHotelList = async (locid, setNameCity, nacionality) => {
 		const data = await api({
-			url1: 'hotels',
-			url2: locid,
-			url3: null
+			url1: 'hoteles',
+			url2: nacionality,
+			url3: locid
 		})
 		dispatch(updateHotelsList(data?.hotels))
-		setNameCity(data?.city[0].name)
+		setNameCity(data?.location[0].name)
 	}
 
-	const getHotelFeatures = async (locid, hotelId, setCity) => {
+	const getHotelFeatures = async (nacionality, city, hotelId) => {
 		const data = await api({
-			url1: 'hotels',
-			url2: locid,
-			url3: hotelId
+			url1: 'hoteles',
+			url2: nacionality,
+			url3: city,
+			url4: hotelId
 		})
 		dispatch(updateCurrentHotel(data?.hotel[0]))
-		setCity(data?.city[0].name)
 	}
 
 	// == HOTELES INTERNACIONALES == //
-	const getInternationalCities = async () => {
+	const getCountry = async () => {
 		const data = await api({
-			url1: 'internacionales',
+			url1: '',
 			url2: null,
 			url3: null
 		})
@@ -150,7 +149,7 @@ export const useApi = () => {
 		getOffersFlash,
 		getDetailsPlans,
 		getHotelFeatures,
-		getInternationalCities,
+		getCountry,
 		getInternationalHotels,
 		getAboutInternationalHotel
 	}
