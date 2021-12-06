@@ -1,6 +1,7 @@
 // creamos la accion
 export const types = {
 	UPDATE_CITY_LIST: 'UPDATE_CITY_LIST',
+	CHANGE_NATIONALITY: 'CHANGE_NATIONALITY',
 	UPDATE_HOTELS_LIST: 'UPDATE_HOTELS_LIST',
 	INTERNATIONAL_HOTEL: 'INTERNATIONAL_HOTEL',
 	INTERNATIONAL_CITIES: 'INTERNATIONAL_CITIES',
@@ -36,5 +37,9 @@ export const internationalHotels = (data) => ({
 
 export const aboutInternationalHotel = (data) => ({
 	type: types.ABOUT_INTERNACIONAL_HOTEL,
+	payload: data
+})
+export const changeNacionality = (data) => ({
+	type: types.CHANGE_NATIONALITY,
 	payload: data
 })

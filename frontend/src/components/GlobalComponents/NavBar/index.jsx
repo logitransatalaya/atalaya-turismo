@@ -61,14 +61,14 @@ export const NavBar = () => {
 										<div className='dropdown-content'>
 											<Link
 												onClick={handleOpenNav}
-												to='/ciudades'
+												to='/ciudades/Nacional'
 												href='#'
 											>
 												NACIONALES
 											</Link>
 											<Link
 												onClick={handleOpenNav}
-												to='/hoteles-internacionales'
+												to='/continentes'
 											>
 												INTERNACIONALES
 											</Link>

@@ -4,18 +4,18 @@ import { Tours } from './components/Tours'
 import { Plans } from './components/Plans'
 import { Health } from 'components/Health'
 import { Offers } from './components/Offers'
-import { Cities } from './components/Hotels/Nationals'
 import { NavBar } from 'components/GlobalComponents/NavBar'
 import { PlansDetails } from 'components/Plans/PlansDetails'
 import { ToursDetails } from 'components/Tours/ToursDetails'
 import { Footer } from './components/GlobalComponents/Footer'
+import { CitiesOrCountries } from './components/Hotels/Nationals'
 import ScrollToTop from 'components/GlobalComponents/ScrollToTop'
 import { HotelsList } from 'components/Hotels/Nationals/HotelsList'
+import { CitiesInternational } from 'components/Hotels/International'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { HotelFeatures } from 'components/Hotels/Nationals/HotelFeatures'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
 import ScrollArrow from 'components/GlobalComponents/ScrollToTop/ScrollArrow'
-import { CitiesInternational } from 'components/Hotels/International'
 
 export default function App() {
 	return (
@@ -30,19 +30,22 @@ export default function App() {
 						<Home />
 						<Footer />
 					</Route>
-					<Route exact path='/paises'>
+					<Route exact path='/continentes'>
 						<CitiesInternational />
 						<Footer />
 					</Route>
-					<Route exact path='/ciudades'>
-						<Cities idCitie={1} />
+					<Route exact path='/ciudades/:nacionality'>
+						<CitiesOrCountries />
 						<Footer />
 					</Route>
-					<Route exact path='/hoteles/:locid'>
+					<Route exact path='/ciudades/hoteles/:nacionality/:city'>
 						<HotelsList />
 						<Footer />
 					</Route>
-					<Route exact path='/hoteles/:locid/:hotelId'>
+					<Route
+						exact
+						path='/ciudades/hoteles/:nacionality/:city/:hotelId'
+					>
 						<HotelFeatures />
 						<Footer />
 					</Route>

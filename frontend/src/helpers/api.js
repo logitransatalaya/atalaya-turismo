@@ -1,13 +1,23 @@
-export async function api({ url1, url2, url3 }) {
+export async function api({ url1, url2, url3, url4 }) {
 	try {
+		if (url1 && url2 && url3 && url4) {
+			const response = await fetch(
+				`https://django.atalayaviajesyturismo.com/api/${url1}/${url2}/${url3}/${url4}`
+			)
+			const data = await response.json()
+			// if (Object.values(data).every((x) => !x.length)) {
+			// 	return undefined
+			// }
+			return data
+		}
 		if (url1 && url2 && url3) {
 			const response = await fetch(
 				`https://django.atalayaviajesyturismo.com/api/${url1}/${url2}/${url3}`
 			)
 			const data = await response.json()
-			if (Object.values(data).every((x) => !x.length)) {
-				return undefined
-			}
+			// if (Object.values(data).every((x) => !x.length)) {
+			// 	return undefined
+			// }
 			return data
 		}
 		if (url1 && url2) {
@@ -15,9 +25,9 @@ export async function api({ url1, url2, url3 }) {
 				`https://django.atalayaviajesyturismo.com/api/${url1}/${url2}`
 			)
 			const data = await response.json()
-			if (Object.values(data).every((x) => !x.length)) {
-				return undefined
-			}
+			// if (Object.values(data).every((x) => !x.length)) {
+			// 	return undefined
+			// }
 			return data
 		}
 		if (url1) {
@@ -25,9 +35,9 @@ export async function api({ url1, url2, url3 }) {
 				`https://django.atalayaviajesyturismo.com/api/${url1}`
 			)
 			const data = await response.json()
-			if (Object.values(data).every((x) => !x.length)) {
-				return undefined
-			}
+			// if (Object.values(data).every((x) => !x.length)) {
+			// 	return undefined
+			// }
 			return data
 		}
 	} catch (error) {
