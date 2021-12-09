@@ -68,6 +68,7 @@ export const StyleNavbar = styled.div`
 		}
 
 		@media (max-width: 840px) {
+			background-color: #0f216f;
 			height: 100vh;
 			flex-direction: column;
 			justify-content: center;
@@ -127,6 +128,10 @@ export const StyleNavbar = styled.div`
 						}
 					}
 				}
+			}
+			.goog-te-gadget {
+				display: flex;
+				justify-content: center;
 			}
 		}
 	}

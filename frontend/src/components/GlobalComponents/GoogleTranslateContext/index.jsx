@@ -11,7 +11,6 @@ export const GoogleTranslateContext = ({ children }) => {
 			childList: true,
 			characterData: true
 		}
-		console.log('entra')
 		mutationObserver.observe(document.body, observerOptions)
 		document.cookie = 'googtrans=; valor=null; expires=sesión; path=/;'
 		return () => mutationObserver.disconnect()

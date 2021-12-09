@@ -43,7 +43,6 @@ export const CitiesOrCountries = () => {
 	useEffect(() => {
 		dispatch(changeNacionality(nacionality))
 	}, [nacionality, dispatch])
-	console.log(CitiesOrCountries)
 	return (
 		<Container>
 			<Search
