@@ -1,31 +1,4 @@
-import { useDispatch } from 'react-redux'
-import { handleFontElementList } from 'state/actions/toolTipActions'
-
-export const useGoogleTranslate = (currentPath) => {
-	const dispatch = useDispatch()
-
-	//fing all the <font> elements from a specify part of the app and save an a state
-	const getFontElements = () => {
-		const element = document.getElementById(currentPath)
-		if (element) {
-			const fontElements = element.getElementsByTagName('font')
-
-			if (fontElements.length > 0)
-				dispatch(handleFontElementList(Array.from(fontElements)))
-		}
-	}
-
-	const dropFontElements = (fontElementsList) => {
-		if (fontElementsList?.length > 0) {
-			fontElementsList.forEach((element) => {
-				const parentNode = element.parentNode.parentNode
-
-				parentNode?.removeChild(element.parentNode)
-			})
-			dispatch(handleFontElementList(null))
-		}
-	}
-
+export const useGoogleTranslate = () => {
 	// MutationOberserver istance for drop the google-banner and change img src
 	const mutationObserver = new MutationObserver((mutationList) => {
 		// get the img change the src and styles
@@ -57,19 +30,11 @@ export const useGoogleTranslate = (currentPath) => {
 					childNode.style.display = 'none'
 					document.body.style = null
 				}
-
-				if (
-					node.nodeName === 'DIV' &&
-					node.children[0]?.nodeName === 'B'
-				) {
-					if (currentPath) getFontElements()
-				}
 			}
 		})
 	})
 
 	return {
-		mutationObserver,
-		dropFontElements
+		mutationObserver
 	}
 }

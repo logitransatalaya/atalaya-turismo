@@ -1,16 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react'
-import { useSelector } from 'react-redux'
-import { useLocation } from 'react-router'
 import { useGoogleTranslate } from 'hooks/useGoogleTranslate'
 
 export const GoogleTranslateContext = ({ children }) => {
-	const location = useLocation()
-	const { currentPath, fontElementsList } = useSelector(
-		(state) => state.toolTipReducer.googleTranslate
-	)
-	const { mutationObserver, dropFontElements } =
-		useGoogleTranslate(currentPath)
+	const { mutationObserver } = useGoogleTranslate()
 
 	useEffect(() => {
 		const observerOptions = {
@@ -23,11 +16,7 @@ export const GoogleTranslateContext = ({ children }) => {
 		document.cookie = 'googtrans=; valor=null; expires=sesión; path=/;'
 		return () => mutationObserver.disconnect()
 		// No include mutationOberserver dependencie to the array please!
-	}, [currentPath])
-
-	useEffect(() => {
-		dropFontElements(fontElementsList)
-	}, [location.pathname])
+	}, [])
 
 	return <div>{children}</div>
 }

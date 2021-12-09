@@ -11,10 +11,6 @@ export const initial_state = {
 		stateShow: false,
 		urlImg: null,
 		numImg: null
-	},
-	googleTranslate: {
-		currentPath: null,
-		fontElementsList: null
 	}
 }
 
@@ -24,22 +20,6 @@ export const toolTipReducer = (state = initial_state, action) => {
 			return {
 				...state,
 				currentRoute: action.payload
-			}
-		case types.CURRENT_PATH:
-			return {
-				...state,
-				googleTranslate: {
-					...state.googleTranslate,
-					currentPath: action.payload
-				}
-			}
-		case types.FONT_ELEMENTS_LIST:
-			return {
-				...state,
-				googleTranslate: {
-					...state.googleTranslate,
-					fontElementsList: action.payload
-				}
 			}
 		case types.GET_MESSAGE: {
 			return {

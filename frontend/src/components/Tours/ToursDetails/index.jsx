@@ -31,16 +31,12 @@ export const ToursDetails = () => {
 		}
 	}, [urlCode, currentTour, getCurrentTour, location, messageWhatsapp])
 
-	useEffect(() => {
-		dispatch(currentPath('toursDetails'))
-	}, [dispatch])
-
 	return !currentTour ? (
 		<Skeleton type='toursDescription' />
 	) : (
 		<>
 			<Container>
-				<ToursDetailsStyled id='toursDeetails' className='ToursDetails'>
+				<ToursDetailsStyled className='ToursDetails'>
 					<Title text={currentTour.title} />
 					<div className='description'>
 						<div className='descriptionImg-container'>
