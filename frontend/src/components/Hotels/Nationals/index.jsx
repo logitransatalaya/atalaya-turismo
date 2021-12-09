@@ -43,19 +43,19 @@ export const CitiesOrCountries = () => {
 	useEffect(() => {
 		dispatch(changeNacionality(nacionality))
 	}, [nacionality, dispatch])
-
+	console.log(CitiesOrCountries)
 	return (
 		<Container>
 			<Search
 				searchText={searchText}
 				handleInputChange={handleInputChange}
-				placeHolder={`Que ${
+				placeHolder={`Qué ${
 					nacionality === 'Nacional' ? `Ciudad ` : 'Pais '
-				}estas Buscando`}
+				}estás buscando...`}
 				text={nacionality === 'Nacional' ? `CIUDADES` : 'PAISES'}
 			/>
 			<HotelsContainer>
-				{CitiesOrCountries ? (
+				{CitiesOrCountries && CitiesOrCountries?.length !== 0 ? (
 					<div className='content'>
 						{searchText === ''
 							? CitiesOrCountries?.map((city, i) => (

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
-	background-color: #10216f;
+	background-color: #0f216f;
 	position: relative;
 `
 export const FooterStyle = styled.footer`
-	background-color: #10216f;
+	background-color: #0f216f;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 `
