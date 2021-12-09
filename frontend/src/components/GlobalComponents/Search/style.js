@@ -10,10 +10,12 @@ export const StyleSearch = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-	.title {
-		font-size: 2rem;
-		margin-left: 5rem;
+
+		.title {
+			color: #0f216f;
+			font-size: 2rem;
+			margin-left: 5rem;
+		}
 	}
 	.input {
 		border-radius: 8px;
