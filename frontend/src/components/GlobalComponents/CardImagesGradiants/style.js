@@ -37,7 +37,11 @@ export const CardStyle = styled.div`
 				align-items: center;
 				justify-content: center;
 
-				background: linear-gradient(180deg, #fff0 0%, #0f216f 85%);
+				background: linear-gradient(
+					180deg,
+					#fff0 0%,
+					rgba(1, 38, 209, 1) 85%
+				);
 
 				h3 {
 					color: #fff;
