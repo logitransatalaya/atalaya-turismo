@@ -1,17 +1,9 @@
-export const useGoogleTranslate = () => {
+export const useGoogleTranslate = (setIconElement) => {
 	// MutationOberserver istance for drop the google-banner and change img src
 	const mutationObserver = new MutationObserver((mutationList) => {
-		// get the img change the src and styles
+		//get the google-icon and save in a external state
 		const [iconImg] = document.getElementsByClassName('goog-te-gadget-icon')
-		iconImg?.setAttribute(
-			'src',
-			'https://cdn-icons-png.flaticon.com/512/323/323310.png'
-		)
-
-		iconImg?.setAttribute(
-			'style',
-			'width: 25px; height:100%; margin-left: 0.5rem'
-		)
+		setIconElement(iconImg)
 
 		// list of changes in the DOM
 		mutationList.forEach((mutation) => {
@@ -29,6 +21,12 @@ export const useGoogleTranslate = () => {
 					// hidden the element and drop some unnecesary styles to the body
 					childNode.style.display = 'none'
 					document.body.style = null
+				}
+				//remove a modal that show the traduction in the original language
+				if (node.id === 'goog-gt-tt') {
+					const parentNode = node.parentNode
+
+					parentNode.removeChild(node)
 				}
 			}
 		})

@@ -59,8 +59,14 @@ export const StyleSearch = styled.div`
 		.input {
 			width: 80%;
 		}
-		.title {
-			margin-left: 0;
+		.title-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.title {
+				margin-left: 0rem;
+			}
 		}
 	}
 `
