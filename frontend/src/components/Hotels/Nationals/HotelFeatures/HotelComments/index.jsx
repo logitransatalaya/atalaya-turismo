@@ -26,7 +26,7 @@ const HotelInfo = ({ comentens, desc }) => {
 										<div className='box-icon'>
 											<IconUsuario />
 										</div>
-										{coment.user_name}
+										<span>{coment.user_name}</span>
 									</div>
 								</Message>
 							</SplideSlide>

@@ -16,12 +16,13 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { HotelFeatures } from 'components/Hotels/Nationals/HotelFeatures'
 import FloatingButtons from 'components/GlobalComponents/FloatingButtons'
 import ScrollArrow from 'components/GlobalComponents/ScrollToTop/ScrollArrow'
+import { GoogleTranslateContext } from 'components/GlobalComponents/GoogleTranslateContext'
 
 export default function App() {
 	return (
 		<Router>
-			<ScrollToTop />
-			<div>
+			<GoogleTranslateContext>
+				<ScrollToTop />
 				<FloatingButtons />
 				<ScrollArrow />
 				<NavBar />
@@ -73,7 +74,7 @@ export default function App() {
 						<Footer />
 					</Route>
 				</Switch>
-			</div>
+			</GoogleTranslateContext>
 		</Router>
 	)
 }

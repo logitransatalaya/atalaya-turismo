@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { formatNumber } from 'helpers/formatNumber'
 import { Button } from 'components/GlobalComponents/Button'
 import { HotelQualification } from 'components/Hotels/Nationals/HotelFeatures/HotelQualification'
-import { formatNumber } from 'helpers/formatNumber'
 
-export const HotelListCardInfo = ({ city, nacionality, hotel, locid }) => {
+export const HotelListCardInfo = ({ city, nacionality, hotel }) => {
 	return (
 		<div className='cityCard'>
 			<div className='cityBoxImg'>
@@ -13,7 +13,9 @@ export const HotelListCardInfo = ({ city, nacionality, hotel, locid }) => {
 			<div className='cityInfo'>
 				<p className='cityInfo_title'>{hotel.name}</p>
 				<p>
-					<small>Dirección: {hotel.addres}</small>
+					<small>
+						Dirección: <span>{hotel.addres}</span>
+					</small>
 				</p>
 				<div className='cityInfoCalification'>
 					<HotelQualification stars={hotel.stars} />
@@ -27,7 +29,7 @@ export const HotelListCardInfo = ({ city, nacionality, hotel, locid }) => {
 				</div>
 				<div>
 					<p className='cityPrice_subTitle'>
-						DESDE Cop {formatNumber(hotel.price)}
+						DESDE Cop <span>{formatNumber(hotel.price)}</span>
 					</p>
 					<p className='cityPrice_card'>
 						<small>tarjeta sujeta a disponibilidad</small>

@@ -1,22 +1,21 @@
 import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router'
-import { useLocation } from 'react-router'
-import { ToursDetailsStyled } from './styles'
-import { Skeleton } from 'components/GlobalComponents/Skeletons'
-import { Container } from 'components/GlobalComponents/Container'
 import { useSelector } from 'react-redux'
+import { ToursDetailsStyled } from './styles'
+import { useWhatsapp } from 'hooks/useWhatsapp'
+import { useParams, useLocation } from 'react-router'
 import { Title } from 'components/GlobalComponents/Title'
 import { Footer } from 'components/GlobalComponents/Footer'
 import { ToursCharacteristics } from './ToursCharacteristics'
-import { useWhatsapp } from 'hooks/useWhatsapp'
+import { Skeleton } from 'components/GlobalComponents/Skeletons'
+import { Container } from 'components/GlobalComponents/Container'
 
 export const ToursDetails = () => {
 	const location = useLocation()
 	const { urlCode } = useParams()
-	const { currentTour } = useSelector((state) => state.tourReducer)
 	const { getCurrentTour } = useApi()
 	const { messageWhatsapp } = useWhatsapp()
+	const { currentTour } = useSelector((state) => state.tourReducer)
 
 	// Funcion para peticion de la base de datos y cambiar el estado de wpp
 	useEffect(() => {
@@ -61,7 +60,7 @@ export const ToursDetails = () => {
 								src={`/tours/${currentTour.icon_unique}.svg`}
 								alt=''
 							/>
-							{currentTour.unique}
+							<span>{currentTour.unique}</span>
 						</p>
 					</div>
 				</ToursDetailsStyled>

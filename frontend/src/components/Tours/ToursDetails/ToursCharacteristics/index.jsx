@@ -13,7 +13,7 @@ export const ToursCharacteristics = ({ data }) => {
 						}.svg`}
 						alt=''
 					/>
-					{text.text_include_two || text.text_include}
+					<span>{text.text_include_two || text.text_include}</span>
 				</p>
 			))}
 		</div>

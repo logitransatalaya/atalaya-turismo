@@ -32,25 +32,29 @@ export const Footer = ({ type = 'general', imageUrl }) => {
 								<FooterTitle>CONTÁCTENOS</FooterTitle>
 								<li>
 									<img src='/footer/casa.svg' alt='' />
-									ATALAYA VIAJES Y TURISMO
+									<span>ATALAYA VIAJES Y TURISMO</span>
 								</li>
 								<li>
 									<img src='/footer/chulito.svg' alt='' />
-									Registro Nacional de Turismo:{' '}
+									<span>Registro Nacional de Turismo:</span>
 									<b>RNT 102055</b>
 								</li>
 								<li>
 									<img src='/footer/correo.svg' alt='' />
-									atalayaviajesturismo@gmail.com
+									<span>atalayaviajesturismo@gmail.com</span>
 								</li>
 								<li>
 									<img src='/footer/telefono.svg' alt='' />
-									+57 314 555 4981 - +57 314 555 4761
+									<span>
+										+57 314 555 4981 - +57 314 555 4761
+									</span>
 								</li>
 								<li>
 									<img src='/footer/ubicacion.svg' alt='' />
-									Cra. 49 #45a-35, Oficina 203 Bello,
-									Antioquia
+									<span>
+										Cra. 49 #45a-35, Oficina 203 Bello,
+										Antioquia
+									</span>
 								</li>
 							</FooterContact>
 							<FooterWe>

@@ -16,7 +16,9 @@ export const HomeOffersCard = ({ image, title, cop }) => {
 			<h1>{title}</h1>
 			<div className='offersCard-textContent'>
 				<p>DESDE</p>
-				<p className='offersCard-price'>COP {cop}</p>
+				<p className='offersCard-price'>
+					COP <span>{cop}</span>
+				</p>
 				<p>Por persona</p>
 			</div>
 			<button onClick={handleBooking} className='btn btn_offert'>
