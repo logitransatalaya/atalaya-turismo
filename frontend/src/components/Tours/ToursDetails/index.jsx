@@ -1,18 +1,16 @@
 import { useApi } from 'hooks/useApi'
 import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { ToursDetailsStyled } from './styles'
 import { useWhatsapp } from 'hooks/useWhatsapp'
 import { useParams, useLocation } from 'react-router'
-import { useSelector, useDispatch } from 'react-redux'
 import { Title } from 'components/GlobalComponents/Title'
-import { currentPath } from 'state/actions/toolTipActions'
 import { Footer } from 'components/GlobalComponents/Footer'
 import { ToursCharacteristics } from './ToursCharacteristics'
 import { Skeleton } from 'components/GlobalComponents/Skeletons'
 import { Container } from 'components/GlobalComponents/Container'
 
 export const ToursDetails = () => {
-	const dispatch = useDispatch()
 	const location = useLocation()
 	const { urlCode } = useParams()
 	const { getCurrentTour } = useApi()
