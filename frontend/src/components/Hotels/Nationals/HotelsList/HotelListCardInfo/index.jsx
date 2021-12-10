@@ -24,12 +24,13 @@ export const HotelListCardInfo = ({ city, nacionality, hotel }) => {
 			<div className='cityPrice'>
 				<div>
 					<p className='cityPrice_title'>
-						Cop: <b>{formatNumber(hotel.price)}</b>
+						<b>COP: </b>
+						<b>${formatNumber(hotel.price)}</b>
 					</p>
 				</div>
 				<div>
 					<p className='cityPrice_subTitle'>
-						DESDE Cop <span>{formatNumber(hotel.price)}</span>
+						DESDE COP <span>${formatNumber(hotel.price)}</span>
 					</p>
 					<p className='cityPrice_card'>
 						<small>tarjeta sujeta a disponibilidad</small>

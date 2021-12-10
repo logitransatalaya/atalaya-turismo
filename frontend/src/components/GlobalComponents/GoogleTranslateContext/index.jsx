@@ -36,14 +36,13 @@ export const GoogleTranslateContext = ({ children }) => {
 			characterData: true
 		}
 		mutationObserver.observe(document.body, observerOptions)
-		document.cookie = 'googtrans=; valor=null; expires=sesión; path=/;'
+		document.cookie = 'googtrans=""; expires=sesión; path=/;'
 		return () => mutationObserver.disconnect()
 		// No include mutationOberserver dependency to the array please!
 	}, [])
 
 	useEffect(() => {
 		if (iconElement !== null && intervalFlag) {
-			console.log('entra')
 			interval()
 			setIntervalFlag(false)
 		}

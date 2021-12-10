@@ -30,16 +30,20 @@ export const ContainerCards = styled.div`
 			display: block;
 
 			.cardButton {
-				text-align: center;
 				display: block;
+				margin-bottom: 1rem;
+				text-align: center;
 				width: 100%;
-				margin: auto;
 				cursor: pointer;
-				font-size: 1.5rem;
-				color: #10216f;
+				font-size: 1.4rem;
+				color: #0f216f;
+				text-decoration: underline;
 				font-weight: bold;
-				cursor: pointer;
 				transition: transform 0.5s;
+
+				&:hover {
+					color: #00113f;
+				}
 			}
 
 			.cardButtonRotate {

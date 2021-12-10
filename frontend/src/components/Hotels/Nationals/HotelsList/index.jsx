@@ -46,7 +46,7 @@ export const HotelsList = () => {
 		<Container>
 			<Search
 				handleInputChange={handleInputChange}
-				placeHolder='Que Hotel estas Buscando'
+				placeHolder='Qué Hotel estás Buscando...'
 				text={`HOTELES`}
 			/>
 			<CityContainer>

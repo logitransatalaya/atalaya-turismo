@@ -10,7 +10,8 @@ export const CityContainer = styled.div`
 
 	.cityCard {
 		display: flex;
-		background-color: #dedede;
+		background-color: #eee;
+		border: #0f216f 1px solid;
 		padding: 1em;
 		border-radius: 1em;
 		gap: 1em;
@@ -55,6 +56,7 @@ export const CityContainer = styled.div`
 			.cityInfo_title {
 				font-size: 2rem;
 				margin: 0.3rem 0;
+				font-weight: 500;
 			}
 		}
 
@@ -88,7 +90,8 @@ export const CityContainer = styled.div`
 			}
 
 			.cityPrice_subTitle {
-				font-size: 1.3rem;
+				font-size: 1.2rem;
+				margin: 0;
 			}
 
 			.cityPrice_card {
