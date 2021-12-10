@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { formatNumber } from 'helpers/formatNumber'
+import imgCO from '../../../../../images/iconCountries/co.png'
 import { Button } from 'components/GlobalComponents/Button'
 import { HotelQualification } from 'components/Hotels/Nationals/HotelFeatures/HotelQualification'
 
@@ -24,8 +25,12 @@ export const HotelListCardInfo = ({ city, nacionality, hotel }) => {
 			<div className='cityPrice'>
 				<div>
 					<p className='cityPrice_title'>
-						<b>COP: </b>
 						<b>${formatNumber(hotel.price)}</b>
+						<img
+							className='cityPrice_title-imgIcon'
+							src={imgCO}
+							alt='Colombia icon'
+						/>
 					</p>
 				</div>
 				<div>

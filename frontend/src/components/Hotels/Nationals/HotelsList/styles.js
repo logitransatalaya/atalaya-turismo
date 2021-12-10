@@ -86,7 +86,11 @@ export const CityContainer = styled.div`
 			}
 
 			.cityPrice_title {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
 				font-size: 1.5rem;
+				gap: 0.5rem;
 			}
 
 			.cityPrice_subTitle {
@@ -96,6 +100,11 @@ export const CityContainer = styled.div`
 
 			.cityPrice_card {
 				font-weight: 300;
+			}
+
+			.cityPrice_title-imgIcon {
+				width: 1.5rem;
+				height: 1.5rem;
 			}
 		}
 	}
