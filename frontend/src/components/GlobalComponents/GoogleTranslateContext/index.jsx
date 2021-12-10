@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import imgNL from '../../../images/iconCountries/nl.png'
 import imgUS from '../../../images/iconCountries/us.png'
+import imgCO from '../../../images/iconCountries/co.png'
+import imgBZ from '../../../images/iconCountries/bz.png'
 import { useGoogleTranslate } from 'hooks/useGoogleTranslate'
 
 export const GoogleTranslateContext = ({ children }) => {
@@ -10,7 +12,7 @@ export const GoogleTranslateContext = ({ children }) => {
 
 	const interval = () => {
 		let index = 0
-		const urls = [imgUS, imgNL]
+		const urls = [imgCO, imgNL, imgBZ, imgUS]
 
 		iconElement?.setAttribute('src', urls[0])
 		iconElement?.setAttribute(
@@ -21,7 +23,7 @@ export const GoogleTranslateContext = ({ children }) => {
 		setInterval(() => {
 			iconElement?.setAttribute('src', urls[index])
 
-			if (index === 1) index = 0
+			if (index === urls.length - 1) index = 0
 			else index += 1
 		}, 4000)
 	}
