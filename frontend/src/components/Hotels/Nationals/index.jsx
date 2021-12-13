@@ -90,7 +90,6 @@ export const CitiesOrCountries = () => {
 				) : (
 					<>
 						<Loader />
-						<div>Cargano...</div>
 					</>
 				)}
 			</HotelsContainer>
