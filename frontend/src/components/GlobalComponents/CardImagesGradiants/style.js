@@ -39,8 +39,8 @@ export const CardStyle = styled.div`
 
 				background: linear-gradient(
 					180deg,
-					rgba(255, 255, 255, 0) 5%,
-					rgba(1, 38, 209, 1) 90%
+					#fff0 0%,
+					rgba(1, 38, 209, 1) 85%
 				);
 
 				h3 {

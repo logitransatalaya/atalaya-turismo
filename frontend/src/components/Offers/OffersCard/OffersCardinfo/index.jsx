@@ -17,12 +17,18 @@ const OffersCardinfo = ({ data }) => {
 				<img src={plane} alt='plane' />
 			</div>
 			<div className='text'>
-				<p className='white bold'>Del {from_date}</p>
-				<p className='white'>al {to_date}</p>
+				<p className='white bold'>
+					Del <span>{from_date}</span>
+				</p>
+				<p className='white'>
+					al <span>{to_date}</span>
+				</p>
 			</div>
 			<div className='line'></div>
 			<div className='text'>
-				<p className='blue bold'>Precio: ${price}</p>
+				<p className='blue bold'>
+					Precio: <span>${price}</span>
+				</p>
 				<p className='blue bold'>{Hotel}</p>
 			</div>
 			<Button

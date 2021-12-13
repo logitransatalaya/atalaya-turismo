@@ -20,14 +20,11 @@ export const HotelMorePopularService = ({ currentHotel }) => {
 	const auxServices = countServices
 		? services_hotel
 		: services_hotel?.slice(0, 4)
-	const auxIcon = countServices
-		? 'cardButton cardButtonRotate'
-		: ' cardButton'
 
 	let ButtonPhoneServices =
 		handleWidth < 800 ? (
-			<span className={auxIcon} onClick={handleServices}>
-				V
+			<span className='cardButton' onClick={handleServices}>
+				Ver {countServices ? 'menos' : 'más'}...
 			</span>
 		) : null
 

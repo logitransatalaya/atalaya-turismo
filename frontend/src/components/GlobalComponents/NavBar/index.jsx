@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { StyleNavbar, StyleButton } from './styles'
 import { ButtonHandleNav } from '../ButtonHandleNav'
 import { Container } from 'components/GlobalComponents/Container'
@@ -13,31 +13,6 @@ export const NavBar = () => {
 	const handleOpenNav = () => {
 		setHandleNav(!handleNav)
 	}
-
-	useEffect(() => {
-		// const images = document.getElementById('google_translate_element')
-		// console.log(images)
-		// translateRef.current.removeChild(images[0])
-
-		setTimeout(() => {
-			const [img] = translateRef.current.getElementsByClassName(
-				'goog-te-gadget-icon'
-			)
-
-			img?.setAttribute(
-				'src',
-				'https://cdn-icons-png.flaticon.com/512/323/323310.png'
-			)
-			img?.setAttribute('style', 'width: 25px; height:100%')
-		}, 200)
-		// setTimeout(() => {
-		// 	const [body] = document.getElementsByTagName('body')
-		// 	// const [googleModal] =
-		// 	// document.getElementsByClassName('skiptranslate')
-		// 	// googleModal.style.display = 'none'
-		// 	body.style.top = '0px'
-		// }, 1000)
-	}, [translateRef])
 
 	return (
 		<StyleNavbar>

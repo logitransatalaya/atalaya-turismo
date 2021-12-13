@@ -129,6 +129,10 @@ export const StyleNavbar = styled.div`
 					}
 				}
 			}
+			.goog-te-gadget {
+				display: flex;
+				justify-content: center;
+			}
 		}
 	}
 
