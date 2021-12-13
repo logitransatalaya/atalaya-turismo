@@ -1,8 +1,8 @@
 import Bedrooms from '../HotelBedrooms'
 import { useDispatch } from 'react-redux'
-import { HotelQualification } from '../HotelQualification'
 import React, { useEffect, useState } from 'react'
 import { HeaderCardStyled, CardGrid } from './style'
+import { HotelQualification } from '../HotelQualification'
 import { ModalImg } from 'components/GlobalComponents/ModalImg'
 import { ReactComponent as IconLocation } from 'images/svg/ubicacion.svg'
 import { handleModalImages } from '../../../../../state/actions/toolTipActions'
@@ -10,6 +10,7 @@ import { handleModalImages } from '../../../../../state/actions/toolTipActions'
 export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 	const dispatch = useDispatch()
 	const [screen, setScreen] = useState(window.innerWidth)
+	const [state, setState] = useState(false)
 
 	useEffect(() => {
 		window.onresize = () => setScreen(window.innerWidth)
@@ -24,7 +25,15 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 	return (
 		<>
 			<HeaderCardStyled>
-				<ModalImg handleShow={handleShow} photos={photosSort} />
+				{state && (
+					<ModalImg
+						handleShow={handleShow}
+						photos={photosSort}
+						state={state}
+						setState={setState}
+					/>
+				)}
+
 				<div>
 					<div className='card_title'>{city}</div>
 					<div className='card_location'>
@@ -48,6 +57,7 @@ export const HotelHeaderFeatur = ({ stars, cityName, city, photos }) => {
 									key={i}
 									onClick={() => {
 										handleShow(photo.url_img, i + 1)
+										setState(!state)
 									}}
 								>
 									<img

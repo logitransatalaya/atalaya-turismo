@@ -9,6 +9,7 @@ import { Loader } from 'components/GlobalComponents/Loader'
 import { Search } from 'components/GlobalComponents/Search'
 import { changeNacionality } from 'state/actions/hotelsActions'
 import { Container } from 'components/GlobalComponents/Container'
+import { ModalFilter } from 'components/GlobalComponents/modalFilter'
 import { CardImagesGradiants } from 'components/GlobalComponents/CardImagesGradiants'
 
 export const CitiesOrCountries = () => {
@@ -56,34 +57,41 @@ export const CitiesOrCountries = () => {
 			<HotelsContainer>
 				{CitiesOrCountries && CitiesOrCountries?.length !== 0 ? (
 					<div className='content'>
-						{searchText === ''
-							? CitiesOrCountries?.map((city, i) => (
-									<Link
-										key={i}
-										to={`/ciudades/hoteles/${nacionality}/${city.name}`}
-									>
-										<CardImagesGradiants
-											url={city.url_img}
-											alt={city.name}
-											name={city.name}
-										/>
-									</Link>
-							  ))
-							: arrayFilter?.map((city, i) => (
-									<Link
-										key={i}
-										to={`/ciudades/hoteles/${nacionality}/${city.name}`}
-									>
-										<CardImagesGradiants
-											url={city.url_img}
-											alt={city.name}
-											name={city.name}
-										/>
-									</Link>
-							  ))}
+						{searchText === '' ? (
+							CitiesOrCountries?.map((city, i) => (
+								<Link
+									key={i}
+									to={`/ciudades/hoteles/${nacionality}/${city.name}`}
+								>
+									<CardImagesGradiants
+										url={city.url_img}
+										alt={city.name}
+										name={city.name}
+									/>
+								</Link>
+							))
+						) : arrayFilter?.length ? (
+							arrayFilter?.map((city, i) => (
+								<Link
+									key={i}
+									to={`/ciudades/hoteles/${nacionality}/${city.name}`}
+								>
+									<CardImagesGradiants
+										url={city.url_img}
+										alt={city.name}
+										name={city.name}
+									/>
+								</Link>
+							))
+						) : (
+							<ModalFilter text={searchText} />
+						)}
 					</div>
 				) : (
-					<Loader />
+					<>
+						<Loader />
+						<div>Cargano...</div>
+					</>
 				)}
 			</HotelsContainer>
 		</Container>

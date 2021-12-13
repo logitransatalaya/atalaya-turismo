@@ -10,7 +10,6 @@ export const StyleSearch = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		.title {
 			color: #0f216f;
 			font-size: 2rem;

@@ -25,10 +25,8 @@ export const ContainerCards = styled.div`
 			grid-template-columns: 1fr;
 			justify-content: space-between;
 			align-items: center;
-			width: 70%;
 			margin: auto;
 			display: block;
-
 			.cardButton {
 				display: block;
 				margin-bottom: 1rem;
