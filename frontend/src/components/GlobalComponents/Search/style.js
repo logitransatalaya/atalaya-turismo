@@ -14,6 +14,7 @@ export const StyleSearch = styled.div`
 	.title {
 		font-size: 2rem;
 		margin-left: 5rem;
+		color: #0f216f;
 	}
 	.input {
 		border-radius: 8px;
