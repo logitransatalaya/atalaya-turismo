@@ -11,3 +11,7 @@ body,
 body {
 	margin: 0;
 }
+
+:root {
+	--column-cards: 3;
+}
