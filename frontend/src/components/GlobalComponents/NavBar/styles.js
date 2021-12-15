@@ -2,6 +2,22 @@ import styled from 'styled-components'
 
 export const StyleNavbar = styled.div`
 	background-color: #0f216f;
+
+	.element-hidde-navbar {
+		display: none;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		z-index: 101;
+	}
+
+	.element-hidde-navbar-active {
+		display: initial;
+		background: #00000040;
+	}
+
 	.navbar {
 		height: 80px;
 		display: flex;

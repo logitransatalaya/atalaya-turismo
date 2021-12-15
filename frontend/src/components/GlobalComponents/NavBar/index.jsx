@@ -1,8 +1,8 @@
 import { useRef } from 'react'
-import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
 import { StyleNavbar, StyleButton } from './styles'
 import { ButtonHandleNav } from '../ButtonHandleNav'
+import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 import { Container } from 'components/GlobalComponents/Container'
 
 export const NavBar = () => {
@@ -72,6 +72,14 @@ export const NavBar = () => {
 					</div>
 				</nav>
 			</Container>
+			<div
+				className={`element-hidde-navbar ${
+					handleNav
+						? 'element-hidde-navbar-active'
+						: 'element-hidde-navbar'
+				}`}
+				onClick={handleOpenNav}
+			></div>
 			<StyleButton onClick={handleOpenNav}>
 				<ButtonHandleNav
 					handleNav={handleNav}
