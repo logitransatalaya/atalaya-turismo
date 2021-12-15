@@ -14,8 +14,14 @@ export const StyleNavbar = styled.div`
 	}
 
 	.element-hidde-navbar-active {
-		display: initial;
-		background: #00000040;
+		display: none;
+	}
+
+	@media (max-width: 840px) {
+		.element-hidde-navbar-active {
+			display: initial !important;
+			background: #00000040 !important;
+		}
 	}
 
 	.navbar {
