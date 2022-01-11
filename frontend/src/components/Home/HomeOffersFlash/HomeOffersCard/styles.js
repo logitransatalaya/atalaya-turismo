@@ -13,6 +13,7 @@ export const CardStyle = styled.div`
 	margin: 1rem 0;
 	animation: ${animationAppear} 0.6s;
 	height: 430px;
+
 	h1 {
 		margin: 0;
 		width: 100%;
@@ -72,10 +73,9 @@ export const CardStyle = styled.div`
 		}
 	}
 
-	/* @media (max-width: 810px) {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	} */
+	@media (max-width: 810px) {
+		margin: 1rem auto;
+		height: 410px;
+		width: 80%;
+	}
 `

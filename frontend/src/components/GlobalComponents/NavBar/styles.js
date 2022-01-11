@@ -146,7 +146,7 @@ export const StyleNavbar = styled.div`
 
 						a {
 							text-decoration: none;
-							font-size: 19px;
+							font-size: 1.2rem;
 						}
 					}
 				}
@@ -154,6 +154,10 @@ export const StyleNavbar = styled.div`
 			.goog-te-gadget {
 				display: flex;
 				justify-content: center;
+			}
+
+			.dropdown .dropbtn {
+				font-size: 1.2rem;
 			}
 		}
 	}

@@ -60,7 +60,8 @@ export const splideOptionsOffers = {
 	gap: '2rem',
 	padding: {
 		left: '4rem',
-		right: '4rem'
+		right: '4rem',
+		bottom: 20
 	},
 	classes: {
 		pagination: 'splide__pagination dotPaginations_color'

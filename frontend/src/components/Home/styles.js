@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const HomeStyled = styled.div`
 	.recomendedCard-container {
 		margin-top: 2rem;
-		min-height: 20vh;
+		min-height: 20rem;
 	}
 
 	.plansCard-slide {
@@ -11,13 +11,16 @@ export const HomeStyled = styled.div`
 		gap: 1rem;
 	}
 
-	.dotPaginations_color button {
-		background-color: orange;
-		-top: 1rem;
-	}
+	.dotPaginations_color {
+		bottom: -1rem !important ;
 
-	.dotPaginations_color .is-active {
-		background-color: #e8641a !important;
+		button {
+			background-color: orange;
+		}
+
+		.is-active {
+			background-color: #e8641a !important;
+		}
 	}
 
 	.viajes-slide {
