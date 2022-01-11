@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { animationUpload } from '../animations'
 
 export const StyleTitle = styled.div`
+	margin-top: ${({ mt }) => (mt ? mt : '0')};
 	width: 100%;
 	display: flex;
 	justify-content: space-between;

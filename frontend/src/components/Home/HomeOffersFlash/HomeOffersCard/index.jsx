@@ -1,5 +1,7 @@
 import React from 'react'
 import { CardStyle } from './styles'
+import imgCO from 'images/iconCountries/co.png'
+import { formatNumber } from 'helpers/formatNumber'
 
 export const HomeOffersCard = ({ image, title, cop }) => {
 	const handleBooking = () => {
@@ -15,11 +17,18 @@ export const HomeOffersCard = ({ image, title, cop }) => {
 			</div>
 			<h1>{title}</h1>
 			<div className='offersCard-textContent'>
-				<p>DESDE</p>
-				<p className='offersCard-price'>
-					COP <span>{cop}</span>
+				<p>
+					Desde:{' '}
+					<span className='offersCard-price'>
+						{formatNumber(cop)}{' '}
+						<img
+							src={imgCO}
+							alt='Colombia icon'
+							className='offersCard-imgIcon'
+						/>
+					</span>
 				</p>
-				<p>Por persona</p>
+				<p className='offersCard-perPerson'>Por persona</p>
 			</div>
 			<button onClick={handleBooking} className='btn btn_offert'>
 				SOLICITAR OFERTA

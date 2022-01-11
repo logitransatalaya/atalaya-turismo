@@ -10,12 +10,13 @@ export const CardStyle = styled.div`
 	border-radius: 20px;
 	padding: 0.8rem;
 	gap: 1rem;
-	margin: 2rem 0;
+	margin: 1rem 0;
 	animation: ${animationAppear} 0.6s;
 	height: 430px;
 	h1 {
 		margin: 0;
 		width: 100%;
+		font-size: 1.5rem;
 		text-align: center;
 		color: #0b1644;
 	}
@@ -38,12 +39,19 @@ export const CardStyle = styled.div`
 
 		p {
 			margin: 0;
+			font-weight: 500;
 		}
 	}
 
 	.offersCard-price {
 		font-size: 1.1rem;
 		color: #e8641a;
+		font-weight: 600;
+
+		.offersCard-imgIcon {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
 	}
 
 	.btn_offert {
@@ -52,9 +60,12 @@ export const CardStyle = styled.div`
 		border-radius: 15px;
 		border: none;
 		color: white;
-		font-size: large;
+		font-size: 1rem;
 		margin-bottom: 19px;
 		width: 100%;
+		margin: 0 auto;
+		font-weight: 600;
+		cursor: pointer;
 
 		&:hover {
 			opacity: 0.8;

@@ -1,5 +1,5 @@
 import { Slider } from './styles'
-import { splideOptionsLoop } from 'lib/splide'
+import { splideOptionsBanners } from 'lib/splide'
 import React, { useEffect, useState } from 'react'
 // movil //
 import slideDefault00 from '../../../images/destinos-movil.jpg'
@@ -82,7 +82,7 @@ const HomeSlider = () => {
 
 	return (
 		<Slider>
-			<Splide options={splideOptionsLoop}>
+			<Splide options={splideOptionsBanners}>
 				{arrayInfo?.map((data, i) => (
 					<SplideSlide key={i}>
 						<img

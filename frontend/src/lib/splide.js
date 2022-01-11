@@ -28,6 +28,15 @@ export const splideOptions = {
 		}
 	}
 }
+export const splideOptionsBanners = {
+	type: 'loop',
+	perPage: 1,
+	autoplay: true,
+	interval: 7000,
+	speed: 2000,
+	arrows: true,
+	pagination: false
+}
 
 export const splideOptionsBedroomsModal = {
 	type: 'slide',
@@ -46,11 +55,12 @@ export const splideOptionsOffers = {
 	type: 'slide',
 	perPage: 4,
 	speed: 600,
+	arrows: true,
 	interval: 200,
-	gap: '2.5rem',
+	gap: '2rem',
 	padding: {
-		left: '0.5rem',
-		right: '0.5rem'
+		left: '4rem',
+		right: '4rem'
 	},
 	classes: {
 		pagination: 'splide__pagination dotPaginations_color'
@@ -76,15 +86,6 @@ export const splideOptionsOffers = {
 			}
 		}
 	}
-}
-
-export const splideOptionsLoop = {
-	type: 'loop',
-	perPage: 1,
-	autoplay: true,
-	interval: 7000,
-	speed: 2000,
-	arrows: false
 }
 
 export const splideOptionsBedrooms = {
